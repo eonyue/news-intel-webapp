@@ -171,6 +171,7 @@ const TITLE_TRANSLATION_MAP = [
   ['Machine Learning', '机器学习'],
   ['Large Language Models', '大语言模型'],
   ['Large Language Model', '大语言模型'],
+  ['LLMs', '大模型'],
   ['LLM', '大模型'],
   ['Agent', '智能体'],
   ['Agents', '智能体'],
@@ -261,6 +262,8 @@ function toChineseTitle(title = '') {
   }
 
   return translated
+    .replace(/法学硕士/gi, '大模型')
+    .replace(/\bLLMs?\b/gi, '大模型')
     .replace(/\s+-\s+/g, '：')
     .replace(/\s{2,}/g, ' ')
     .trim();
@@ -309,7 +312,10 @@ async function translateTitleOnline(title = '') {
     const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-CN&dt=t&q=${encodeURIComponent(source)}`;
     const text = await fetchTextWithTimeout(url, 8000);
     const data = JSON.parse(text);
-    const translated = clean((data?.[0] || []).map((x) => (x && x[0]) || '').join(''));
+    const translatedRaw = clean((data?.[0] || []).map((x) => (x && x[0]) || '').join(''));
+    const translated = translatedRaw
+      .replace(/法学硕士/gi, '大模型')
+      .replace(/\bLLMs?\b/gi, '大模型');
     const out = translated || local || source;
     titleTranslateCache.set(source, out);
     return out;
@@ -387,19 +393,18 @@ function scoreJudgement(item) {
   };
 }
 
-function buildTags(item, judgement) {
+function buildTags(item) {
   const text = `${item.title || ''} ${item.rawSummary || ''}`.toLowerCase();
   const tags = [];
-
-  if (judgement.frontier >= 7) tags.push('前沿');
-  if (judgement.depth >= 6) tags.push('深度');
-  if (judgement.reach >= 6) tags.push('传播广');
 
   for (const [tag, kws] of TOPIC_TAGS) {
     if (kws.some((kw) => keywordMatch(text, kw))) tags.push(tag);
   }
 
-  return [...new Set(tags)].slice(0, 5);
+  // 兜底标签，确保只有学科/领域维度
+  if (!tags.length) tags.push('技术');
+
+  return [...new Set(tags)].slice(0, 4);
 }
 
 function normalizeItem(item, feedSource, feedTitle) {
@@ -511,7 +516,7 @@ async function enrichItem(item) {
   const titleZh = await translateTitleOnline(item.title);
   const rawSummary = text || item.rawSummary || '';
   const judgement = scoreJudgement({ ...item, rawSummary, title: titleZh || item.title });
-  const tags = buildTags({ ...item, rawSummary, title: titleZh || item.title }, judgement);
+  const tags = buildTags({ ...item, rawSummary, title: titleZh || item.title });
 
   return {
     ...item,
