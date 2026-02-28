@@ -8,6 +8,9 @@ const CACHE_TTL_MS = 15 * 60 * 1000;
 const ITEMS_PER_SOURCE = 4;
 const TAVILY_API_KEY = process.env.TAVILY_API_KEY || process.env.TAVILY_KEY || '';
 const TAVILY_ENDPOINT = process.env.TAVILY_ENDPOINT || 'https://api.tavily.com/search';
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '';
+const OPENAI_MODEL = process.env.OPENAI_MODEL || 'gpt-5.3-codex';
+const OPENAI_ENDPOINT = process.env.OPENAI_ENDPOINT || 'https://api.openai.com/v1/responses';
 
 const CATEGORIES = [
   {
@@ -153,6 +156,7 @@ const US_POLITICS_DOMAINS = [
 
 const cache = new Map();
 const titleTranslateCache = new Map();
+const llmTranslateCache = new Map();
 
 app.set('view engine', 'ejs');
 app.set('views', `${__dirname}/views`);
@@ -261,12 +265,16 @@ function toChineseTitle(title = '') {
     translated = translated.replace(pattern, zh);
   }
 
-  return translated
-    .replace(/法学硕士/gi, '大模型')
-    .replace(/\bLLMs?\b/gi, '大模型')
+  return normalizeLLMTerm(translated)
     .replace(/\s+-\s+/g, '：')
     .replace(/\s{2,}/g, ' ')
     .trim();
+}
+
+function normalizeLLMTerm(text = '') {
+  return String(text)
+    .replace(/法学硕士/gi, '大模型')
+    .replace(/\bLLMs?\b/gi, '大模型');
 }
 
 function needsBetterChineseTitle(title = '') {
@@ -296,6 +304,58 @@ async function fetchTextWithTimeout(url, timeoutMs = 12000, init = {}) {
   }
 }
 
+async function translateWithCodex(sourceText = '') {
+  const source = clean(sourceText);
+  if (!source) return '';
+  if (!OPENAI_API_KEY) return '';
+  if (llmTranslateCache.has(source)) return llmTranslateCache.get(source);
+
+  try {
+    const body = {
+      model: OPENAI_MODEL,
+      input: [
+        {
+          role: 'system',
+          content:
+            'You translate English news titles into concise, natural Chinese for tech/research dashboards. Keep proper nouns accurate. NEVER translate LLM as 法学硕士; always use 大模型. Return only one short Chinese title without quotes.',
+        },
+        {
+          role: 'user',
+          content: source,
+        },
+      ],
+      max_output_tokens: 60,
+      temperature: 0.2,
+    };
+
+    const text = await fetchTextWithTimeout(
+      OPENAI_ENDPOINT,
+      12000,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${OPENAI_API_KEY}`,
+        },
+        body: JSON.stringify(body),
+      }
+    );
+
+    const data = JSON.parse(text);
+    const outputText = clean(
+      data?.output_text ||
+      data?.output?.map((x) => x?.content?.map((c) => c?.text || '').join(' ') || '').join(' ') ||
+      ''
+    );
+
+    const out = normalizeLLMTerm(outputText);
+    llmTranslateCache.set(source, out);
+    return out;
+  } catch {
+    return '';
+  }
+}
+
 async function translateTitleOnline(title = '') {
   const source = clean(title);
   if (!source) return '未命名内容';
@@ -308,14 +368,19 @@ async function translateTitleOnline(title = '') {
     return local;
   }
 
+  const codex = await translateWithCodex(source);
+  if (codex) {
+    const out = normalizeLLMTerm(codex || local || source);
+    titleTranslateCache.set(source, out);
+    return out;
+  }
+
   try {
     const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-CN&dt=t&q=${encodeURIComponent(source)}`;
     const text = await fetchTextWithTimeout(url, 8000);
     const data = JSON.parse(text);
     const translatedRaw = clean((data?.[0] || []).map((x) => (x && x[0]) || '').join(''));
-    const translated = translatedRaw
-      .replace(/法学硕士/gi, '大模型')
-      .replace(/\bLLMs?\b/gi, '大模型');
+    const translated = normalizeLLMTerm(translatedRaw);
     const out = translated || local || source;
     titleTranslateCache.set(source, out);
     return out;
@@ -611,6 +676,8 @@ app.get('/health', (_req, res) => {
     service: 'news-intel-webapp',
     now: new Date().toISOString(),
     tavilyEnabled: !!TAVILY_API_KEY,
+    codexEnabled: !!OPENAI_API_KEY,
+    codexModel: OPENAI_MODEL,
     itemsPerSource: ITEMS_PER_SOURCE,
   });
 });

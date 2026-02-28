@@ -229,11 +229,18 @@ h2 {
 
 .title {
   display: block;
-  color: #e7fff3;
+  color: #e8f1ff;
   font-weight: 700;
   line-height: 1.4;
   text-decoration: none;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+}
+
+.title-original {
+  margin: 0 0 8px;
+  color: #8da7d6;
+  font-size: 11px;
+  line-height: 1.45;
 }
 
 .tags {

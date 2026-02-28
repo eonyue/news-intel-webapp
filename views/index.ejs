@@ -47,6 +47,9 @@
           <% cat.items.forEach((item) => { %>
           <li class="item <%= item.error ? 'error' : '' %>">
             <a class="title" href="<%= item.link %>" target="_blank" rel="noreferrer"><%= item.titleZh || item.title %></a>
+            <% if (item.title && item.titleZh && item.title !== item.titleZh) { %>
+            <p class="title-original"><%= item.title %></p>
+            <% } %>
 
             <div class="tags">
               <% (item.tags || []).forEach((tag) => { %>
