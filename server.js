@@ -5,7 +5,8 @@ const app = express();
 const parser = new Parser({ timeout: 15000 });
 const PORT = process.env.PORT || 4321;
 const CACHE_TTL_MS = 15 * 60 * 1000;
-const ITEMS_PER_SOURCE = 4;
+const ITEMS_PER_SOURCE = 1;
+
 const TAVILY_API_KEY = process.env.TAVILY_API_KEY || process.env.TAVILY_KEY || '';
 const TAVILY_ENDPOINT = process.env.TAVILY_ENDPOINT || 'https://api.tavily.com/search';
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '';
@@ -14,52 +15,34 @@ const OPENAI_ENDPOINT = process.env.OPENAI_ENDPOINT || 'https://api.openai.com/v
 
 const CATEGORIES = [
   {
-    id: 'scour',
-    name: 'Scour Feeds',
-    zhName: 'Scour 信息流',
-    description: 'Curated mixed feed with strong AI / science relevance',
-    zhDescription: 'Scour 混合精选流（AI / 科学优先）',
-    tavilyQuery:
-      'latest high-signal stories on artificial intelligence neuroscience life science health technology from trusted sources',
-    feeds: [{ url: process.env.SCOUR_RSS || 'https://scour.ing/@yuesean/rss.xml', source: 'scour.ing' }],
-  },
-  {
-    id: 'arxiv',
-    name: 'Arxiv Digest',
-    zhName: 'Arxiv 论文速览',
-    description: 'Latest AI / neuroscience / life-science preprints',
-    zhDescription: 'AI / 神经科学 / 生命科学最新预印本',
-    tavilyQuery:
-      'site:arxiv.org latest papers on AI large language models neuroscience brain science life science computational biology health tech',
-    feeds: [
-      { url: 'https://export.arxiv.org/rss/cs.AI', source: 'arXiv cs.AI' },
-      { url: 'https://export.arxiv.org/rss/cs.CL', source: 'arXiv cs.CL' },
-      { url: 'https://export.arxiv.org/rss/q-bio.NC', source: 'arXiv q-bio.NC' },
-    ],
-  },
-  {
     id: 'media',
     name: 'Media Headlines',
     zhName: '媒体头条',
     description: 'Broad-reach media coverage around AI, tech and health',
     zhDescription: 'AI / 科技 / 健康主流媒体报道',
+    limit: 5,
     tavilyQuery:
-      'top media analysis and headlines on AI technology health neuroscience from MIT Technology Review VentureBeat The Verge',
+      'best in-depth media coverage today on AI large language models neuroscience life science health technology',
     feeds: [
       { url: 'https://venturebeat.com/category/ai/feed/', source: 'VentureBeat' },
       { url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', source: 'The Verge' },
       { url: 'https://www.technologyreview.com/topic/artificial-intelligence/feed/', source: 'MIT Technology Review' },
+      { url: 'https://hnrss.org/newest?q=AI', source: 'Hacker News' },
     ],
   },
   {
     id: 'research',
     name: 'Research Alert',
-    zhName: '研究快讯',
-    description: 'Research-heavy updates from scientific outlets',
-    zhDescription: '科研导向更新（神经科学 / 生命科学 / 健康）',
+    zhName: '研究速递',
+    description: 'Research-heavy updates from journals, labs, and arXiv',
+    zhDescription: '科研导向更新（含 arXiv）',
+    limit: 5,
     tavilyQuery:
-      'latest research news on neuroscience life science health from Nature Medical Xpress Neuroscience News ScienceDaily',
+      'latest research in AI neuroscience life science health from arXiv Nature Science Medical Xpress Neuroscience News',
     feeds: [
+      { url: 'https://export.arxiv.org/rss/cs.AI', source: 'arXiv cs.AI' },
+      { url: 'https://export.arxiv.org/rss/cs.CL', source: 'arXiv cs.CL' },
+      { url: 'https://export.arxiv.org/rss/q-bio.NC', source: 'arXiv q-bio.NC' },
       { url: 'https://neurosciencenews.com/feed/', source: 'Neuroscience News' },
       { url: 'https://medicalxpress.com/rss-feed/', source: 'Medical Xpress' },
       { url: 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', source: 'ScienceDaily' },
@@ -71,12 +54,14 @@ const CATEGORIES = [
     zhName: '技术趋势',
     description: 'Developer and ecosystem trend signals',
     zhDescription: '开发者生态与技术趋势信号',
+    limit: 5,
     tavilyQuery:
-      'latest trends on AI agents software engineering chips developer tools health technology discussions',
+      'top trend signals this week on AI agents developer tooling chips software infrastructure and health tech',
     feeds: [
       { url: 'https://hnrss.org/newest?q=AI', source: 'Hacker News' },
       { url: 'https://lobste.rs/t/ai.rss', source: 'Lobsters' },
       { url: 'https://www.worksinprogress.news/feed', source: 'Works in Progress' },
+      { url: 'https://www.technologyreview.com/topic/artificial-intelligence/feed/', source: 'MIT Technology Review' },
     ],
   },
 ];
@@ -89,23 +74,23 @@ const SOURCE_WEIGHT = {
   'thelancet.com': 9,
   'jamanetwork.com': 9,
   'arxiv.org': 8,
-  'medicalxpress.com': 7,
-  'neurosciencenews.com': 7,
+  'medicalxpress.com': 8,
+  'neurosciencenews.com': 8,
   'sciencedaily.com': 7,
-  'technologyreview.com': 7,
-  'venturebeat.com': 6,
+  'technologyreview.com': 8,
+  'venturebeat.com': 7,
   'theverge.com': 6,
-  'openai.com': 6,
-  'anthropic.com': 6,
-  'news.ycombinator.com': 5,
-  'lobste.rs': 5,
+  'openai.com': 7,
+  'anthropic.com': 7,
+  'news.ycombinator.com': 6,
+  'lobste.rs': 6,
 };
 
 const REACH_WEIGHT = {
   'technologyreview.com': 9,
-  'theverge.com': 9,
+  'theverge.com': 8,
   'venturebeat.com': 8,
-  'news.ycombinator.com': 8,
+  'news.ycombinator.com': 9,
   'openai.com': 8,
   'arxiv.org': 7,
   'medicalxpress.com': 7,
@@ -115,48 +100,65 @@ const REACH_WEIGHT = {
 };
 
 const TOPIC_TAGS = [
-  ['人工智能', ['ai', 'artificial intelligence', 'llm', 'agent', 'transformer', '大模型', '人工智能', '智能体']],
-  ['神经科学', ['neuro', 'neuroscience', 'brain', 'hippocamp', 'eeg', 'bci', '神经', '脑科学']],
-  ['生命科学', ['life science', 'biology', 'biotech', 'gene', 'genome', 'dna', 'rna', 'protein', 'cell', '生命科学', '基因', '生物']],
-  ['健康', ['health', 'clinical', 'medical', 'therapy', 'disease', 'diagnosis', 'drug', 'trial', '健康', '医学', '临床', '疗法']],
-  ['技术', ['technology', 'tech', 'software', 'chip', 'semiconductor', 'tooling', 'engineering', '技术', '软件', '芯片']],
+  ['人工智能', ['ai', 'artificial intelligence', 'machine learning', 'deep learning', '大模型', '人工智能']],
+  ['大模型', ['llm', 'large language model', 'foundation model', 'gpt', 'transformer']],
+  ['智能体', ['agent', 'agentic', 'tool use', 'autonomous agent']],
+  ['AI安全', ['ai safety', 'alignment', 'governance', 'policy', 'risk', '安全']],
+  ['神经科学', ['neuro', 'neuroscience', 'brain', 'cortex', 'synapse', '神经', '脑科学']],
+  ['神经影像', ['fmri', 'pet', 'imaging', 'brain imaging', '神经影像']],
+  ['脑机接口', ['bci', 'brain-computer interface', 'eeg', 'electrode', '脑机接口']],
+  ['生命科学', ['life science', 'biology', 'biological', '生命科学', '生物']],
+  ['生物技术', ['biotech', 'drug discovery', 'biopharma', '生物技术']],
+  ['基因组学', ['gene', 'genome', 'genomic', 'crispr', '基因', '基因组']],
+  ['蛋白质科学', ['protein', 'proteomics', '蛋白质']],
+  ['健康', ['health', 'medical', 'clinical', 'disease', 'therapy', '健康', '医学', '临床']],
+  ['精神健康', ['mental health', 'depression', 'anxiety', '心理健康']],
+  ['数字医疗', ['health tech', 'medical ai', 'digital health', '数字医疗']],
+  ['技术', ['technology', 'tech', 'software', 'chip', 'semiconductor', 'infrastructure', '技术', '软件', '芯片']],
 ];
 
 const IN_SCOPE_KEYWORDS = TOPIC_TAGS.flatMap((x) => x[1]);
 
 const US_POLITICS_KEYWORDS = [
-  'trump',
-  'biden',
-  'white house',
-  'senate',
-  'congress',
-  'republican',
-  'democrat',
-  'election',
-  'campaign',
-  'capitol hill',
-  'washington dc',
-  'u.s. politics',
-  'us politics',
-  'pentagon',
-  'supreme court',
-  'federal agencies',
-  'department of state',
-  'homeland security',
+  'trump', 'biden', 'white house', 'senate', 'congress', 'republican', 'democrat', 'election', 'campaign',
+  'capitol hill', 'washington dc', 'u.s. politics', 'us politics', 'pentagon', 'supreme court',
+  'federal agencies', 'department of state', 'homeland security',
 ];
 
 const US_POLITICS_DOMAINS = [
-  'politico.com',
-  'foxnews.com',
-  'cnn.com',
-  'nytimes.com',
-  'washingtonpost.com',
-  'thehill.com',
+  'politico.com', 'foxnews.com', 'cnn.com', 'nytimes.com', 'washingtonpost.com', 'thehill.com',
+];
+
+const TITLE_TRANSLATION_MAP = [
+  ['Artificial Intelligence', '人工智能'],
+  ['Machine Learning', '机器学习'],
+  ['Large Language Models', '大语言模型'],
+  ['Large Language Model', '大语言模型'],
+  ['LLMs', '大模型'],
+  ['LLM', '大模型'],
+  ['Agent', '智能体'],
+  ['Agents', '智能体'],
+  ['Neural Network', '神经网络'],
+  ['Neuroscience', '神经科学'],
+  ['Brain', '大脑'],
+  ['EEG', '脑电'],
+  ['BCI', '脑机接口'],
+  ['Health', '健康'],
+  ['Medical', '医学'],
+  ['Clinical', '临床'],
+  ['Research', '研究'],
+  ['Paper', '论文'],
+  ['Benchmark', '基准'],
+  ['Dataset', '数据集'],
+  ['Model', '模型'],
+  ['Therapy', '治疗'],
+  ['Policy', '政策'],
 ];
 
 const cache = new Map();
 const titleTranslateCache = new Map();
 const llmTranslateCache = new Map();
+const llmSummaryCache = new Map();
 
 app.set('view engine', 'ejs');
 app.set('views', `${__dirname}/views`);
@@ -170,45 +172,11 @@ const clean = (txt = '') =>
 
 const hasChinese = (txt = '') => /[\u4e00-\u9fa5]/.test(txt);
 
-const TITLE_TRANSLATION_MAP = [
-  ['Artificial Intelligence', '人工智能'],
-  ['Machine Learning', '机器学习'],
-  ['Large Language Models', '大语言模型'],
-  ['Large Language Model', '大语言模型'],
-  ['LLMs', '大模型'],
-  ['LLM', '大模型'],
-  ['Agent', '智能体'],
-  ['Agents', '智能体'],
-  ['Neural Network', '神经网络'],
-  ['Neural', '神经'],
-  ['Neuroscience', '神经科学'],
-  ['Brain', '大脑'],
-  ['Hippocampal', '海马体'],
-  ['EEG', '脑电'],
-  ['BCI', '脑机接口'],
-  ['Robotics', '机器人'],
-  ['Robot', '机器人'],
-  ['Automation', '自动化'],
-  ['Health', '健康'],
-  ['Mental Health', '心理健康'],
-  ['Medical', '医学'],
-  ['Clinical', '临床'],
-  ['Research', '研究'],
-  ['Paper', '论文'],
-  ['Update', '更新'],
-  ['Guide', '指南'],
-  ['Trends', '趋势'],
-  ['News', '新闻'],
-  ['Theory', '理论'],
-  ['Safety', '安全'],
-  ['Governance', '治理'],
-  ['Policy', '政策'],
-  ['Benchmark', '基准'],
-  ['Dataset', '数据集'],
-  ['Model', '模型'],
-  ['Memory', '记忆'],
-  ['Therapy', '治疗'],
-];
+function normalizeLLMTerm(text = '') {
+  return String(text)
+    .replace(/法学硕士/gi, '大模型')
+    .replace(/\bLLMs?\b/gi, '大模型');
+}
 
 function resolveScourLink(link = '') {
   if (link.includes('/redirect/')) {
@@ -271,12 +239,6 @@ function toChineseTitle(title = '') {
     .trim();
 }
 
-function normalizeLLMTerm(text = '') {
-  return String(text)
-    .replace(/法学硕士/gi, '大模型')
-    .replace(/\bLLMs?\b/gi, '大模型');
-}
-
 function needsBetterChineseTitle(title = '') {
   const zhCount = (title.match(/[\u4e00-\u9fa5]/g) || []).length;
   const latinCount = (title.match(/[A-Za-z]/g) || []).length;
@@ -290,7 +252,7 @@ async function fetchTextWithTimeout(url, timeoutMs = 12000, init = {}) {
     const resp = await fetch(url, {
       method: 'GET',
       headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; NewsIntelBot/1.0)',
+        'User-Agent': 'Mozilla/5.0 (compatible; NewsIntelBot/2.0)',
         Accept: '*/*',
       },
       redirect: 'follow',
@@ -304,33 +266,23 @@ async function fetchTextWithTimeout(url, timeoutMs = 12000, init = {}) {
   }
 }
 
-async function translateWithCodex(sourceText = '') {
-  const source = clean(sourceText);
-  if (!source) return '';
+async function callCodex({ systemPrompt, userPrompt, maxOutputTokens = 180, temperature = 0.2 }) {
   if (!OPENAI_API_KEY) return '';
-  if (llmTranslateCache.has(source)) return llmTranslateCache.get(source);
 
   try {
     const body = {
       model: OPENAI_MODEL,
       input: [
-        {
-          role: 'system',
-          content:
-            'You translate English news titles into concise, natural Chinese for tech/research dashboards. Keep proper nouns accurate. NEVER translate LLM as 法学硕士; always use 大模型. Return only one short Chinese title without quotes.',
-        },
-        {
-          role: 'user',
-          content: source,
-        },
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: userPrompt },
       ],
-      max_output_tokens: 60,
-      temperature: 0.2,
+      max_output_tokens: maxOutputTokens,
+      temperature,
     };
 
     const text = await fetchTextWithTimeout(
       OPENAI_ENDPOINT,
-      12000,
+      14000,
       {
         method: 'POST',
         headers: {
@@ -348,9 +300,7 @@ async function translateWithCodex(sourceText = '') {
       ''
     );
 
-    const out = normalizeLLMTerm(outputText);
-    llmTranslateCache.set(source, out);
-    return out;
+    return normalizeLLMTerm(outputText);
   } catch {
     return '';
   }
@@ -368,20 +318,34 @@ async function translateTitleOnline(title = '') {
     return local;
   }
 
-  const codex = await translateWithCodex(source);
-  if (codex) {
-    const out = normalizeLLMTerm(codex || local || source);
+  const cacheKey = `title:${source}`;
+  if (llmTranslateCache.has(cacheKey)) {
+    const out = llmTranslateCache.get(cacheKey);
     titleTranslateCache.set(source, out);
     return out;
   }
 
+  const codex = await callCodex({
+    systemPrompt:
+      '将英文新闻标题翻译为自然、简洁、准确的中文标题。保留专有名词。LLM统一译为“大模型”。只输出一行中文标题。',
+    userPrompt: source,
+    maxOutputTokens: 80,
+    temperature: 0.1,
+  });
+
+  if (codex) {
+    llmTranslateCache.set(cacheKey, codex);
+    titleTranslateCache.set(source, codex);
+    return codex;
+  }
+
+  // fallback: lightweight translation API
   try {
     const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-CN&dt=t&q=${encodeURIComponent(source)}`;
     const text = await fetchTextWithTimeout(url, 8000);
     const data = JSON.parse(text);
     const translatedRaw = clean((data?.[0] || []).map((x) => (x && x[0]) || '').join(''));
-    const translated = normalizeLLMTerm(translatedRaw);
-    const out = translated || local || source;
+    const out = normalizeLLMTerm(translatedRaw || local || source);
     titleTranslateCache.set(source, out);
     return out;
   } catch {
@@ -392,22 +356,39 @@ async function translateTitleOnline(title = '') {
 
 function inferTopic(text = '') {
   const t = text.toLowerCase();
-  if (/(llm|large language|agent|ai|model|transformer)/.test(t)) return 'AI 模型与智能体';
-  if (/(brain|neuro|neural|hippocamp|eeg|bci)/.test(t)) return '神经科学与脑机接口';
-  if (/(health|therapy|clinical|disease|alzheimer|drug|medical)/.test(t)) return '健康与临床应用';
+  if (/(llm|large language|agent|ai|model|transformer)/.test(t)) return '人工智能';
+  if (/(brain|neuro|neural|hippocamp|eeg|bci)/.test(t)) return '神经科学';
   if (/(life science|biology|biotech|gene|genome|dna|rna|protein|cell)/.test(t)) return '生命科学';
-  if (/(robot|automation|software|chip|semiconductor|technology|tech)/.test(t)) return '技术与工程';
-  return '前沿科技趋势';
+  if (/(health|therapy|clinical|disease|alzheimer|drug|medical)/.test(t)) return '健康';
+  return '技术';
 }
 
-function toChineseSummary(raw = '', title = '') {
-  const text = clean(raw);
-  if (!text) return `围绕「${inferTopic(title)}」的关键更新，建议查看原文获取完整细节。`;
-  if (hasChinese(text)) return text.slice(0, 220);
+async function polishSummaryWithCodex(raw = '', titleZh = '') {
+  const source = clean(raw);
+  if (!source) return '';
 
-  const firstSentence = text.split(/(?<=[.!?])\s+/)[0] || text;
+  const cacheKey = `${titleZh}::${source}`;
+  if (llmSummaryCache.has(cacheKey)) return llmSummaryCache.get(cacheKey);
+
+  const codex = await callCodex({
+    systemPrompt:
+      '你是科技新闻编辑。请将输入内容提炼为中文摘要，2句，信息密度高、流畅自然、避免空话。保持客观，不编造事实。LLM统一译为“大模型”。只输出摘要正文。',
+    userPrompt: `标题：${titleZh}\n原文片段：${source}`,
+    maxOutputTokens: 180,
+    temperature: 0.2,
+  });
+
+  if (codex) {
+    llmSummaryCache.set(cacheKey, codex);
+    return codex;
+  }
+
+  // fallback
+  const firstSentence = source.split(/(?<=[.!?])\s+/)[0] || source;
   const compact = clean(firstSentence).slice(0, 180);
-  return `围绕「${inferTopic(`${title} ${text}`)}」：${compact}。`.slice(0, 220);
+  const out = `围绕「${inferTopic(`${titleZh} ${source}`)}」：${compact}。`;
+  llmSummaryCache.set(cacheKey, out);
+  return out;
 }
 
 function extractAbstractOrDescription(htmlText) {
@@ -436,7 +417,7 @@ function scoreJudgement(item) {
 
   let frontier = 4;
   if (/(breakthrough|novel|first|sota|state-of-the-art|new|首次|突破|前沿)/.test(t)) frontier += 3;
-  if (/(arxiv|nature|science|cell|clinical trial|doi)/.test(t)) frontier += 2;
+  if (/(arxiv|nature|science|cell|clinical trial|doi|peer-reviewed)/.test(t)) frontier += 2;
 
   let depth = 3;
   if ((item.rawSummary || '').length > 180) depth += 3;
@@ -466,10 +447,8 @@ function buildTags(item) {
     if (kws.some((kw) => keywordMatch(text, kw))) tags.push(tag);
   }
 
-  // 兜底标签，确保只有学科/领域维度
   if (!tags.length) tags.push('技术');
-
-  return [...new Set(tags)].slice(0, 4);
+  return [...new Set(tags)].slice(0, 6);
 }
 
 function normalizeItem(item, feedSource, feedTitle) {
@@ -508,6 +487,7 @@ async function fetchFromRSS(category) {
           publishedAt: '',
           ts: 0,
           error: true,
+          tags: ['抓取异常'],
         },
       ];
     }
@@ -531,7 +511,7 @@ async function fetchFromTavily(category) {
         query: category.tavilyQuery,
         topic: 'news',
         search_depth: 'advanced',
-        max_results: 30,
+        max_results: 40,
         include_answer: false,
         include_raw_content: false,
       }),
@@ -580,6 +560,7 @@ async function enrichItem(item) {
 
   const titleZh = await translateTitleOnline(item.title);
   const rawSummary = text || item.rawSummary || '';
+  const summary = await polishSummaryWithCodex(rawSummary, titleZh || item.title);
   const judgement = scoreJudgement({ ...item, rawSummary, title: titleZh || item.title });
   const tags = buildTags({ ...item, rawSummary, title: titleZh || item.title });
 
@@ -587,7 +568,7 @@ async function enrichItem(item) {
     ...item,
     titleZh,
     rawSummary,
-    summary: toChineseSummary(rawSummary, titleZh || item.title),
+    summary,
     judgement,
     tags,
     score: judgement.total,
@@ -597,7 +578,6 @@ async function enrichItem(item) {
 async function fetchCategory(category) {
   const fromTavily = await fetchFromTavily(category);
   const fromRss = await fetchFromRSS(category);
-
   const merged = [...fromTavily, ...fromRss];
 
   const seen = new Set();
@@ -612,7 +592,6 @@ async function fetchCategory(category) {
 
   const filtered = deduped.filter((it) => !it.error && !isUSPolitics(it) && isInScopeTopic(it));
   const enriched = await Promise.all(filtered.map(enrichItem));
-
   const sorted = enriched.sort((a, b) => (b.score || 0) - (a.score || 0));
 
   const bySourceCount = new Map();
@@ -623,13 +602,14 @@ async function fetchCategory(category) {
     if (n >= ITEMS_PER_SOURCE) continue;
     bySourceCount.set(sk, n + 1);
     selected.push(item);
+    if (selected.length >= category.limit) break;
   }
 
   if (selected.length) return selected;
 
   return deduped
     .filter((x) => x.error)
-    .slice(0, ITEMS_PER_SOURCE)
+    .slice(0, category.limit)
     .map((x) => ({ ...x, tags: ['抓取异常'] }));
 }
 
