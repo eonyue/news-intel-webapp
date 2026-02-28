@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News Intel Dashboard</title>
+    <title>News Intel</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
@@ -12,11 +12,11 @@
 
     <header class="top glass">
       <div>
-        <h1>News Intel Dashboard</h1>
-        <p class="sub">移动端优先 · 毛玻璃风格 · 中文标题聚合</p>
+        <h1>News Intel</h1>
+        <p class="sub">由神经现实呈现</p>
       </div>
       <div class="actions">
-        <a class="btn" href="/?refresh=1">刷新全部</a>
+        <a class="icon-btn" href="/?refresh=1" title="刷新" aria-label="刷新">↻</a>
       </div>
     </header>
 
@@ -44,6 +44,7 @@
           <% cat.items.forEach((item) => { %>
           <li class="item <%= item.error ? 'error' : '' %>">
             <a class="title" href="<%= item.link %>" target="_blank" rel="noreferrer"><%= item.titleZh || item.title %></a>
+            <p class="summary"><%= item.summary || '暂无摘要' %></p>
             <div class="row">
               <span>来源：<%= item.source %></span>
               <% if (item.publishedAt) { %>
@@ -59,6 +60,6 @@
       <% }) %>
     </main>
 
-    <footer>页面生成时间：<%= generatedAt.toLocaleString('zh-CN') %></footer>
+    <footer>© Powered by noetex.ai</footer>
   </body>
 </html>

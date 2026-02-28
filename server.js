@@ -13,7 +13,7 @@ const CATEGORIES = [
     zhName: 'Scour 信息流',
     description: 'Your personal Scour stream and recommended links',
     zhDescription: '你的 Scour 个性化信息流与推荐源',
-    limit: 12,
+    limit: 3,
     feeds: [{ url: process.env.SCOUR_RSS || 'https://scour.ing/@yuesean/rss.xml', source: 'scour.ing' }],
   },
   {
@@ -22,7 +22,7 @@ const CATEGORIES = [
     zhName: 'Arxiv 论文速览',
     description: 'Fresh papers from AI / neuroscience-related categories',
     zhDescription: '聚合 AI 与神经科学相关新论文',
-    limit: 15,
+    limit: 3,
     feeds: [
       { url: 'https://export.arxiv.org/rss/cs.AI', source: 'arXiv cs.AI' },
       { url: 'https://export.arxiv.org/rss/cs.CL', source: 'arXiv cs.CL' },
@@ -35,7 +35,7 @@ const CATEGORIES = [
     zhName: '媒体头条',
     description: 'Top media coverage around AI and tech',
     zhDescription: 'AI 与科技领域的媒体重点报道',
-    limit: 15,
+    limit: 3,
     feeds: [
       { url: 'https://venturebeat.com/category/ai/feed/', source: 'VentureBeat' },
       { url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', source: 'The Verge' },
@@ -48,7 +48,7 @@ const CATEGORIES = [
     zhName: '研究快讯',
     description: 'Research-heavy news and scientific updates',
     zhDescription: '科研导向的新闻与学术更新',
-    limit: 15,
+    limit: 3,
     feeds: [
       { url: 'https://neurosciencenews.com/feed/', source: 'Neuroscience News' },
       { url: 'https://medicalxpress.com/rss-feed/', source: 'Medical Xpress' },
@@ -61,7 +61,7 @@ const CATEGORIES = [
     zhName: '技术趋势',
     description: 'High-signal discussions and trend posts',
     zhDescription: '高信号讨论与趋势型内容',
-    limit: 15,
+    limit: 3,
     feeds: [
       { url: 'https://hnrss.org/newest?q=AI', source: 'Hacker News' },
       { url: 'https://lobste.rs/t/ai.rss', source: 'Lobsters' },
@@ -70,7 +70,26 @@ const CATEGORIES = [
   },
 ];
 
+const SOURCE_WEIGHT = {
+  'nature.com': 10,
+  'science.org': 10,
+  'cell.com': 10,
+  'nejm.org': 9,
+  'thelancet.com': 9,
+  'jamanetwork.com': 9,
+  'arxiv.org': 8,
+  'medicalxpress.com': 7,
+  'neurosciencenews.com': 7,
+  'sciencedaily.com': 7,
+  'technologyreview.com': 7,
+  'venturebeat.com': 6,
+  'theverge.com': 6,
+  'news.ycombinator.com': 5,
+  'lobste.rs': 5,
+};
+
 const cache = new Map();
+const titleTranslateCache = new Map();
 
 app.set('view engine', 'ejs');
 app.set('views', `${__dirname}/views`);
@@ -83,23 +102,6 @@ const clean = (txt = '') =>
     .trim();
 
 const hasChinese = (txt = '') => /[\u4e00-\u9fa5]/.test(txt);
-
-function resolveScourLink(link = '') {
-  if (link.includes('/redirect/')) {
-    const after = link.split('/redirect/')[1] || '';
-    const target = decodeURIComponent(after.split('?')[0] || '');
-    return target || link;
-  }
-  return link;
-}
-
-function domain(url = '') {
-  try {
-    return new URL(url).hostname.replace(/^www\./, '');
-  } catch {
-    return 'unknown';
-  }
-}
 
 const TITLE_TRANSLATION_MAP = [
   ['Artificial Intelligence', '人工智能'],
@@ -134,7 +136,29 @@ const TITLE_TRANSLATION_MAP = [
   ['Safety', '安全'],
   ['Governance', '治理'],
   ['Policy', '政策'],
+  ['Benchmark', '基准'],
+  ['Dataset', '数据集'],
+  ['Model', '模型'],
+  ['Memory', '记忆'],
+  ['Therapy', '治疗'],
 ];
+
+function resolveScourLink(link = '') {
+  if (link.includes('/redirect/')) {
+    const after = link.split('/redirect/')[1] || '';
+    const target = decodeURIComponent(after.split('?')[0] || '');
+    return target || link;
+  }
+  return link;
+}
+
+function domain(url = '') {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return 'unknown';
+  }
+}
 
 function toChineseTitle(title = '') {
   const source = clean(title);
@@ -148,18 +172,126 @@ function toChineseTitle(title = '') {
     translated = translated.replace(pattern, zh);
   }
 
-  // 清理残余英文连词和标点格式
-  translated = translated
+  return translated
     .replace(/\s+-\s+/g, '：')
     .replace(/\s{2,}/g, ' ')
     .trim();
+}
 
-  // 若仍以英文为主，退化成中文标题包装，保证界面中文化
-  const zhCount = (translated.match(/[\u4e00-\u9fa5]/g) || []).length;
-  const latinCount = (translated.match(/[A-Za-z]/g) || []).length;
-  if (zhCount < 2 || latinCount > 8) return `关于「${source}」的更新`;
+function needsBetterChineseTitle(title = '') {
+  const zhCount = (title.match(/[\u4e00-\u9fa5]/g) || []).length;
+  const latinCount = (title.match(/[A-Za-z]/g) || []).length;
+  return zhCount < 2 || latinCount > 10;
+}
 
-  return translated;
+async function translateTitleOnline(title = '') {
+  const source = clean(title);
+  if (!source) return '未命名内容';
+  if (hasChinese(source)) return source;
+  if (titleTranslateCache.has(source)) return titleTranslateCache.get(source);
+
+  const local = toChineseTitle(source);
+  if (!needsBetterChineseTitle(local)) {
+    titleTranslateCache.set(source, local);
+    return local;
+  }
+
+  try {
+    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-CN&dt=t&q=${encodeURIComponent(source)}`;
+    const text = await fetchTextWithTimeout(url, 8000);
+    const data = JSON.parse(text);
+    const translated = clean((data?.[0] || []).map((x) => (x && x[0]) || '').join(''));
+    const out = translated || local || source;
+    titleTranslateCache.set(source, out);
+    return out;
+  } catch {
+    titleTranslateCache.set(source, local || source);
+    return local || source;
+  }
+}
+
+function inferTopic(text = '') {
+  const t = text.toLowerCase();
+  if (/(llm|large language|agent|ai|model|transformer)/.test(t)) return 'AI 模型与智能体';
+  if (/(brain|neuro|neural|hippocamp|eeg|bci)/.test(t)) return '神经科学与脑机接口';
+  if (/(health|therapy|clinical|disease|alzheimer|drug|medical)/.test(t)) return '健康与临床应用';
+  if (/(robot|humanoid|automation)/.test(t)) return '机器人与自动化';
+  if (/(policy|governance|law|rights|ethic|safety)/.test(t)) return '治理、伦理与安全';
+  return '前沿科技趋势';
+}
+
+function toChineseSummary(raw = '', title = '') {
+  const text = clean(raw);
+  if (!text) return `围绕「${inferTopic(title)}」的最新内容，建议阅读全文获取完整细节。`;
+  if (hasChinese(text)) return text.slice(0, 220);
+
+  const firstSentence = text.split(/(?<=[.!?])\s+/)[0] || text;
+  const compact = clean(firstSentence).slice(0, 180);
+  return `围绕「${inferTopic(`${title} ${text}`)}」：${compact}。`.slice(0, 220);
+}
+
+async function fetchTextWithTimeout(url, timeoutMs = 12000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const resp = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; NewsIntelBot/1.0)',
+        Accept: '*/*',
+      },
+      redirect: 'follow',
+      signal: controller.signal,
+    });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    return await resp.text();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+function extractAbstractOrDescription(htmlText) {
+  const html = String(htmlText || '');
+
+  // arXiv abstract
+  const arxiv = html.match(/<blockquote class="abstract[^>]*">([\s\S]*?)<\/blockquote>/i);
+  if (arxiv) return clean(arxiv[1].replace(/^\s*Abstract:\s*/i, ''));
+
+  // og description / meta description
+  const og = html.match(/<meta\s+property="og:description"\s+content="([^"]+)"/i);
+  if (og) return clean(og[1]);
+
+  const md = html.match(/<meta\s+name="description"\s+content="([^"]+)"/i);
+  if (md) return clean(md[1]);
+
+  // first meaningful paragraph
+  const paragraphs = [...html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
+    .map((m) => clean(m[1]))
+    .filter((p) => p && p.length > 80);
+  if (paragraphs.length) return paragraphs[0];
+
+  return '';
+}
+
+function importanceScore(item, categoryId) {
+  const d = domain(item.link || '');
+  let score = SOURCE_WEIGHT[d] || 3;
+
+  const t = (item.title || '').toLowerCase();
+  if (/(benchmark|breakthrough|trial|clinical|dataset|review|policy|update)/.test(t)) score += 2;
+  if (/(alzheimer|brain|neuro|llm|agent|safety|governance)/.test(t)) score += 2;
+
+  const now = Date.now();
+  if (item.ts) {
+    const hours = Math.max(0, (now - item.ts) / 3600000);
+    score += Math.max(0, 72 - hours) / 12;
+  }
+
+  if (categoryId === 'arxiv' && d === 'arxiv.org') score += 2;
+  if (categoryId === 'research' && /(nature|science|medicalxpress|neurosciencenews|sciencedaily)/.test(d)) score += 2;
+  if (categoryId === 'trends' && /(news.ycombinator|lobste.rs)/.test(d)) score += 1;
+
+  return score;
 }
 
 function normalizeItem(item, feedSource, feedTitle) {
@@ -167,14 +299,39 @@ function normalizeItem(item, feedSource, feedTitle) {
   const title = clean(item.title || 'Untitled');
   const pub = item.isoDate || item.pubDate || '';
   const source = feedSource || clean(feedTitle) || domain(link);
+  const rawSummary = clean(item.contentSnippet || item.content || item.summary || '');
 
   return {
     title,
     titleZh: toChineseTitle(title),
     source,
     link,
+    rawSummary,
     publishedAt: pub,
     ts: pub ? new Date(pub).getTime() : 0,
+  };
+}
+
+async function enrichSummary(item) {
+  let text = item.rawSummary || '';
+  const generic = /Scour interesting reads from noisy feeds/i.test(text);
+
+  if (!text || text.length < 80 || generic) {
+    try {
+      const html = await fetchTextWithTimeout(item.link, 10000);
+      const extracted = extractAbstractOrDescription(html);
+      if (extracted) text = extracted;
+    } catch {
+      // keep fallback
+    }
+  }
+
+  const titleZh = await translateTitleOnline(item.title);
+
+  return {
+    ...item,
+    titleZh,
+    summary: toChineseSummary(text, titleZh || item.title),
   };
 }
 
@@ -190,6 +347,8 @@ async function fetchCategory(category) {
           titleZh: `抓取失败：${feedConfig.source}`,
           source: feedConfig.source,
           link: feedConfig.url,
+          rawSummary: '',
+          summary: `无法获取 ${feedConfig.url}（${error.message}）`,
           publishedAt: '',
           ts: 0,
           error: true,
@@ -211,8 +370,15 @@ async function fetchCategory(category) {
     }
   }
 
-  deduped.sort((a, b) => (b.ts || 0) - (a.ts || 0));
-  return deduped.slice(0, category.limit);
+  const sorted = deduped
+    .map((it) => ({ ...it, score: importanceScore(it, category.id) }))
+    .sort((a, b) => (b.score - a.score) || ((b.ts || 0) - (a.ts || 0)));
+
+  const top = sorted.filter((x) => !x.error).slice(0, category.limit);
+  const enriched = await Promise.all(top.map(enrichSummary));
+
+  if (!enriched.length) return sorted.slice(0, category.limit);
+  return enriched;
 }
 
 async function getCategoryData(category, force = false) {
