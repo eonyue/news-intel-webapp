@@ -20,11 +20,14 @@
       </div>
     </header>
 
-    <nav class="anchors glass">
-      <% categories.forEach((cat) => { %>
-      <a href="#<%= cat.id %>"><%= cat.zhName || cat.name %></a>
-      <% }) %>
-    </nav>
+    <details class="nav-menu glass">
+      <summary>☰ 栏目菜单</summary>
+      <div class="menu-list">
+        <% categories.forEach((cat) => { %>
+        <a href="#<%= cat.id %>"><%= cat.zhName || cat.name %></a>
+        <% }) %>
+      </div>
+    </details>
 
     <main>
       <% categories.forEach((cat) => { %>

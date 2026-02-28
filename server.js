@@ -160,6 +160,48 @@ function domain(url = '') {
   }
 }
 
+function sourceKey(item) {
+  return clean(item.source || domain(item.link || '') || 'unknown').toLowerCase();
+}
+
+const US_POLITICS_KEYWORDS = [
+  'trump',
+  'biden',
+  'white house',
+  'senate',
+  'congress',
+  'republican',
+  'democrat',
+  'election',
+  'campaign',
+  'capitol hill',
+  'washington dc',
+  'u.s. politics',
+  'us politics',
+  'pentagon',
+  'supreme court',
+  'federal agencies',
+  'department of state',
+  'homeland security',
+];
+
+const US_POLITICS_DOMAINS = [
+  'politico.com',
+  'foxnews.com',
+  'cnn.com',
+  'nytimes.com',
+  'washingtonpost.com',
+  'thehill.com',
+];
+
+function isUSPolitics(item) {
+  const d = domain(item.link || '');
+  const text = `${item.title || ''} ${item.rawSummary || ''} ${item.link || ''}`.toLowerCase();
+
+  if (US_POLITICS_DOMAINS.some((x) => d.includes(x))) return true;
+  return US_POLITICS_KEYWORDS.some((kw) => text.includes(kw));
+}
+
 function toChineseTitle(title = '') {
   const source = clean(title);
   if (!source) return '未命名内容';
@@ -298,7 +340,8 @@ function normalizeItem(item, feedSource, feedTitle) {
   const link = resolveScourLink(item.link || item.guid || '');
   const title = clean(item.title || 'Untitled');
   const pub = item.isoDate || item.pubDate || '';
-  const source = feedSource || clean(feedTitle) || domain(link);
+  const inferredSource = domain(link);
+  const source = /scour\.ing/i.test(feedSource || '') ? inferredSource : (feedSource || clean(feedTitle) || inferredSource);
   const rawSummary = clean(item.contentSnippet || item.content || item.summary || '');
 
   return {
@@ -370,15 +413,29 @@ async function fetchCategory(category) {
     }
   }
 
-  const sorted = deduped
+  const filtered = deduped.filter((it) => !isUSPolitics(it));
+
+  const sorted = filtered
     .map((it) => ({ ...it, score: importanceScore(it, category.id) }))
     .sort((a, b) => (b.score - a.score) || ((b.ts || 0) - (a.ts || 0)));
 
-  const top = sorted.filter((x) => !x.error).slice(0, category.limit);
-  const enriched = await Promise.all(top.map(enrichSummary));
+  const topUnique = [];
+  const seenSource = new Set();
+  for (const item of sorted) {
+    const sk = sourceKey(item);
+    if (seenSource.has(sk)) continue;
+    seenSource.add(sk);
+    topUnique.push(item);
+    if (topUnique.length >= category.limit) break;
+  }
 
-  if (!enriched.length) return sorted.slice(0, category.limit);
-  return enriched;
+  const enriched = await Promise.all(topUnique.map(enrichSummary));
+
+  if (enriched.length) return enriched;
+
+  // 若全部抓取失败，返回去政治过滤后的错误项占位
+  const fallback = deduped.filter((x) => x.error).slice(0, category.limit);
+  return fallback;
 }
 
 async function getCategoryData(category, force = false) {
