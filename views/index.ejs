@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Intel Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow"></div>
+
+    <header class="top">
+      <div>
+        <h1>News Intel Dashboard</h1>
+        <p class="sub">每日情报面板：Scour / Arxiv / Media / Research / Trends</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="/?refresh=1">刷新全部</a>
+      </div>
+    </header>
+
+    <nav class="anchors">
+      <% categories.forEach((cat) => { %>
+      <a href="#<%= cat.id %>"><%= cat.zhName || cat.name %></a>
+      <% }) %>
+    </nav>
+
+    <main>
+      <% categories.forEach((cat) => { %>
+      <section class="panel" id="<%= cat.id %>">
+        <div class="panel-head">
+          <div>
+            <h2><%= cat.zhName || cat.name %></h2>
+            <p class="desc"><%= cat.zhDescription || cat.description %></p>
+          </div>
+          <div class="meta-wrap">
+            <span class="count"><%= cat.items.length %> 条</span>
+            <span class="meta">更新于 <%= new Date(cat.updatedAt).toLocaleString('zh-CN') %></span>
+          </div>
+        </div>
+
+        <ul class="items">
+          <% cat.items.forEach((item) => { %>
+          <li class="item <%= item.error ? 'error' : '' %>">
+            <a class="title" href="<%= item.link %>" target="_blank" rel="noreferrer"><%= item.title %></a>
+            <p class="summary"><%= item.summary %></p>
+            <div class="row">
+              <span>来源：<%= item.source %></span>
+              <% if (item.publishedAt) { %>
+              <span><%= new Date(item.publishedAt).toLocaleString('zh-CN') %></span>
+              <% } else { %>
+              <span>时间未知</span>
+              <% } %>
+            </div>
+          </li>
+          <% }) %>
+        </ul>
+      </section>
+      <% }) %>
+    </main>
+
+    <footer>
+      页面生成时间：<%= generatedAt.toLocaleString('zh-CN') %>
+    </footer>
+  </body>
+</html>
