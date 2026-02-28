@@ -372,7 +372,7 @@ async function polishSummaryWithCodex(raw = '', titleZh = '') {
 
   const codex = await callCodex({
     systemPrompt:
-      '你是科技新闻编辑。请将输入内容提炼为中文摘要，2句，信息密度高、流畅自然、避免空话。保持客观，不编造事实。LLM统一译为“大模型”。只输出摘要正文。',
+      '你是科技新闻编辑。请将输入内容提炼为中文摘要，2句，信息密度高、流畅自然、避免空话。保持客观，不编造事实。LLM统一译为“大模型”。不要使用“围绕”这个词。只输出摘要正文。',
     userPrompt: `标题：${titleZh}\n原文片段：${source}`,
     maxOutputTokens: 180,
     temperature: 0.2,
@@ -386,7 +386,7 @@ async function polishSummaryWithCodex(raw = '', titleZh = '') {
   // fallback
   const firstSentence = source.split(/(?<=[.!?])\s+/)[0] || source;
   const compact = clean(firstSentence).slice(0, 180);
-  const out = `围绕「${inferTopic(`${titleZh} ${source}`)}」：${compact}。`;
+  const out = compact.endsWith('。') ? compact : `${compact}。`;
   llmSummaryCache.set(cacheKey, out);
   return out;
 }
