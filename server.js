@@ -194,12 +194,43 @@ const US_POLITICS_DOMAINS = [
   'thehill.com',
 ];
 
+const IN_SCOPE_KEYWORDS = [
+  // AI / tech
+  'ai', 'artificial intelligence', 'llm', 'large language model', 'machine learning', 'deep learning', 'agent',
+  'model', 'neural network', 'transformer', 'robotics', 'automation', 'software', 'technology', 'tech', 'chip', 'semiconductor',
+  'openai', 'anthropic', 'google deepmind',
+  // neuroscience
+  'neuro', 'neuroscience', 'brain', 'hippocamp', 'cortex', 'synapse', 'eeg', 'fmri', 'bci',
+  // life science
+  'life science', 'biology', 'biotech', 'genetics', 'genome', 'dna', 'rna', 'protein', 'cell', 'molecule',
+  'microbiome', 'crispr', 'pharma',
+  // health
+  'health', 'mental health', 'clinical', 'medical', 'therapy', 'disease', 'diagnosis', 'drug', 'trial',
+  'alzheimer', 'parkinson',
+  // Chinese keywords
+  '人工智能', '大模型', '神经科学', '脑科学', '生命科学', '生物', '基因', '医学', '健康', '临床', '疗法', '疾病',
+];
+
 function isUSPolitics(item) {
   const d = domain(item.link || '');
   const text = `${item.title || ''} ${item.rawSummary || ''} ${item.link || ''}`.toLowerCase();
 
   if (US_POLITICS_DOMAINS.some((x) => d.includes(x))) return true;
   return US_POLITICS_KEYWORDS.some((kw) => text.includes(kw));
+}
+
+function keywordMatch(text, kw) {
+  const hasCJK = /[\u4e00-\u9fa5]/.test(kw);
+  if (hasCJK) return text.includes(kw.toLowerCase());
+
+  const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
+  const re = new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`, 'i');
+  return re.test(text);
+}
+
+function isInScopeTopic(item) {
+  const text = `${item.title || ''} ${item.rawSummary || ''} ${item.link || ''}`.toLowerCase();
+  return IN_SCOPE_KEYWORDS.some((kw) => keywordMatch(text, kw));
 }
 
 function toChineseTitle(title = '') {
@@ -413,7 +444,7 @@ async function fetchCategory(category) {
     }
   }
 
-  const filtered = deduped.filter((it) => !isUSPolitics(it));
+  const filtered = deduped.filter((it) => !isUSPolitics(it) && isInScopeTopic(it));
 
   const sorted = filtered
     .map((it) => ({ ...it, score: importanceScore(it, category.id) }))
