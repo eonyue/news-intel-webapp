@@ -101,48 +101,76 @@ function domain(url = '') {
   }
 }
 
-function inferTopic(title = '') {
-  const t = title.toLowerCase();
-  if (/(llm|large language|agent|ai|model|transformer)/.test(t)) return 'AI 模型与智能体能力';
-  if (/(brain|neuro|neural|hippocamp|eeg|bci)/.test(t)) return '神经科学与脑机接口';
-  if (/(health|therapy|clinical|disease|alzheimer|drug|medical)/.test(t)) return '健康与临床应用';
-  if (/(robot|humanoid|automation)/.test(t)) return '机器人与自动化';
-  if (/(policy|governance|law|rights|ethic|safety)/.test(t)) return '治理、伦理与安全';
-  return '前沿趋势与方法探索';
-}
+const TITLE_TRANSLATION_MAP = [
+  ['Artificial Intelligence', '人工智能'],
+  ['Machine Learning', '机器学习'],
+  ['Large Language Models', '大语言模型'],
+  ['Large Language Model', '大语言模型'],
+  ['LLM', '大模型'],
+  ['Agent', '智能体'],
+  ['Agents', '智能体'],
+  ['Neural Network', '神经网络'],
+  ['Neural', '神经'],
+  ['Neuroscience', '神经科学'],
+  ['Brain', '大脑'],
+  ['Hippocampal', '海马体'],
+  ['EEG', '脑电'],
+  ['BCI', '脑机接口'],
+  ['Robotics', '机器人'],
+  ['Robotic', '机器人'],
+  ['Robot', '机器人'],
+  ['Automation', '自动化'],
+  ['Health', '健康'],
+  ['Mental Health', '心理健康'],
+  ['Medical', '医学'],
+  ['Clinical', '临床'],
+  ['Research', '研究'],
+  ['Paper', '论文'],
+  ['Update', '更新'],
+  ['Guide', '指南'],
+  ['Trends', '趋势'],
+  ['News', '新闻'],
+  ['Theory', '理论'],
+  ['Safety', '安全'],
+  ['Governance', '治理'],
+  ['Policy', '政策'],
+];
 
-function englishSnippetToChinese(raw = '', title = '') {
-  const text = clean(raw);
+function toChineseTitle(title = '') {
+  const source = clean(title);
+  if (!source) return '未命名内容';
+  if (hasChinese(source)) return source;
 
-  if (!text || /Scour interesting reads from noisy feeds/i.test(text)) {
-    if (/\(Scour Feed Recommendation\)/i.test(title) || /^📰/.test(title)) {
-      return '该条为 Scour 推荐订阅源，建议加入长期跟踪列表，持续观察后续高质量更新。';
-    }
-    return `该内容围绕“${title}”展开，建议阅读全文获取完整细节。`;
+  let translated = source;
+  for (const [en, zh] of TITLE_TRANSLATION_MAP.sort((a, b) => b[0].length - a[0].length)) {
+    const escaped = en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const pattern = new RegExp(`\\b${escaped}\\b`, 'gi');
+    translated = translated.replace(pattern, zh);
   }
 
-  const topic = inferTopic(title);
-  const firstSentence = text.split(/(?<=[.!?])\s+/)[0] || text;
-  const compact = firstSentence.replace(/\.$/, '').slice(0, 140);
+  // 清理残余英文连词和标点格式
+  translated = translated
+    .replace(/\s+-\s+/g, '：')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
 
-  return `围绕「${topic}」的最新进展：${compact}。建议结合原文进一步核查关键细节。`;
-}
+  // 若仍以英文为主，退化成中文标题包装，保证界面中文化
+  const zhCount = (translated.match(/[\u4e00-\u9fa5]/g) || []).length;
+  const latinCount = (translated.match(/[A-Za-z]/g) || []).length;
+  if (zhCount < 2 || latinCount > 8) return `关于「${source}」的更新`;
 
-function toChineseSummary(rawSummary = '', title = '') {
-  if (hasChinese(rawSummary)) return clean(rawSummary).slice(0, 220);
-  return englishSnippetToChinese(rawSummary, title).slice(0, 220);
+  return translated;
 }
 
 function normalizeItem(item, feedSource, feedTitle) {
   const link = resolveScourLink(item.link || item.guid || '');
   const title = clean(item.title || 'Untitled');
-  const rawSummary = clean(item.contentSnippet || item.content || item.summary || '');
   const pub = item.isoDate || item.pubDate || '';
   const source = feedSource || clean(feedTitle) || domain(link);
 
   return {
     title,
-    summary: toChineseSummary(rawSummary, title),
+    titleZh: toChineseTitle(title),
     source,
     link,
     publishedAt: pub,
@@ -159,7 +187,7 @@ async function fetchCategory(category) {
       return [
         {
           title: `抓取失败：${feedConfig.source}`,
-          summary: `无法获取 ${feedConfig.url}（${error.message}）`,
+          titleZh: `抓取失败：${feedConfig.source}`,
           source: feedConfig.source,
           link: feedConfig.url,
           publishedAt: '',

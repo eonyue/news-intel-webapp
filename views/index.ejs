@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <div class="bg-glow"></div>
+    <div class="bg-blur bg-blur-a"></div>
+    <div class="bg-blur bg-blur-b"></div>
 
-    <header class="top">
+    <header class="top glass">
       <div>
         <h1>News Intel Dashboard</h1>
-        <p class="sub">每日情报面板：Scour / Arxiv / Media / Research / Trends</p>
+        <p class="sub">移动端优先 · 毛玻璃风格 · 中文标题聚合</p>
       </div>
       <div class="actions">
         <a class="btn" href="/?refresh=1">刷新全部</a>
       </div>
     </header>
 
-    <nav class="anchors">
+    <nav class="anchors glass">
       <% categories.forEach((cat) => { %>
       <a href="#<%= cat.id %>"><%= cat.zhName || cat.name %></a>
       <% }) %>
@@ -27,7 +28,7 @@
 
     <main>
       <% categories.forEach((cat) => { %>
-      <section class="panel" id="<%= cat.id %>">
+      <section class="panel glass" id="<%= cat.id %>">
         <div class="panel-head">
           <div>
             <h2><%= cat.zhName || cat.name %></h2>
@@ -35,15 +36,14 @@
           </div>
           <div class="meta-wrap">
             <span class="count"><%= cat.items.length %> 条</span>
-            <span class="meta">更新于 <%= new Date(cat.updatedAt).toLocaleString('zh-CN') %></span>
+            <span class="meta"><%= new Date(cat.updatedAt).toLocaleString('zh-CN') %></span>
           </div>
         </div>
 
         <ul class="items">
           <% cat.items.forEach((item) => { %>
           <li class="item <%= item.error ? 'error' : '' %>">
-            <a class="title" href="<%= item.link %>" target="_blank" rel="noreferrer"><%= item.title %></a>
-            <p class="summary"><%= item.summary %></p>
+            <a class="title" href="<%= item.link %>" target="_blank" rel="noreferrer"><%= item.titleZh || item.title %></a>
             <div class="row">
               <span>来源：<%= item.source %></span>
               <% if (item.publishedAt) { %>
@@ -59,8 +59,6 @@
       <% }) %>
     </main>
 
-    <footer>
-      页面生成时间：<%= generatedAt.toLocaleString('zh-CN') %>
-    </footer>
+    <footer>页面生成时间：<%= generatedAt.toLocaleString('zh-CN') %></footer>
   </body>
 </html>
