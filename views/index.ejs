@@ -47,7 +47,13 @@
           <% cat.items.forEach((item) => { %>
           <li class="item <%= item.error ? 'error' : '' %>">
             <a class="title" href="<%= item.link %>" target="_blank" rel="noreferrer"><%= item.titleZh || item.title %></a>
-            <p class="summary"><%= item.summary || '暂无摘要' %></p>
+
+            <div class="tags">
+              <% (item.tags || []).forEach((tag) => { %>
+              <span class="tag"><%= tag %></span>
+              <% }) %>
+            </div>
+
             <div class="row">
               <span>来源：<%= item.source %></span>
               <% if (item.publishedAt) { %>
@@ -63,6 +69,14 @@
       <% }) %>
     </main>
 
-    <footer>© Powered by noetex.ai</footer>
+    <footer class="footer glass">
+      <div class="brand">© Powered by noetex.ai</div>
+      <div class="socials" aria-label="社交媒体链接">
+        <a class="social" href="https://mp.weixin.qq.com/s/BgZCDRICPzGcvI3ITpFgSg" target="_blank" rel="noreferrer" title="微信">微</a>
+        <a class="social" href="https://www.xiaohongshu.com/user/profile/632f3c94000000002303e0a9" target="_blank" rel="noreferrer" title="小红书">红</a>
+        <a class="social" href="https://www.zhihu.com/people/cc291b8ee46f03fbf5aad34797982ac1" target="_blank" rel="noreferrer" title="知乎">知</a>
+        <a class="social" href="https://www.douban.com/people/neureality/?_i=1983129EZtlAvB" target="_blank" rel="noreferrer" title="豆瓣">豆</a>
+      </div>
+    </footer>
   </body>
 </html>

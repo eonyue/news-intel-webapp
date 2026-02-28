@@ -1,10 +1,10 @@
 :root {
-  --bg: #05070d;
-  --glass: rgba(12, 20, 30, 0.55);
-  --glass-2: rgba(10, 16, 24, 0.35);
+  --bg: #000000;
+  --glass: rgba(10, 16, 24, 0.55);
+  --glass-2: rgba(8, 12, 18, 0.35);
   --text: #d8ffe9;
-  --muted: #88bfa6;
-  --line: rgba(40, 255, 170, 0.26);
+  --muted: #86b79f;
+  --line: rgba(35, 255, 170, 0.25);
   --accent: #2cf7a0;
   --accent-2: #61ffe2;
   --danger: #ff5f7d;
@@ -17,10 +17,7 @@ body {
   padding: 14px;
   color: var(--text);
   font-family: "JetBrains Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  background:
-    radial-gradient(circle at 85% -10%, rgba(44, 247, 160, 0.25), transparent 38%),
-    radial-gradient(circle at -10% 90%, rgba(97, 255, 226, 0.2), transparent 35%),
-    linear-gradient(180deg, #070b13 0%, #05070d 100%);
+  background: var(--bg);
 }
 
 body::before {
@@ -47,7 +44,7 @@ body::before {
   height: 240px;
   top: -80px;
   right: -60px;
-  background: rgba(44, 247, 160, 0.3);
+  background: rgba(44, 247, 160, 0.22);
 }
 
 .bg-blur-b {
@@ -55,13 +52,13 @@ body::before {
   height: 220px;
   left: -70px;
   bottom: 18vh;
-  background: rgba(97, 255, 226, 0.22);
+  background: rgba(97, 255, 226, 0.16);
 }
 
 .top,
 .nav-menu,
 main,
-footer {
+.footer {
   position: relative;
   z-index: 1;
 }
@@ -204,7 +201,7 @@ h2 {
 
 .meta,
 .row,
-footer {
+.brand {
   color: var(--muted);
   font-size: 11px;
 }
@@ -236,14 +233,25 @@ footer {
   font-weight: 700;
   line-height: 1.4;
   text-decoration: none;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
-.summary {
-  margin: 0 0 8px;
-  color: #d0f8e4;
-  font-size: 12px;
-  line-height: 1.55;
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(44, 247, 160, 0.35);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 11px;
+  color: #b2ffe2;
+  background: rgba(44, 247, 160, 0.08);
 }
 
 .row {
@@ -252,9 +260,33 @@ footer {
   gap: 8px;
 }
 
-footer {
+.footer {
   margin-top: 12px;
-  text-align: right;
+  border-radius: 12px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.socials {
+  display: flex;
+  gap: 8px;
+}
+
+.social {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid rgba(44, 247, 160, 0.35);
+  color: #baffea;
+  background: rgba(44, 247, 160, 0.08);
+  font-size: 12px;
 }
 
 @media (min-width: 760px) {

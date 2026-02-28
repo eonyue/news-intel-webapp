@@ -5,24 +5,29 @@ const app = express();
 const parser = new Parser({ timeout: 15000 });
 const PORT = process.env.PORT || 4321;
 const CACHE_TTL_MS = 15 * 60 * 1000;
+const ITEMS_PER_SOURCE = 4;
+const TAVILY_API_KEY = process.env.TAVILY_API_KEY || process.env.TAVILY_KEY || '';
+const TAVILY_ENDPOINT = process.env.TAVILY_ENDPOINT || 'https://api.tavily.com/search';
 
 const CATEGORIES = [
   {
     id: 'scour',
     name: 'Scour Feeds',
     zhName: 'Scour 信息流',
-    description: 'Your personal Scour stream and recommended links',
-    zhDescription: '你的 Scour 个性化信息流与推荐源',
-    limit: 3,
+    description: 'Curated mixed feed with strong AI / science relevance',
+    zhDescription: 'Scour 混合精选流（AI / 科学优先）',
+    tavilyQuery:
+      'latest high-signal stories on artificial intelligence neuroscience life science health technology from trusted sources',
     feeds: [{ url: process.env.SCOUR_RSS || 'https://scour.ing/@yuesean/rss.xml', source: 'scour.ing' }],
   },
   {
     id: 'arxiv',
     name: 'Arxiv Digest',
     zhName: 'Arxiv 论文速览',
-    description: 'Fresh papers from AI / neuroscience-related categories',
-    zhDescription: '聚合 AI 与神经科学相关新论文',
-    limit: 3,
+    description: 'Latest AI / neuroscience / life-science preprints',
+    zhDescription: 'AI / 神经科学 / 生命科学最新预印本',
+    tavilyQuery:
+      'site:arxiv.org latest papers on AI large language models neuroscience brain science life science computational biology health tech',
     feeds: [
       { url: 'https://export.arxiv.org/rss/cs.AI', source: 'arXiv cs.AI' },
       { url: 'https://export.arxiv.org/rss/cs.CL', source: 'arXiv cs.CL' },
@@ -33,9 +38,10 @@ const CATEGORIES = [
     id: 'media',
     name: 'Media Headlines',
     zhName: '媒体头条',
-    description: 'Top media coverage around AI and tech',
-    zhDescription: 'AI 与科技领域的媒体重点报道',
-    limit: 3,
+    description: 'Broad-reach media coverage around AI, tech and health',
+    zhDescription: 'AI / 科技 / 健康主流媒体报道',
+    tavilyQuery:
+      'top media analysis and headlines on AI technology health neuroscience from MIT Technology Review VentureBeat The Verge',
     feeds: [
       { url: 'https://venturebeat.com/category/ai/feed/', source: 'VentureBeat' },
       { url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', source: 'The Verge' },
@@ -46,9 +52,10 @@ const CATEGORIES = [
     id: 'research',
     name: 'Research Alert',
     zhName: '研究快讯',
-    description: 'Research-heavy news and scientific updates',
-    zhDescription: '科研导向的新闻与学术更新',
-    limit: 3,
+    description: 'Research-heavy updates from scientific outlets',
+    zhDescription: '科研导向更新（神经科学 / 生命科学 / 健康）',
+    tavilyQuery:
+      'latest research news on neuroscience life science health from Nature Medical Xpress Neuroscience News ScienceDaily',
     feeds: [
       { url: 'https://neurosciencenews.com/feed/', source: 'Neuroscience News' },
       { url: 'https://medicalxpress.com/rss-feed/', source: 'Medical Xpress' },
@@ -59,9 +66,10 @@ const CATEGORIES = [
     id: 'trends',
     name: 'Tech Trends',
     zhName: '技术趋势',
-    description: 'High-signal discussions and trend posts',
-    zhDescription: '高信号讨论与趋势型内容',
-    limit: 3,
+    description: 'Developer and ecosystem trend signals',
+    zhDescription: '开发者生态与技术趋势信号',
+    tavilyQuery:
+      'latest trends on AI agents software engineering chips developer tools health technology discussions',
     feeds: [
       { url: 'https://hnrss.org/newest?q=AI', source: 'Hacker News' },
       { url: 'https://lobste.rs/t/ai.rss', source: 'Lobsters' },
@@ -84,9 +92,64 @@ const SOURCE_WEIGHT = {
   'technologyreview.com': 7,
   'venturebeat.com': 6,
   'theverge.com': 6,
+  'openai.com': 6,
+  'anthropic.com': 6,
   'news.ycombinator.com': 5,
   'lobste.rs': 5,
 };
+
+const REACH_WEIGHT = {
+  'technologyreview.com': 9,
+  'theverge.com': 9,
+  'venturebeat.com': 8,
+  'news.ycombinator.com': 8,
+  'openai.com': 8,
+  'arxiv.org': 7,
+  'medicalxpress.com': 7,
+  'neurosciencenews.com': 7,
+  'sciencedaily.com': 7,
+  'lobste.rs': 6,
+};
+
+const TOPIC_TAGS = [
+  ['人工智能', ['ai', 'artificial intelligence', 'llm', 'agent', 'transformer', '大模型', '人工智能', '智能体']],
+  ['神经科学', ['neuro', 'neuroscience', 'brain', 'hippocamp', 'eeg', 'bci', '神经', '脑科学']],
+  ['生命科学', ['life science', 'biology', 'biotech', 'gene', 'genome', 'dna', 'rna', 'protein', 'cell', '生命科学', '基因', '生物']],
+  ['健康', ['health', 'clinical', 'medical', 'therapy', 'disease', 'diagnosis', 'drug', 'trial', '健康', '医学', '临床', '疗法']],
+  ['技术', ['technology', 'tech', 'software', 'chip', 'semiconductor', 'tooling', 'engineering', '技术', '软件', '芯片']],
+];
+
+const IN_SCOPE_KEYWORDS = TOPIC_TAGS.flatMap((x) => x[1]);
+
+const US_POLITICS_KEYWORDS = [
+  'trump',
+  'biden',
+  'white house',
+  'senate',
+  'congress',
+  'republican',
+  'democrat',
+  'election',
+  'campaign',
+  'capitol hill',
+  'washington dc',
+  'u.s. politics',
+  'us politics',
+  'pentagon',
+  'supreme court',
+  'federal agencies',
+  'department of state',
+  'homeland security',
+];
+
+const US_POLITICS_DOMAINS = [
+  'politico.com',
+  'foxnews.com',
+  'cnn.com',
+  'nytimes.com',
+  'washingtonpost.com',
+  'thehill.com',
+];
 
 const cache = new Map();
 const titleTranslateCache = new Map();
@@ -119,7 +182,6 @@ const TITLE_TRANSLATION_MAP = [
   ['EEG', '脑电'],
   ['BCI', '脑机接口'],
   ['Robotics', '机器人'],
-  ['Robotic', '机器人'],
   ['Robot', '机器人'],
   ['Automation', '自动化'],
   ['Health', '健康'],
@@ -164,61 +226,6 @@ function sourceKey(item) {
   return clean(item.source || domain(item.link || '') || 'unknown').toLowerCase();
 }
 
-const US_POLITICS_KEYWORDS = [
-  'trump',
-  'biden',
-  'white house',
-  'senate',
-  'congress',
-  'republican',
-  'democrat',
-  'election',
-  'campaign',
-  'capitol hill',
-  'washington dc',
-  'u.s. politics',
-  'us politics',
-  'pentagon',
-  'supreme court',
-  'federal agencies',
-  'department of state',
-  'homeland security',
-];
-
-const US_POLITICS_DOMAINS = [
-  'politico.com',
-  'foxnews.com',
-  'cnn.com',
-  'nytimes.com',
-  'washingtonpost.com',
-  'thehill.com',
-];
-
-const IN_SCOPE_KEYWORDS = [
-  // AI / tech
-  'ai', 'artificial intelligence', 'llm', 'large language model', 'machine learning', 'deep learning', 'agent',
-  'model', 'neural network', 'transformer', 'robotics', 'automation', 'software', 'technology', 'tech', 'chip', 'semiconductor',
-  'openai', 'anthropic', 'google deepmind',
-  // neuroscience
-  'neuro', 'neuroscience', 'brain', 'hippocamp', 'cortex', 'synapse', 'eeg', 'fmri', 'bci',
-  // life science
-  'life science', 'biology', 'biotech', 'genetics', 'genome', 'dna', 'rna', 'protein', 'cell', 'molecule',
-  'microbiome', 'crispr', 'pharma',
-  // health
-  'health', 'mental health', 'clinical', 'medical', 'therapy', 'disease', 'diagnosis', 'drug', 'trial',
-  'alzheimer', 'parkinson',
-  // Chinese keywords
-  '人工智能', '大模型', '神经科学', '脑科学', '生命科学', '生物', '基因', '医学', '健康', '临床', '疗法', '疾病',
-];
-
-function isUSPolitics(item) {
-  const d = domain(item.link || '');
-  const text = `${item.title || ''} ${item.rawSummary || ''} ${item.link || ''}`.toLowerCase();
-
-  if (US_POLITICS_DOMAINS.some((x) => d.includes(x))) return true;
-  return US_POLITICS_KEYWORDS.some((kw) => text.includes(kw));
-}
-
 function keywordMatch(text, kw) {
   const hasCJK = /[\u4e00-\u9fa5]/.test(kw);
   if (hasCJK) return text.includes(kw.toLowerCase());
@@ -226,6 +233,14 @@ function keywordMatch(text, kw) {
   const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
   const re = new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`, 'i');
   return re.test(text);
+}
+
+function isUSPolitics(item) {
+  const d = domain(item.link || '');
+  const text = `${item.title || ''} ${item.rawSummary || ''} ${item.link || ''}`.toLowerCase();
+
+  if (US_POLITICS_DOMAINS.some((x) => d.includes(x))) return true;
+  return US_POLITICS_KEYWORDS.some((kw) => text.includes(kw));
 }
 
 function isInScopeTopic(item) {
@@ -255,6 +270,27 @@ function needsBetterChineseTitle(title = '') {
   const zhCount = (title.match(/[\u4e00-\u9fa5]/g) || []).length;
   const latinCount = (title.match(/[A-Za-z]/g) || []).length;
   return zhCount < 2 || latinCount > 10;
+}
+
+async function fetchTextWithTimeout(url, timeoutMs = 12000, init = {}) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const resp = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; NewsIntelBot/1.0)',
+        Accept: '*/*',
+      },
+      redirect: 'follow',
+      signal: controller.signal,
+      ...init,
+    });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    return await resp.text();
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 async function translateTitleOnline(title = '') {
@@ -288,14 +324,14 @@ function inferTopic(text = '') {
   if (/(llm|large language|agent|ai|model|transformer)/.test(t)) return 'AI 模型与智能体';
   if (/(brain|neuro|neural|hippocamp|eeg|bci)/.test(t)) return '神经科学与脑机接口';
   if (/(health|therapy|clinical|disease|alzheimer|drug|medical)/.test(t)) return '健康与临床应用';
-  if (/(robot|humanoid|automation)/.test(t)) return '机器人与自动化';
-  if (/(policy|governance|law|rights|ethic|safety)/.test(t)) return '治理、伦理与安全';
+  if (/(life science|biology|biotech|gene|genome|dna|rna|protein|cell)/.test(t)) return '生命科学';
+  if (/(robot|automation|software|chip|semiconductor|technology|tech)/.test(t)) return '技术与工程';
   return '前沿科技趋势';
 }
 
 function toChineseSummary(raw = '', title = '') {
   const text = clean(raw);
-  if (!text) return `围绕「${inferTopic(title)}」的最新内容，建议阅读全文获取完整细节。`;
+  if (!text) return `围绕「${inferTopic(title)}」的关键更新，建议查看原文获取完整细节。`;
   if (hasChinese(text)) return text.slice(0, 220);
 
   const firstSentence = text.split(/(?<=[.!?])\s+/)[0] || text;
@@ -303,41 +339,18 @@ function toChineseSummary(raw = '', title = '') {
   return `围绕「${inferTopic(`${title} ${text}`)}」：${compact}。`.slice(0, 220);
 }
 
-async function fetchTextWithTimeout(url, timeoutMs = 12000) {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-  try {
-    const resp = await fetch(url, {
-      method: 'GET',
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; NewsIntelBot/1.0)',
-        Accept: '*/*',
-      },
-      redirect: 'follow',
-      signal: controller.signal,
-    });
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    return await resp.text();
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
 function extractAbstractOrDescription(htmlText) {
   const html = String(htmlText || '');
 
-  // arXiv abstract
   const arxiv = html.match(/<blockquote class="abstract[^>]*">([\s\S]*?)<\/blockquote>/i);
   if (arxiv) return clean(arxiv[1].replace(/^\s*Abstract:\s*/i, ''));
 
-  // og description / meta description
   const og = html.match(/<meta\s+property="og:description"\s+content="([^"]+)"/i);
   if (og) return clean(og[1]);
 
   const md = html.match(/<meta\s+name="description"\s+content="([^"]+)"/i);
   if (md) return clean(md[1]);
 
-  // first meaningful paragraph
   const paragraphs = [...html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
     .map((m) => clean(m[1]))
     .filter((p) => p && p.length > 80);
@@ -346,25 +359,47 @@ function extractAbstractOrDescription(htmlText) {
   return '';
 }
 
-function importanceScore(item, categoryId) {
+function scoreJudgement(item) {
+  const t = `${item.title || ''} ${item.rawSummary || ''}`.toLowerCase();
   const d = domain(item.link || '');
-  let score = SOURCE_WEIGHT[d] || 3;
 
-  const t = (item.title || '').toLowerCase();
-  if (/(benchmark|breakthrough|trial|clinical|dataset|review|policy|update)/.test(t)) score += 2;
-  if (/(alzheimer|brain|neuro|llm|agent|safety|governance)/.test(t)) score += 2;
+  let frontier = 4;
+  if (/(breakthrough|novel|first|sota|state-of-the-art|new|首次|突破|前沿)/.test(t)) frontier += 3;
+  if (/(arxiv|nature|science|cell|clinical trial|doi)/.test(t)) frontier += 2;
 
-  const now = Date.now();
-  if (item.ts) {
-    const hours = Math.max(0, (now - item.ts) / 3600000);
-    score += Math.max(0, 72 - hours) / 12;
+  let depth = 3;
+  if ((item.rawSummary || '').length > 180) depth += 3;
+  if (SOURCE_WEIGHT[d]) depth += Math.min(3, Math.floor(SOURCE_WEIGHT[d] / 3));
+  if (/(analysis|review|framework|benchmark|dataset|白皮书|综述|基准)/.test(t)) depth += 2;
+
+  let reach = REACH_WEIGHT[d] || 3;
+  if (/(hacker news|lobsters|reddit)/.test(t)) reach += 1;
+
+  frontier = Math.min(10, frontier);
+  depth = Math.min(10, depth);
+  reach = Math.min(10, reach);
+
+  return {
+    frontier,
+    depth,
+    reach,
+    total: frontier * 0.42 + depth * 0.33 + reach * 0.25 + (item.tavilyScore || 0),
+  };
+}
+
+function buildTags(item, judgement) {
+  const text = `${item.title || ''} ${item.rawSummary || ''}`.toLowerCase();
+  const tags = [];
+
+  if (judgement.frontier >= 7) tags.push('前沿');
+  if (judgement.depth >= 6) tags.push('深度');
+  if (judgement.reach >= 6) tags.push('传播广');
+
+  for (const [tag, kws] of TOPIC_TAGS) {
+    if (kws.some((kw) => keywordMatch(text, kw))) tags.push(tag);
   }
 
-  if (categoryId === 'arxiv' && d === 'arxiv.org') score += 2;
-  if (categoryId === 'research' && /(nature|science|medicalxpress|neurosciencenews|sciencedaily)/.test(d)) score += 2;
-  if (categoryId === 'trends' && /(news.ycombinator|lobste.rs)/.test(d)) score += 1;
-
-  return score;
+  return [...new Set(tags)].slice(0, 5);
 }
 
 function normalizeItem(item, feedSource, feedTitle) {
@@ -386,30 +421,7 @@ function normalizeItem(item, feedSource, feedTitle) {
   };
 }
 
-async function enrichSummary(item) {
-  let text = item.rawSummary || '';
-  const generic = /Scour interesting reads from noisy feeds/i.test(text);
-
-  if (!text || text.length < 80 || generic) {
-    try {
-      const html = await fetchTextWithTimeout(item.link, 10000);
-      const extracted = extractAbstractOrDescription(html);
-      if (extracted) text = extracted;
-    } catch {
-      // keep fallback
-    }
-  }
-
-  const titleZh = await translateTitleOnline(item.title);
-
-  return {
-    ...item,
-    titleZh,
-    summary: toChineseSummary(text, titleZh || item.title),
-  };
-}
-
-async function fetchCategory(category) {
+async function fetchFromRSS(category) {
   const tasks = category.feeds.map(async (feedConfig) => {
     try {
       const feed = await parser.parseURL(feedConfig.url);
@@ -432,7 +444,91 @@ async function fetchCategory(category) {
   });
 
   const nested = await Promise.all(tasks);
-  const merged = nested.flat();
+  return nested.flat();
+}
+
+async function fetchFromTavily(category) {
+  if (!TAVILY_API_KEY) return [];
+
+  try {
+    const resp = await fetch(TAVILY_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        api_key: TAVILY_API_KEY,
+        query: category.tavilyQuery,
+        topic: 'news',
+        search_depth: 'advanced',
+        max_results: 30,
+        include_answer: false,
+        include_raw_content: false,
+      }),
+    });
+
+    if (!resp.ok) return [];
+    const data = await resp.json();
+    const results = Array.isArray(data.results) ? data.results : [];
+
+    return results.map((r) => {
+      const link = resolveScourLink(r.url || '');
+      const title = clean(r.title || 'Untitled');
+      const rawSummary = clean(r.content || r.snippet || '');
+      const source = domain(link);
+      const publishedAt = r.published_date || r.date || '';
+      const tavilyScore = Number(r.score || 0) * 1.6;
+      return {
+        title,
+        titleZh: toChineseTitle(title),
+        source,
+        link,
+        rawSummary,
+        publishedAt,
+        ts: publishedAt ? new Date(publishedAt).getTime() : 0,
+        tavilyScore,
+      };
+    });
+  } catch {
+    return [];
+  }
+}
+
+async function enrichItem(item) {
+  let text = item.rawSummary || '';
+  const generic = /Scour interesting reads from noisy feeds/i.test(text);
+
+  if (!text || text.length < 80 || generic) {
+    try {
+      const html = await fetchTextWithTimeout(item.link, 10000);
+      const extracted = extractAbstractOrDescription(html);
+      if (extracted) text = extracted;
+    } catch {
+      // keep fallback
+    }
+  }
+
+  const titleZh = await translateTitleOnline(item.title);
+  const rawSummary = text || item.rawSummary || '';
+  const judgement = scoreJudgement({ ...item, rawSummary, title: titleZh || item.title });
+  const tags = buildTags({ ...item, rawSummary, title: titleZh || item.title }, judgement);
+
+  return {
+    ...item,
+    titleZh,
+    rawSummary,
+    summary: toChineseSummary(rawSummary, titleZh || item.title),
+    judgement,
+    tags,
+    score: judgement.total,
+  };
+}
+
+async function fetchCategory(category) {
+  const fromTavily = await fetchFromTavily(category);
+  const fromRss = await fetchFromRSS(category);
+
+  const merged = [...fromTavily, ...fromRss];
 
   const seen = new Set();
   const deduped = [];
@@ -444,29 +540,27 @@ async function fetchCategory(category) {
     }
   }
 
-  const filtered = deduped.filter((it) => !isUSPolitics(it) && isInScopeTopic(it));
+  const filtered = deduped.filter((it) => !it.error && !isUSPolitics(it) && isInScopeTopic(it));
+  const enriched = await Promise.all(filtered.map(enrichItem));
 
-  const sorted = filtered
-    .map((it) => ({ ...it, score: importanceScore(it, category.id) }))
-    .sort((a, b) => (b.score - a.score) || ((b.ts || 0) - (a.ts || 0)));
+  const sorted = enriched.sort((a, b) => (b.score || 0) - (a.score || 0));
 
-  const topUnique = [];
-  const seenSource = new Set();
+  const bySourceCount = new Map();
+  const selected = [];
   for (const item of sorted) {
     const sk = sourceKey(item);
-    if (seenSource.has(sk)) continue;
-    seenSource.add(sk);
-    topUnique.push(item);
-    if (topUnique.length >= category.limit) break;
+    const n = bySourceCount.get(sk) || 0;
+    if (n >= ITEMS_PER_SOURCE) continue;
+    bySourceCount.set(sk, n + 1);
+    selected.push(item);
   }
 
-  const enriched = await Promise.all(topUnique.map(enrichSummary));
+  if (selected.length) return selected;
 
-  if (enriched.length) return enriched;
-
-  // 若全部抓取失败，返回去政治过滤后的错误项占位
-  const fallback = deduped.filter((x) => x.error).slice(0, category.limit);
-  return fallback;
+  return deduped
+    .filter((x) => x.error)
+    .slice(0, ITEMS_PER_SOURCE)
+    .map((x) => ({ ...x, tags: ['抓取异常'] }));
 }
 
 async function getCategoryData(category, force = false) {
@@ -507,7 +601,13 @@ app.get('/api/category/:id', async (req, res) => {
 });
 
 app.get('/health', (_req, res) => {
-  res.json({ ok: true, service: 'news-intel-webapp', now: new Date().toISOString() });
+  res.json({
+    ok: true,
+    service: 'news-intel-webapp',
+    now: new Date().toISOString(),
+    tavilyEnabled: !!TAVILY_API_KEY,
+    itemsPerSource: ITEMS_PER_SOURCE,
+  });
 });
 
 if (process.env.VERCEL !== '1' && process.env.VERCEL !== 'true') {
