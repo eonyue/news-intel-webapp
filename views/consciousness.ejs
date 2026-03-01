@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>意识简报 | News Intel</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-blur bg-blur-a"></div>
+    <div class="bg-blur bg-blur-b"></div>
+
+    <header class="top glass">
+      <div>
+        <h1>意识简报</h1>
+        <p class="sub">Curated by <%= digest.curatedBy || 'OpenClaw' %> ｜ <%= digest.date || '' %></p>
+      </div>
+      <div class="actions">
+        <a class="icon-btn" href="/" title="返回首页" aria-label="返回首页">⌂</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel glass">
+        <div class="panel-head">
+          <div>
+            <h2><%= digest.title || '【“意识研究”简报】' %></h2>
+            <p class="desc">每日同步到 WebApp 的意识研究精选</p>
+          </div>
+          <div class="meta-wrap">
+            <span class="count"><%= (digest.items || []).length %> 条</span>
+            <span class="meta">同步：<%= digest.updatedAt ? new Date(digest.updatedAt).toLocaleString('zh-CN') : '未知' %></span>
+          </div>
+        </div>
+
+        <ul class="items">
+          <% (digest.items || []).forEach((item, idx) => { %>
+          <li class="item">
+            <a class="title" href="<%= item.link %>" target="_blank" rel="noreferrer"><%= idx + 1 %>) <%= item.title %></a>
+            <p class="summary"><%= item.summary || '暂无摘要' %></p>
+            <div class="row">
+              <span>来源：<%= item.source || '未知来源' %></span>
+              <span>DOI/链接</span>
+            </div>
+          </li>
+          <% }) %>
+        </ul>
+
+        <div class="trend-box">
+          <strong>今日趋势观察：</strong>
+          <p><%= digest.trendObservation || '暂无趋势观察。' %></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer glass">
+      <div class="brand">© Powered by noetex.ai</div>
+      <div class="socials" aria-label="社交媒体链接">
+        <a class="social" href="https://mp.weixin.qq.com/s/BgZCDRICPzGcvI3ITpFgSg" target="_blank" rel="noreferrer" title="微信">微</a>
+        <a class="social" href="https://www.xiaohongshu.com/user/profile/632f3c94000000002303e0a9" target="_blank" rel="noreferrer" title="小红书">红</a>
+        <a class="social" href="https://www.zhihu.com/people/cc291b8ee46f03fbf5aad34797982ac1" target="_blank" rel="noreferrer" title="知乎">知</a>
+        <a class="social" href="https://www.douban.com/people/neureality/?_i=1983129EZtlAvB" target="_blank" rel="noreferrer" title="豆瓣">豆</a>
+      </div>
+    </footer>
+  </body>
+</html>

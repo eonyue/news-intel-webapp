@@ -1,5 +1,7 @@
 const express = require('express');
 const Parser = require('rss-parser');
+const fs = require('fs/promises');
+const path = require('path');
 
 const app = express();
 const parser = new Parser({ timeout: 15000 });
@@ -12,6 +14,7 @@ const TAVILY_ENDPOINT = process.env.TAVILY_ENDPOINT || 'https://api.tavily.com/s
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '';
 const OPENAI_MODEL = process.env.OPENAI_MODEL || 'gpt-5.3-codex';
 const OPENAI_ENDPOINT = process.env.OPENAI_ENDPOINT || 'https://api.openai.com/v1/responses';
+const CONSCIOUSNESS_DATA_FILE = path.join(__dirname, 'data', 'consciousness-latest.json');
 
 const CATEGORIES = [
   {
@@ -159,6 +162,35 @@ const cache = new Map();
 const titleTranslateCache = new Map();
 const llmTranslateCache = new Map();
 const llmSummaryCache = new Map();
+
+function chinaDate(ts = Date.now()) {
+  return new Date(ts).toLocaleDateString('en-CA', { timeZone: 'Asia/Shanghai' });
+}
+
+function emptyConsciousnessDigest() {
+  return {
+    title: '【“意识研究”简报】',
+    curatedBy: 'OpenClaw',
+    date: chinaDate(),
+    updatedAt: new Date().toISOString(),
+    trendObservation: '暂无趋势观察。',
+    items: [],
+  };
+}
+
+async function getConsciousnessDigest() {
+  try {
+    const raw = await fs.readFile(CONSCIOUSNESS_DATA_FILE, 'utf8');
+    const parsed = JSON.parse(raw);
+    return {
+      ...emptyConsciousnessDigest(),
+      ...parsed,
+      items: Array.isArray(parsed.items) ? parsed.items : [],
+    };
+  } catch {
+    return emptyConsciousnessDigest();
+  }
+}
 
 app.set('view engine', 'ejs');
 app.set('views', `${__dirname}/views`);
@@ -650,6 +682,16 @@ app.get('/api/category/:id', async (req, res) => {
   res.json(data);
 });
 
+app.get('/consciousness', async (_req, res) => {
+  const digest = await getConsciousnessDigest();
+  res.render('consciousness', { digest });
+});
+
+app.get('/api/consciousness', async (_req, res) => {
+  const digest = await getConsciousnessDigest();
+  res.json(digest);
+});
+
 app.get('/health', (_req, res) => {
   res.json({
     ok: true,
@@ -659,6 +701,7 @@ app.get('/health', (_req, res) => {
     codexEnabled: !!OPENAI_API_KEY,
     codexModel: OPENAI_MODEL,
     itemsPerSource: ITEMS_PER_SOURCE,
+    consciousnessDataFile: CONSCIOUSNESS_DATA_FILE,
   });
 });
 

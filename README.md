@@ -1,20 +1,16 @@
-# News Intel WebApp (MVP)
+# News Intel WebApp
 
-A lightweight dashboard that aggregates five sections:
+新闻聚合 + 意识研究简报的轻量 WebApp。
 
-1. Scour Feeds
-2. Arxiv Digest
-3. Media Headlines
-4. Research Alert
-5. Tech Trends
+## 当前页面
 
-Each item shows:
-- 标题
-- 中文摘要（优先；英文内容自动转中文风格摘要）
-- 来源
-- 链接
+- `/` 主页面（3栏）
+  - 媒体头条
+  - 研究速递（含 arXiv）
+  - 技术趋势
+- `/consciousness` 意识研究简报页面（每日同步）
 
-## Quick start
+## 本地运行
 
 ```bash
 cd news-intel-webapp
@@ -22,40 +18,34 @@ npm install
 npm run dev
 ```
 
-Open: `http://localhost:4321`
+打开：`http://localhost:4321`
 
-## Optional env
+## 环境变量（可选）
 
-- `PORT` (default `4321`)
-- `SCOUR_RSS` (default `https://scour.ing/@yuesean/rss.xml`)
+- `PORT`（默认 `4321`）
+- `TAVILY_API_KEY` / `TAVILY_KEY`
+- `TAVILY_ENDPOINT`
+- `OPENAI_API_KEY`
+- `OPENAI_MODEL`（默认 `gpt-5.3-codex`）
+- `OPENAI_ENDPOINT`
 
-## APIs
+## API
 
-- `GET /` dashboard
-- `GET /?refresh=1` force refresh all categories
-- `GET /api/category/:id` get one category as JSON
-- `GET /health` health check
+- `GET /api/category/:id` 单栏目 JSON
+- `GET /api/consciousness` 意识简报 JSON
+- `GET /health` 健康检查
 
-## Deploy to Vercel
+## 意识简报同步机制
 
-This project is ready for Vercel (Express via `@vercel/node`).
+`/consciousness` 页面读取：
+
+- `data/consciousness-latest.json`
+
+建议由每日 12:00 的意识 cron 在产出简报后，同步覆盖该 JSON 文件（并 push 到 main 触发 Vercel 更新）。
+
+## Vercel
 
 ```bash
 cd news-intel-webapp
-npx vercel
-```
-
-Production deploy:
-
-```bash
 npx vercel --prod
 ```
-
-Optional environment variable in Vercel:
-- `SCOUR_RSS` (default `https://scour.ing/@yuesean/rss.xml`)
-
-## Notes
-
-- Fetch is RSS-first for stability.
-- Scour redirect links are auto-resolved to original source URLs.
-- Basic in-memory cache: 15 minutes TTL.

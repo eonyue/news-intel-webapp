@@ -16,6 +16,7 @@
         <p class="sub">由神经现实呈现</p>
       </div>
       <div class="actions">
+        <a class="icon-btn" href="/consciousness" title="意识简报" aria-label="意识简报">🧠</a>
         <a class="icon-btn" href="/?refresh=1" title="刷新" aria-label="刷新">↻</a>
       </div>
     </header>
@@ -23,6 +24,7 @@
     <details class="nav-menu glass">
       <summary>☰ 栏目菜单</summary>
       <div class="menu-list">
+        <a href="/consciousness">🧠 意识简报</a>
         <% categories.forEach((cat) => { %>
         <a href="#<%= cat.id %>"><%= cat.zhName || cat.name %></a>
         <% }) %>

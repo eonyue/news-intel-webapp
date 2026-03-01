@@ -257,6 +257,21 @@ h2 {
   line-height: 1.52;
 }
 
+.trend-box {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(77, 163, 255, 0.32);
+  border-radius: 10px;
+  background: rgba(77, 163, 255, 0.08);
+  color: #d9ebff;
+  font-size: 12px;
+}
+
+.trend-box p {
+  margin: 6px 0 0;
+  line-height: 1.5;
+}
+
 .tag {
   display: inline-flex;
   align-items: center;
