@@ -426,19 +426,8 @@ async function translateTitleOnline(title = '') {
     return codex;
   }
 
-  // fallback: lightweight translation API
-  try {
-    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-CN&dt=t&q=${encodeURIComponent(source)}`;
-    const text = await fetchTextWithTimeout(url, 8000);
-    const data = JSON.parse(text);
-    const translatedRaw = clean((data?.[0] || []).map((x) => (x && x[0]) || '').join(''));
-    const out = normalizeLLMTerm(translatedRaw || local || source);
-    titleTranslateCache.set(source, out);
-    return out;
-  } catch {
-    titleTranslateCache.set(source, local || source);
-    return local || source;
-  }
+  titleTranslateCache.set(source, local || source);
+  return local || source;
 }
 
 function inferTopic(text = '') {
@@ -476,27 +465,43 @@ async function translateTextToChinese(text = '') {
   }
 }
 
-async function polishSummaryWithCodex(raw = '', titleZh = '') {
+async function summarizeArticleInChinese(raw = '', titleZh = '') {
   const source = clean(raw);
   if (!source) return '';
 
   const cacheKey = `${titleZh}::${source}`;
   if (llmSummaryCache.has(cacheKey)) return llmSummaryCache.get(cacheKey);
 
-  const codex = await callLLM({
+  const chunks = chunkByLength(source, 1500);
+  const partials = [];
+
+  for (const part of chunks.slice(0, 4)) {
+    const chunkSummary = await callLLM({
+      systemPrompt:
+        '你是科技新闻编辑。请将输入内容总结为中文要点，1-2句，信息密度高、客观准确，不编造。LLM统一译为“大模型”。只输出中文摘要正文。',
+      userPrompt: `标题：${titleZh}\n内容片段：${part}`,
+      maxOutputTokens: 140,
+      temperature: 0.2,
+    });
+
+    if (chunkSummary) partials.push(chunkSummary);
+  }
+
+  const mergedInput = partials.length ? partials.join('\n') : source.slice(0, 2500);
+  const finalSummary = await callLLM({
     systemPrompt:
-      '你是科技新闻编辑。请将输入内容提炼为中文摘要，2句，信息密度高、流畅自然、避免空话。保持客观，不编造事实。LLM统一译为“大模型”。不要使用“围绕”这个词。只输出摘要正文。',
-    userPrompt: `标题：${titleZh}\n原文片段：${source}`,
-    maxOutputTokens: 180,
+      '你是科技新闻编辑。请根据输入内容输出“文章总结”，用中文2-3句，讲清核心发现/事件、关键意义和潜在影响。风格客观、简洁，不要空话，不编造。LLM统一译为“大模型”。只输出总结正文。',
+    userPrompt: `标题：${titleZh}\n素材：${mergedInput}`,
+    maxOutputTokens: 220,
     temperature: 0.2,
   });
 
-  if (codex && hasChinese(codex)) {
-    llmSummaryCache.set(cacheKey, codex);
-    return codex;
+  if (finalSummary && hasChinese(finalSummary)) {
+    llmSummaryCache.set(cacheKey, finalSummary);
+    return finalSummary;
   }
 
-  // fallback: translate + compress first sentence
+  // fallback: translate + compact
   const firstSentence = source.split(/(?<=[.!?])\s+/)[0] || source;
   const compact = clean(firstSentence).slice(0, 220);
   const translated = await translateTextToChinese(compact);
@@ -517,12 +522,37 @@ function extractAbstractOrDescription(htmlText) {
   const md = html.match(/<meta\s+name="description"\s+content="([^"]+)"/i);
   if (md) return clean(md[1]);
 
+  return '';
+}
+
+function extractMainArticleText(htmlText) {
+  const html = String(htmlText || '');
   const paragraphs = [...html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
     .map((m) => clean(m[1]))
-    .filter((p) => p && p.length > 80);
-  if (paragraphs.length) return paragraphs[0];
+    .filter((p) => p && p.length > 60)
+    .filter((p) => !/cookie|subscribe|newsletter|all rights reserved|sign up|privacy policy/i.test(p));
 
-  return '';
+  if (!paragraphs.length) return '';
+
+  const joined = paragraphs.slice(0, 10).join(' ');
+  return clean(joined).slice(0, 5000);
+}
+
+function chunkByLength(text = '', maxLen = 1600) {
+  const t = clean(text);
+  if (!t) return [];
+  if (t.length <= maxLen) return [t];
+
+  const chunks = [];
+  let rest = t;
+  while (rest.length > maxLen) {
+    let cut = rest.lastIndexOf(' ', maxLen);
+    if (cut < Math.floor(maxLen * 0.6)) cut = maxLen;
+    chunks.push(rest.slice(0, cut));
+    rest = rest.slice(cut).trim();
+  }
+  if (rest) chunks.push(rest);
+  return chunks;
 }
 
 function scoreJudgement(item) {
@@ -662,11 +692,12 @@ async function enrichItem(item) {
   let text = item.rawSummary || '';
   const generic = /Scour interesting reads from noisy feeds/i.test(text);
 
-  if (!text || text.length < 80 || generic) {
+  if (!text || text.length < 160 || generic) {
     try {
       const html = await fetchTextWithTimeout(item.link, 10000);
-      const extracted = extractAbstractOrDescription(html);
-      if (extracted) text = extracted;
+      const fullText = extractMainArticleText(html);
+      const abstractText = extractAbstractOrDescription(html);
+      text = fullText || abstractText || text;
     } catch {
       // keep fallback
     }
@@ -674,7 +705,7 @@ async function enrichItem(item) {
 
   const titleZh = await translateTitleOnline(item.title);
   const rawSummary = text || item.rawSummary || '';
-  const summary = await polishSummaryWithCodex(rawSummary, titleZh || item.title);
+  const summary = await summarizeArticleInChinese(rawSummary, titleZh || item.title);
   const judgement = scoreJudgement({ ...item, rawSummary, title: titleZh || item.title });
   const tags = buildTags({ ...item, rawSummary, title: titleZh || item.title });
 
