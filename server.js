@@ -146,6 +146,11 @@ const TOPIC_TAGS = [
   ['生物技术', ['biotech', 'drug discovery', 'biopharma', '生物技术']],
   ['基因组学', ['gene', 'genome', 'genomic', 'crispr', '基因', '基因组']],
   ['蛋白质科学', ['protein', 'proteomics', '蛋白质']],
+  ['科研进展', ['research', 'study', 'paper', 'journal', 'preprint', '实验', '研究']],
+  ['科学发现', ['discovery', 'breakthrough', 'mechanism', 'hypothesis', '发现', '突破', '机制']],
+  ['医疗科技', ['medtech', 'medical technology', 'diagnostic', 'clinical tool', '医疗科技']],
+  ['能源科技', ['energy tech', 'battery', 'fusion', 'solar', '能源', '电池', '核聚变']],
+  ['材料科学', ['material science', 'materials', '新材料', '材料科学']],
 
   ['技术', ['technology', 'tech', 'software', 'chip', 'semiconductor', 'infrastructure', '技术', '软件', '芯片']],
 ];

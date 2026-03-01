@@ -9,7 +9,7 @@ const OUT = process.env.HOME_DIGEST_OUT || path.join(__dirname, '..', 'data', 'h
 const CATEGORY_IDS = ['media', 'research', 'trends'];
 const TOPICS = ['ai', 'neuro', 'life'];
 const FIXED_PER_CATEGORY = 6;
-const FIXED_PER_TOPIC = 2;
+const MIN_PER_TOPIC = 1;
 
 const WHITELIST_DOMAINS = [
   'wired.com', 'technologyreview.com', 'aeon.co', 'psyche.co', 'quantamagazine.org',
@@ -126,9 +126,9 @@ function rebalanceByTopic(items = [], target = FIXED_PER_CATEGORY) {
   const selected = [];
   const selectedKey = new Set();
 
-  // hard quota: 2 per topic
+  // soft diversity: at least 1 per topic when possible
   for (const t of TOPICS) {
-    for (const item of buckets[t].slice(0, FIXED_PER_TOPIC)) {
+    for (const item of buckets[t].slice(0, MIN_PER_TOPIC)) {
       const key = `${item.link || ''}::${clean(item.titleZh || item.title || '')}`.toLowerCase();
       if (selectedKey.has(key)) continue;
       selected.push(item);
@@ -136,7 +136,7 @@ function rebalanceByTopic(items = [], target = FIXED_PER_CATEGORY) {
     }
   }
 
-  // fallback fill only if some topic lacks enough candidates
+  // then fill remaining by overall score (broader tech/research scope)
   if (selected.length < target) {
     for (const item of sorted) {
       const key = `${item.link || ''}::${clean(item.titleZh || item.title || '')}`.toLowerCase();
