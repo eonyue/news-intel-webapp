@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T18:05:59.451Z",
+  "generatedAt": "2026-03-01T18:10:00.849Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772388346455,
+      "updatedAt": 1772388583074,
       "items": [
         {
           "title": "This AI can improve your peer review — and make it more polite - Nature",
@@ -54,6 +54,49 @@
           "score": 8.49
         },
         {
+          "title": "New Scientist recommends the quantum soundscape of Liminals - New Scientist",
+          "titleZh": "《新科学家》推荐 Liminals 的量子音景 - 《新科学家》",
+          "source": "newscientist.com",
+          "link": "https://www.newscientist.com/article/mg26935840-400-new-scientist-recommends-the-quantum-soundscape-of-liminals/",
+          "rawSummary": "Topics: exhibition/ review Advertisement ## Sign up to our weekly newsletter Receive a weekly dose of discovery in your inbox. We'll also keep you up to date with New Scientist events and special offers. Sign up ## More from New Scientist Explore the latest news, articles and features #### Comment ### Return of Fallout, Paradise and Silo fuels passion for bunker sci-fi Culture#### Comment ### New Scientist recommends pioneering artist Ryoji Ikeda's new work Culture#### Comment ### Alex Garland’s The Bone Temple is brutal, brilliant - and mind-blowing Culture#### Space ### Blue Planet Red is wrong about Mars – but it's surprisingly poignant Culture #### Popular articles Trending New Scientist articles #### 1 [...] Trending New Scientist articles #### 1 AIs can’t stop recommending nuclear strikes in war game simulations #### 2 It’s your perception of sleep that’s making you feel tired all day #### 3 The world’s most elusive colour is worth billions – if we can find it #### 4 Birdwatching may reshape the brain and build its buffer against ageing #### 5 Rapamycin can add years to your life, or none at all – it’s a lottery #### 6 Cannibalism may explain why some orcas stay in family groups #### 7 Stone Age symbols may push back the earliest form of writing #### 8 Tiny predatory dinosaur weighed less than a chicken #### 9 Landmark vitiligo cream targets immune cells that disrupt pigmentation #### 10 Loophole found that makes quantum cloning possible Advertisement [...] Skip to content Sign in Subscribe now Subscribe now Subscribe now #### Comment # New Scientist recommends the quantum soundscape of Liminals The books, TV, games and more that New Scientist staff have enjoyed this week By Thomas Lewton 25 February 2026 A century ago, when quantum mechanics was developed, physicists felt they were peering into the abyss: everything they thought was real, wasn’t. Today, we talk easily about collapsing clouds of probability and spooky action at a distance.",
+          "publishedAt": "Wed, 25 Feb 2026 19:03:30 GMT",
+          "ts": 1772046210000,
+          "tavilyScore": 0.025450227199999998,
+          "summary": "主题：展览/回顾 广告 ## 订阅我们的每周通讯 在您的收件箱中接收每周的发现。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.1954502272
+          },
+          "tags": [
+            "神经科学"
+          ],
+          "score": 7.1954502272
+        },
+        {
+          "title": "More than 1 in 10 meditators report serious adverse effects - Boing Boing",
+          "titleZh": "超过十分之一的冥想者报告有严重的不良影响",
+          "source": "boingboing.net",
+          "link": "https://boingboing.net/2026/02/25/more-than-1-in-10-meditators-report-serious-adverse-effects.html",
+          "rawSummary": "Last year, an asteroid called 2025 TF zipped past Antarctica at an altitude of 428 kilometers — no higher than where the ISS orbits. Nobody saw it coming. The Catalina… READ THE REST ## This all-in-one AI app is a hub for creativity — and it's 87% off. TL;DR: Brainstorm, generate, and collaborate with a subscription to Hive AI for just $79 (Reg. $619). Tired of toggling between AI tools and workspaces? Most of us spend most of our time on… READ THE REST ## This is the platform where 25+ AI models compete for your approval [...] TL;DR: Instead of trusting one AI model, compare dozens side-by-side forever with ChatPlayground for a single $79 payment. Most people use AI the same way they use a search engine: ask a question,… READ THE REST ## Build your brain, not debt — 1,000+ courses for less than $20 TL;DR: Learn from over 1,000+ StackSkills EDU Unlimited courses, on sale for just $19.97 (MSRP $600). Life moves fast — work piles up, deadlines loom, and finding time to learn new skills… READ THE REST [...] Georg Cantor's 1874 proof that infinity comes in different sizes reshaped mathematics. It also appears to have been stolen. Newly discovered letters show that Cantor's colleague Richard Dedekind provided key… READ THE REST ## Scientists complete the first full wiring diagram of a fruit fly brain Scientists have completed the most detailed map ever made of an adult animal brain by charting every cell and connection in a fruit fly's brain (the fly brain map is ridiculously… READ THE REST ## An asteroid passed 428 km from Earth and no one saw it coming",
+          "publishedAt": "Wed, 25 Feb 2026 19:16:22 GMT",
+          "ts": 1772046982000,
+          "tavilyScore": 0.11454592,
+          "summary": "去年，一颗名为 2025 TF 的小行星以 428 公里的高度掠过南极洲——不高于国际空间站的轨道高度。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 6,
+            "reach": 3,
+            "total": 6.62454592
+          },
+          "tags": [
+            "人工智能",
+            "神经科学"
+          ],
+          "score": 6.62454592
+        },
+        {
           "title": "ChatGPT Health fails critical emergency and suicide safety tests - News-Medical",
           "titleZh": "ChatGPT Health 未能通过关键的紧急情况和自杀安全测试 - 新闻-医疗",
           "source": "news-medical.net",
@@ -77,24 +120,30 @@
           "score": 7.898317792
         },
         {
-          "title": "Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done",
-          "titleZh": "微软的 Copilot Tasks 人工智能 使用自己的计算机来完成工作",
-          "source": "The Verge",
-          "link": "https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai",
-          "rawSummary": "Microsoft is previewing a new AI system, Copilot Tasks, that it says is designed to take care of busywork for you in the background, the company announced on Thursday. The feature takes the load off your device using its own cloud-based computer and browser, allowing it to handle a variety of jobs ranging from scheduling appointments to generating study plans while you do something else. As noted by Microsoft, you can describe what you need to Copilot Tasks using natural language, and assign Copilot Tasks to complete jobs on a recurring, scheduled, or one-time basis. Copilot Tasks will provide a report once its work is complete. You can ca … Read the full story at The Verge.",
-          "publishedAt": "2026-02-26T22:56:09.000Z",
-          "ts": 1772146569000,
-          "summary": "微软周四宣布，正在预览一款新的人工智能系统 Copilot Tasks，据称该系统旨在在后台为你处理繁忙的工作。",
+          "title": "Autonomy and Accountability in Bioprocessing - GEN - Genetic Engineering and Biotechnology News",
+          "titleZh": "生物加工中的自主权和问责制 - GEN - 基因工程和生物技术新闻",
+          "source": "genengnews.com",
+          "link": "https://www.genengnews.com/topics/bioprocessing/autonomy-and-accountability-in-bioprocessing/",
+          "rawSummary": "Copyright © 2026 Sage Publications or its affiliates, licensors, or contributors. All rights reserved, including those for text and data mining and training of large language models, artificial intelligence technologies, or similar technologies. GEN - Genetic Engineering and Biotechnology News MORE STORIES ### Healthcare Tech–Focused PATH Plans International Summit, Calls for Presentations ### Smoking Accelerates Biological Age, Says AI [...] Large language models (LLMs) play a growing role in this vision. By translating high-level scientific goals into executable protocols, LLM-based agents lower the barrier to automation and free researchers from low-level robotic programming. However, because such models can be error-prone, hybrid systems enforce guardrails: clear decision tiers, human checkpoints for out-of-range results, and comprehensive audit trails compatible with regulatory standards. Scaling up remains the biggest hurdle. While self-driving labs excel at micro- to laboratory-scale experimentation, autonomy becomes less practical at pilot and manufacturing scales. Here, digital twins and uncertainty-aware optimization help bridge bench and plant, but human-in-the-loop control remains essential. [...] Home Topics Artificial Intelligence Autonomy and Accountability in Bioprocessing # Autonomy and Accountability in Bioprocessing By Mike May, PhD Credit: Google Gemini Artificial intelligence (AI) is moving from offline analysis into the laboratory itself, reshaping how experiments are designed, executed, and interpreted. In chemistry and materials science, autonomous platforms already run closed-loop discovery cycles. In the life sciences, breakthroughs like protein-structure prediction and AI-guided drug discovery highlight AI’s transformative potential. Yet in bioprocess engineering, the path to autonomy is less straightforward.",
+          "publishedAt": "Wed, 25 Feb 2026 12:00:28 GMT",
+          "ts": 1772020828000,
+          "tavilyScore": 0.38295896,
+          "summary": "版权所有 © 2026 Sage Publications 或其附属机构、许可方或贡献者。",
           "judgement": {
-            "frontier": 7,
-            "depth": 10,
-            "reach": 8,
-            "total": 8.24
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.55295896
           },
           "tags": [
-            "人工智能"
+            "人工智能",
+            "大模型",
+            "生命科学",
+            "生物技术",
+            "基因组学",
+            "蛋白质科学"
           ],
-          "score": 8.24
+          "score": 7.55295896
         }
       ]
     },
@@ -104,8 +153,50 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772388353777,
+      "updatedAt": 1772388591053,
       "items": [
+        {
+          "title": "High-risk patients account for 80% of post-surgery deaths",
+          "titleZh": "高危患者占术后死亡的80%",
+          "source": "Medical Xpress",
+          "link": "https://medicalxpress.com/news/2026-02-high-patients-account-surgery-deaths.html",
+          "rawSummary": "A major new study, led by Queen Mary University of London has been published in The Lancet Public Health. It found that out of the five million surgical procedures performed each year by the NHS, around 300,000 are carried out on individuals considered high-risk, and within 90 days of surgery, these high-risk patients account for four out of five deaths, over half of all hospital bed days and nearly one-third of emergency readmissions.",
+          "publishedAt": "2026-03-01T13:00:05.000Z",
+          "ts": 1772370005000,
+          "summary": "由伦敦玛丽女王大学领导的一项重大新研究已发表在《柳叶刀公共卫生》上。",
+          "judgement": {
+            "frontier": 7,
+            "depth": 8,
+            "reach": 7,
+            "total": 7.33
+          },
+          "tags": [
+            "AI安全"
+          ],
+          "score": 7.33
+        },
+        {
+          "title": "What’s going on in the UK: 12-25 February - Research Professional News",
+          "titleZh": "英国正在发生的事情：2 月 12 日至 25 日 - 研究专业新闻",
+          "source": "researchprofessionalnews.com",
+          "link": "https://www.researchprofessionalnews.com/rr-news-uk-politics-2026-2-what-s-going-on-in-the-uk-12-25-february/",
+          "rawSummary": "### Sign in to your account This article on Research Professional News is only available to subscribers. Sign in with your Pivot-RP or Research Professional credentials. Continue with Pivot-RP Continue with or Non-academic institution subscribers sign in here ## Not yet a subscriber? Locked articles can be accessed as part of a Research Professional News subscription. A variety of subscription options are available, allowing you to… Read our full range of news, insight and intelligence. Access our digital magazines, Research Fortnight and Research Europe. Create personalised email alerts to keep up to date on new developments. Search our database of research funding opportunities. Learn more [...] Skip to content Research Professional News Published by Clarivate Go back Research Fortnight # What’s going on in the UK: 12-25 February By the newsdesk Share Share on Facebook Share on X Share on BlueSky Share on Linkedin Share via email This week: Levy exemption plea, Elsevier drop-outs, MoD R&D MIA and more AI at UKRI [...] AI at UKRI UK Research and Innovation has laid out plans to channel money towards research fields underpinning artificial intelligence systems, as part of its first dedicated strategy on the burgeoning technology. On 19 February, the national funding agency said it will “invest at scale in the mathematics, computer science and engineering research that underpins new AI systems in areas of UK strength and potential”. Charlotte Deane, executive chair of the Engineering and Physical Sciences Research Council and UKRI’s lead on its AI programme, said the strategy will turn the UK’s “research excellence into national advantage”. ### Sign in to your account",
+          "publishedAt": "Wed, 25 Feb 2026 08:00:05 GMT",
+          "ts": 1772006405000,
+          "tavilyScore": 0.0121235856,
+          "summary": "登录您的帐户 本文有关研究专业新闻的文章仅供订阅者阅读。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 6,
+            "reach": 3,
+            "total": 6.5221235856
+          },
+          "tags": [
+            "人工智能",
+            "技术"
+          ],
+          "score": 6.5221235856
+        },
         {
           "title": "Vitamin K Refusal Puts Newborns at High Risk for Brain Injury",
           "titleZh": "拒绝维生素 K 会使新生儿面临脑损伤的高风险",
@@ -169,6 +260,28 @@
             "生命科学"
           ],
           "score": 8.17
+        },
+        {
+          "title": "AI scientists and the robotic labs of tomorrow - pharmaphorum",
+          "titleZh": "人工智能科学家和未来的机器人实验室",
+          "source": "pharmaphorum.com",
+          "link": "https://pharmaphorum.com/digital/ai-scientists-and-robotic-labs-tomorrow",
+          "rawSummary": "##### About the author David Ruau is head of business development for healthcare & life sciences, EMEA, at NVIDIA, where he partners to drive the use of AI and machine learning in pharmaceutical research. With a background in computational biology, his work has focused on stem cell reprogramming and the electronic health records analysis across therapeutic areas. He previously held senior roles at Bayer, AstraZeneca, and a healthcare AI company, and has authored more than 30 peer-reviewed publications in leading journals including Nature, Cell, and Stem Cells. Image David Ruau ## AI in life sciences News ### FDA maps new regulatory route for ultra-rare diseases [...] ## AI scientists become core collaborators As 2026 progresses, AI scientists will no longer operate at the margins of life sciences research. Instead, they will become essential collaborators in the labs of tomorrow, working alongside human scientists and other AI-scientist platforms and established tools to co-author discovery itself. These AI systems will propose novel targets and molecular structures, simulate biological behaviour across complex virtual networks, suggest possible indication expansion and help direct both digital and physical experiments. [...] # AI scientists and the robotic labs of tomorrow Digital The life sciences are entering a decisive new phase. Over the past decade, artificial intelligence (AI) has proven its value as a powerful tool, helping researchers analyse vast datasets, surface hidden patterns, and accelerate individual stages of discovery. In 2026, however, AI’s role is evolving from exploration to orchestration. Rather than supporting isolated tasks, AI scientists – systems of agents that can work autonomously alongside human scientists – are already becoming essential collaborators embedded across the research lifecycle, fundamentally reshaping how innovation happens in healthcare and beyond.",
+          "publishedAt": "Tue, 24 Feb 2026 10:50:02 GMT",
+          "ts": 1771930202000,
+          "tavilyScore": 0.26151273599999997,
+          "summary": "关于作者 David Ruau 是 NVIDIA 欧洲、中东和非洲地区医疗保健和生命科学业务开发主管，他与 NVIDIA 合作推动人工智能和机器学习在制药研究中的应用。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.431512736
+          },
+          "tags": [
+            "人工智能",
+            "生命科学"
+          ],
+          "score": 7.431512736
         }
       ]
     },
@@ -178,30 +291,97 @@
       "zhName": "技术趋势",
       "description": "Developer and ecosystem trend signals",
       "zhDescription": "开发者生态与技术趋势信号",
-      "updatedAt": 1772388359451,
+      "updatedAt": 1772388600848,
       "items": [
         {
-          "title": "AI Stocks Hit Reset. Will Nvidia, Snowflake, CoreWeave, Salesforce Earnings Decide What's Next? - Investor's Business Daily",
-          "titleZh": "人工智能股票遭遇重置。 Nvidia、Snowflake、CoreWeave、Salesforce 的盈利状况会决定下一步的发展吗？ - 投资者商报",
-          "source": "investors.com",
-          "link": "https://www.investors.com/news/technology/ai-stocks-artificial-intelligence-stocks-2026-disruption-openclaw-feb23/",
-          "rawSummary": "## AI Stocks: Software Takes Hit Software stocks have been hammered, even Palantir Technologies (PLTR), amid concern AI model builders OpenAI and Anthropic will emerge as competitors. There's growing investor angst over generative AI software coding tools and automated AI assistants, and how they might impact traditional software product growth and profit margins. The iShares Expanded Tech-Software Sector ETF, an industry index that includes many big-cap software companies, has dropped 23% in 2026. But it stabilized last week. The debut of \"OpenClaw,\" open-source software for powering personal agents, has further fueled a sell-off in software stocks, which gained momentum in January because of Anthropic's launch of \"Cowork\" tools. [...] DoorDash Stock Slides After Hypothetical 2028 Research Report Sees Big AI Agent RisksDoorDash stock slid Monday as investors reacted to a viral post from a research group describing the food-delivery company as a \"poster child\" for risks from AI agents. A company cofounder responded... Read More AI News: Artificial Intelligence Trends And Top AI Stocks To WatchView More AI News And Stock Analysis AI Stocks: Tech Giants, Cloud Titans, Chipmakers Battle For An Edge Find The Best AI Stocks To Buy And Watch Bookmark this page for news... Read More Follow Reinhardt Krause on X, formerly Twitter, @reinhardtk\\_tech for updates on artificial intelligence, quantum computing, cybersecurity and cloud computing. YOU MAY ALSO LIKE: [...] In 2026, investors prefer some data center plays over AI chip suppliers amid intensified semiconductor competition. Among the top-performing AI stocks last week were Lumentum Holdings (LITE), Ciena (CIEN), and Vertiv Holdings (VRT). Lumentum stock has shot up over 80% this year while Ciena stock has gained over 40%. Meanwhile, cybersecurity stocks were among last week's losers. Earnings reports are due this week from Nvidia (NVDA), Snowflake (SNOW) Salesforce (CRM), and CoreWeave (CRWV). Meanwhile, Applied Optoelectronics (AAOI) reports Q4 earnings Feb. 26. Its biggest data center customer has been Microsoft (MSFT) but AAOI is shipping new devices toAmazon.com (AMZN). ↑ X This video file cannot be played.(Error Code: 102630) Is The AI Boom Starting To Crack? See All Videos",
-          "publishedAt": "Mon, 23 Feb 2026 12:59:13 GMT",
-          "ts": 1771851553000,
-          "tavilyScore": 1.39154336,
-          "summary": "人工智能股票：软件受到打击 由于担心人工智能模型构建器 OpenAI 和 Anthropic 将成为竞争对手，软件股票受到重创，甚至 Palantir Technologies (PLTR) 也不例外。",
+          "title": "The human exposome could change everything we know about disease",
+          "titleZh": "人类暴露组可能会改变我们对疾病的了解",
+          "source": "ScienceDaily Biology",
+          "link": "https://www.sciencedaily.com/releases/2026/02/260213223904.htm",
+          "rawSummary": "Scientists are launching an ambitious global effort to map the “human exposome” — the lifelong mix of environmental and chemical exposures that drive most diseases. Backed by new partnerships with governments, UNESCO, and international science advisory bodies, the initiative is rapidly expanding across continents. Powered by AI and advanced data tools, the movement seeks to shift medicine beyond genetics and toward the real-world factors shaping human health.",
+          "publishedAt": "2026-02-14T13:06:46.000Z",
+          "ts": 1771074406000,
+          "summary": "科学家们正在发起一项雄心勃勃的全球努力，绘制“人类暴露组”图谱——导致大多数疾病的终生环境和化学暴露组合。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 7,
+            "total": 8.17
+          },
+          "tags": [
+            "人工智能"
+          ],
+          "score": 8.17
+        },
+        {
+          "title": "Scientists discover a bacterial kill switch and it could change the fight against superbugs",
+          "titleZh": "科学家发现细菌杀死开关，它可能会改变对抗超级细菌的斗争",
+          "source": "ScienceDaily Biology",
+          "link": "https://www.sciencedaily.com/releases/2026/02/260228082723.htm",
+          "rawSummary": "Drug-resistant bacteria are becoming harder to treat, pushing scientists to look for new antibiotic targets. Researchers have now discovered that several unrelated viruses disable a key bacterial protein called MurJ, which is essential for building the bacterial cell wall. High-resolution imaging shows these viral proteins lock MurJ into a single position, stopping cell wall construction and leading to bacterial death.",
+          "publishedAt": "2026-02-28T14:20:04.000Z",
+          "ts": 1772288404000,
+          "summary": "耐药细菌变得越来越难治疗，促使科学家寻找新的抗生素靶点。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 7,
+            "total": 8.17
+          },
+          "tags": [
+            "神经影像",
+            "蛋白质科学"
+          ],
+          "score": 8.17
+        },
+        {
+          "title": "Trends & Insights, January 2026: A pharmaphorum industry report - pharmaphorum",
+          "titleZh": "趋势与见解，2026 年 1 月：Pharmaphorum 行业报告",
+          "source": "pharmaphorum.com",
+          "link": "https://pharmaphorum.com/digital/trends-insights-january-2026-pharmaphorum-industry-report",
+          "rawSummary": "Diet–receptor–seizure link: New academic findings connected the ketogenic diet’s β hydroxybutyrate to HCAR2 receptor activity in hippocampal circuits and microglia, suggesting druggable mechanisms (e.g., niacin) that could mimic keto benefits for refractory epilepsy – illustrative of translational paths industry can pick up. iPSC disease models scale out: Axol’s funding supports expanded ALS/Huntington’s platforms – feeding both target discovery and functional screening as wet lab complements to AI predictions. Takeaway: Expect a more hybrid neuroscience toolkit – genetics informed subgroups, iPSC phenotyping, and AI generated hypotheses – aligned around endpoints regulators and HTA bodies can accept. #### 9. Anti microbial resistance (AMR) and vaccines: Cautious optimism [...] Implications: Imaging departments and trial groups will need to harmonise protocols to capitalise on low dose agents and sensitive MRD readouts; sponsor teams should pre plan for diagnostic supply, reader training, and MRD anchored secondary endpoints. #### 5. AI in life sciences: From pilots to platform commitments [...] Below, we’ve brought together the month’s themes, the signals that matter for life sciences operators, and what to watch in Q1–Q2 #### 1. Translating platform science into the clinic Cellular rejuvenation enters human testing. Life Biosciences secured FDA IND clearance for ER 100, the first clinical-stage therapy using partial epigenetic reprogramming (OSK factors) to treat optic neuropathies (OAG and NAION). The first in human Phase 1 study (NCT07290244) starts in Q1, reflecting years of intravitreal preclinical work and controlled OSK expression readouts in primates. This is a defining moment for longevity modalities, and noteworthy for starting in ophthalmology – clear delivery route, functional end points, and manageable risk.",
+          "publishedAt": "Fri, 27 Feb 2026 16:32:24 GMT",
+          "ts": 1772209944000,
+          "tavilyScore": 1.01055088,
+          "summary": "饮食-受体-癫痫发作联系：新的学术发现将生酮饮食的 β 羟基丁酸与海马回路和小胶质细胞中的 HCAR2 受体活性联系起来，表明可药物机制（例如烟酸）可以。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 6,
+            "reach": 3,
+            "total": 7.52055088
+          },
+          "tags": [
+            "人工智能",
+            "AI安全",
+            "神经科学",
+            "神经影像"
+          ],
+          "score": 7.52055088
+        },
+        {
+          "title": "Q4 2025 Pharma Biotools VC Trends - PitchBook",
+          "titleZh": "2025 年第 4 季度 Pharma Biotools 风险投资趋势",
+          "source": "pitchbook.com",
+          "link": "https://pitchbook.com/news/reports/q4-2025-pharma-biotools-vc-trends",
+          "rawSummary": "The pharma biotools sector regained momentum in 2025 as venture funding rebounded following three years of contraction, driven by investor appetite for asset-light business models and AI-enabled technologies that support drug discovery and development. Deal value rose modestly for the year and remained stable in Q4, signaling a normalization of activity rather than renewed decline. Investment concentrated heavily in generative AI, quantum computing, microfluidics, and synthetic biology, as companies delivering high-fidelity data generation, automation, and software-like services attracted outsized interest. Major Q4 financings for AI-driven protein design platforms and automation-focused tools underscored how investors are backing the emerging “scientific stack” that connects [...] M&A activity remained subdued, although Halozyme Therapeutics’ acquisition of Elektrofi for up to $900 million marked the sector’s largest exit since 2021 and highlighted continued demand for technologies embedded in biologics delivery and manufacturing workflows. China also emerged as a key growth market, with deal count rising more than 80% YoY and investment concentrated in AI-driven platforms and enabling infrastructure for next-generation therapeutics. Overall, pharma biotools VC activity is stabilizing as investors prioritize platforms capable of generating high-quality datasets, enabling automation, and accelerating commercialization across the broader biopharma ecosystem. Table of contents [...] are backing the emerging “scientific stack” that connects computational discovery with physical experimentation.",
+          "publishedAt": "Tue, 24 Feb 2026 19:25:21 GMT",
+          "ts": 1771961121000,
+          "tavilyScore": 1.28704944,
+          "summary": "由于投资者对轻资产商业模式和支持人工智能的技术的兴趣，风险投资在经历了三年的收缩后出现反弹，制药生物工具行业将在 2025 年重新获得动力。",
           "judgement": {
             "frontier": 7,
             "depth": 8,
             "reach": 3,
-            "total": 7.72154336
+            "total": 7.617049440000001
           },
           "tags": [
             "人工智能",
-            "智能体",
+            "生命科学",
+            "生物技术",
+            "蛋白质科学",
             "技术"
           ],
-          "score": 7.72154336
+          "score": 7.617049440000001
         }
       ]
     }
