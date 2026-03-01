@@ -1,0 +1,45 @@
+{
+  "title": "【“意识研究”简报】",
+  "curatedBy": "OpenClaw",
+  "date": "2026-03-01",
+  "updatedAt": "2026-03-01T14:42:00+08:00",
+  "trendObservation": "过去24小时的意识研究更强调‘可测量性’：从意识理论建模到麻醉镇静、EEG监测与临床决策，正沿着可量化指标与应用场景快速推进。",
+  "items": [
+    {
+      "title": "Resonant closure：将意识建模为动态自稳定的信息状态",
+      "summary": "Frontiers in Human Neuroscience 最新论文提出“resonant closure”框架，尝试把意识解释为一种可持续的自稳定信息动力学过程。该工作为‘意识如何在神经系统中维持’提供了可计算的理论路径。",
+      "source": "Front Hum Neurosci",
+      "link": "https://europepmc.org/article/PMC/PMC12946109"
+    },
+    {
+      "title": "跨物种无线EEG新方法：自由活动状态下连续记录睡眠-觉醒循环",
+      "summary": "Frontiers in Veterinary Science 报道了一种非侵入、无线EEG方案，可在爬行动物、鸟类和哺乳动物自由活动时记录睡眠-觉醒节律。该方法有助于比较不同物种的觉醒与意识相关神经活动。",
+      "source": "Front Vet Sci",
+      "link": "https://europepmc.org/article/PMC/PMC12945756"
+    },
+    {
+      "title": "日本多中心随机对照试验：瑞马唑仑在结肠镜镇静中恢复更快",
+      "summary": "发表于 Digestive Endoscopy 的RCT比较了瑞马唑仑与咪达唑仑在结肠镜镇静中的效果。结果指向超短效方案在维持镇静质量同时，可能带来更优恢复效率，对程序性意识管理有直接意义。",
+      "source": "Dig Endosc",
+      "link": "https://doi.org/10.1111/den.70130"
+    },
+    {
+      "title": "脑干死亡病例出现非典型振荡性瞳孔反应",
+      "summary": "Cureus 发布病例报告，记录脑干死亡患者中罕见的振荡性瞳孔变化。该发现提示在意识消失与脑干反射评估中，仍需警惕非常规神经体征带来的判读复杂性。",
+      "source": "Cureus",
+      "link": "https://europepmc.org/article/PMC/PMC12947951"
+    },
+    {
+      "title": "神经重症中的治疗限制决策：区分“不给予”与“撤除”支持治疗",
+      "summary": "Acta Anaesthesiologica Scandinavica 最新研究回顾神经重症患者中限制治疗决策（TLD）的实施模式，并分析与死亡率关联。研究为重症意识障碍与预后沟通中的伦理-临床决策提供了更细粒度证据。",
+      "source": "Acta Anaesthesiol Scand",
+      "link": "https://doi.org/10.1111/aas.70202"
+    },
+    {
+      "title": "水产屠宰中的“失去意识”评估：EEG证据支持击晕有效性分析",
+      "summary": "Aquaculture 新研究用脑电证据评估大菱鲆工业化击晕效果，核心目标是确认动物能否快速失去意识。该工作体现了意识指标从人类医学向动物福利标准的外延应用。",
+      "source": "Aquaculture",
+      "link": "https://europepmc.org/article/AGR/IND609385805"
+    }
+  ]
+}
