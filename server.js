@@ -52,6 +52,7 @@ const CATEGORIES = [
       { url: 'https://export.arxiv.org/rss/cs.CL', source: 'arXiv cs.CL' },
       { url: 'https://export.arxiv.org/rss/q-bio.NC', source: 'arXiv q-bio.NC' },
       { url: 'https://neurosciencenews.com/feed/', source: 'Neuroscience News' },
+      { url: 'https://medicalxpress.com/rss-feed/', source: 'Medical Xpress' },
       { url: 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', source: 'ScienceDaily' },
     ],
   },
