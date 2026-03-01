@@ -6,7 +6,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "NODE_ENV=development node server.js"
+    "dev": "NODE_ENV=development node server.js",
+    "build:digest": "node scripts/build-home-digest.js"
   },
   "dependencies": {
     "ejs": "^3.1.10",

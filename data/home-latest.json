@@ -1,0 +1,280 @@
+{
+  "generatedAt": "2026-03-01T16:36:53.244Z",
+  "categories": [
+    {
+      "id": "media",
+      "name": "Media Headlines",
+      "zhName": "媒体头条",
+      "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
+      "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
+      "updatedAt": 1772383000570,
+      "items": [
+        {
+          "title": "What’s next for Chinese open-source AI",
+          "titleZh": "中国开源人工智能的下一步是什么",
+          "source": "MIT Technology Review",
+          "link": "https://www.technologyreview.com/2026/02/12/1132811/whats-next-for-chinese-open-source-ai/",
+          "rawSummary": "MIT Technology Review’s What’s Next series looks across industries, trends, and technologies to give you a first look at the future. You can read the rest of them here. The past year has marked a turning point for Chinese AI. Since DeepSeek released its R1 reasoning model in January 2025, Chinese companies have repeatedly delivered AI…",
+          "publishedAt": "2026-02-12T10:00:00.000Z",
+          "ts": 1770890400000,
+          "summary": "《麻省理工学院技术评论》的“下一步是什么”系列涵盖了各个行业、趋势和技术，让您对未来有一个初步的了解。",
+          "judgement": {
+            "frontier": 7,
+            "depth": 10,
+            "reach": 9,
+            "total": 8.49
+          },
+          "tags": [
+            "人工智能",
+            "技术"
+          ],
+          "score": 8.49
+        },
+        {
+          "title": "This AI can improve your peer review — and make it more polite - Nature",
+          "titleZh": "《自然》杂志：这种人工智能可以改善你的同行评审，并使其更加礼貌",
+          "source": "nature.com",
+          "link": "https://www.nature.com/articles/d41586-026-00536-6",
+          "rawSummary": "James Zou, a computer scientist at Stanford University in California, and his colleagues set out to assess whether large language models (LLM) could help to address a common complaint about peer reviews: feedback often lacks thoroughness or strikes the wrong tone. At the 2023 Association for Computational Linguistics annual meeting in Toronto, Canada, for example, authors of conference papers flagged 12.9% of reviews as being poor quality. [...] ## Latest on: Machine learning Peer review AI is threatening science jobs. Which ones are most at risk? News ‘An AlphaFold 4’ – scientists marvel at DeepMind drug spin-off’s exclusive new AI News AI offers way to image and assess clinical cell samples News & Views How AI slop is causing a crisis in computer science News AI could transform research assessment — and some academics are worried Career Column AI research deluge: why one conference is asking authors to rank their own papers Nature Index ## ### Jobs #### Global Recruitment for Faculty, Postdocs, and Specialists at Hangzhou Institute of Medicine, CAS Seeking exceptional Senior/Junior PIs, Postdocs, and Core Specialists globally year-round Hangzhou, China [...] Access the most recent journalism from Nature's award-winning team Explore the latest features & opinion covering groundbreaking research Access through your institution or Sign in or create an account Continue with Google Continue with ORCiD doi: ## References 1. Thakkar, N. et al. Nature Mach. Intell. (2026). Article Google Scholar Download references Reprints and permissions ## Related Articles AI is transforming peer review — and many scientists are worried Three AI-powered steps to faster, smarter peer review Scientists hide messages in papers to game AI peer review More than half of researchers now use AI for peer review — often against guidance ## Subjects Machine learning Peer review ## Latest on: Machine learning Peer review",
+          "publishedAt": "Mon, 23 Feb 2026 15:28:26 GMT",
+          "ts": 1771860506000,
+          "tavilyScore": 0.4408376,
+          "summary": "加利福尼亚州斯坦福大学的计算机科学家 James Zou 和他的同事着手评估大型语言模型 (大模型) 是否有助于解决同行评审的常见抱怨：反馈经常会被忽略。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 3,
+            "total": 8.2708376
+          },
+          "tags": [
+            "人工智能",
+            "大模型",
+            "AI安全"
+          ],
+          "score": 8.2708376
+        },
+        {
+          "title": "Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done",
+          "titleZh": "微软的 Copilot Tasks 人工智能 使用自己的计算机来完成工作",
+          "source": "The Verge",
+          "link": "https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai",
+          "rawSummary": "Microsoft is previewing a new AI system, Copilot Tasks, that it says is designed to take care of busywork for you in the background, the company announced on Thursday. The feature takes the load off your device using its own cloud-based computer and browser, allowing it to handle a variety of jobs ranging from scheduling appointments to generating study plans while you do something else. As noted by Microsoft, you can describe what you need to Copilot Tasks using natural language, and assign Copilot Tasks to complete jobs on a recurring, scheduled, or one-time basis. Copilot Tasks will provide a report once its work is complete. You can ca … Read the full story at The Verge.",
+          "publishedAt": "2026-02-26T22:56:09.000Z",
+          "ts": 1772146569000,
+          "summary": "微软周四宣布，正在预览一款新的人工智能系统 Copilot Tasks，据称该系统旨在在后台为你处理繁忙的工作。",
+          "judgement": {
+            "frontier": 7,
+            "depth": 10,
+            "reach": 8,
+            "total": 8.24
+          },
+          "tags": [
+            "人工智能"
+          ],
+          "score": 8.24
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "name": "Research Alert",
+      "zhName": "研究速递",
+      "description": "Research-heavy updates from journals, labs, and arXiv",
+      "zhDescription": "科研导向更新（含 arXiv）",
+      "updatedAt": 1772383007624,
+      "items": [
+        {
+          "title": "Vitamin K Refusal Puts Newborns at High Risk for Brain Injury",
+          "titleZh": "拒绝维生素 K 会使新生儿面临脑损伤的高风险",
+          "source": "Neuroscience News",
+          "link": "https://neurosciencenews.com/vitamin-k-newborn-brain-bleed-30205/",
+          "rawSummary": "Vitamin K Refusal Puts Newborns at High Risk for Brain Injury Featured Neurology Neuroscience &middot; February 26, 2026 Summary: Newborns are naturally born with low levels of vitamin K, which is essential for blood clotting. To prevent life-threatening bleeding, infants are typically given a vitamin K shot at birth. However, a systematic review reveals a concerning trend: more parents are refusing this essential supplement. Babies who do not receive the shot are 81 times more likely to develop &#8220;vitamin K deficiency bleeding,&#8221; a condition that often leads to brain hemorrhages, permanent neurological disability, or death. Researchers noted that this trend is often linked to broader healthcare hesitancy and inaccurate information. Increasing numbers of parents are refusing vitamin K shots for their newborns, putting infants at greater risk of avoidable brain injuries, according to a preliminary systematic review released February 26, 2026, that will be presented at the American Academy of Neurology’s 78 th Annual Meeting taking place April 18-22, 2026, in Chicago and online. A vitamin K injection is a supplement that provides babies with an essential vitamin that is naturally low in newborns. It is not a vaccine. Vitamin K is needed to help blood clot. Getting a vitamin K shot right after birth can prevent a rare but serious condition called vitamin K deficiency bleeding. Research confirms that the vitamin K injection at birth is a vital safeguard against preventable brain hemorrhages and lifelong neurological disability. Credit: Neuroscience News This condition can cause an intracerebral hemorrhage, a type of stroke, when a blood vessel bursts in the brain. It can lead to death or lifelong brain problems. “Vitamin K at birth is safe and effective, and while refusal is still uncommon with rates in the United States remaining under 1% in most hospitals, our review found in recent years, there have been increases in parents refusing this supplement for their newborns,” said study author Kate Semidey, MD, of Florida International University in Miami. “This trend is concerning because our review also found that babies who do not get the vitamin K injection are 81 times more likely to develop vitamin K deficiency bleeding.” For the review, researchers looked at 25 studies with two decades of global data. The studies examined vitamin K refusal, the incidence of vitamin K deficiency bleeding and outcomes, parent reasons for refusal and possible links to vaccine refusal. Researchers found in Minnesota, refusal rates rose from 0.9% in 2015 to 1.6% in 2019. In California, Connecticut, and Iowa, refusal ranged from 0.2% to 1.3% in 2018 and 2019, with over half of hospital staff perceiving increases. Internationally, refusal rates ranged from 1% to 3% in Canada, New Zealand and Scotland, and more than 30% in some birthing centers.",
+          "publishedAt": "2026-02-26T21:31:17.000Z",
+          "ts": 1772141477000,
+          "summary": "拒绝维生素 K 使新生儿面临脑损伤的高风险 神经病学 神经科学专题 · 2026 年 2 月 26 日 摘要：新生儿天生维生素 K 水平较低，而维生素 K 对于血液循环至关重要。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 7,
+            "total": 8.83
+          },
+          "tags": [
+            "AI安全",
+            "神经科学"
+          ],
+          "score": 8.83
+        },
+        {
+          "title": "EEG-based foundation AI for early brain disease diagnosis unveiled in India - MobiHealthNews",
+          "titleZh": "印度推出用于早期脑部疾病诊断的基于脑电图的基础人工智能",
+          "source": "mobihealthnews.com",
+          "link": "https://www.mobihealthnews.com/news/asia/eeg-based-foundation-ai-early-brain-disease-diagnosis-unveiled-india",
+          "rawSummary": "From current 400 million parameters (or the variables it learns from the training data), NeuroDX is working to scale the model to 2 billion parameters. A news report notes that a second version, MANAS-2, is coming out in the coming weeks. THE LARGER TREND A similar AI-driven tool, developed and introduced last year by researchers in Singapore, assists with analysing brain activity. By identifying brain regions and how they function individually and dynamically with other regions, the Brain-JEPA model can also enable early and accurate diagnoses of brain disorders, predict disease progression, and support personalised treatment plans. [...] The model, he said, is capable of interpreting brain functional connectivity and neural network dynamics. Citing findings from research, the neurologist said that the model has \"achieved 95% accuracy in identifying computational biomarkers of epilepsy and mental health disorders,\" showing potential as an \"affordable and non‑invasive brain health screening platform.\" According to Dr Agarwal, MANAS-1 has applications in neurological diagnosis, psychiatry, cognitive assessment, and brain-computer interface systems, and can be deployed at scale across primary to tertiary health centres. [...] Touted as a first of its kind in India, the brain language foundation model dubbed MANAS-1 uses brain electrophysiology – primarily through electroencephalogram (EEG) – as a \"structured biological language,\" Dr Puneet Agarwal, chairman and founder of Intellihealth (NeuroDX), which created the technology, explained in a LinkedIn announcement. The model was initially trained on 60,000 hours of brain wave records from more than 25,000 patients globally. WHY IT MATTERS Dr Agarwal, who is also a professor of Neurology at Max Super Speciality Hospital in New Delhi, said MANAS-1 enables the \"scalable, accurate, and early\" detection of neurological and psychiatric disorders, potentially providing a unified AI framework for brain health screening and precision neuroscience.",
+          "publishedAt": "Tue, 24 Feb 2026 07:33:00 GMT",
+          "ts": 1771918380000,
+          "tavilyScore": 1.441964,
+          "summary": "NeuroDX 正在努力从当前的 4 亿个参数（或从训练数据中学习的变量）将模型扩展到 20 亿个参数。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 8.611964
+          },
+          "tags": [
+            "人工智能",
+            "大模型",
+            "神经科学",
+            "脑机接口",
+            "生命科学",
+            "技术"
+          ],
+          "score": 8.611964
+        },
+        {
+          "title": "This AI finds simple rules where humans see only chaos",
+          "titleZh": "这个人工智能找到了人类只看到混乱的简单规则",
+          "source": "ScienceDaily",
+          "link": "https://www.sciencedaily.com/releases/2025/12/251221091237.htm",
+          "rawSummary": "A new AI developed at Duke University can uncover simple, readable rules behind extremely complex systems. It studies how systems evolve over time and reduces thousands of variables into compact equations that still capture real behavior. The method works across physics, engineering, climate science, and biology. Researchers say it could help scientists understand systems where traditional equations are missing or too complicated to write down.",
+          "publishedAt": "2025-12-22T06:04:50.000Z",
+          "ts": 1766383490000,
+          "summary": "杜克大学开发的一种新人工智能可以揭示极其复杂系统背后的简单、可读的规则。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 7,
+            "total": 8.17
+          },
+          "tags": [
+            "人工智能",
+            "生命科学"
+          ],
+          "score": 8.17
+        },
+        {
+          "title": "Study reframes amygdala as the sophisticated learning arbiter - News-Medical",
+          "titleZh": "研究将杏仁核重塑为复杂的学习仲裁者 - 新闻医学",
+          "source": "news-medical.net",
+          "link": "https://www.news-medical.net/news/20260224/Study-reframes-amygdala-as-the-sophisticated-learning-arbiter.aspx",
+          "rawSummary": "The research team is now analyzing recordings of neural activity in the prefrontal cortex during different tasks to understand how neurons interact during the arbitration process. In collaboration with researchers at UCLA, they're also conducting experiments with rats to examine specific neural pathways between the amygdala and prefrontal cortex. Woo and Soltani collaborated with researchers at the National Institute of Mental Health. Source: Dartmouth College Journal reference: Woo, J. H., _et al._ (2025). Contribution of amygdala to dynamic model arbitration under uncertainty._Nature Communications._ DOI: 10.1038/s41467-025-66745-1. Be the first to rate this article Posted in: Medical Science News | Medical Research News Comments (0) Download PDF Copy [...] Image 33: Metabolite-driven AI model accurately estimates time of death Metabolite-driven AI model accurately estimates time of death [...] Powered by Targeting settings Do not sell my personal information Suggested Reading Image 6: Brain neurons after exercise drive long-term endurance gains Brain neurons after exercise drive long-term endurance gains Image 7: Scientists uncover nanoplastics in brain tissue and question their role in neurological disease Scientists uncover nanoplastics in brain tissue and question their role in neurological disease Image 8: Brainstem nerve cells found to stabilize blood pressure fluctuations Brainstem nerve cells found to stabilize blood pressure fluctuations Image 9: New maps of mouse brains reveal patterns of myelin formation New maps of mouse brains reveal patterns of myelin formation Image 10: New AI-based analysis method can accurately classify and monitor brain tumors",
+          "publishedAt": "Wed, 25 Feb 2026 02:24:00 GMT",
+          "ts": 1771986240000,
+          "tavilyScore": 0.6487179200000001,
+          "summary": "研究小组现在正在分析不同任务期间前额皮质神经活动的记录，以了解神经元在仲裁过程中如何相互作用。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.81871792
+          },
+          "tags": [
+            "人工智能",
+            "神经科学"
+          ],
+          "score": 7.81871792
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "name": "Tech Trends",
+      "zhName": "技术趋势",
+      "description": "Developer and ecosystem trend signals",
+      "zhDescription": "开发者生态与技术趋势信号",
+      "updatedAt": 1772383013244,
+      "items": [
+        {
+          "title": "‘Keeping Its Lead in AI’: Nvidia (NVDA) Develops New Chip Built for Faster Responses - TipRanks",
+          "titleZh": "“保持人工智能领域的领先地位”：Nvidia 开发新芯片以实现更快的响应",
+          "source": "tipranks.com",
+          "link": "https://www.tipranks.com/news/ai-moves-to-real-time-nvidia-nvda-readies-new-chip-for-inference-demand",
+          "rawSummary": "## NVDA Moves Beyond Training Chips Nvidia’s graphics processors have long dominated the training of large AI models. However, demand is now moving toward running those models in everyday applications. As businesses deploy AI tools for coding, search, and customer service, they need chips that can deliver quick answers while using less power. The planned processor is intended to handle those requests more efficiently. Reports indicate OpenAI could become one of the major customers, using the system to improve the speed of its tools. [...] Shalu SarafFeb 28, 2026, 05:15 PM Semiconductor giant Nvidia (NVDA) is preparing to introduce a new processor designed to speed up how AI systems respond to users, according to a Wall Street Journal report. The company is expected to reveal the product at its GTC developer conference next month. ### Claim 50% Off TipRanks Premium Unlock hedge fund-level data and powerful investing tools for smarter, sharper decisions Stay ahead of the market with the latest news and analysis and maximize your portfolio's potential Unlike Nvidia’s traditional chips used to train large AI models, the new processor focuses on inference computing. This is the stage when an AI system answers questions, writes code, or carries out tasks after the model has already been built. [...] Inflation RateUnemployment Rate Class Actions Stock ScreenerETF Screener PopularPenny Stock ScreenerTechnical Analysis Screener Dividend CenterBest Dividend Stocks PopularBest High Yield Dividend StocksDividend AristocratsDividend Stock Comparison NewDividend CalculatorDividend Returns ComparisonDividend Calendar My ExpertsTop AnalystsTop Financial BloggersTop-Performing Corporate InsidersTop Hedge Fund ManagersTop Research FirmsTop Individual Investors Newsletter CenterSmart InvestorSmart Dividends New Trending News [Premium Broadcom (AVGO) Will Report Q1 Earnings on March 4. Here Is What to Expect from This AI Stock Shalu Saraf8h ago AVGO](/news/broadcom-avgo-will-report-q1-earnings-on-march-4-here-is-what-to-expect-from-this-ai-infrastructure-stock \"AVGO\") [Premium",
+          "publishedAt": "Sat, 28 Feb 2026 22:15:00 GMT",
+          "ts": 1772316900000,
+          "tavilyScore": 1.537052,
+          "summary": "NVDA 超越训练芯片 Nvidia 的图形处理器长期以来一直主导着大型 AI 模型的训练。",
+          "judgement": {
+            "frontier": 7,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.867052
+          },
+          "tags": [
+            "人工智能",
+            "技术"
+          ],
+          "score": 7.867052
+        },
+        {
+          "title": "AI Use Will Drive Health Care and Life Sciences Investment - Bloomberg Law News",
+          "titleZh": "人工智能的使用将推动医疗保健和生命科学投资 - 彭博法律新闻",
+          "source": "news.bloomberglaw.com",
+          "link": "https://news.bloomberglaw.com/legal-exchange-insights-and-commentary/ai-use-will-drive-health-care-and-life-sciences-investment",
+          "rawSummary": "In health care, ambient listening tools coupled with clinical decision support software can help physicians practice more effectively and better oversee the professionals they supervise. Tools to help improve accurate coding and reimbursement, as well as other administrative functions, continue to present opportunities. Although federal initiatives are encouraging greater adoption of these technologies, there is a growing awareness of the potential legal and regulatory pitfalls pertaining to data governance, FDA, fraud and abuse compliance, agency expectations, evolving state law requirements, and legal obligations in international markets. [...] In our conversations in San Francisco, we explored the regulatory, Food and Drug Administration, and compliance issues that could affect the outlook for health care and life sciences companies this year and beyond. Here are our top takeaways. The regulatory environment and cost considerations are driving AI use. The US Department of Health and Human Services and its subagencies are leveraging AI for a variety of uses—from FDA reviews of new drug applications to rooting out fraud and abuse in federal payor programs—effectively normalizing AI use in health care and life sciences. [...] Legal Exchange: Insights & Commentary Email Share To:Facebook LinkedIn Insight # AI Use Will Drive Health Care and Life Sciences Investment Feb. 26, 2026, 9:30 AM UTC James Boiani Epstein Becker Green Amy Dow Epstein Becker Green Megan Robertson Epstein Becker Green J.P. Morgan & Co.’s annual health care conference last month generated cautious optimism that 2026 will be a breakout year for investment in the health care and life sciences industries—particularly with artificial intelligence’s role in encouraging investment in the health ecosystem.",
+          "publishedAt": "Thu, 26 Feb 2026 09:30:01 GMT",
+          "ts": 1772098201000,
+          "tavilyScore": 0.633709056,
+          "summary": "在医疗保健领域，环境聆听工具与临床决策支持软件相结合可以帮助医生更有效地执业并更好地监督他们所监督的专业人员。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.803709056
+          },
+          "tags": [
+            "人工智能",
+            "AI安全",
+            "生命科学",
+            "技术"
+          ],
+          "score": 7.803709056
+        },
+        {
+          "title": "ARC Launches SmartER Ambient AI Platform at Sheba Medical Center Emergency Department - HIT Consultant",
+          "titleZh": "ARC 在 Sheba 医疗中心急诊科推出 SmartER Ambient 人工智能 平台 - HIT 顾问",
+          "source": "hitconsultant.net",
+          "link": "https://hitconsultant.net/2026/02/26/sheba-medical-center-arc-smarter-ambient-ai-emergency-department/",
+          "rawSummary": "### AI as an “Infrastructure Layer” This launch is part of a much larger strategic vision for ARC, which has evolved into a global blueprint for healthcare innovation with a $5.8 billion portfolio value and deployments across 31 health systems worldwide. Rather than treating AI as a novelty or a standalone software application, Sheba Medical Center is embedding it as foundational plumbing. SmartER joins a growing ecosystem of AI tools already operating at the hospital, including Aidoc for advanced imaging analysis and Project K for clinical decision support. [...] ### Editorial Coverage Opinion Health IT + Care Coordination + EMR/EHR + Interoperability + Population Health Management + Revenue Cycle Management Digital Health + Artificial Intelligence + Blockchain Tech + Precision Medicine + Telehealth + Wearables Startups Value-Based Care + Accountable Care + Medicare Advantage ### Subscribe to HIT Consultant Media [...] ### Invisible UI: How SmartER Works The true genius of SmartER isn’t just the AI; it is the workflow integration. The system operates in three distinct phases of the patient journey:",
+          "publishedAt": "Thu, 26 Feb 2026 10:30:00 GMT",
+          "ts": 1772101800000,
+          "tavilyScore": 1.34692096,
+          "summary": "AI 作为“基础设施层” 此次发布是 ARC 更大战略愿景的一部分，该战略愿景已发展成为医疗保健创新的全球蓝图，拥有 58 亿美元的投资组合价值和部署。",
+          "judgement": {
+            "frontier": 7,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.67692096
+          },
+          "tags": [
+            "人工智能",
+            "神经影像",
+            "技术"
+          ],
+          "score": 7.67692096
+        },
+        {
+          "title": "Q4 2025 Healthtech VC Trends - PitchBook",
+          "titleZh": "2025 年第四季度健康科技风险投资趋势",
+          "source": "pitchbook.com",
+          "link": "https://pitchbook.com/news/reports/q4-2025-healthtech-vc-trends",
+          "rawSummary": "Activity was especially strong in operations, analytics, and electronic health records, while AI-heavy segments such as clinical documentation, digital care, and provider education attracted outsized capital. The year also saw record VC exit volume, rising IPO momentum led by Omada Health and Hinge Health, and a sharp rebound in PE dealmaking. With AI now central to both clinical and administrative workflows, the data points to continued opportunity across healthtech segments—and a healthy pipeline of late-stage companies positioning for exits in 2026. Table of contents [...] Q4 2025 # Healthtech VC Trends PitchBook clients can access the full report and its Excel data pack via the Research Center on the PitchBook Platform. Healthtech exits hit a record high while AI reshapes investment priorities Healthtech venture funding staged a strong comeback in 2025, with startups raising $15.3 billion—up 26% YoY—as larger deal sizes and AI-driven growth rounds powered the rebound. Fourth-quarter funding dipped slightly from earlier highs but remained more than double the prior-year quarter, underscoring renewed investor confidence. The median pre-money valuation rose to $31 million, reflecting sustained demand for AI-enabled healthcare delivery, operations, and revenue-cycle solutions. [...] Table of contents | | | --- | | Healthtech landscape | 3 | | Quarterly analysis | 4 | | Key takeaways | 4 | | VC activity | 4 | | Valuations | 5 | | Exit activity | 5 | | AI investment dominates subsector allocation | 5 | | Funding relative to prior three-year averages | 6 | | Healthtech VC deal summary | 19 | Healthtech VC deal value hit a record high in 2025, driven by larger deal sizes and AI-powered growth rounds fueling the sector’s strongest funding rebound in years. Healthtech VC Trends Healthtech Market Map Tech Emerging Technology Healthcare LinkedIn Twitter Facebook Email Additional Research ### Pharma Biotools VC Trends",
+          "publishedAt": "Wed, 25 Feb 2026 17:58:49 GMT",
+          "ts": 1772042329000,
+          "tavilyScore": 1.3245250720000001,
+          "summary": "运营、分析和电子健康记录领域的活动尤其强劲，而临床文档、数字护理和提供者教育等人工智能重点领域则吸引了大量资本。",
+          "judgement": {
+            "frontier": 7,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.654525072
+          },
+          "tags": [
+            "人工智能",
+            "技术"
+          ],
+          "score": 7.654525072
+        }
+      ]
+    }
+  ]
+}
