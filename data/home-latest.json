@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T19:00:14.327Z",
+  "generatedAt": "2026-03-01T19:01:29.631Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772391596712,
+      "updatedAt": 1772391671618,
       "items": [
         {
           "title": "What’s next for Chinese open-source AI",
@@ -70,6 +70,29 @@
             "神经科学"
           ],
           "score": 7.258538056
+        },
+        {
+          "title": "Are You ‘Agentic’ Enough for the AI Era?",
+          "titleZh": "人工智能时代你足够“代理”吗？",
+          "source": "Wired AI",
+          "link": "https://www.wired.com/story/silicon-valley-agentic-individuals-future-of-work/",
+          "rawSummary": "“Today’s agents might already be more capable than all three of us here in the room,” says Akshay Kothari, cofounder and chief operating officer of the $11 billion productivity startup Notion . “Taste is something we think is pretty unique to Notion, but you can imagine agents getting pretty good at that too. Eventually, the only thing left for humans is agency.” That idea might sound outrageous to most people, but it will come as no surprise to many in Silicon Valley . A viral Harper&#x27;s essay brought the subject to a head recently. It followed a few young people in San Francisco and concluded that being agentic has less to do with productivity and “more to do with constantly chasing attention online.” But in my conversations with founders, researchers, and investors, I came to a different conclusion. The tech industry is grappling with a very real shift in how software engineers do their jobs. Millions of developers are using AI coding agents like Claude Code and Codex to automate much of their work (some tech companies are even requiring it ). For many, a massive piece of their value is now tied to deciding what AI coding agents should work on. The shift is unsettling to those who enjoyed the act of sitting down and actually writing code, but for some of the industry’s most “agentic,” it’s an opportunity. Simon Last, another Notion cofounder, uses AI coding agents more than anyone I’ve ever met. He coded for nearly two decades—then abruptly stopped. Now, he’s using up to four AI coding agents at any given time (he prefers Codex to Claude Code). If he’s at a party or sleeping, Last gets what he calls “token anxiety” if he doesn’t have agents working in the background. He doesn’t like to use more than four, though, because he says it causes “context overload” on his human brain. “Knowing how to harness these agents is now the most important skill in the world, and it’s not really something you can train for,” says Last. “You have to be very open-minded, curious, and willing to try whatever the newest thing is. The value of that sort of person is going up exponentially, because the value they can create, by extension, is going up exponentially.” To be fair, Last is kind of describing himself. He acts as a “super IC” for Notion, and he doesn’t manage humans, only agents. But the way he manages them is not unlike how a manager oversees employees. Last is constantly delegating work to AI agents, then closely reviewing and fixing their code. Kothari says Notion has always hired people with high agency, but the value of doing so has gone up dramatically in recent months. Even though the company is using AI agents to automate work, Notion is busier than ever. Employees are shipping products at a higher velocity and doing more work overall, the cofounders claim. Notion isn’t downsizing its team because of AI, but it is hiring differently. “There&#x27;s more value in the Valley today to have a few Simons than thousands of engineers,” says Kothari. He says the people Notion hires need to understand “the new way of working.” If you’re not a software engineer, this can be a little hard to process. AI agents aren’t very useful for people in many industries. A recent survey from Gallup found that most Americans still don’t use AI much in their jobs , though the number of people who do is rising. Kothari is increasingly convinced the “new way of work” will eventually hit finance, legal, creative, and other industries. If and when that happens, you can imagine more Americans beginning to ask themselves, am I agentic? Jennifer Li, a general partner at Andreessen Horowitz who works on the AI infrastructure team, says it’s hard to find a company she’s invested in where employees don’t use AI coding tools. “If we do come across people who are oblivious to it, it’s a big red flag. It impacts how we think about picking founders.” Of course, Li notes that just because you use a lot of AI agents doesn’t make you a “high-agency” person—ideally you’re using them in a smart way. Some engineers who work on highly sophisticated infrastructure systems can’t use AI coding agents much, she adds. For teams that are using them, there’s a “no slop rule”: the person who submitted the code is still responsible if it’s wrong.",
+          "publishedAt": "2026-02-26T19:00:00.000Z",
+          "ts": 1772132400000,
+          "summary": "价值 110 亿美元的生产力初创公司 Notion 的联合创始人兼首席运营官阿克谢·科塔里 (Akshay Kothari) 表示：“今天的特工可能已经比房间里的我们三个人更有能力了。”。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.17
+          },
+          "tags": [
+            "人工智能",
+            "智能体",
+            "神经科学",
+            "技术"
+          ],
+          "score": 7.17
         }
       ]
     },
@@ -79,7 +102,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772391606166,
+      "updatedAt": 1772391681824,
       "items": [
         {
           "title": "The human exposome could change everything we know about disease",
@@ -102,25 +125,26 @@
           "score": 8.17
         },
         {
-          "title": "Cover runners-up of 2025 - Nature",
-          "titleZh": "2025 年封面亚军",
+          "title": "This AI can improve your peer review — and make it more polite - Nature",
+          "titleZh": "《自然》杂志：这种人工智能可以改善你的同行评审，并使其更加礼貌",
           "source": "nature.com",
-          "link": "https://www.nature.com/articles/s43588-026-00967-1",
-          "rawSummary": "## Search Advanced search ### Quick links Explore articles by subject Find a job Guide to authors Editorial policies Sign up for the Nature Briefing: AI and Robotics newsletter — what matters in AI and robotics research, free to your inbox weekly. Get the most important science stories of the day, free in your inbox. Sign up for Nature Briefing: AI and Robotics [...] Thank you for visiting nature.com. You are using a browser version with limited support for CSS. To obtain the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles and JavaScript. View all journals Search Log in Content Explore content About the journal Publish with us Sign up for alerts RSS feed Cover runners-up of 2025 Download PDF Download PDF Editorial Published: # Cover runners-up of 2025 Nature Computational Science volume 6, page 111 (2026)Cite this article ### Subjects Computational science Publishing We highlight some of our favorite cover suggestions from 2025. [...] Cover submitted for the paper by Kevin Maik Jablonka and colleagues. Credit: Indrajeet Mandal. Last but not least, an image submitted for the paper by Kevin Maik Jablonka and colleagues is also worth highlighting3.\"). The figure depicts a luminous wireframe hand — which represents artificial intelligence, and more specifically, a vision language models (VLM) — writing on a laboratory notebook filled with notes related to chemistry and materials science. Here, the act of writing represents active scientific thinking, interpretation of experimental data, and formation of meaningful conclusions. The paper introduces a benchmark — named MaCBench — to evaluate whether modern VLMs can truly reason across chemistry and materials science like a scientist, or merely recognize patterns.",
-          "publishedAt": "Thu, 26 Feb 2026 17:05:57 GMT",
-          "ts": 1772125557000,
-          "tavilyScore": 0.27096200000000004,
-          "summary": "搜索 高级搜索 ### 快速链接 按主题探索文章 寻找工作 作者指南 编辑政策 订阅《自然简报：人工智能和机器人》时事通讯 — 人工智能和机器人研究中的重要因素，。",
+          "link": "https://www.nature.com/articles/d41586-026-00536-6",
+          "rawSummary": "## Search Advanced search ### Quick links Explore articles by subject Find a job Guide to authors Editorial policies [...] Access the most recent journalism from Nature's award-winning team Explore the latest features & opinion covering groundbreaking research Access through your institution or Sign in or create an account Continue with Google Continue with ORCiD doi: ## References 1. Thakkar, N. et al. Nature Mach. Intell. (2026). Article Google Scholar Download references Reprints and permissions ## Related Articles AI is transforming peer review — and many scientists are worried Three AI-powered steps to faster, smarter peer review Scientists hide messages in papers to game AI peer review More than half of researchers now use AI for peer review — often against guidance ## Subjects Machine learning Peer review ## Latest on: Machine learning Peer review [...] ## Latest on: Machine learning Peer review AI is threatening science jobs. Which ones are most at risk? News ‘An AlphaFold 4’ – scientists marvel at DeepMind drug spin-off’s exclusive new AI News AI offers way to image and assess clinical cell samples News & Views How AI slop is causing a crisis in computer science News AI could transform research assessment — and some academics are worried Career Column AI research deluge: why one conference is asking authors to rank their own papers Nature Index ## ### Jobs #### Global Recruitment for Faculty, Postdocs, and Specialists at Hangzhou Institute of Medicine, CAS Seeking exceptional Senior/Junior PIs, Postdocs, and Core Specialists globally year-round Hangzhou, China",
+          "publishedAt": "Mon, 23 Feb 2026 15:28:26 GMT",
+          "ts": 1771860506000,
+          "tavilyScore": 0.271929952,
+          "summary": "搜索 高级搜索 ### 快速链接 按主题探索文章 查找工作 作者指南 编辑政策 [...] 访问《自然》获奖团队的最新新闻 探索最新功能和。",
           "judgement": {
             "frontier": 9,
             "depth": 10,
             "reach": 3,
-            "total": 8.100962
+            "total": 8.101929952
           },
           "tags": [
-            "人工智能"
+            "人工智能",
+            "AI安全"
           ],
-          "score": 8.100962
+          "score": 8.101929952
         },
         {
           "title": "Why You Can’t Say No to Snacks Even When Full",
@@ -190,27 +214,30 @@
           "score": 8.17
         },
         {
-          "title": "Agentic AI and the human element: Building trustworthy automation in clinical trials - pharmaphorum",
-          "titleZh": "代理人工智能和人的因素：在临床试验中建立值得信赖的自动化",
-          "source": "pharmaphorum.com",
-          "link": "https://pharmaphorum.com/rd/agentic-ai-and-human-element-building-trustworthy-automation-clinical-trials",
-          "rawSummary": "Sales & Marketing Sponsored ### Using AI-driven synthetic personas to take your insights fur... As AI continues to reshape the healthcare landscape, pharma teams are beginning to leverage synthetic personas. R&D ### Deep Dive: Research and Development 2025 Every breakthrough in medicine, every new treatment that changes lives, starts with research. Digital Sponsored ### Expert Directed Applied Intelligence: Redefining AI in Life ... In a new white paper from Lumanity, explore why the most powerful AI will always be human-directed. Oncology Sponsored ### Collaboration & personalisation in rare disease R&D, with AO... For Rare Disease Day, in an AOP Health-sponsored podcast Melissa Fellner, VP of Global Therapeutic Areas, Commercial Operations, discussed their work. Digital [...] ## automation ## clinical trial enrolment ## human in the loop Category : R&D / Views & Analysis ### Editor's Picks - ##### Makary says FDA will \"end two-trial dogma\" for approvals - ##### NIH Director Bhattacharya will temporarily run CDC - ##### MSD and Mayo Clinic team up on AI drug discovery News - ##### Number of UK biotech companies rising, says report - ##### NHS study will pick apart mental illness with data science News ### Eisai unveils digital platform for kidney cancer patients Eisai has launched a 'digital destination', called Kompass, that aims to support patients after they have been given a diagnosis of kidney cancer. Sales & Marketing Sponsored ### Using AI-driven synthetic personas to take your insights fur... [...] ##### About the author Ece Kalvaci is a software engineer at Lindus Health, with dual MSc degrees in Computer Science and Data Science. She develops ML pipelines for clinical trial data extraction and predictive modelling while also leading work on ML-powered tools for protocol design. Image Ece Kalvaci ## AI in clinical trials News ### Eisai unveils digital platform for kidney cancer patients Eisai has launched a 'digital destination', called Kompass, that aims to support patients after they have been given a diagnosis of kidney cancer. R&D ### Results, reality, and recalibration: Unpacking AI hype at SC... SCOPE 2026 was dominated by one big topic: AI. You couldn’t walk five steps without hearing about something that AI was going to fix. Sales & Marketing Sponsored",
-          "publishedAt": "Thu, 26 Feb 2026 19:22:45 GMT",
-          "ts": 1772133765000,
-          "tavilyScore": 0.09565464000000001,
-          "summary": "销售和营销赞助 ### 使用人工智能驱动的合成角色将您的见解进一步...。",
+          "title": "Autonomy and Accountability in Bioprocessing - GEN - Genetic Engineering and Biotechnology News",
+          "titleZh": "生物加工中的自主权和问责制 - GEN - 基因工程和生物技术新闻",
+          "source": "genengnews.com",
+          "link": "https://www.genengnews.com/topics/bioprocessing/autonomy-and-accountability-in-bioprocessing/",
+          "rawSummary": "Copyright © 2026 Sage Publications or its affiliates, licensors, or contributors. All rights reserved, including those for text and data mining and training of large language models, artificial intelligence technologies, or similar technologies. GEN - Genetic Engineering and Biotechnology News MORE STORIES ### Healthcare Tech–Focused PATH Plans International Summit, Calls for Presentations ### Smoking Accelerates Biological Age, Says AI [...] Forgot your password? Get help Privacy Policy Password recovery Recover your password A password will be e-mailed to you. GEN – Genetic Engineering and Biotechnology News GEN Edge + Featured News + Multimedia Content + News + Insights Topics + Artificial Intelligence + Bioprocessing + Cancer + Drug Discovery + Genome Editing + Infectious Diseases + OMICs + Translational Medicine Magazine + Browse Issues + Subscribe Multimedia + Summits + Webinars + GEN Live + Learning Labs + Podcasts + Videos Resources + A-Lists + eBooks/Perspectives + Tutorials + Peer-Reviewed Journals - GEN Biotechnology - Re:Gen Open + New Products Subscribe + Get GEN Magazine + Get GEN eNewsletters [...] How to Avoid a Fall by Balancing Cost and Performance in Drug Discovery Related Media Robots on the Red Line: A Video Update from SLAS 2026 Reporting Live from JPM 2026: Alex Philippidis and Jonathan Grinstein, PhD AI in Protein Design: Hype vs. Reality Explained by David Baker Boston's Bioprocessing Buzz: GEN Reports Live from BPI 2025 The Future of Bioinformatics: Scaling Interactive and Computational Workflows with Seqera Bioprocessing in Boston: GEN Reports Live from BPI 2024 ##### Top 5 ##### Resources ##### Recommended For You #### Podcast ### Touching Base",
+          "publishedAt": "Wed, 25 Feb 2026 12:00:28 GMT",
+          "ts": 1772020828000,
+          "tavilyScore": 0.027907972800000003,
+          "summary": "版权所有 © 2026 Sage Publications 或其附属机构、许可方或贡献者。",
           "judgement": {
             "frontier": 9,
             "depth": 8,
             "reach": 3,
-            "total": 7.26565464
+            "total": 7.1979079727999995
           },
           "tags": [
             "人工智能",
+            "AI安全",
+            "生命科学",
             "生物技术",
-            "技术"
+            "基因组学",
+            "蛋白质科学"
           ],
-          "score": 7.26565464
+          "score": 7.1979079727999995
         }
       ]
     },
@@ -220,50 +247,29 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1772391614326,
+      "updatedAt": 1772391689631,
       "items": [
         {
           "title": "Q4 2025 Healthtech VC Trends - PitchBook",
           "titleZh": "2025 年第四季度健康科技风险投资趋势",
           "source": "pitchbook.com",
           "link": "https://pitchbook.com/news/reports/q4-2025-healthtech-vc-trends",
-          "rawSummary": "Activity was especially strong in operations, analytics, and electronic health records, while AI-heavy segments such as clinical documentation, digital care, and provider education attracted outsized capital. The year also saw record VC exit volume, rising IPO momentum led by Omada Health and Hinge Health, and a sharp rebound in PE dealmaking. With AI now central to both clinical and administrative workflows, the data points to continued opportunity across healthtech segments—and a healthy pipeline of late-stage companies positioning for exits in 2026. Table of contents [...] Additional Research ### Pharma Biotools VC Trends The Q4 2025 Pharma Biotools VC Trends report provides an analysis of recent VC activity and includes a market map of leading VC-backed companies in the space. ### PitchBook Analyst Note: Tariff Shock: Perspectives on Private Market Impacts This analyst note examines how renewed US tariff uncertainty is reshaping risks, liquidity, and strategy across private credit, PE, VC, and European investments. ### AI Public Comp Sheet and Valuation Guide Our AI Public Comp Sheet and Valuation Guide tracks stock performances, valuations, and market caps of key publicly traded AI companies. February 23rd, 2026 [...] Q4 2025 # Healthtech VC Trends PitchBook clients can access the full report and its Excel data pack via the Research Center on the PitchBook Platform. Healthtech exits hit a record high while AI reshapes investment priorities Healthtech venture funding staged a strong comeback in 2025, with startups raising $15.3 billion—up 26% YoY—as larger deal sizes and AI-driven growth rounds powered the rebound. Fourth-quarter funding dipped slightly from earlier highs but remained more than double the prior-year quarter, underscoring renewed investor confidence. The median pre-money valuation rose to $31 million, reflecting sustained demand for AI-enabled healthcare delivery, operations, and revenue-cycle solutions.",
+          "rawSummary": "Q4 2025 # Healthtech VC Trends PitchBook clients can access the full report and its Excel data pack via the Research Center on the PitchBook Platform. Healthtech exits hit a record high while AI reshapes investment priorities Healthtech venture funding staged a strong comeback in 2025, with startups raising $15.3 billion—up 26% YoY—as larger deal sizes and AI-driven growth rounds powered the rebound. Fourth-quarter funding dipped slightly from earlier highs but remained more than double the prior-year quarter, underscoring renewed investor confidence. The median pre-money valuation rose to $31 million, reflecting sustained demand for AI-enabled healthcare delivery, operations, and revenue-cycle solutions. [...] Table of contents | | | --- | | Healthtech landscape | 3 | | Quarterly analysis | 4 | | Key takeaways | 4 | | VC activity | 4 | | Valuations | 5 | | Exit activity | 5 | | AI investment dominates subsector allocation | 5 | | Funding relative to prior three-year averages | 6 | | Healthtech VC deal summary | 19 | Healthtech VC deal value hit a record high in 2025, driven by larger deal sizes and AI-powered growth rounds fueling the sector’s strongest funding rebound in years. Healthtech VC Trends Healthtech Market Map Tech Emerging Technology Healthcare LinkedIn Twitter Facebook Email Additional Research ### Pharma Biotools VC Trends [...] Activity was especially strong in operations, analytics, and electronic health records, while AI-heavy segments such as clinical documentation, digital care, and provider education attracted outsized capital. The year also saw record VC exit volume, rising IPO momentum led by Omada Health and Hinge Health, and a sharp rebound in PE dealmaking. With AI now central to both clinical and administrative workflows, the data points to continued opportunity across healthtech segments—and a healthy pipeline of late-stage companies positioning for exits in 2026. Table of contents",
           "publishedAt": "Wed, 25 Feb 2026 17:58:49 GMT",
           "ts": 1772042329000,
-          "tavilyScore": 1.59468096,
-          "summary": "运营、分析和电子健康记录领域的活动尤其强劲，而临床文档、数字护理和提供者教育等人工智能重点领域则吸引了大量资本。",
+          "tavilyScore": 0.9093512000000001,
+          "summary": "2025 年第 4 季度# Healthtech VC 趋势 PitchBook 客户可以通过 PitchBook 平台上的研究中心访问完整报告及其 Excel 数据包。",
           "judgement": {
             "frontier": 7,
             "depth": 8,
             "reach": 3,
-            "total": 7.92468096
-          },
-          "tags": [
-            "人工智能"
-          ],
-          "score": 7.92468096
-        },
-        {
-          "title": "Boston AI startup can predict risk of breast cancer before tumors appear - The Boston Globe",
-          "titleZh": "波士顿人工智能初创公司可以在肿瘤出现之前预测乳腺癌风险 - 波士顿环球报",
-          "source": "bostonglobe.com",
-          "link": "https://www.bostonglobe.com/2026/02/24/business/breast-cancer-ai-detection-clairity/",
-          "rawSummary": "Advertisement --- 💵 Quantum cybersecurity firm Aliro in Boston raised $15 millionin a deal led by Gutbrain Ventures. 🔌 EV developer Indigo Technologies in Woburn received a $4 million loan from MassDevelopment’s Emerging Technology Fund. ☀️ Community solar developer Solstice in Cambridge was acquired by Boston-based Perch Energy. Terms of the deal were not disclosed. 📦 Supply chain software firm Dray Dog in Dover, N.H., was acquired by California-based firm CargoSprint. Terms of the deal were not disclosed. 👋 Software developer Code Metal in Boston hired Ryan Aytay, former chief executive of Tableau, as president and chief operating officer. 🖨️ Somerville-based 3D printing company Formlabs added Rob Willett, former chief executive of Cognex, to its board of directors. [...] ⏸️ Maine considers a moratorium on data centers as businesses look to New England. Read more from Julia Tilton of The Daily Yonder. 🎁 Klaviyo founders give $6 million to boost MIT startups, Boston’s competitiveness. Read more from business reporter Jon Chesto. 🤑 Boston-based Code Metal, which writes AI software to run hardware such as drones, sensors, and robots, raised $125 million in a deal led by Salesforce Ventures and including Accel, B Capital, Smith Point Capital, J2 Ventures, and RTX. The deal valued Code Metal at $1.25 billion. 🌎 Rare earth mineral producer Phoenix Tailings in Woburn raised $30 million of equity from investors Traxys, Eni Next, and Geodesic Alliance Fund. Phoenix also raised $10 million of debt from Nomura. Advertisement --- [...] “There’s much in medicine that can be a black box,” Lehman said. “We are doing lots of research [to figure out] what are the features in a mammogram that the deep learning model is picking up on.” With Silicon Valley dominating in AI innovation so far, the Boston tech scene could use a lot more startups like Clairity, investors and entrepreneurs said. Health care startup investor Michael Greeley, general partner at Flare Capital in Boston, said he expects to see more and more researchers in the region creating startups that combine AI and medical data. A company like Clairity “underscores the power of our community as the health care and technology sectors continue to collaborate given the proximity to each other,“ Greeley said.",
-          "publishedAt": "Tue, 24 Feb 2026 21:16:07 GMT",
-          "ts": 1771967767000,
-          "tavilyScore": 1.4973077760000002,
-          "summary": "广告 --- 💵 波士顿量子网络安全公司 Aliro 在由 Gutbrain Ventures 牵头的交易中筹集了 1500 万美元。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 6,
-            "reach": 3,
-            "total": 8.007307776
+            "total": 7.2393512
           },
           "tags": [
             "人工智能",
             "技术"
           ],
-          "score": 8.007307776
+          "score": 7.2393512
         },
         {
           "title": "Brain inspired machines are better at math than expected",
@@ -286,26 +292,28 @@
           "score": 7.33
         },
         {
-          "title": "MatX's $500m, QC Capital backs virtual pediatrics and The Raine Group's new partner - Axios",
-          "titleZh": "MatX 5 亿美元、QC Capital 支持虚拟儿科和 Raine Group 的新合作伙伴 Axios",
-          "source": "amp.axios.com",
-          "link": "https://amp.axios.com/pro-rata-premium-first-look-matx-qc-capital-raine-e2e23561-c459-452d-a04c-e2d0e6cca8aa.html",
-          "rawSummary": "• Evoke Security, a Washington-based cybersecurity company, raised a $4m pre-seed round led by Crosspoint Capital Partners, with participation from Red Cell Partners. Go deeper • Jampack AI, an NYC-based wholesale operations automation platform, raised a $3.2m seed led by Maveron, joined by Timber Grove Ventures. Go deeper ## Private Equity • Arcline Investment Management agreed to buy Hydraulics International, a provider of ground support equipment, mobile test systems, and specialized pumps. Go deeper • CampusWorks, backed by Atlantic Street Capital, merged with Dynamic Campus, a higher education IT services firm. dynamiccampus.com • Capital Constellation, backed by Wafra, invested in Gallatin Point Capital, a private investment firm. Go deeper [...] • Brookfield Asset Management bought U.K.-based Ori, an AI cloud provider, and merged it with its newly formed Radiant. Ori's backers include Fortitude Capital, Wa'ed Ventures, 6 Degrees Capital, Atempo Growth and NextEra Energy. Go deeper ## Public Offerings 🚑 MiniMed Group, a diabetes management device business being carved out of Medtronic (NYSE: MDT), plans to raise $742m in an offering of 28 million shares priced between $25 to $28. Go deeper 💊 Salspera, a Cambridge, Mass.-based cancer biotech, plans to raise $85m by offering 5.7 million shares priced between $14 and $16. Go deeper ## It's Personnel • Anthony Kontoleon, former partner and CEO of the Americas at Azura Partners, joined The Raine Group as partner. Go deeper [...] • Topspin Consumer Partners invested in Grid, a Dallas-based maker of lockers and flooring solutions for fitness facilities. Go deeper • Victor Capital Partners invested in Specialty Fenestration Group, a maker of high-security windows and doors. River Associates Investments exited. Go deeper 🚑 QC Capital Group invested in My Pediatric Doctor, a 24/7 urgent care pediatric telemedicine company. Go deeper ## M&A • ADT, a Boca Raton, Fla.-based home security company,acquired Origin Wireless, an AI company that can analyze and track motion without cameras, for $170m. Go deeper",
-          "publishedAt": "Tue, 24 Feb 2026 20:59:41 GMT",
-          "ts": 1771966781000,
-          "tavilyScore": 1.5865913600000001,
-          "summary": "• 总部位于华盛顿的网络安全公司 Evoke Security 筹集了 400 万美元的种子前融资，由 Crosspoint Capital Partners 领投，Red Cell Partners 参与。",
+          "title": "Trends & Insights, January 2026: A pharmaphorum industry report - pharmaphorum",
+          "titleZh": "趋势与见解，2026 年 1 月：Pharmaphorum 行业报告",
+          "source": "pharmaphorum.com",
+          "link": "https://pharmaphorum.com/digital/trends-insights-january-2026-pharmaphorum-industry-report",
+          "rawSummary": "R&D Partner Content ### 5th mRNA-Based Therapeutics Summit Europe The Summit is the leading European industry-focused forum dedicated to accelerating the development of messenger RNA (mRNA) medicines Get in-depth news, opinions, and features on pharma and healthcare sent straight to your inbox ## Trends & Insights ## industry trends ## Life Sciences ## pharma industry Category : Digital / Views & Analysis ### Editor's Picks - ##### Makary says FDA will \"end two-trial dogma\" for approvals - ##### NIH Director Bhattacharya will temporarily run CDC - ##### MSD and Mayo Clinic team up on AI drug discovery News - ##### Number of UK biotech companies rising, says report - ##### NHS study will pick apart mental illness with data science News [...] Nicole Raleigh ## Trends & Insights News ### NHS \"isn't delivering equitable care for rare diseases\" A Genetic Alliance UK report claims the NHS is failing to meet the needs of many of the 3.5 million people in the country who live with rare diseases. Sales & Marketing Sponsored ### Using AI-driven synthetic personas to take your insights fur... As AI continues to reshape the healthcare landscape, pharma teams are beginning to leverage synthetic personas. Market Access ### 12 questions with: Daniel Kohlstaedt Daniel Kohlstaedt, managing director of PurpleLeaf Strategy, with more than 18 years of experience in pharma, talks about his journey through the industry. Digital Sponsored ### Expert Directed Applied Intelligence: Redefining AI in Life ... [...] Designing medicines, not just models: Basecamp’s EDEN and aiPGI exemplify AI as a creator of therapeutic enzymes and antimicrobial peptides with high lab validation rates – an inflection beyond in silico screening. Precision analytics at scale: SOPHiA GENETICS passed 2 million genomic profiles analyzed on DDM and forged an MD Anderson collaboration – evidence that AI genomics networks are achieving clinical grade scale. Operational AI adoption pressure: Survey data (Argon & Co) showed 49% of life sciences leaders plan to invest in AI for efficiencies amid rising input costs and supply risk – pairing nicely with digital twins and predictive analytics in manufacturing/logistics.",
+          "publishedAt": "Fri, 27 Feb 2026 16:32:24 GMT",
+          "ts": 1772209944000,
+          "tavilyScore": 0.46195192,
+          "summary": "研发合作伙伴内容 ### 第五届欧洲 mRNA 治疗峰会 该峰会是欧洲领先的以行业为中心的论坛，致力于加速信使 RNA (mRNA) 药物的开发 获取深度新闻，。",
           "judgement": {
             "frontier": 9,
-            "depth": 6,
+            "depth": 8,
             "reach": 3,
-            "total": 8.09659136
+            "total": 7.63195192
           },
           "tags": [
             "人工智能",
-            "生物技术"
+            "AI安全",
+            "生物技术",
+            "基因组学"
           ],
-          "score": 8.09659136
+          "score": 7.63195192
         }
       ]
     }
