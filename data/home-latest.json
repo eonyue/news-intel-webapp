@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T17:58:17.936Z",
+  "generatedAt": "2026-03-01T18:05:59.451Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772387883720,
+      "updatedAt": 1772388346455,
       "items": [
         {
           "title": "This AI can improve your peer review — and make it more polite - Nature",
@@ -54,6 +54,29 @@
           "score": 8.49
         },
         {
+          "title": "ChatGPT Health fails critical emergency and suicide safety tests - News-Medical",
+          "titleZh": "ChatGPT Health 未能通过关键的紧急情况和自杀安全测试 - 新闻-医疗",
+          "source": "news-medical.net",
+          "link": "https://www.news-medical.net/news/20260224/ChatGPT-Health-fails-critical-emergency-and-suicide-safety-tests.aspx",
+          "rawSummary": "### Life Sciences Links Life Sciences Home News Lab Instruments & Equipment Life Sciences A-Z White Papers Thought Leaders Insights Webinars eBooks Posters Podcasts ### Other Useful Links About Meet the Team Search Newsletters Sitemap Advertise Contact Terms & Conditions Privacy & Cookie Policy Content Policy Ownership & Funding Information ### Other AZoNetwork Sites AZoM AZoNano AZoCleantech AZoOptics AZoRobotics AZoSensors AZoMining AZoQuantum AZoBuild AZoLifeSciences AZoAi Image 41: News-Medical Facebook Twitter LinkedIn [...] Download PDF Copy Image 3: Editorial ChecklistReviewed Mount Sinai Health SystemFeb 24 2026 ChatGPT Health, a widely used consumer artificial intelligence (AI) tool that provides health guidance directly to the public-including advice about how urgently to seek medical care-may fail to direct users appropriately to emergency care in a significant number of serious cases, according to researchers at the Icahn School of Medicine at Mount Sinai. The study, fast-tracked in the February 23, 2026 online issue of _Nature Medicine_ [ is the first independent safety evaluation of the large language model (LLM)-based tool since its January 2026 launch. It also identified serious concerns with the tool's suicide-crisis safeguards. [...] \"As a medical student training at a time when AI health tools are already in the hands of millions, I see them as technologies we must learn to integrate thoughtfully into care rather than substitutes for clinical judgment,\" says Alvira Tyagi, a first-year medical student at the Icahn School of Medicine at Mount Sinai and second author of the study. \"These systems are changing quickly, so part of our training now must consider learning how to understand their outputs critically, identify where they fall short, and use them in ways that protect patients.\" The study assessed the system at a single point in time. Because AI models are frequently updated, performance may change over time, underscoring the need for independent evaluation, the researchers say.",
+          "publishedAt": "Tue, 24 Feb 2026 16:16:00 GMT",
+          "ts": 1771949760000,
+          "tavilyScore": 0.728317792,
+          "summary": "生命科学链接 生命科学主页 新闻 实验室仪器和设备 生命科学 A-Z 白皮书 思想领袖见解 网络研讨会 电子书 海报 播客 ### 关于认识团队的其他有用链接 搜索新闻。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.898317792
+          },
+          "tags": [
+            "人工智能",
+            "大模型",
+            "AI安全"
+          ],
+          "score": 7.898317792
+        },
+        {
           "title": "Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done",
           "titleZh": "微软的 Copilot Tasks 人工智能 使用自己的计算机来完成工作",
           "source": "The Verge",
@@ -81,7 +104,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772387890657,
+      "updatedAt": 1772388353777,
       "items": [
         {
           "title": "Vitamin K Refusal Puts Newborns at High Risk for Brain Injury",
@@ -105,53 +128,6 @@
           "score": 8.83
         },
         {
-          "title": "This AI finds simple rules where humans see only chaos",
-          "titleZh": "这个人工智能找到了人类只看到混乱的简单规则",
-          "source": "ScienceDaily",
-          "link": "https://www.sciencedaily.com/releases/2025/12/251221091237.htm",
-          "rawSummary": "A new AI developed at Duke University can uncover simple, readable rules behind extremely complex systems. It studies how systems evolve over time and reduces thousands of variables into compact equations that still capture real behavior. The method works across physics, engineering, climate science, and biology. Researchers say it could help scientists understand systems where traditional equations are missing or too complicated to write down.",
-          "publishedAt": "2025-12-22T06:04:50.000Z",
-          "ts": 1766383490000,
-          "summary": "杜克大学开发的一种新人工智能可以揭示极其复杂系统背后的简单、可读的规则。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 7,
-            "total": 8.17
-          },
-          "tags": [
-            "人工智能",
-            "生命科学"
-          ],
-          "score": 8.17
-        },
-        {
-          "title": "EEG-based foundation AI for early brain disease diagnosis unveiled in India - MobiHealthNews",
-          "titleZh": "印度推出用于早期脑部疾病诊断的基于脑电图的基础人工智能",
-          "source": "mobihealthnews.com",
-          "link": "https://www.mobihealthnews.com/news/asia/eeg-based-foundation-ai-early-brain-disease-diagnosis-unveiled-india",
-          "rawSummary": "From current 400 million parameters (or the variables it learns from the training data), NeuroDX is working to scale the model to 2 billion parameters. A news report notes that a second version, MANAS-2, is coming out in the coming weeks. THE LARGER TREND A similar AI-driven tool, developed and introduced last year by researchers in Singapore, assists with analysing brain activity. By identifying brain regions and how they function individually and dynamically with other regions, the Brain-JEPA model can also enable early and accurate diagnoses of brain disorders, predict disease progression, and support personalised treatment plans. [...] The model, he said, is capable of interpreting brain functional connectivity and neural network dynamics. Citing findings from research, the neurologist said that the model has \"achieved 95% accuracy in identifying computational biomarkers of epilepsy and mental health disorders,\" showing potential as an \"affordable and non‑invasive brain health screening platform.\" According to Dr Agarwal, MANAS-1 has applications in neurological diagnosis, psychiatry, cognitive assessment, and brain-computer interface systems, and can be deployed at scale across primary to tertiary health centres. [...] Touted as a first of its kind in India, the brain language foundation model dubbed MANAS-1 uses brain electrophysiology – primarily through electroencephalogram (EEG) – as a \"structured biological language,\" Dr Puneet Agarwal, chairman and founder of Intellihealth (NeuroDX), which created the technology, explained in a LinkedIn announcement. The model was initially trained on 60,000 hours of brain wave records from more than 25,000 patients globally. WHY IT MATTERS Dr Agarwal, who is also a professor of Neurology at Max Super Speciality Hospital in New Delhi, said MANAS-1 enables the \"scalable, accurate, and early\" detection of neurological and psychiatric disorders, potentially providing a unified AI framework for brain health screening and precision neuroscience.",
-          "publishedAt": "Tue, 24 Feb 2026 07:33:00 GMT",
-          "ts": 1771918380000,
-          "tavilyScore": 1.441964,
-          "summary": "NeuroDX 正在努力从当前的 4 亿个参数（或从训练数据中学习的变量）将模型扩展到 20 亿个参数。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 8.611964
-          },
-          "tags": [
-            "人工智能",
-            "大模型",
-            "神经科学",
-            "脑机接口",
-            "生命科学",
-            "技术"
-          ],
-          "score": 8.611964
-        },
-        {
           "title": "Study reframes amygdala as the sophisticated learning arbiter - News-Medical",
           "titleZh": "研究将杏仁核重塑为复杂的学习仲裁者 - 新闻医学",
           "source": "news-medical.net",
@@ -172,6 +148,27 @@
             "神经科学"
           ],
           "score": 7.81871792
+        },
+        {
+          "title": "This AI finds simple rules where humans see only chaos",
+          "titleZh": "这个人工智能找到了人类只看到混乱的简单规则",
+          "source": "ScienceDaily",
+          "link": "https://www.sciencedaily.com/releases/2025/12/251221091237.htm",
+          "rawSummary": "A new AI developed at Duke University can uncover simple, readable rules behind extremely complex systems. It studies how systems evolve over time and reduces thousands of variables into compact equations that still capture real behavior. The method works across physics, engineering, climate science, and biology. Researchers say it could help scientists understand systems where traditional equations are missing or too complicated to write down.",
+          "publishedAt": "2025-12-22T06:04:50.000Z",
+          "ts": 1766383490000,
+          "summary": "杜克大学开发的一种新人工智能可以揭示极其复杂系统背后的简单、可读的规则。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 7,
+            "total": 8.17
+          },
+          "tags": [
+            "人工智能",
+            "生命科学"
+          ],
+          "score": 8.17
         }
       ]
     },
@@ -181,55 +178,30 @@
       "zhName": "技术趋势",
       "description": "Developer and ecosystem trend signals",
       "zhDescription": "开发者生态与技术趋势信号",
-      "updatedAt": 1772387897935,
+      "updatedAt": 1772388359451,
       "items": [
         {
-          "title": "Getting Super-Agents This Year, Says IBM Roundup - Forbes",
-          "titleZh": "IBM 综述称，今年将迎来超级代理商 - 福布斯",
-          "source": "forbes.com",
-          "link": "https://www.forbes.com/sites/johnwerner/2026/02/27/getting-super-agents-this-year-says-ibm-roundup/",
-          "rawSummary": "That’s front and center in a brand new survey of current tech trends that IBM is releasing for 2026 under the banner: “The trends that will shape AI and tech in 2026.” Staff writer Annabelle Nicoud takes us through a dizzying array of advances that will certainly grab headlines in the year to come. One is quantum computing and its obvious boost to overall digital brain-power. The utilities of quantum over classical computing are evident, and I’ve seen IBM actually focus on this through 2024 and 2025. But one of the more interesting components here is the emergence of what Nicoud calls “super-agents.” What does that mean? ## The Super-Agent at Work [...] And how do the super-agents do this? A major part of the answer is that the super-agent isn’t really just one agent: it’s a series of agents working together to accomplish broader goals. IBM Chief Architect of AI Open Innovation Gabe Goodhart explains: “If you go to ChatGPT, you are not talking to an AI model … You are talking to a software system that includes tools for searching the web, doing all sorts of different individual scripted programmatic tasks, and most likely an agentic loop.” That’s true for the super-agent, too. [...] What does that mean? ## The Super-Agent at Work Well, agentic AI means AI can do tasks. The first agents were the most primitive. They could, say, create a poem or a song, or an image, or use a web site to make some transaction, but they were, in a sense, specialists. They were single-use. MORE FOR YOU The idea with super-agents is that they will be able to move in a digital environment, analyze a system, navigate processes, and even supply their own insights. Not only supply their own insights, but work on the basis of those insights, in ways that don’t really require any substantial human supervision. So you might wake up to find that AI has written a poem or a song, or done some transaction, without your express request. That’s part of the whole ball of wax.",
-          "publishedAt": "Fri, 27 Feb 2026 00:00:00 GMT",
-          "ts": 1772150400000,
-          "tavilyScore": 0.1881644,
-          "summary": "这是 IBM 发布的 2026 年当前技术趋势全新调查的核心内容：“2026 年将塑造人工智能和技术的趋势。”特约撰稿人安娜贝尔·尼古德带我们度过了一段昏昏欲睡的时光。",
+          "title": "AI Stocks Hit Reset. Will Nvidia, Snowflake, CoreWeave, Salesforce Earnings Decide What's Next? - Investor's Business Daily",
+          "titleZh": "人工智能股票遭遇重置。 Nvidia、Snowflake、CoreWeave、Salesforce 的盈利状况会决定下一步的发展吗？ - 投资者商报",
+          "source": "investors.com",
+          "link": "https://www.investors.com/news/technology/ai-stocks-artificial-intelligence-stocks-2026-disruption-openclaw-feb23/",
+          "rawSummary": "## AI Stocks: Software Takes Hit Software stocks have been hammered, even Palantir Technologies (PLTR), amid concern AI model builders OpenAI and Anthropic will emerge as competitors. There's growing investor angst over generative AI software coding tools and automated AI assistants, and how they might impact traditional software product growth and profit margins. The iShares Expanded Tech-Software Sector ETF, an industry index that includes many big-cap software companies, has dropped 23% in 2026. But it stabilized last week. The debut of \"OpenClaw,\" open-source software for powering personal agents, has further fueled a sell-off in software stocks, which gained momentum in January because of Anthropic's launch of \"Cowork\" tools. [...] DoorDash Stock Slides After Hypothetical 2028 Research Report Sees Big AI Agent RisksDoorDash stock slid Monday as investors reacted to a viral post from a research group describing the food-delivery company as a \"poster child\" for risks from AI agents. A company cofounder responded... Read More AI News: Artificial Intelligence Trends And Top AI Stocks To WatchView More AI News And Stock Analysis AI Stocks: Tech Giants, Cloud Titans, Chipmakers Battle For An Edge Find The Best AI Stocks To Buy And Watch Bookmark this page for news... Read More Follow Reinhardt Krause on X, formerly Twitter, @reinhardtk\\_tech for updates on artificial intelligence, quantum computing, cybersecurity and cloud computing. YOU MAY ALSO LIKE: [...] In 2026, investors prefer some data center plays over AI chip suppliers amid intensified semiconductor competition. Among the top-performing AI stocks last week were Lumentum Holdings (LITE), Ciena (CIEN), and Vertiv Holdings (VRT). Lumentum stock has shot up over 80% this year while Ciena stock has gained over 40%. Meanwhile, cybersecurity stocks were among last week's losers. Earnings reports are due this week from Nvidia (NVDA), Snowflake (SNOW) Salesforce (CRM), and CoreWeave (CRWV). Meanwhile, Applied Optoelectronics (AAOI) reports Q4 earnings Feb. 26. Its biggest data center customer has been Microsoft (MSFT) but AAOI is shipping new devices toAmazon.com (AMZN). ↑ X This video file cannot be played.(Error Code: 102630) Is The AI Boom Starting To Crack? See All Videos",
+          "publishedAt": "Mon, 23 Feb 2026 12:59:13 GMT",
+          "ts": 1771851553000,
+          "tavilyScore": 1.39154336,
+          "summary": "人工智能股票：软件受到打击 由于担心人工智能模型构建器 OpenAI 和 Anthropic 将成为竞争对手，软件股票受到重创，甚至 Palantir Technologies (PLTR) 也不例外。",
           "judgement": {
-            "frontier": 9,
+            "frontier": 7,
             "depth": 8,
             "reach": 3,
-            "total": 7.3581644
+            "total": 7.72154336
           },
           "tags": [
             "人工智能",
             "智能体",
-            "神经科学",
             "技术"
           ],
-          "score": 7.3581644
-        },
-        {
-          "title": "Top 15 AI Startups Powering India’s Self-Reliance Mission - Analytics India Magazine",
-          "titleZh": "推动印度自力更生使命的 15 强人工智能初创公司",
-          "source": "analyticsindiamag.com",
-          "link": "https://analyticsindiamag.com/ai-highlights/top-15-ai-startups-powering-indias-self-reliance-mission",
-          "rawSummary": "Continue Reading AI News # Karnataka Biotech Economy Crosses $39 Bn Fuelled by Biomanufacturing Bioindustrial biotechnology emerged as the fastest-growing segment, reaching $11.46 billion in 2025. Merin Susan John 5 min Follow:Preferred SourceGoogle NewsWhatsAppTelegram ### Stay Ahead with AI Insights Get unlimited access to premium articles, exclusive analysis, and more. Subscribe Now Excellence in AI Journalism Download on theApp StoreGet it onGoogle Play Explore Topics AI FeaturesGCCAI TrendsAI StartupsAI NewsAI HighlightsMagazineDeep Tech Navigation Home Latest Trending Authors Videos Print Editions Newsletters AIM Network AIM Research CDO Vision MachineCon AIM Council AdaSci More PEMA Quadrant GCC AI TLC Best Firm AIM Media [...] About the Author ### Mohit Pandey Journalist Mohit writes about AI in simple, explainable, and often funny words. He's especially passionate about chatting with those building AI for Bharat, with the occasional detour into AGI. ### Got a tip? Share confidential information with AIM. Editorial Standards|Reprints & Permissions Explore our newsletters Build your routine with some of our top newsletters or view them all here. ### Wake up informed Make sense of the day's AI news and breakthroughs with our morning briefing. WeeklyBelamySee the latest ### Industry intelligence Receive a roundup of AI adoption stories by industry vertical, curated for professionals. 3x WeeklySector6See the latest By signing up, you agree to our Privacy Policy. Continue Reading AI News [...] # Top 15 AI Startups Powering India’s Self-Reliance Mission From foundational models to applied platforms, domestic builders are creating an end-to-end AI ecosystem rooted in Indian data and needs. Mohit Pandey· 5 min Follow:Preferred SourceGoogle NewsWhatsAppTelegram Key Takeaways ### What Actually Matters. Highlight India's shift towards AI self-reliance through deployment and foundational models. Showcase BharatGen's development of a multilingual AI model supporting 22 languages. Loading article content… Advertise with UsOur Events CalendarOur AI Trainings About the Author ### Mohit Pandey Journalist",
-          "publishedAt": "Mon, 23 Feb 2026 11:30:00 GMT",
-          "ts": 1771846200000,
-          "tavilyScore": 0.084042632,
-          "summary": "继续阅读 AI 新闻 # 在生物制造的推动下，卡纳塔克邦生物技术经济突破 390 亿美元生物工业生物技术成为增长最快的领域，到 2025 年将达到 114.6 亿美元。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 7.254042632
-          },
-          "tags": [
-            "人工智能",
-            "AI安全",
-            "生物技术",
-            "技术"
-          ],
-          "score": 7.254042632
+          "score": 7.72154336
         }
       ]
     }
