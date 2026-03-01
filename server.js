@@ -509,10 +509,21 @@ async function translateTitleOnline(title = '') {
 
   const candidate = forceTitleChineseStyle(llmTitle || local || source);
   const latinCount = (candidate.match(/[A-Za-z]/g) || []).length;
-  let out = (hasChinese(candidate) && latinCount <= 14) ? candidate : local;
+  let out = (hasChinese(candidate) && latinCount <= 10) ? candidate : local;
 
-  const outLatinCount = (out.match(/[A-Za-z]/g) || []).length;
-  if (!hasChinese(out) || outLatinCount > 14) {
+  let outLatinCount = (out.match(/[A-Za-z]/g) || []).length;
+  if (!hasChinese(out) || outLatinCount > 10) {
+    const translated = await callLLM({
+      systemPrompt: '请将标题翻译为自然中文，除品牌/人名外尽量不要保留英文词。只输出一行中文标题。',
+      userPrompt: source,
+      maxOutputTokens: 90,
+      temperature: 0.1,
+    });
+    if (translated) out = forceTitleChineseStyle(translated);
+  }
+
+  outLatinCount = (out.match(/[A-Za-z]/g) || []).length;
+  if (!hasChinese(out) || outLatinCount > 10) {
     const translated = await translateTextToChinese(source);
     if (translated) out = forceTitleChineseStyle(translated);
   }
@@ -621,9 +632,8 @@ async function summarizeArticleInChinese(raw = '', titleZh = '') {
   const compact = clean(firstSentence).slice(0, 220);
   const translated = await translateTextToChinese(compact);
   const plain = translated.endsWith('。') ? translated : `${translated}。`;
-  const out = isSummaryRelevantToTitle(plain, titleZh) ? plain : `${titleZh}：${plain}`;
-  llmSummaryCache.set(cacheKey, out);
-  return out;
+  llmSummaryCache.set(cacheKey, plain);
+  return plain;
 }
 
 function extractAbstractOrDescription(htmlText) {
