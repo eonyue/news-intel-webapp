@@ -7,6 +7,7 @@ const BASE = process.env.WEBAPP_BASE_URL || 'https://newsintel.noetex.ai';
 const OUT = process.env.HOME_DIGEST_OUT || path.join(__dirname, '..', 'data', 'home-latest.json');
 
 const CATEGORY_IDS = ['media', 'research', 'trends'];
+const TOPICS = ['ai', 'neuro', 'life'];
 
 function clean(text = '') {
   return String(text || '').replace(/\s+/g, ' ').trim();
@@ -35,6 +36,74 @@ function dedupeItems(items = []) {
   });
 }
 
+function classifyTopic(item = {}) {
+  const text = `${item.titleZh || ''} ${item.title || ''} ${(item.tags || []).join(' ')} ${item.summary || ''}`.toLowerCase();
+
+  const ai = /(人工智能|大模型|模型|智能体|ai|llm|agent|inference|transformer|copilot|openai|anthropic|nvidia)/.test(text);
+  const neuro = /(神经|脑|脑电|神经科学|杏仁核|eeg|brain|neuro|neural|cortex|synapse|bci)/.test(text);
+  const life = /(生命科学|生物|基因|蛋白|细胞|组学|biolog|genom|gene|protein|cell|biotech|drug discovery)/.test(text);
+
+  if (ai && !neuro && !life) return 'ai';
+  if (neuro && !ai && !life) return 'neuro';
+  if (life && !ai && !neuro) return 'life';
+
+  // multi-topic fallback priority for balance
+  if (neuro) return 'neuro';
+  if (life) return 'life';
+  return 'ai';
+}
+
+function rebalanceByTopic(items = []) {
+  if (!items.length) return items;
+
+  const target = items.length;
+  const buckets = {
+    ai: [],
+    neuro: [],
+    life: [],
+  };
+
+  const sorted = [...items].sort((a, b) => Number(b.score || 0) - Number(a.score || 0));
+  for (const item of sorted) {
+    const topic = classifyTopic(item);
+    buckets[topic].push(item);
+  }
+
+  const base = Math.floor(target / 3);
+  let remainder = target - base * 3;
+  const quota = { ai: base, neuro: base, life: base };
+  for (const t of TOPICS) {
+    if (remainder <= 0) break;
+    quota[t] += 1;
+    remainder -= 1;
+  }
+
+  const selected = [];
+  const selectedKey = new Set();
+
+  for (const t of TOPICS) {
+    for (const item of buckets[t].slice(0, quota[t])) {
+      const key = `${item.link || ''}::${clean(item.titleZh || item.title || '')}`.toLowerCase();
+      if (!selectedKey.has(key)) {
+        selected.push(item);
+        selectedKey.add(key);
+      }
+    }
+  }
+
+  if (selected.length < target) {
+    for (const item of sorted) {
+      const key = `${item.link || ''}::${clean(item.titleZh || item.title || '')}`.toLowerCase();
+      if (selectedKey.has(key)) continue;
+      selected.push(item);
+      selectedKey.add(key);
+      if (selected.length >= target) break;
+    }
+  }
+
+  return selected.slice(0, target);
+}
+
 async function fetchCategory(id) {
   const url = `${BASE}/api/category/${id}?refresh=1`;
   const resp = await fetch(url, { headers: { Accept: 'application/json' } });
@@ -51,9 +120,12 @@ async function main() {
       .filter((x) => readableSummary(x.summary || ''))
       .map((x) => ({ ...x, summary: clean(x.summary || '') }));
 
+    const deduped = dedupeItems(filteredItems);
+    const balanced = rebalanceByTopic(deduped);
+
     categories.push({
       ...data,
-      items: dedupeItems(filteredItems),
+      items: balanced,
       updatedAt: Date.now(),
     });
   }
@@ -67,6 +139,7 @@ async function main() {
       globalSeen.add(key);
       return true;
     });
+    cat.items = rebalanceByTopic(cat.items);
   }
 
   const payload = {
