@@ -7,7 +7,7 @@ const app = express();
 const parser = new Parser({ timeout: 15000 });
 const PORT = process.env.PORT || 4321;
 const CACHE_TTL_MS = 15 * 60 * 1000;
-const ITEMS_PER_SOURCE = 1;
+const ITEMS_PER_SOURCE = 2;
 
 const TAVILY_API_KEY = process.env.TAVILY_API_KEY || process.env.TAVILY_KEY || '';
 const TAVILY_ENDPOINT = process.env.TAVILY_ENDPOINT || 'https://api.tavily.com/search';
@@ -37,6 +37,9 @@ const CATEGORIES = [
       { url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', source: 'The Verge' },
       { url: 'https://www.technologyreview.com/topic/artificial-intelligence/feed/', source: 'MIT Technology Review' },
       { url: 'https://hnrss.org/newest?q=AI', source: 'Hacker News' },
+      { url: 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', source: 'ScienceDaily AI' },
+      { url: 'https://www.sciencedaily.com/rss/health_medicine/neuroscience.xml', source: 'ScienceDaily Neuroscience' },
+      { url: 'https://www.sciencedaily.com/rss/plants_animals/biology.xml', source: 'ScienceDaily Biology' },
     ],
   },
   {
@@ -52,9 +55,13 @@ const CATEGORIES = [
       { url: 'https://export.arxiv.org/rss/cs.AI', source: 'arXiv cs.AI' },
       { url: 'https://export.arxiv.org/rss/cs.CL', source: 'arXiv cs.CL' },
       { url: 'https://export.arxiv.org/rss/q-bio.NC', source: 'arXiv q-bio.NC' },
+      { url: 'https://export.arxiv.org/rss/q-bio.BM', source: 'arXiv q-bio.BM' },
+      { url: 'https://export.arxiv.org/rss/q-bio.GN', source: 'arXiv q-bio.GN' },
       { url: 'https://neurosciencenews.com/feed/', source: 'Neuroscience News' },
       { url: 'https://medicalxpress.com/rss-feed/', source: 'Medical Xpress' },
-      { url: 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', source: 'ScienceDaily' },
+      { url: 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', source: 'ScienceDaily AI' },
+      { url: 'https://www.sciencedaily.com/rss/health_medicine/neuroscience.xml', source: 'ScienceDaily Neuroscience' },
+      { url: 'https://www.sciencedaily.com/rss/plants_animals/biology.xml', source: 'ScienceDaily Biology' },
     ],
   },
   {
@@ -65,12 +72,15 @@ const CATEGORIES = [
     zhDescription: '开发者生态与技术趋势信号',
     limit: 18,
     tavilyQuery:
-      'top trend signals this week on AI agents developer tooling chips software infrastructure and health tech',
+      'top trend signals this week on AI agents neuroscience tooling biotech software chips infrastructure',
     feeds: [
       { url: 'https://hnrss.org/newest?q=AI', source: 'Hacker News' },
       { url: 'https://lobste.rs/t/ai.rss', source: 'Lobsters' },
       { url: 'https://www.worksinprogress.news/feed', source: 'Works in Progress' },
       { url: 'https://www.technologyreview.com/topic/artificial-intelligence/feed/', source: 'MIT Technology Review' },
+      { url: 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', source: 'ScienceDaily AI' },
+      { url: 'https://www.sciencedaily.com/rss/health_medicine/neuroscience.xml', source: 'ScienceDaily Neuroscience' },
+      { url: 'https://www.sciencedaily.com/rss/plants_animals/biology.xml', source: 'ScienceDaily Biology' },
     ],
   },
 ];
