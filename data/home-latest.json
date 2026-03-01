@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T16:36:53.244Z",
+  "generatedAt": "2026-03-01T16:41:40.111Z",
   "categories": [
     {
       "id": "media",
@@ -7,8 +7,31 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772383000570,
+      "updatedAt": 1772383271600,
       "items": [
+        {
+          "title": "This AI can improve your peer review — and make it more polite - Nature",
+          "titleZh": "《自然》杂志：这种人工智能可以改善你的同行评审，并使其更加礼貌",
+          "source": "nature.com",
+          "link": "https://www.nature.com/articles/d41586-026-00536-6",
+          "rawSummary": "James Zou, a computer scientist at Stanford University in California, and his colleagues set out to assess whether large language models (LLM) could help to address a common complaint about peer reviews: feedback often lacks thoroughness or strikes the wrong tone. At the 2023 Association for Computational Linguistics annual meeting in Toronto, Canada, for example, authors of conference papers flagged 12.9% of reviews as being poor quality. [...] Access the most recent journalism from Nature's award-winning team Explore the latest features & opinion covering groundbreaking research Access through your institution or Sign in or create an account Continue with Google Continue with ORCiD doi: ## References 1. Thakkar, N. et al. Nature Mach. Intell. (2026). Article Google Scholar Download references Reprints and permissions ## Related Articles AI is transforming peer review — and many scientists are worried Three AI-powered steps to faster, smarter peer review Scientists hide messages in papers to game AI peer review More than half of researchers now use AI for peer review — often against guidance ## Subjects Machine learning Peer review ## Latest on: Machine learning Peer review [...] ## Latest on: Machine learning Peer review AI is threatening science jobs. Which ones are most at risk? News ‘An AlphaFold 4’ – scientists marvel at DeepMind drug spin-off’s exclusive new AI News AI offers way to image and assess clinical cell samples News & Views How AI slop is causing a crisis in computer science News AI could transform research assessment — and some academics are worried Career Column AI research deluge: why one conference is asking authors to rank their own papers Nature Index ## ### Jobs #### Global Recruitment for Faculty, Postdocs, and Specialists at Hangzhou Institute of Medicine, CAS Seeking exceptional Senior/Junior PIs, Postdocs, and Core Specialists globally year-round Hangzhou, China",
+          "publishedAt": "Mon, 23 Feb 2026 15:28:26 GMT",
+          "ts": 1771860506000,
+          "tavilyScore": 1.41952736,
+          "summary": "加利福尼亚州斯坦福大学的计算机科学家 James Zou 和他的同事着手评估大型语言模型 (大模型) 是否有助于解决同行评审的常见抱怨：反馈经常会被忽略。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 3,
+            "total": 9.24952736
+          },
+          "tags": [
+            "人工智能",
+            "大模型",
+            "AI安全"
+          ],
+          "score": 9.24952736
+        },
         {
           "title": "What’s next for Chinese open-source AI",
           "titleZh": "中国开源人工智能的下一步是什么",
@@ -31,29 +54,6 @@
           "score": 8.49
         },
         {
-          "title": "This AI can improve your peer review — and make it more polite - Nature",
-          "titleZh": "《自然》杂志：这种人工智能可以改善你的同行评审，并使其更加礼貌",
-          "source": "nature.com",
-          "link": "https://www.nature.com/articles/d41586-026-00536-6",
-          "rawSummary": "James Zou, a computer scientist at Stanford University in California, and his colleagues set out to assess whether large language models (LLM) could help to address a common complaint about peer reviews: feedback often lacks thoroughness or strikes the wrong tone. At the 2023 Association for Computational Linguistics annual meeting in Toronto, Canada, for example, authors of conference papers flagged 12.9% of reviews as being poor quality. [...] ## Latest on: Machine learning Peer review AI is threatening science jobs. Which ones are most at risk? News ‘An AlphaFold 4’ – scientists marvel at DeepMind drug spin-off’s exclusive new AI News AI offers way to image and assess clinical cell samples News & Views How AI slop is causing a crisis in computer science News AI could transform research assessment — and some academics are worried Career Column AI research deluge: why one conference is asking authors to rank their own papers Nature Index ## ### Jobs #### Global Recruitment for Faculty, Postdocs, and Specialists at Hangzhou Institute of Medicine, CAS Seeking exceptional Senior/Junior PIs, Postdocs, and Core Specialists globally year-round Hangzhou, China [...] Access the most recent journalism from Nature's award-winning team Explore the latest features & opinion covering groundbreaking research Access through your institution or Sign in or create an account Continue with Google Continue with ORCiD doi: ## References 1. Thakkar, N. et al. Nature Mach. Intell. (2026). Article Google Scholar Download references Reprints and permissions ## Related Articles AI is transforming peer review — and many scientists are worried Three AI-powered steps to faster, smarter peer review Scientists hide messages in papers to game AI peer review More than half of researchers now use AI for peer review — often against guidance ## Subjects Machine learning Peer review ## Latest on: Machine learning Peer review",
-          "publishedAt": "Mon, 23 Feb 2026 15:28:26 GMT",
-          "ts": 1771860506000,
-          "tavilyScore": 0.4408376,
-          "summary": "加利福尼亚州斯坦福大学的计算机科学家 James Zou 和他的同事着手评估大型语言模型 (大模型) 是否有助于解决同行评审的常见抱怨：反馈经常会被忽略。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 3,
-            "total": 8.2708376
-          },
-          "tags": [
-            "人工智能",
-            "大模型",
-            "AI安全"
-          ],
-          "score": 8.2708376
-        },
-        {
           "title": "Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done",
           "titleZh": "微软的 Copilot Tasks 人工智能 使用自己的计算机来完成工作",
           "source": "The Verge",
@@ -72,6 +72,29 @@
             "人工智能"
           ],
           "score": 8.24
+        },
+        {
+          "title": "ChatGPT Health fails critical emergency and suicide safety tests - News-Medical",
+          "titleZh": "ChatGPT Health 未能通过关键的紧急情况和自杀安全测试 - 新闻-医疗",
+          "source": "news-medical.net",
+          "link": "https://www.news-medical.net/news/20260224/ChatGPT-Health-fails-critical-emergency-and-suicide-safety-tests.aspx",
+          "rawSummary": "### Life Sciences Links Life Sciences Home News Lab Instruments & Equipment Life Sciences A-Z White Papers Thought Leaders Insights Webinars eBooks Posters Podcasts ### Other Useful Links About Meet the Team Search Newsletters Sitemap Advertise Contact Terms & Conditions Privacy & Cookie Policy Content Policy Ownership & Funding Information ### Other AZoNetwork Sites AZoM AZoNano AZoCleantech AZoOptics AZoRobotics AZoSensors AZoMining AZoQuantum AZoBuild AZoLifeSciences AZoAi Image 41: News-Medical Facebook Twitter LinkedIn [...] Download PDF Copy Image 3: Editorial ChecklistReviewed Mount Sinai Health SystemFeb 24 2026 ChatGPT Health, a widely used consumer artificial intelligence (AI) tool that provides health guidance directly to the public-including advice about how urgently to seek medical care-may fail to direct users appropriately to emergency care in a significant number of serious cases, according to researchers at the Icahn School of Medicine at Mount Sinai. The study, fast-tracked in the February 23, 2026 online issue of _Nature Medicine_ [ is the first independent safety evaluation of the large language model (LLM)-based tool since its January 2026 launch. It also identified serious concerns with the tool's suicide-crisis safeguards. [...] \"As a medical student training at a time when AI health tools are already in the hands of millions, I see them as technologies we must learn to integrate thoughtfully into care rather than substitutes for clinical judgment,\" says Alvira Tyagi, a first-year medical student at the Icahn School of Medicine at Mount Sinai and second author of the study. \"These systems are changing quickly, so part of our training now must consider learning how to understand their outputs critically, identify where they fall short, and use them in ways that protect patients.\" The study assessed the system at a single point in time. Because AI models are frequently updated, performance may change over time, underscoring the need for independent evaluation, the researchers say.",
+          "publishedAt": "Tue, 24 Feb 2026 16:16:00 GMT",
+          "ts": 1771949760000,
+          "tavilyScore": 0.728317792,
+          "summary": "生命科学链接 生命科学主页 新闻 实验室仪器和设备 生命科学 A-Z 白皮书 思想领袖见解 网络研讨会 电子书 海报 播客 ### 关于认识团队的其他有用链接 搜索新闻。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.898317792
+          },
+          "tags": [
+            "人工智能",
+            "大模型",
+            "AI安全"
+          ],
+          "score": 7.898317792
         }
       ]
     },
@@ -81,7 +104,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772383007624,
+      "updatedAt": 1772383293321,
       "items": [
         {
           "title": "Vitamin K Refusal Puts Newborns at High Risk for Brain Injury",
@@ -105,32 +128,6 @@
           "score": 8.83
         },
         {
-          "title": "EEG-based foundation AI for early brain disease diagnosis unveiled in India - MobiHealthNews",
-          "titleZh": "印度推出用于早期脑部疾病诊断的基于脑电图的基础人工智能",
-          "source": "mobihealthnews.com",
-          "link": "https://www.mobihealthnews.com/news/asia/eeg-based-foundation-ai-early-brain-disease-diagnosis-unveiled-india",
-          "rawSummary": "From current 400 million parameters (or the variables it learns from the training data), NeuroDX is working to scale the model to 2 billion parameters. A news report notes that a second version, MANAS-2, is coming out in the coming weeks. THE LARGER TREND A similar AI-driven tool, developed and introduced last year by researchers in Singapore, assists with analysing brain activity. By identifying brain regions and how they function individually and dynamically with other regions, the Brain-JEPA model can also enable early and accurate diagnoses of brain disorders, predict disease progression, and support personalised treatment plans. [...] The model, he said, is capable of interpreting brain functional connectivity and neural network dynamics. Citing findings from research, the neurologist said that the model has \"achieved 95% accuracy in identifying computational biomarkers of epilepsy and mental health disorders,\" showing potential as an \"affordable and non‑invasive brain health screening platform.\" According to Dr Agarwal, MANAS-1 has applications in neurological diagnosis, psychiatry, cognitive assessment, and brain-computer interface systems, and can be deployed at scale across primary to tertiary health centres. [...] Touted as a first of its kind in India, the brain language foundation model dubbed MANAS-1 uses brain electrophysiology – primarily through electroencephalogram (EEG) – as a \"structured biological language,\" Dr Puneet Agarwal, chairman and founder of Intellihealth (NeuroDX), which created the technology, explained in a LinkedIn announcement. The model was initially trained on 60,000 hours of brain wave records from more than 25,000 patients globally. WHY IT MATTERS Dr Agarwal, who is also a professor of Neurology at Max Super Speciality Hospital in New Delhi, said MANAS-1 enables the \"scalable, accurate, and early\" detection of neurological and psychiatric disorders, potentially providing a unified AI framework for brain health screening and precision neuroscience.",
-          "publishedAt": "Tue, 24 Feb 2026 07:33:00 GMT",
-          "ts": 1771918380000,
-          "tavilyScore": 1.441964,
-          "summary": "NeuroDX 正在努力从当前的 4 亿个参数（或从训练数据中学习的变量）将模型扩展到 20 亿个参数。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 8.611964
-          },
-          "tags": [
-            "人工智能",
-            "大模型",
-            "神经科学",
-            "脑机接口",
-            "生命科学",
-            "技术"
-          ],
-          "score": 8.611964
-        },
-        {
           "title": "This AI finds simple rules where humans see only chaos",
           "titleZh": "这个人工智能找到了人类只看到混乱的简单规则",
           "source": "ScienceDaily",
@@ -152,26 +149,49 @@
           "score": 8.17
         },
         {
-          "title": "Study reframes amygdala as the sophisticated learning arbiter - News-Medical",
-          "titleZh": "研究将杏仁核重塑为复杂的学习仲裁者 - 新闻医学",
-          "source": "news-medical.net",
-          "link": "https://www.news-medical.net/news/20260224/Study-reframes-amygdala-as-the-sophisticated-learning-arbiter.aspx",
-          "rawSummary": "The research team is now analyzing recordings of neural activity in the prefrontal cortex during different tasks to understand how neurons interact during the arbitration process. In collaboration with researchers at UCLA, they're also conducting experiments with rats to examine specific neural pathways between the amygdala and prefrontal cortex. Woo and Soltani collaborated with researchers at the National Institute of Mental Health. Source: Dartmouth College Journal reference: Woo, J. H., _et al._ (2025). Contribution of amygdala to dynamic model arbitration under uncertainty._Nature Communications._ DOI: 10.1038/s41467-025-66745-1. Be the first to rate this article Posted in: Medical Science News | Medical Research News Comments (0) Download PDF Copy [...] Image 33: Metabolite-driven AI model accurately estimates time of death Metabolite-driven AI model accurately estimates time of death [...] Powered by Targeting settings Do not sell my personal information Suggested Reading Image 6: Brain neurons after exercise drive long-term endurance gains Brain neurons after exercise drive long-term endurance gains Image 7: Scientists uncover nanoplastics in brain tissue and question their role in neurological disease Scientists uncover nanoplastics in brain tissue and question their role in neurological disease Image 8: Brainstem nerve cells found to stabilize blood pressure fluctuations Brainstem nerve cells found to stabilize blood pressure fluctuations Image 9: New maps of mouse brains reveal patterns of myelin formation New maps of mouse brains reveal patterns of myelin formation Image 10: New AI-based analysis method can accurately classify and monitor brain tumors",
-          "publishedAt": "Wed, 25 Feb 2026 02:24:00 GMT",
-          "ts": 1771986240000,
-          "tavilyScore": 0.6487179200000001,
-          "summary": "研究小组现在正在分析不同任务期间前额皮质神经活动的记录，以了解神经元在仲裁过程中如何相互作用。",
+          "title": "AI scientists and the robotic labs of tomorrow - pharmaphorum",
+          "titleZh": "人工智能科学家和未来的机器人实验室",
+          "source": "pharmaphorum.com",
+          "link": "https://pharmaphorum.com/digital/ai-scientists-and-robotic-labs-tomorrow",
+          "rawSummary": "## AI scientists become core collaborators As 2026 progresses, AI scientists will no longer operate at the margins of life sciences research. Instead, they will become essential collaborators in the labs of tomorrow, working alongside human scientists and other AI-scientist platforms and established tools to co-author discovery itself. These AI systems will propose novel targets and molecular structures, simulate biological behaviour across complex virtual networks, suggest possible indication expansion and help direct both digital and physical experiments. [...] ##### About the author David Ruau is head of business development for healthcare & life sciences, EMEA, at NVIDIA, where he partners to drive the use of AI and machine learning in pharmaceutical research. With a background in computational biology, his work has focused on stem cell reprogramming and the electronic health records analysis across therapeutic areas. He previously held senior roles at Bayer, AstraZeneca, and a healthcare AI company, and has authored more than 30 peer-reviewed publications in leading journals including Nature, Cell, and Stem Cells. Image David Ruau ## AI in life sciences News ### FDA maps new regulatory route for ultra-rare diseases [...] # AI scientists and the robotic labs of tomorrow Digital The life sciences are entering a decisive new phase. Over the past decade, artificial intelligence (AI) has proven its value as a powerful tool, helping researchers analyse vast datasets, surface hidden patterns, and accelerate individual stages of discovery. In 2026, however, AI’s role is evolving from exploration to orchestration. Rather than supporting isolated tasks, AI scientists – systems of agents that can work autonomously alongside human scientists – are already becoming essential collaborators embedded across the research lifecycle, fundamentally reshaping how innovation happens in healthcare and beyond.",
+          "publishedAt": "Tue, 24 Feb 2026 10:50:02 GMT",
+          "ts": 1771930202000,
+          "tavilyScore": 0.480848736,
+          "summary": "AI 科学家成为核心合作者 随着 2026 年的进展，AI 科学家将不再处于生命科学研究的边缘。",
           "judgement": {
             "frontier": 9,
             "depth": 8,
             "reach": 3,
-            "total": 7.81871792
+            "total": 7.650848736
           },
           "tags": [
             "人工智能",
-            "神经科学"
+            "生命科学"
           ],
-          "score": 7.81871792
+          "score": 7.650848736
+        },
+        {
+          "title": "Study reframes amygdala as the sophisticated learning arbiter - News-Medical",
+          "titleZh": "研究将杏仁核重塑为复杂的学习仲裁者 - 新闻医学",
+          "source": "news-medical.net",
+          "link": "https://www.news-medical.net/news/20260224/Study-reframes-amygdala-as-the-sophisticated-learning-arbiter.aspx",
+          "rawSummary": "New AI-based analysis method can accurately classify and monitor brain tumors Image 11: Key protein regulates slow oxytocin release in the brain Key protein regulates slow oxytocin release in the brain Image 12: Second pregnancy leaves distinct and lasting changes in the maternal brain_which_the_pregnant_woman_in_a_coral_dress_embraces_-_ARegina_be8fb2211c1b4cca93378f2b8fa975cb-125x110.jpg) Second pregnancy leaves distinct and lasting changes in the maternal brain Image 13: Certain brain regions found to be more active in people with obsessive-compulsive disorder Certain brain regions found to be more active in people with obsessive-compulsive disorder Comments [...] Powered by Targeting settings Do not sell my personal information Suggested Reading Image 6: Brain neurons after exercise drive long-term endurance gains Brain neurons after exercise drive long-term endurance gains Image 7: Scientists uncover nanoplastics in brain tissue and question their role in neurological disease Scientists uncover nanoplastics in brain tissue and question their role in neurological disease Image 8: Brainstem nerve cells found to stabilize blood pressure fluctuations Brainstem nerve cells found to stabilize blood pressure fluctuations Image 9: New maps of mouse brains reveal patterns of myelin formation New maps of mouse brains reveal patterns of myelin formation Image 10: New AI-based analysis method can accurately classify and monitor brain tumors [...] Image 33: Metabolite-driven AI model accurately estimates time of death Metabolite-driven AI model accurately estimates time of death",
+          "publishedAt": "Wed, 25 Feb 2026 02:24:00 GMT",
+          "ts": 1771986240000,
+          "tavilyScore": 0.43055952000000003,
+          "summary": "基于人工智能的新分析方法可以准确分类和监测脑肿瘤 图 11：关键蛋白调节大脑中催产素缓慢释放 关键蛋白调节大脑中催产素缓慢释放 图 12：第二个图。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.60055952
+          },
+          "tags": [
+            "人工智能",
+            "神经科学",
+            "蛋白质科学"
+          ],
+          "score": 7.60055952
         }
       ]
     },
@@ -181,7 +201,7 @@
       "zhName": "技术趋势",
       "description": "Developer and ecosystem trend signals",
       "zhDescription": "开发者生态与技术趋势信号",
-      "updatedAt": 1772383013244,
+      "updatedAt": 1772383300111,
       "items": [
         {
           "title": "‘Keeping Its Lead in AI’: Nvidia (NVDA) Develops New Chip Built for Faster Responses - TipRanks",

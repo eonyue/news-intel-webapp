@@ -65,6 +65,28 @@ npm run build:digest
 - Header: `x-admin-token: <ADMIN_PUBLISH_TOKEN>`
 - Body: `data/home-latest.json` 的 JSON 内容
 
+可直接使用：
+
+```bash
+npm run publish:digest
+# 或一键构建+上传
+npm run sync:digest
+```
+
+## GitHub Actions 自动同步
+
+已提供工作流：`.github/workflows/sync-home-digest.yml`
+
+需要在 GitHub 仓库 Secrets 配置：
+
+- `WEBAPP_BASE_URL`（如 `https://newsintel.noetex.ai`）
+- `ADMIN_PUBLISH_TOKEN`（与 Vercel 线上环境变量一致）
+
+工作流支持：
+
+- 手动触发（workflow_dispatch）
+- 每天 3 次自动同步（北京时间 08:00 / 12:00 / 20:00）
+
 ## Vercel
 
 ```bash

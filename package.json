@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node server.js",
     "dev": "NODE_ENV=development node server.js",
-    "build:digest": "node scripts/build-home-digest.js"
+    "build:digest": "node scripts/build-home-digest.js",
+    "publish:digest": "node scripts/publish-home-digest.js",
+    "sync:digest": "npm run build:digest && npm run publish:digest"
   },
   "dependencies": {
     "ejs": "^3.1.10",
