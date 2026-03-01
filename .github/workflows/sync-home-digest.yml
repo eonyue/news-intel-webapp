@@ -12,7 +12,6 @@ runs-on: ubuntu-latest
 steps:
 - name: Checkout
 uses: actions/checkout@v4
-
 - name: Setup Node
 uses: actions/setup-node@v4
 with:
@@ -24,7 +23,6 @@ run: npm ci
 
 - name: Build digest
 run: npm run build:digest
-
 env:
 WEBAPP_BASE_URL: ${{ secrets.WEBAPP_BASE_URL }}
 
