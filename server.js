@@ -26,11 +26,11 @@ const CATEGORIES = [
     id: 'media',
     name: 'Media Headlines',
     zhName: '媒体头条',
-    description: 'Broad-reach media coverage around AI, tech and health',
-    zhDescription: 'AI / 科技 / 健康主流媒体报道',
+    description: 'Broad-reach media coverage around AI, neuroscience, life science and technology',
+    zhDescription: 'AI / 神经科学 / 生命科学 / 技术主流媒体报道',
     limit: 5,
     tavilyQuery:
-      'best in-depth media coverage today on AI large language models neuroscience life science health technology',
+      'best in-depth media coverage today on AI large language models neuroscience life science technology',
     feeds: [
       { url: 'https://venturebeat.com/category/ai/feed/', source: 'VentureBeat' },
       { url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', source: 'The Verge' },
@@ -46,13 +46,12 @@ const CATEGORIES = [
     zhDescription: '科研导向更新（含 arXiv）',
     limit: 5,
     tavilyQuery:
-      'latest research in AI neuroscience life science health from arXiv Nature Science Medical Xpress Neuroscience News',
+      'latest research in AI neuroscience life science from arXiv Nature Science Neuroscience News',
     feeds: [
       { url: 'https://export.arxiv.org/rss/cs.AI', source: 'arXiv cs.AI' },
       { url: 'https://export.arxiv.org/rss/cs.CL', source: 'arXiv cs.CL' },
       { url: 'https://export.arxiv.org/rss/q-bio.NC', source: 'arXiv q-bio.NC' },
       { url: 'https://neurosciencenews.com/feed/', source: 'Neuroscience News' },
-      { url: 'https://medicalxpress.com/rss-feed/', source: 'Medical Xpress' },
       { url: 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', source: 'ScienceDaily' },
     ],
   },
@@ -119,9 +118,7 @@ const TOPIC_TAGS = [
   ['生物技术', ['biotech', 'drug discovery', 'biopharma', '生物技术']],
   ['基因组学', ['gene', 'genome', 'genomic', 'crispr', '基因', '基因组']],
   ['蛋白质科学', ['protein', 'proteomics', '蛋白质']],
-  ['健康', ['health', 'medical', 'clinical', 'disease', 'therapy', '健康', '医学', '临床']],
-  ['精神健康', ['mental health', 'depression', 'anxiety', '心理健康']],
-  ['数字医疗', ['health tech', 'medical ai', 'digital health', '数字医疗']],
+
   ['技术', ['technology', 'tech', 'software', 'chip', 'semiconductor', 'infrastructure', '技术', '软件', '芯片']],
 ];
 
@@ -236,6 +233,35 @@ function forceTitleChineseStyle(text = '') {
     .replace(/\bLLMs?\b/gi, '大模型')
     .replace(/\s{2,}/g, ' ')
     .trim();
+}
+
+function tokenizeForRelevance(text = '') {
+  return String(text || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\u4e00-\u9fa5\s]/g, ' ')
+    .split(/\s+/)
+    .filter((w) => w && w.length >= 3)
+    .slice(0, 40);
+}
+
+function isSummaryRelevantToTitle(summary = '', title = '') {
+  const s = clean(summary);
+  const t = clean(title);
+  if (!s || !t) return true;
+
+  const titleTokens = tokenizeForRelevance(t);
+  if (!titleTokens.length) return true;
+
+  const summaryLower = s.toLowerCase();
+  let hit = 0;
+  for (const tk of titleTokens.slice(0, 12)) {
+    if (summaryLower.includes(tk)) hit += 1;
+  }
+
+  const titleZh = (t.match(/[\u4e00-\u9fa5]/g) || []).slice(0, 6).join('');
+  const zhHit = titleZh && s.includes(titleZh.slice(0, 2));
+
+  return hit >= 1 || !!zhHit;
 }
 
 function normalizeLLMTerm(text = '') {
@@ -464,7 +490,6 @@ function inferTopic(text = '') {
   if (/(llm|large language|agent|ai|model|transformer)/.test(t)) return '人工智能';
   if (/(brain|neuro|neural|hippocamp|eeg|bci)/.test(t)) return '神经科学';
   if (/(life science|biology|biotech|gene|genome|dna|rna|protein|cell)/.test(t)) return '生命科学';
-  if (/(health|therapy|clinical|disease|alzheimer|drug|medical)/.test(t)) return '健康';
   return '技术';
 }
 
@@ -525,7 +550,7 @@ async function summarizeArticleInChinese(raw = '', titleZh = '') {
     temperature: 0.2,
   });
 
-  if (isReadableChineseSummary(finalSummary)) {
+  if (isReadableChineseSummary(finalSummary) && isSummaryRelevantToTitle(finalSummary, titleZh)) {
     llmSummaryCache.set(cacheKey, finalSummary);
     return finalSummary;
   }
@@ -539,7 +564,7 @@ async function summarizeArticleInChinese(raw = '', titleZh = '') {
     temperature: 0.1,
   });
 
-  if (isReadableChineseSummary(retrySummary)) {
+  if (isReadableChineseSummary(retrySummary) && isSummaryRelevantToTitle(retrySummary, titleZh)) {
     llmSummaryCache.set(cacheKey, retrySummary);
     return retrySummary;
   }
@@ -548,7 +573,8 @@ async function summarizeArticleInChinese(raw = '', titleZh = '') {
   const firstSentence = source.split(/(?<=[.!?])\s+/)[0] || source;
   const compact = clean(firstSentence).slice(0, 220);
   const translated = await translateTextToChinese(compact);
-  const out = translated.endsWith('。') ? translated : `${translated}。`;
+  const plain = translated.endsWith('。') ? translated : `${translated}。`;
+  const out = isSummaryRelevantToTitle(plain, titleZh) ? plain : `${titleZh}：${plain}`;
   llmSummaryCache.set(cacheKey, out);
   return out;
 }
