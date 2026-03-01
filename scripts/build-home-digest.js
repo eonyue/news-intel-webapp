@@ -11,6 +11,19 @@ const TOPICS = ['ai', 'neuro', 'life'];
 const FIXED_PER_CATEGORY = 6;
 const FIXED_PER_TOPIC = 2;
 
+const WHITELIST_DOMAINS = [
+  'wired.com', 'technologyreview.com', 'aeon.co', 'psyche.co', 'quantamagazine.org',
+  'theatlantic.com', 'nautil.us', 'thetransmitter.org', 'spectrum.ieee.org', 'sciencefocus.com',
+  'theconversation.com', 'vox.com', 'popsci.com', 'scientificamerican.com', 'statnews.com',
+  'popularmechanics.com', 'newscientist.com', 'the-scientist.com', 'futurism.com', 'techcrunch.com',
+  'engadget.com', 'newatlas.com', 'cnet.com', 'inverse.com', 'theguardian.com', 'qz.com', 'eurekalert.org'
+];
+
+const US_POLITICS_KEYWORDS = [
+  'trump','biden','white house','senate','congress','republican','democrat','election','campaign',
+  'capitol hill','washington dc','u.s. politics','us politics','pentagon','supreme court'
+];
+
 function clean(text = '') {
   return String(text || '').replace(/\s+/g, ' ').trim();
 }
@@ -24,8 +37,43 @@ function readableSummary(s = '') {
   if (!t || !hasChinese(t)) return false;
   if (/[�]/.test(t)) return false;
   if (/^#+\s*/.test(t)) return false;
-  if (t.length < 28 || t.length > 260) return false;
+  if (t.length < 28 || t.length > 320) return false;
   return true;
+}
+
+function toDomain(link = '') {
+  try {
+    return new URL(link).hostname.replace(/^www\./, '').toLowerCase();
+  } catch {
+    return '';
+  }
+}
+
+function isWhitelistSource(item = {}) {
+  const d = toDomain(item.link || '');
+  return WHITELIST_DOMAINS.some((w) => d === w || d.endsWith(`.${w}`));
+}
+
+function isUSPolitics(item = {}) {
+  const text = `${item.titleZh || ''} ${item.title || ''} ${item.summary || ''} ${item.rawSummary || ''}`.toLowerCase();
+  return US_POLITICS_KEYWORDS.some((k) => text.includes(k));
+}
+
+function polishTitleZh(title = '') {
+  return clean(title)
+    .replace(/\s*[-|–—]\s*[^\u4e00-\u9fa5]*$/g, '')
+    .replace(/\(\s*[A-Z]{2,10}\s*\)/g, '')
+    .replace(/\bAI\b/gi, '人工智能')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
+function normalizeSummaryTo23Sentences(summary = '') {
+  const t = clean(summary);
+  if (!t) return t;
+  const parts = t.split(/(?<=[。！？!?])/).map((x) => clean(x)).filter(Boolean);
+  if (parts.length <= 3) return t;
+  return clean(parts.slice(0, 3).join(' '));
 }
 
 function dedupeItems(items = []) {
@@ -117,10 +165,16 @@ async function main() {
     const filteredItems = (data.items || [])
       .filter((x) => readableSummary(x.summary || ''))
       .filter((x) => !isIndiaRelated(x))
-      .map((x) => ({ ...x, summary: clean(x.summary || '') }));
+      .filter((x) => !isUSPolitics(x))
+      .map((x) => ({
+        ...x,
+        titleZh: polishTitleZh(x.titleZh || x.title || ''),
+        summary: normalizeSummaryTo23Sentences(x.summary || ''),
+      }));
 
     const deduped = dedupeItems(filteredItems);
-    const balanced = rebalanceByTopic(deduped, FIXED_PER_CATEGORY);
+    const prioritized = deduped.sort((a, b) => Number(isWhitelistSource(b)) - Number(isWhitelistSource(a)));
+    const balanced = rebalanceByTopic(prioritized, FIXED_PER_CATEGORY);
 
     categories.push({
       ...data,
