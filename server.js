@@ -14,6 +14,11 @@ const TAVILY_ENDPOINT = process.env.TAVILY_ENDPOINT || 'https://api.tavily.com/s
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '';
 const OPENAI_MODEL = process.env.OPENAI_MODEL || 'gpt-5.3-codex';
 const OPENAI_ENDPOINT = process.env.OPENAI_ENDPOINT || 'https://api.openai.com/v1/responses';
+
+const MINIMAX_API_KEY = process.env.MINIMAX_API_KEY || '';
+const MINIMAX_MODEL = process.env.MINIMAX_MODEL || 'MiniMax-Text-01';
+const MINIMAX_ENDPOINT = process.env.MINIMAX_ENDPOINT || 'https://api.minimax.chat/v1/text/chatcompletion_v2';
+
 const CONSCIOUSNESS_DATA_FILE = path.join(__dirname, 'data', 'consciousness-latest.json');
 
 const CATEGORIES = [
@@ -298,7 +303,7 @@ async function fetchTextWithTimeout(url, timeoutMs = 12000, init = {}) {
   }
 }
 
-async function callCodex({ systemPrompt, userPrompt, maxOutputTokens = 180, temperature = 0.2 }) {
+async function callOpenAI({ systemPrompt, userPrompt, maxOutputTokens = 180, temperature = 0.2 }) {
   if (!OPENAI_API_KEY) return '';
 
   try {
@@ -338,6 +343,56 @@ async function callCodex({ systemPrompt, userPrompt, maxOutputTokens = 180, temp
   }
 }
 
+async function callMiniMax({ systemPrompt, userPrompt, maxOutputTokens = 180, temperature = 0.2 }) {
+  if (!MINIMAX_API_KEY) return '';
+
+  try {
+    const body = {
+      model: MINIMAX_MODEL,
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: userPrompt },
+      ],
+      temperature,
+      max_tokens: maxOutputTokens,
+    };
+
+    const text = await fetchTextWithTimeout(
+      MINIMAX_ENDPOINT,
+      14000,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${MINIMAX_API_KEY}`,
+        },
+        body: JSON.stringify(body),
+      }
+    );
+
+    const data = JSON.parse(text);
+    const outputText = clean(
+      data?.choices?.[0]?.message?.content ||
+      data?.reply ||
+      data?.output_text ||
+      ''
+    );
+
+    return normalizeLLMTerm(outputText);
+  } catch {
+    return '';
+  }
+}
+
+async function callLLM(params) {
+  if (MINIMAX_API_KEY) {
+    const out = await callMiniMax(params);
+    if (out) return out;
+  }
+
+  return callOpenAI(params);
+}
+
 async function translateTitleOnline(title = '') {
   const source = clean(title);
   if (!source) return '未命名内容';
@@ -357,7 +412,7 @@ async function translateTitleOnline(title = '') {
     return out;
   }
 
-  const codex = await callCodex({
+  const codex = await callLLM({
     systemPrompt:
       '将英文新闻标题翻译为自然、简洁、准确的中文标题。保留专有名词。LLM统一译为“大模型”。只输出一行中文标题。',
     userPrompt: source,
@@ -402,7 +457,7 @@ async function polishSummaryWithCodex(raw = '', titleZh = '') {
   const cacheKey = `${titleZh}::${source}`;
   if (llmSummaryCache.has(cacheKey)) return llmSummaryCache.get(cacheKey);
 
-  const codex = await callCodex({
+  const codex = await callLLM({
     systemPrompt:
       '你是科技新闻编辑。请将输入内容提炼为中文摘要，2句，信息密度高、流畅自然、避免空话。保持客观，不编造事实。LLM统一译为“大模型”。不要使用“围绕”这个词。只输出摘要正文。',
     userPrompt: `标题：${titleZh}\n原文片段：${source}`,
@@ -700,8 +755,11 @@ app.get('/health', (_req, res) => {
     service: 'news-intel-webapp',
     now: new Date().toISOString(),
     tavilyEnabled: !!TAVILY_API_KEY,
+    minimaxEnabled: !!MINIMAX_API_KEY,
+    minimaxModel: MINIMAX_MODEL,
     codexEnabled: !!OPENAI_API_KEY,
     codexModel: OPENAI_MODEL,
+    llmProvider: MINIMAX_API_KEY ? 'minimax' : (OPENAI_API_KEY ? 'openai' : 'none'),
     itemsPerSource: ITEMS_PER_SOURCE,
     consciousnessDataFile: CONSCIOUSNESS_DATA_FILE,
   });
