@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T16:41:40.111Z",
+  "generatedAt": "2026-03-01T17:35:33.906Z",
   "categories": [
     {
       "id": "media",
@@ -7,31 +7,8 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772383271600,
+      "updatedAt": 1772386520775,
       "items": [
-        {
-          "title": "This AI can improve your peer review — and make it more polite - Nature",
-          "titleZh": "《自然》杂志：这种人工智能可以改善你的同行评审，并使其更加礼貌",
-          "source": "nature.com",
-          "link": "https://www.nature.com/articles/d41586-026-00536-6",
-          "rawSummary": "James Zou, a computer scientist at Stanford University in California, and his colleagues set out to assess whether large language models (LLM) could help to address a common complaint about peer reviews: feedback often lacks thoroughness or strikes the wrong tone. At the 2023 Association for Computational Linguistics annual meeting in Toronto, Canada, for example, authors of conference papers flagged 12.9% of reviews as being poor quality. [...] Access the most recent journalism from Nature's award-winning team Explore the latest features & opinion covering groundbreaking research Access through your institution or Sign in or create an account Continue with Google Continue with ORCiD doi: ## References 1. Thakkar, N. et al. Nature Mach. Intell. (2026). Article Google Scholar Download references Reprints and permissions ## Related Articles AI is transforming peer review — and many scientists are worried Three AI-powered steps to faster, smarter peer review Scientists hide messages in papers to game AI peer review More than half of researchers now use AI for peer review — often against guidance ## Subjects Machine learning Peer review ## Latest on: Machine learning Peer review [...] ## Latest on: Machine learning Peer review AI is threatening science jobs. Which ones are most at risk? News ‘An AlphaFold 4’ – scientists marvel at DeepMind drug spin-off’s exclusive new AI News AI offers way to image and assess clinical cell samples News & Views How AI slop is causing a crisis in computer science News AI could transform research assessment — and some academics are worried Career Column AI research deluge: why one conference is asking authors to rank their own papers Nature Index ## ### Jobs #### Global Recruitment for Faculty, Postdocs, and Specialists at Hangzhou Institute of Medicine, CAS Seeking exceptional Senior/Junior PIs, Postdocs, and Core Specialists globally year-round Hangzhou, China",
-          "publishedAt": "Mon, 23 Feb 2026 15:28:26 GMT",
-          "ts": 1771860506000,
-          "tavilyScore": 1.41952736,
-          "summary": "加利福尼亚州斯坦福大学的计算机科学家 James Zou 和他的同事着手评估大型语言模型 (大模型) 是否有助于解决同行评审的常见抱怨：反馈经常会被忽略。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 3,
-            "total": 9.24952736
-          },
-          "tags": [
-            "人工智能",
-            "大模型",
-            "AI安全"
-          ],
-          "score": 9.24952736
-        },
         {
           "title": "What’s next for Chinese open-source AI",
           "titleZh": "中国开源人工智能的下一步是什么",
@@ -54,6 +31,29 @@
           "score": 8.49
         },
         {
+          "title": "This AI can improve your peer review — and make it more polite - Nature",
+          "titleZh": "《自然》杂志：这种人工智能可以改善你的同行评审，并使其更加礼貌",
+          "source": "nature.com",
+          "link": "https://www.nature.com/articles/d41586-026-00536-6",
+          "rawSummary": "James Zou, a computer scientist at Stanford University in California, and his colleagues set out to assess whether large language models (LLM) could help to address a common complaint about peer reviews: feedback often lacks thoroughness or strikes the wrong tone. At the 2023 Association for Computational Linguistics annual meeting in Toronto, Canada, for example, authors of conference papers flagged 12.9% of reviews as being poor quality. [...] ## Latest on: Machine learning Peer review AI is threatening science jobs. Which ones are most at risk? News ‘An AlphaFold 4’ – scientists marvel at DeepMind drug spin-off’s exclusive new AI News AI offers way to image and assess clinical cell samples News & Views How AI slop is causing a crisis in computer science News AI could transform research assessment — and some academics are worried Career Column AI research deluge: why one conference is asking authors to rank their own papers Nature Index ## ### Jobs #### Global Recruitment for Faculty, Postdocs, and Specialists at Hangzhou Institute of Medicine, CAS Seeking exceptional Senior/Junior PIs, Postdocs, and Core Specialists globally year-round Hangzhou, China [...] Access the most recent journalism from Nature's award-winning team Explore the latest features & opinion covering groundbreaking research Access through your institution or Sign in or create an account Continue with Google Continue with ORCiD doi: ## References 1. Thakkar, N. et al. Nature Mach. Intell. (2026). Article Google Scholar Download references Reprints and permissions ## Related Articles AI is transforming peer review — and many scientists are worried Three AI-powered steps to faster, smarter peer review Scientists hide messages in papers to game AI peer review More than half of researchers now use AI for peer review — often against guidance ## Subjects Machine learning Peer review ## Latest on: Machine learning Peer review",
+          "publishedAt": "Mon, 23 Feb 2026 15:28:26 GMT",
+          "ts": 1771860506000,
+          "tavilyScore": 0.4408376,
+          "summary": "加利福尼亚州斯坦福大学的计算机科学家 James Zou 和他的同事着手评估大型语言模型 (大模型) 是否有助于解决同行评审的常见抱怨：反馈经常会被忽略。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 3,
+            "total": 8.2708376
+          },
+          "tags": [
+            "人工智能",
+            "大模型",
+            "AI安全"
+          ],
+          "score": 8.2708376
+        },
+        {
           "title": "Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done",
           "titleZh": "微软的 Copilot Tasks 人工智能 使用自己的计算机来完成工作",
           "source": "The Verge",
@@ -72,29 +72,6 @@
             "人工智能"
           ],
           "score": 8.24
-        },
-        {
-          "title": "ChatGPT Health fails critical emergency and suicide safety tests - News-Medical",
-          "titleZh": "ChatGPT Health 未能通过关键的紧急情况和自杀安全测试 - 新闻-医疗",
-          "source": "news-medical.net",
-          "link": "https://www.news-medical.net/news/20260224/ChatGPT-Health-fails-critical-emergency-and-suicide-safety-tests.aspx",
-          "rawSummary": "### Life Sciences Links Life Sciences Home News Lab Instruments & Equipment Life Sciences A-Z White Papers Thought Leaders Insights Webinars eBooks Posters Podcasts ### Other Useful Links About Meet the Team Search Newsletters Sitemap Advertise Contact Terms & Conditions Privacy & Cookie Policy Content Policy Ownership & Funding Information ### Other AZoNetwork Sites AZoM AZoNano AZoCleantech AZoOptics AZoRobotics AZoSensors AZoMining AZoQuantum AZoBuild AZoLifeSciences AZoAi Image 41: News-Medical Facebook Twitter LinkedIn [...] Download PDF Copy Image 3: Editorial ChecklistReviewed Mount Sinai Health SystemFeb 24 2026 ChatGPT Health, a widely used consumer artificial intelligence (AI) tool that provides health guidance directly to the public-including advice about how urgently to seek medical care-may fail to direct users appropriately to emergency care in a significant number of serious cases, according to researchers at the Icahn School of Medicine at Mount Sinai. The study, fast-tracked in the February 23, 2026 online issue of _Nature Medicine_ [ is the first independent safety evaluation of the large language model (LLM)-based tool since its January 2026 launch. It also identified serious concerns with the tool's suicide-crisis safeguards. [...] \"As a medical student training at a time when AI health tools are already in the hands of millions, I see them as technologies we must learn to integrate thoughtfully into care rather than substitutes for clinical judgment,\" says Alvira Tyagi, a first-year medical student at the Icahn School of Medicine at Mount Sinai and second author of the study. \"These systems are changing quickly, so part of our training now must consider learning how to understand their outputs critically, identify where they fall short, and use them in ways that protect patients.\" The study assessed the system at a single point in time. Because AI models are frequently updated, performance may change over time, underscoring the need for independent evaluation, the researchers say.",
-          "publishedAt": "Tue, 24 Feb 2026 16:16:00 GMT",
-          "ts": 1771949760000,
-          "tavilyScore": 0.728317792,
-          "summary": "生命科学链接 生命科学主页 新闻 实验室仪器和设备 生命科学 A-Z 白皮书 思想领袖见解 网络研讨会 电子书 海报 播客 ### 关于认识团队的其他有用链接 搜索新闻。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 7.898317792
-          },
-          "tags": [
-            "人工智能",
-            "大模型",
-            "AI安全"
-          ],
-          "score": 7.898317792
         }
       ]
     },
@@ -104,7 +81,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772383293321,
+      "updatedAt": 1772386527640,
       "items": [
         {
           "title": "Vitamin K Refusal Puts Newborns at High Risk for Brain Injury",
@@ -201,98 +178,55 @@
       "zhName": "技术趋势",
       "description": "Developer and ecosystem trend signals",
       "zhDescription": "开发者生态与技术趋势信号",
-      "updatedAt": 1772383300111,
+      "updatedAt": 1772386533906,
       "items": [
         {
-          "title": "‘Keeping Its Lead in AI’: Nvidia (NVDA) Develops New Chip Built for Faster Responses - TipRanks",
-          "titleZh": "“保持人工智能领域的领先地位”：Nvidia 开发新芯片以实现更快的响应",
-          "source": "tipranks.com",
-          "link": "https://www.tipranks.com/news/ai-moves-to-real-time-nvidia-nvda-readies-new-chip-for-inference-demand",
-          "rawSummary": "## NVDA Moves Beyond Training Chips Nvidia’s graphics processors have long dominated the training of large AI models. However, demand is now moving toward running those models in everyday applications. As businesses deploy AI tools for coding, search, and customer service, they need chips that can deliver quick answers while using less power. The planned processor is intended to handle those requests more efficiently. Reports indicate OpenAI could become one of the major customers, using the system to improve the speed of its tools. [...] Shalu SarafFeb 28, 2026, 05:15 PM Semiconductor giant Nvidia (NVDA) is preparing to introduce a new processor designed to speed up how AI systems respond to users, according to a Wall Street Journal report. The company is expected to reveal the product at its GTC developer conference next month. ### Claim 50% Off TipRanks Premium Unlock hedge fund-level data and powerful investing tools for smarter, sharper decisions Stay ahead of the market with the latest news and analysis and maximize your portfolio's potential Unlike Nvidia’s traditional chips used to train large AI models, the new processor focuses on inference computing. This is the stage when an AI system answers questions, writes code, or carries out tasks after the model has already been built. [...] Inflation RateUnemployment Rate Class Actions Stock ScreenerETF Screener PopularPenny Stock ScreenerTechnical Analysis Screener Dividend CenterBest Dividend Stocks PopularBest High Yield Dividend StocksDividend AristocratsDividend Stock Comparison NewDividend CalculatorDividend Returns ComparisonDividend Calendar My ExpertsTop AnalystsTop Financial BloggersTop-Performing Corporate InsidersTop Hedge Fund ManagersTop Research FirmsTop Individual Investors Newsletter CenterSmart InvestorSmart Dividends New Trending News [Premium Broadcom (AVGO) Will Report Q1 Earnings on March 4. Here Is What to Expect from This AI Stock Shalu Saraf8h ago AVGO](/news/broadcom-avgo-will-report-q1-earnings-on-march-4-here-is-what-to-expect-from-this-ai-infrastructure-stock \"AVGO\") [Premium",
-          "publishedAt": "Sat, 28 Feb 2026 22:15:00 GMT",
-          "ts": 1772316900000,
-          "tavilyScore": 1.537052,
-          "summary": "NVDA 超越训练芯片 Nvidia 的图形处理器长期以来一直主导着大型 AI 模型的训练。",
-          "judgement": {
-            "frontier": 7,
-            "depth": 8,
-            "reach": 3,
-            "total": 7.867052
-          },
-          "tags": [
-            "人工智能",
-            "技术"
-          ],
-          "score": 7.867052
-        },
-        {
-          "title": "AI Use Will Drive Health Care and Life Sciences Investment - Bloomberg Law News",
-          "titleZh": "人工智能的使用将推动医疗保健和生命科学投资 - 彭博法律新闻",
-          "source": "news.bloomberglaw.com",
-          "link": "https://news.bloomberglaw.com/legal-exchange-insights-and-commentary/ai-use-will-drive-health-care-and-life-sciences-investment",
-          "rawSummary": "In health care, ambient listening tools coupled with clinical decision support software can help physicians practice more effectively and better oversee the professionals they supervise. Tools to help improve accurate coding and reimbursement, as well as other administrative functions, continue to present opportunities. Although federal initiatives are encouraging greater adoption of these technologies, there is a growing awareness of the potential legal and regulatory pitfalls pertaining to data governance, FDA, fraud and abuse compliance, agency expectations, evolving state law requirements, and legal obligations in international markets. [...] In our conversations in San Francisco, we explored the regulatory, Food and Drug Administration, and compliance issues that could affect the outlook for health care and life sciences companies this year and beyond. Here are our top takeaways. The regulatory environment and cost considerations are driving AI use. The US Department of Health and Human Services and its subagencies are leveraging AI for a variety of uses—from FDA reviews of new drug applications to rooting out fraud and abuse in federal payor programs—effectively normalizing AI use in health care and life sciences. [...] Legal Exchange: Insights & Commentary Email Share To:Facebook LinkedIn Insight # AI Use Will Drive Health Care and Life Sciences Investment Feb. 26, 2026, 9:30 AM UTC James Boiani Epstein Becker Green Amy Dow Epstein Becker Green Megan Robertson Epstein Becker Green J.P. Morgan & Co.’s annual health care conference last month generated cautious optimism that 2026 will be a breakout year for investment in the health care and life sciences industries—particularly with artificial intelligence’s role in encouraging investment in the health ecosystem.",
-          "publishedAt": "Thu, 26 Feb 2026 09:30:01 GMT",
-          "ts": 1772098201000,
-          "tavilyScore": 0.633709056,
-          "summary": "在医疗保健领域，环境聆听工具与临床决策支持软件相结合可以帮助医生更有效地执业并更好地监督他们所监督的专业人员。",
+          "title": "Getting Super-Agents This Year, Says IBM Roundup - Forbes",
+          "titleZh": "IBM 综述称，今年将迎来超级代理商 - 福布斯",
+          "source": "forbes.com",
+          "link": "https://www.forbes.com/sites/johnwerner/2026/02/27/getting-super-agents-this-year-says-ibm-roundup/",
+          "rawSummary": "That’s front and center in a brand new survey of current tech trends that IBM is releasing for 2026 under the banner: “The trends that will shape AI and tech in 2026.” Staff writer Annabelle Nicoud takes us through a dizzying array of advances that will certainly grab headlines in the year to come. One is quantum computing and its obvious boost to overall digital brain-power. The utilities of quantum over classical computing are evident, and I’ve seen IBM actually focus on this through 2024 and 2025. But one of the more interesting components here is the emergence of what Nicoud calls “super-agents.” What does that mean? ## The Super-Agent at Work [...] And how do the super-agents do this? A major part of the answer is that the super-agent isn’t really just one agent: it’s a series of agents working together to accomplish broader goals. IBM Chief Architect of AI Open Innovation Gabe Goodhart explains: “If you go to ChatGPT, you are not talking to an AI model … You are talking to a software system that includes tools for searching the web, doing all sorts of different individual scripted programmatic tasks, and most likely an agentic loop.” That’s true for the super-agent, too. [...] What does that mean? ## The Super-Agent at Work Well, agentic AI means AI can do tasks. The first agents were the most primitive. They could, say, create a poem or a song, or an image, or use a web site to make some transaction, but they were, in a sense, specialists. They were single-use. MORE FOR YOU The idea with super-agents is that they will be able to move in a digital environment, analyze a system, navigate processes, and even supply their own insights. Not only supply their own insights, but work on the basis of those insights, in ways that don’t really require any substantial human supervision. So you might wake up to find that AI has written a poem or a song, or done some transaction, without your express request. That’s part of the whole ball of wax.",
+          "publishedAt": "Fri, 27 Feb 2026 00:00:00 GMT",
+          "ts": 1772150400000,
+          "tavilyScore": 0.1881644,
+          "summary": "这是 IBM 发布的 2026 年当前技术趋势全新调查的核心内容：“2026 年将塑造人工智能和技术的趋势。”特约撰稿人安娜贝尔·尼古德带我们度过了一段昏昏欲睡的时光。",
           "judgement": {
             "frontier": 9,
             "depth": 8,
             "reach": 3,
-            "total": 7.803709056
+            "total": 7.3581644
+          },
+          "tags": [
+            "人工智能",
+            "智能体",
+            "神经科学",
+            "技术"
+          ],
+          "score": 7.3581644
+        },
+        {
+          "title": "Top 15 AI Startups Powering India’s Self-Reliance Mission - Analytics India Magazine",
+          "titleZh": "推动印度自力更生使命的 15 强人工智能初创公司",
+          "source": "analyticsindiamag.com",
+          "link": "https://analyticsindiamag.com/ai-highlights/top-15-ai-startups-powering-indias-self-reliance-mission",
+          "rawSummary": "Continue Reading AI News # Karnataka Biotech Economy Crosses $39 Bn Fuelled by Biomanufacturing Bioindustrial biotechnology emerged as the fastest-growing segment, reaching $11.46 billion in 2025. Merin Susan John 5 min Follow:Preferred SourceGoogle NewsWhatsAppTelegram ### Stay Ahead with AI Insights Get unlimited access to premium articles, exclusive analysis, and more. Subscribe Now Excellence in AI Journalism Download on theApp StoreGet it onGoogle Play Explore Topics AI FeaturesGCCAI TrendsAI StartupsAI NewsAI HighlightsMagazineDeep Tech Navigation Home Latest Trending Authors Videos Print Editions Newsletters AIM Network AIM Research CDO Vision MachineCon AIM Council AdaSci More PEMA Quadrant GCC AI TLC Best Firm AIM Media [...] About the Author ### Mohit Pandey Journalist Mohit writes about AI in simple, explainable, and often funny words. He's especially passionate about chatting with those building AI for Bharat, with the occasional detour into AGI. ### Got a tip? Share confidential information with AIM. Editorial Standards|Reprints & Permissions Explore our newsletters Build your routine with some of our top newsletters or view them all here. ### Wake up informed Make sense of the day's AI news and breakthroughs with our morning briefing. WeeklyBelamySee the latest ### Industry intelligence Receive a roundup of AI adoption stories by industry vertical, curated for professionals. 3x WeeklySector6See the latest By signing up, you agree to our Privacy Policy. Continue Reading AI News [...] # Top 15 AI Startups Powering India’s Self-Reliance Mission From foundational models to applied platforms, domestic builders are creating an end-to-end AI ecosystem rooted in Indian data and needs. Mohit Pandey· 5 min Follow:Preferred SourceGoogle NewsWhatsAppTelegram Key Takeaways ### What Actually Matters. Highlight India's shift towards AI self-reliance through deployment and foundational models. Showcase BharatGen's development of a multilingual AI model supporting 22 languages. Loading article content… Advertise with UsOur Events CalendarOur AI Trainings About the Author ### Mohit Pandey Journalist",
+          "publishedAt": "Mon, 23 Feb 2026 11:30:00 GMT",
+          "ts": 1771846200000,
+          "tavilyScore": 0.084042632,
+          "summary": "继续阅读 AI 新闻 # 在生物制造的推动下，卡纳塔克邦生物技术经济突破 390 亿美元生物工业生物技术成为增长最快的领域，到 2025 年将达到 114.6 亿美元。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.254042632
           },
           "tags": [
             "人工智能",
             "AI安全",
-            "生命科学",
+            "生物技术",
             "技术"
           ],
-          "score": 7.803709056
-        },
-        {
-          "title": "ARC Launches SmartER Ambient AI Platform at Sheba Medical Center Emergency Department - HIT Consultant",
-          "titleZh": "ARC 在 Sheba 医疗中心急诊科推出 SmartER Ambient 人工智能 平台 - HIT 顾问",
-          "source": "hitconsultant.net",
-          "link": "https://hitconsultant.net/2026/02/26/sheba-medical-center-arc-smarter-ambient-ai-emergency-department/",
-          "rawSummary": "### AI as an “Infrastructure Layer” This launch is part of a much larger strategic vision for ARC, which has evolved into a global blueprint for healthcare innovation with a $5.8 billion portfolio value and deployments across 31 health systems worldwide. Rather than treating AI as a novelty or a standalone software application, Sheba Medical Center is embedding it as foundational plumbing. SmartER joins a growing ecosystem of AI tools already operating at the hospital, including Aidoc for advanced imaging analysis and Project K for clinical decision support. [...] ### Editorial Coverage Opinion Health IT + Care Coordination + EMR/EHR + Interoperability + Population Health Management + Revenue Cycle Management Digital Health + Artificial Intelligence + Blockchain Tech + Precision Medicine + Telehealth + Wearables Startups Value-Based Care + Accountable Care + Medicare Advantage ### Subscribe to HIT Consultant Media [...] ### Invisible UI: How SmartER Works The true genius of SmartER isn’t just the AI; it is the workflow integration. The system operates in three distinct phases of the patient journey:",
-          "publishedAt": "Thu, 26 Feb 2026 10:30:00 GMT",
-          "ts": 1772101800000,
-          "tavilyScore": 1.34692096,
-          "summary": "AI 作为“基础设施层” 此次发布是 ARC 更大战略愿景的一部分，该战略愿景已发展成为医疗保健创新的全球蓝图，拥有 58 亿美元的投资组合价值和部署。",
-          "judgement": {
-            "frontier": 7,
-            "depth": 8,
-            "reach": 3,
-            "total": 7.67692096
-          },
-          "tags": [
-            "人工智能",
-            "神经影像",
-            "技术"
-          ],
-          "score": 7.67692096
-        },
-        {
-          "title": "Q4 2025 Healthtech VC Trends - PitchBook",
-          "titleZh": "2025 年第四季度健康科技风险投资趋势",
-          "source": "pitchbook.com",
-          "link": "https://pitchbook.com/news/reports/q4-2025-healthtech-vc-trends",
-          "rawSummary": "Activity was especially strong in operations, analytics, and electronic health records, while AI-heavy segments such as clinical documentation, digital care, and provider education attracted outsized capital. The year also saw record VC exit volume, rising IPO momentum led by Omada Health and Hinge Health, and a sharp rebound in PE dealmaking. With AI now central to both clinical and administrative workflows, the data points to continued opportunity across healthtech segments—and a healthy pipeline of late-stage companies positioning for exits in 2026. Table of contents [...] Q4 2025 # Healthtech VC Trends PitchBook clients can access the full report and its Excel data pack via the Research Center on the PitchBook Platform. Healthtech exits hit a record high while AI reshapes investment priorities Healthtech venture funding staged a strong comeback in 2025, with startups raising $15.3 billion—up 26% YoY—as larger deal sizes and AI-driven growth rounds powered the rebound. Fourth-quarter funding dipped slightly from earlier highs but remained more than double the prior-year quarter, underscoring renewed investor confidence. The median pre-money valuation rose to $31 million, reflecting sustained demand for AI-enabled healthcare delivery, operations, and revenue-cycle solutions. [...] Table of contents | | | --- | | Healthtech landscape | 3 | | Quarterly analysis | 4 | | Key takeaways | 4 | | VC activity | 4 | | Valuations | 5 | | Exit activity | 5 | | AI investment dominates subsector allocation | 5 | | Funding relative to prior three-year averages | 6 | | Healthtech VC deal summary | 19 | Healthtech VC deal value hit a record high in 2025, driven by larger deal sizes and AI-powered growth rounds fueling the sector’s strongest funding rebound in years. Healthtech VC Trends Healthtech Market Map Tech Emerging Technology Healthcare LinkedIn Twitter Facebook Email Additional Research ### Pharma Biotools VC Trends",
-          "publishedAt": "Wed, 25 Feb 2026 17:58:49 GMT",
-          "ts": 1772042329000,
-          "tavilyScore": 1.3245250720000001,
-          "summary": "运营、分析和电子健康记录领域的活动尤其强劲，而临床文档、数字护理和提供者教育等人工智能重点领域则吸引了大量资本。",
-          "judgement": {
-            "frontier": 7,
-            "depth": 8,
-            "reach": 3,
-            "total": 7.654525072
-          },
-          "tags": [
-            "人工智能",
-            "技术"
-          ],
-          "score": 7.654525072
+          "score": 7.254042632
         }
       ]
     }
