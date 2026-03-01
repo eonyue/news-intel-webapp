@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T18:49:33.153Z",
+  "generatedAt": "2026-03-01T18:57:25.046Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772390958185,
+      "updatedAt": 1772391427756,
       "items": [
         {
           "title": "What’s next for Chinese open-source AI",
@@ -58,7 +58,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772390964931,
+      "updatedAt": 1772391437133,
       "items": [
         {
           "title": "The human exposome could change everything we know about disease",
@@ -81,24 +81,26 @@
           "score": 8.17
         },
         {
-          "title": "High-risk patients account for 80% of post-surgery deaths",
-          "titleZh": "高危患者占术后死亡的80%",
-          "source": "Medical Xpress",
-          "link": "https://medicalxpress.com/news/2026-02-high-patients-account-surgery-deaths.html",
-          "rawSummary": "A major new study, led by Queen Mary University of London has been published in The Lancet Public Health. It found that out of the five million surgical procedures performed each year by the NHS, around 300,000 are carried out on individuals considered high-risk, and within 90 days of surgery, these high-risk patients account for four out of five deaths, over half of all hospital bed days and nearly one-third of emergency readmissions.",
-          "publishedAt": "2026-03-01T13:00:05.000Z",
-          "ts": 1772370005000,
-          "summary": "由伦敦玛丽女王大学领导的一项重大新研究已发表在《柳叶刀公共卫生》上。",
+          "title": "Structural alignment for energy–computation co-design - Nature",
+          "titleZh": "能源计算协同设计的结构调整",
+          "source": "nature.com",
+          "link": "https://www.nature.com/articles/s44287-026-00273-y",
+          "rawSummary": "## Search Advanced search ### Quick links Explore articles by subject Find a job Guide to authors Editorial policies Sign up for the Nature Briefing newsletter — what matters in science, free to your inbox daily. Get the most important science stories of the day, free in your inbox. Sign up for Nature Briefing [...] only $9.92 per issue Learn more Buy this article Purchase on SpringerLink Instant access to the full article PDF. USD 39.95 Prices may be subject to local taxes which are calculated during checkout ## References 1. International Energy Agency. AI is Set to Drive Surging Electricity Demand from Data Centres while Offering the Potential to Transform How the Energy Sector Works (2025). 2. Mills, J. NVIDIA Launches Omniverse DSX Blueprint, Enabling Global AI Infrastructure Ecosystem to Build Gigawatt-Scale AI Factories (2025). 3. Xie, L., Li, N. & Poor, H. V. Sustainable electrification in the era of AI. Nat. Rev. Electr. Eng. 1, 493–494 (2024). [...] Article Google Scholar 4. US Department of Energy, Office of Nuclear Energy. Advantages and Challenges of Nuclear-Powered Data Centers (2025). 5. International Energy Agency. Energy Supply for AI (2024). 6. Lin, H. et al. Power system and communication network co-simulation for smart grid applications. IEEE ISGT (2011). 7. Ruan, J., Xu, Z. & Su, H. Towards interdisciplinary integration of electrical engineering and earth science. Nat. Rev. Electr. Eng. 1, 278–279 (2024). Article Google Scholar 8. Censi, A. Uncertainty in monotone codesign problems. IEEE Robot. Autom. Lett. 2, 1556–1563 (2017). Article Google Scholar 9. Helbing, D. Globally networked risks and how to respond. Nature 497, 51–59 (2013).",
+          "publishedAt": "Mon, 23 Feb 2026 17:26:56 GMT",
+          "ts": 1771867616000,
+          "tavilyScore": 0.10687071040000001,
+          "summary": "搜索 高级搜索 ### 快速链接 按主题浏览文章 查找工作 作者指南 编辑政策 订阅《自然简报》时事通讯 — 科学领域的重要内容，每天免费发送到您的收件箱。",
           "judgement": {
-            "frontier": 7,
-            "depth": 8,
-            "reach": 7,
-            "total": 7.33
+            "frontier": 9,
+            "depth": 9,
+            "reach": 3,
+            "total": 7.6068707104
           },
           "tags": [
-            "AI安全"
+            "人工智能",
+            "技术"
           ],
-          "score": 7.33
+          "score": 7.6068707104
         },
         {
           "title": "Vitamin K Refusal Puts Newborns at High Risk for Brain Injury",
@@ -168,22 +170,22 @@
           "titleZh": "人工智能科学家和未来的机器人实验室",
           "source": "pharmaphorum.com",
           "link": "https://pharmaphorum.com/digital/ai-scientists-and-robotic-labs-tomorrow",
-          "rawSummary": "##### About the author David Ruau is head of business development for healthcare & life sciences, EMEA, at NVIDIA, where he partners to drive the use of AI and machine learning in pharmaceutical research. With a background in computational biology, his work has focused on stem cell reprogramming and the electronic health records analysis across therapeutic areas. He previously held senior roles at Bayer, AstraZeneca, and a healthcare AI company, and has authored more than 30 peer-reviewed publications in leading journals including Nature, Cell, and Stem Cells. Image David Ruau ## AI in life sciences News ### FDA maps new regulatory route for ultra-rare diseases [...] ## AI scientists become core collaborators As 2026 progresses, AI scientists will no longer operate at the margins of life sciences research. Instead, they will become essential collaborators in the labs of tomorrow, working alongside human scientists and other AI-scientist platforms and established tools to co-author discovery itself. These AI systems will propose novel targets and molecular structures, simulate biological behaviour across complex virtual networks, suggest possible indication expansion and help direct both digital and physical experiments. [...] # AI scientists and the robotic labs of tomorrow Digital The life sciences are entering a decisive new phase. Over the past decade, artificial intelligence (AI) has proven its value as a powerful tool, helping researchers analyse vast datasets, surface hidden patterns, and accelerate individual stages of discovery. In 2026, however, AI’s role is evolving from exploration to orchestration. Rather than supporting isolated tasks, AI scientists – systems of agents that can work autonomously alongside human scientists – are already becoming essential collaborators embedded across the research lifecycle, fundamentally reshaping how innovation happens in healthcare and beyond.",
+          "rawSummary": "##### About the author David Ruau is head of business development for healthcare & life sciences, EMEA, at NVIDIA, where he partners to drive the use of AI and machine learning in pharmaceutical research. With a background in computational biology, his work has focused on stem cell reprogramming and the electronic health records analysis across therapeutic areas. He previously held senior roles at Bayer, AstraZeneca, and a healthcare AI company, and has authored more than 30 peer-reviewed publications in leading journals including Nature, Cell, and Stem Cells. Image David Ruau ## AI in life sciences News ### FDA maps new regulatory route for ultra-rare diseases [...] # AI scientists and the robotic labs of tomorrow Digital The life sciences are entering a decisive new phase. Over the past decade, artificial intelligence (AI) has proven its value as a powerful tool, helping researchers analyse vast datasets, surface hidden patterns, and accelerate individual stages of discovery. In 2026, however, AI’s role is evolving from exploration to orchestration. Rather than supporting isolated tasks, AI scientists – systems of agents that can work autonomously alongside human scientists – are already becoming essential collaborators embedded across the research lifecycle, fundamentally reshaping how innovation happens in healthcare and beyond. [...] ## AI scientists become core collaborators As 2026 progresses, AI scientists will no longer operate at the margins of life sciences research. Instead, they will become essential collaborators in the labs of tomorrow, working alongside human scientists and other AI-scientist platforms and established tools to co-author discovery itself. These AI systems will propose novel targets and molecular structures, simulate biological behaviour across complex virtual networks, suggest possible indication expansion and help direct both digital and physical experiments.",
           "publishedAt": "Tue, 24 Feb 2026 10:50:02 GMT",
           "ts": 1771930202000,
-          "tavilyScore": 0.26151273599999997,
+          "tavilyScore": 0.380844352,
           "summary": "关于作者 David Ruau 是 NVIDIA 欧洲、中东和非洲地区医疗保健和生命科学业务开发主管，他与 NVIDIA 合作推动人工智能和机器学习在制药研究中的应用。",
           "judgement": {
             "frontier": 9,
             "depth": 8,
             "reach": 3,
-            "total": 7.431512736
+            "total": 7.550844352
           },
           "tags": [
             "人工智能",
             "生命科学"
           ],
-          "score": 7.431512736
+          "score": 7.550844352
         }
       ]
     },
@@ -191,79 +193,94 @@
       "id": "trends",
       "name": "Tech Trends",
       "zhName": "技术趋势",
-      "description": "Developer and ecosystem trend signals",
-      "zhDescription": "开发者生态与技术趋势信号",
-      "updatedAt": 1772390973152,
+      "description": "Tech & biotech company moves, market changes and funding trends",
+      "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
+      "updatedAt": 1772391445046,
       "items": [
         {
-          "title": "Scientists discover a bacterial kill switch and it could change the fight against superbugs",
-          "titleZh": "科学家发现细菌杀死开关，它可能会改变对抗超级细菌的斗争",
-          "source": "ScienceDaily Biology",
-          "link": "https://www.sciencedaily.com/releases/2026/02/260228082723.htm",
-          "rawSummary": "Drug-resistant bacteria are becoming harder to treat, pushing scientists to look for new antibiotic targets. Researchers have now discovered that several unrelated viruses disable a key bacterial protein called MurJ, which is essential for building the bacterial cell wall. High-resolution imaging shows these viral proteins lock MurJ into a single position, stopping cell wall construction and leading to bacterial death.",
-          "publishedAt": "2026-02-28T14:20:04.000Z",
-          "ts": 1772288404000,
-          "summary": "耐药细菌变得越来越难治疗，促使科学家寻找新的抗生素靶点。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 7,
-            "total": 8.17
-          },
-          "tags": [
-            "神经影像",
-            "蛋白质科学"
-          ],
-          "score": 8.17
-        },
-        {
-          "title": "Trends & Insights, January 2026: A pharmaphorum industry report - pharmaphorum",
-          "titleZh": "趋势与见解，2026 年 1 月：Pharmaphorum 行业报告",
-          "source": "pharmaphorum.com",
-          "link": "https://pharmaphorum.com/digital/trends-insights-january-2026-pharmaphorum-industry-report",
-          "rawSummary": "Diet–receptor–seizure link: New academic findings connected the ketogenic diet’s β hydroxybutyrate to HCAR2 receptor activity in hippocampal circuits and microglia, suggesting druggable mechanisms (e.g., niacin) that could mimic keto benefits for refractory epilepsy – illustrative of translational paths industry can pick up. iPSC disease models scale out: Axol’s funding supports expanded ALS/Huntington’s platforms – feeding both target discovery and functional screening as wet lab complements to AI predictions. Takeaway: Expect a more hybrid neuroscience toolkit – genetics informed subgroups, iPSC phenotyping, and AI generated hypotheses – aligned around endpoints regulators and HTA bodies can accept. #### 9. Anti microbial resistance (AMR) and vaccines: Cautious optimism [...] Implications: Imaging departments and trial groups will need to harmonise protocols to capitalise on low dose agents and sensitive MRD readouts; sponsor teams should pre plan for diagnostic supply, reader training, and MRD anchored secondary endpoints. #### 5. AI in life sciences: From pilots to platform commitments [...] Below, we’ve brought together the month’s themes, the signals that matter for life sciences operators, and what to watch in Q1–Q2 #### 1. Translating platform science into the clinic Cellular rejuvenation enters human testing. Life Biosciences secured FDA IND clearance for ER 100, the first clinical-stage therapy using partial epigenetic reprogramming (OSK factors) to treat optic neuropathies (OAG and NAION). The first in human Phase 1 study (NCT07290244) starts in Q1, reflecting years of intravitreal preclinical work and controlled OSK expression readouts in primates. This is a defining moment for longevity modalities, and noteworthy for starting in ophthalmology – clear delivery route, functional end points, and manageable risk.",
-          "publishedAt": "Fri, 27 Feb 2026 16:32:24 GMT",
-          "ts": 1772209944000,
-          "tavilyScore": 1.01055088,
-          "summary": "饮食-受体-癫痫发作联系：新的学术发现将生酮饮食的 β 羟基丁酸与海马回路和小胶质细胞中的 HCAR2 受体活性联系起来，表明可药物机制（例如烟酸）可以。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 6,
-            "reach": 3,
-            "total": 7.52055088
-          },
-          "tags": [
-            "人工智能",
-            "AI安全",
-            "神经科学",
-            "神经影像"
-          ],
-          "score": 7.52055088
-        },
-        {
-          "title": "Q4 2025 Pharma Biotools VC Trends - PitchBook",
-          "titleZh": "2025 年第 4 季度 Pharma Biotools 风险投资趋势",
+          "title": "Q4 2025 Healthtech VC Trends - PitchBook",
+          "titleZh": "2025 年第四季度健康科技风险投资趋势",
           "source": "pitchbook.com",
-          "link": "https://pitchbook.com/news/reports/q4-2025-pharma-biotools-vc-trends",
-          "rawSummary": "The pharma biotools sector regained momentum in 2025 as venture funding rebounded following three years of contraction, driven by investor appetite for asset-light business models and AI-enabled technologies that support drug discovery and development. Deal value rose modestly for the year and remained stable in Q4, signaling a normalization of activity rather than renewed decline. Investment concentrated heavily in generative AI, quantum computing, microfluidics, and synthetic biology, as companies delivering high-fidelity data generation, automation, and software-like services attracted outsized interest. Major Q4 financings for AI-driven protein design platforms and automation-focused tools underscored how investors are backing the emerging “scientific stack” that connects [...] M&A activity remained subdued, although Halozyme Therapeutics’ acquisition of Elektrofi for up to $900 million marked the sector’s largest exit since 2021 and highlighted continued demand for technologies embedded in biologics delivery and manufacturing workflows. China also emerged as a key growth market, with deal count rising more than 80% YoY and investment concentrated in AI-driven platforms and enabling infrastructure for next-generation therapeutics. Overall, pharma biotools VC activity is stabilizing as investors prioritize platforms capable of generating high-quality datasets, enabling automation, and accelerating commercialization across the broader biopharma ecosystem. Table of contents [...] are backing the emerging “scientific stack” that connects computational discovery with physical experimentation.",
-          "publishedAt": "Tue, 24 Feb 2026 19:25:21 GMT",
-          "ts": 1771961121000,
-          "tavilyScore": 1.28704944,
-          "summary": "由于投资者对轻资产商业模式和支持人工智能的技术的兴趣，风险投资在经历了三年的收缩后出现反弹，制药生物工具行业将在 2025 年重新获得动力。",
+          "link": "https://pitchbook.com/news/reports/q4-2025-healthtech-vc-trends",
+          "rawSummary": "Activity was especially strong in operations, analytics, and electronic health records, while AI-heavy segments such as clinical documentation, digital care, and provider education attracted outsized capital. The year also saw record VC exit volume, rising IPO momentum led by Omada Health and Hinge Health, and a sharp rebound in PE dealmaking. With AI now central to both clinical and administrative workflows, the data points to continued opportunity across healthtech segments—and a healthy pipeline of late-stage companies positioning for exits in 2026. Table of contents [...] Additional Research ### Pharma Biotools VC Trends The Q4 2025 Pharma Biotools VC Trends report provides an analysis of recent VC activity and includes a market map of leading VC-backed companies in the space. ### PitchBook Analyst Note: Tariff Shock: Perspectives on Private Market Impacts This analyst note examines how renewed US tariff uncertainty is reshaping risks, liquidity, and strategy across private credit, PE, VC, and European investments. ### AI Public Comp Sheet and Valuation Guide Our AI Public Comp Sheet and Valuation Guide tracks stock performances, valuations, and market caps of key publicly traded AI companies. February 23rd, 2026 [...] Q4 2025 # Healthtech VC Trends PitchBook clients can access the full report and its Excel data pack via the Research Center on the PitchBook Platform. Healthtech exits hit a record high while AI reshapes investment priorities Healthtech venture funding staged a strong comeback in 2025, with startups raising $15.3 billion—up 26% YoY—as larger deal sizes and AI-driven growth rounds powered the rebound. Fourth-quarter funding dipped slightly from earlier highs but remained more than double the prior-year quarter, underscoring renewed investor confidence. The median pre-money valuation rose to $31 million, reflecting sustained demand for AI-enabled healthcare delivery, operations, and revenue-cycle solutions.",
+          "publishedAt": "Wed, 25 Feb 2026 17:58:49 GMT",
+          "ts": 1772042329000,
+          "tavilyScore": 1.59468096,
+          "summary": "运营、分析和电子健康记录领域的活动尤其强劲，而临床文档、数字护理和提供者教育等人工智能重点领域则吸引了大量资本。",
           "judgement": {
             "frontier": 7,
             "depth": 8,
             "reach": 3,
-            "total": 7.617049440000001
+            "total": 7.92468096
+          },
+          "tags": [
+            "人工智能"
+          ],
+          "score": 7.92468096
+        },
+        {
+          "title": "Boston AI startup can predict risk of breast cancer before tumors appear - The Boston Globe",
+          "titleZh": "波士顿人工智能初创公司可以在肿瘤出现之前预测乳腺癌风险 - 波士顿环球报",
+          "source": "bostonglobe.com",
+          "link": "https://www.bostonglobe.com/2026/02/24/business/breast-cancer-ai-detection-clairity/",
+          "rawSummary": "Advertisement --- 💵 Quantum cybersecurity firm Aliro in Boston raised $15 millionin a deal led by Gutbrain Ventures. 🔌 EV developer Indigo Technologies in Woburn received a $4 million loan from MassDevelopment’s Emerging Technology Fund. ☀️ Community solar developer Solstice in Cambridge was acquired by Boston-based Perch Energy. Terms of the deal were not disclosed. 📦 Supply chain software firm Dray Dog in Dover, N.H., was acquired by California-based firm CargoSprint. Terms of the deal were not disclosed. 👋 Software developer Code Metal in Boston hired Ryan Aytay, former chief executive of Tableau, as president and chief operating officer. 🖨️ Somerville-based 3D printing company Formlabs added Rob Willett, former chief executive of Cognex, to its board of directors. [...] ⏸️ Maine considers a moratorium on data centers as businesses look to New England. Read more from Julia Tilton of The Daily Yonder. 🎁 Klaviyo founders give $6 million to boost MIT startups, Boston’s competitiveness. Read more from business reporter Jon Chesto. 🤑 Boston-based Code Metal, which writes AI software to run hardware such as drones, sensors, and robots, raised $125 million in a deal led by Salesforce Ventures and including Accel, B Capital, Smith Point Capital, J2 Ventures, and RTX. The deal valued Code Metal at $1.25 billion. 🌎 Rare earth mineral producer Phoenix Tailings in Woburn raised $30 million of equity from investors Traxys, Eni Next, and Geodesic Alliance Fund. Phoenix also raised $10 million of debt from Nomura. Advertisement --- [...] “There’s much in medicine that can be a black box,” Lehman said. “We are doing lots of research [to figure out] what are the features in a mammogram that the deep learning model is picking up on.” With Silicon Valley dominating in AI innovation so far, the Boston tech scene could use a lot more startups like Clairity, investors and entrepreneurs said. Health care startup investor Michael Greeley, general partner at Flare Capital in Boston, said he expects to see more and more researchers in the region creating startups that combine AI and medical data. A company like Clairity “underscores the power of our community as the health care and technology sectors continue to collaborate given the proximity to each other,“ Greeley said.",
+          "publishedAt": "Tue, 24 Feb 2026 21:16:07 GMT",
+          "ts": 1771967767000,
+          "tavilyScore": 1.4973077760000002,
+          "summary": "广告 --- 💵 波士顿量子网络安全公司 Aliro 在由 Gutbrain Ventures 牵头的交易中筹集了 1500 万美元。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 6,
+            "reach": 3,
+            "total": 8.007307776
           },
           "tags": [
             "人工智能",
-            "生命科学",
-            "生物技术",
-            "蛋白质科学",
             "技术"
           ],
-          "score": 7.617049440000001
+          "score": 8.007307776
+        },
+        {
+          "title": "Brain inspired machines are better at math than expected",
+          "titleZh": "受大脑启发的机器在数学方面比预期更好",
+          "source": "ScienceDaily AI",
+          "link": "https://www.sciencedaily.com/releases/2026/02/260213223923.htm",
+          "rawSummary": "Neuromorphic computers modeled after the human brain can now solve the complex equations behind physics simulations — something once thought possible only with energy-hungry supercomputers. The breakthrough could lead to powerful, low-energy supercomputers while revealing new secrets about how our brains process information.",
+          "publishedAt": "2026-02-14T15:19:40.000Z",
+          "ts": 1771082380000,
+          "summary": "以人脑为模型的神经形态计算机现在可以解决物理模拟背后的复杂方程——这曾经被认为只有耗能超级计算机才能实现。",
+          "judgement": {
+            "frontier": 7,
+            "depth": 8,
+            "reach": 7,
+            "total": 7.33
+          },
+          "tags": [
+            "神经科学"
+          ],
+          "score": 7.33
+        },
+        {
+          "title": "MatX's $500m, QC Capital backs virtual pediatrics and The Raine Group's new partner - Axios",
+          "titleZh": "MatX 5 亿美元、QC Capital 支持虚拟儿科和 Raine Group 的新合作伙伴 Axios",
+          "source": "amp.axios.com",
+          "link": "https://amp.axios.com/pro-rata-premium-first-look-matx-qc-capital-raine-e2e23561-c459-452d-a04c-e2d0e6cca8aa.html",
+          "rawSummary": "• Evoke Security, a Washington-based cybersecurity company, raised a $4m pre-seed round led by Crosspoint Capital Partners, with participation from Red Cell Partners. Go deeper • Jampack AI, an NYC-based wholesale operations automation platform, raised a $3.2m seed led by Maveron, joined by Timber Grove Ventures. Go deeper ## Private Equity • Arcline Investment Management agreed to buy Hydraulics International, a provider of ground support equipment, mobile test systems, and specialized pumps. Go deeper • CampusWorks, backed by Atlantic Street Capital, merged with Dynamic Campus, a higher education IT services firm. dynamiccampus.com • Capital Constellation, backed by Wafra, invested in Gallatin Point Capital, a private investment firm. Go deeper [...] • Brookfield Asset Management bought U.K.-based Ori, an AI cloud provider, and merged it with its newly formed Radiant. Ori's backers include Fortitude Capital, Wa'ed Ventures, 6 Degrees Capital, Atempo Growth and NextEra Energy. Go deeper ## Public Offerings 🚑 MiniMed Group, a diabetes management device business being carved out of Medtronic (NYSE: MDT), plans to raise $742m in an offering of 28 million shares priced between $25 to $28. Go deeper 💊 Salspera, a Cambridge, Mass.-based cancer biotech, plans to raise $85m by offering 5.7 million shares priced between $14 and $16. Go deeper ## It's Personnel • Anthony Kontoleon, former partner and CEO of the Americas at Azura Partners, joined The Raine Group as partner. Go deeper [...] • Topspin Consumer Partners invested in Grid, a Dallas-based maker of lockers and flooring solutions for fitness facilities. Go deeper • Victor Capital Partners invested in Specialty Fenestration Group, a maker of high-security windows and doors. River Associates Investments exited. Go deeper 🚑 QC Capital Group invested in My Pediatric Doctor, a 24/7 urgent care pediatric telemedicine company. Go deeper ## M&A • ADT, a Boca Raton, Fla.-based home security company,acquired Origin Wireless, an AI company that can analyze and track motion without cameras, for $170m. Go deeper",
+          "publishedAt": "Tue, 24 Feb 2026 20:59:41 GMT",
+          "ts": 1771966781000,
+          "tavilyScore": 1.5865913600000001,
+          "summary": "• 总部位于华盛顿的网络安全公司 Evoke Security 筹集了 400 万美元的种子前融资，由 Crosspoint Capital Partners 领投，Red Cell Partners 参与。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 6,
+            "reach": 3,
+            "total": 8.09659136
+          },
+          "tags": [
+            "人工智能",
+            "生物技术"
+          ],
+          "score": 8.09659136
         }
       ]
     }
