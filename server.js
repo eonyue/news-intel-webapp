@@ -209,6 +209,35 @@ const clean = (txt = '') =>
 
 const hasChinese = (txt = '') => /[\u4e00-\u9fa5]/.test(txt);
 
+function chineseRatio(text = '') {
+  const s = String(text || '');
+  const zh = (s.match(/[\u4e00-\u9fa5]/g) || []).length;
+  return s.length ? zh / s.length : 0;
+}
+
+function isReadableChineseSummary(text = '') {
+  const s = clean(text);
+  if (!s) return false;
+  if (!hasChinese(s)) return false;
+  if (/[�]/.test(s)) return false;
+  if (/(undefined|null|\[object Object\]|lorem ipsum)/i.test(s)) return false;
+  if (s.length < 20) return false;
+  if (chineseRatio(s) < 0.2) return false;
+  const sentenceCount = s.split(/[。！？!?]/).filter(Boolean).length;
+  if (sentenceCount > 6) return false;
+  return true;
+}
+
+function forceTitleChineseStyle(text = '') {
+  return clean(text)
+    .replace(/\s*[-|–—]\s*[^\u4e00-\u9fa5]*$/g, '')
+    .replace(/\bAI\b/gi, '人工智能')
+    .replace(/\bAGI\b/gi, '通用人工智能')
+    .replace(/\bLLMs?\b/gi, '大模型')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
 function normalizeLLMTerm(text = '') {
   return String(text)
     .replace(/法学硕士/gi, '大模型')
@@ -396,38 +425,32 @@ async function callLLM(params) {
 async function translateTitleOnline(title = '') {
   const source = clean(title);
   if (!source) return '未命名内容';
-  if (hasChinese(source)) return source;
+  if (hasChinese(source) && chineseRatio(source) > 0.35) return forceTitleChineseStyle(source);
   if (titleTranslateCache.has(source)) return titleTranslateCache.get(source);
 
-  const local = toChineseTitle(source);
-  if (!needsBetterChineseTitle(local)) {
-    titleTranslateCache.set(source, local);
-    return local;
-  }
-
+  const local = forceTitleChineseStyle(toChineseTitle(source));
   const cacheKey = `title:${source}`;
   if (llmTranslateCache.has(cacheKey)) {
-    const out = llmTranslateCache.get(cacheKey);
+    const out = forceTitleChineseStyle(llmTranslateCache.get(cacheKey));
     titleTranslateCache.set(source, out);
     return out;
   }
 
-  const codex = await callLLM({
+  const llmTitle = await callLLM({
     systemPrompt:
-      '将英文新闻标题翻译为自然、简洁、准确的中文标题。保留专有名词。LLM统一译为“大模型”。只输出一行中文标题。',
+      '将英文新闻标题翻译为自然、简洁、准确的中文标题。保留必要专有名词（如人名、公司名），其余尽量中文化。禁止输出英文整句。LLM统一译为“大模型”。只输出一行中文标题。',
     userPrompt: source,
-    maxOutputTokens: 80,
+    maxOutputTokens: 90,
     temperature: 0.1,
   });
 
-  if (codex) {
-    llmTranslateCache.set(cacheKey, codex);
-    titleTranslateCache.set(source, codex);
-    return codex;
-  }
+  const candidate = forceTitleChineseStyle(llmTitle || local || source);
+  const latinCount = (candidate.match(/[A-Za-z]/g) || []).length;
+  const out = (hasChinese(candidate) && latinCount <= 14) ? candidate : local;
 
-  titleTranslateCache.set(source, local || source);
-  return local || source;
+  llmTranslateCache.set(cacheKey, out);
+  titleTranslateCache.set(source, out);
+  return out;
 }
 
 function inferTopic(text = '') {
@@ -496,9 +519,23 @@ async function summarizeArticleInChinese(raw = '', titleZh = '') {
     temperature: 0.2,
   });
 
-  if (finalSummary && hasChinese(finalSummary)) {
+  if (isReadableChineseSummary(finalSummary)) {
     llmSummaryCache.set(cacheKey, finalSummary);
     return finalSummary;
+  }
+
+  // retry once with stricter prompt
+  const retrySummary = await callLLM({
+    systemPrompt:
+      '请输出高可读中文文章总结：2-3句，逻辑完整，避免术语堆砌，不要乱码或中英夹杂，不编造事实。只输出中文总结正文。',
+    userPrompt: `标题：${titleZh}\n素材：${mergedInput}`,
+    maxOutputTokens: 220,
+    temperature: 0.1,
+  });
+
+  if (isReadableChineseSummary(retrySummary)) {
+    llmSummaryCache.set(cacheKey, retrySummary);
+    return retrySummary;
   }
 
   // fallback: translate + compact
