@@ -822,6 +822,11 @@ async function getCategoryData(category, force = false) {
 
 app.get('/', async (req, res) => {
   const force = req.query.refresh === '1';
+  if (force) {
+    titleTranslateCache.clear();
+    llmTranslateCache.clear();
+    llmSummaryCache.clear();
+  }
   const data = await Promise.all(CATEGORIES.map((c) => getCategoryData(c, force)));
   const consciousness = await getConsciousnessDigest();
   res.render('index', {
@@ -836,6 +841,11 @@ app.get('/api/category/:id', async (req, res) => {
   if (!category) return res.status(404).json({ error: 'category_not_found' });
 
   const force = req.query.refresh === '1';
+  if (force) {
+    titleTranslateCache.clear();
+    llmTranslateCache.clear();
+    llmSummaryCache.clear();
+  }
   const data = await getCategoryData(category, force);
   res.json(data);
 });
