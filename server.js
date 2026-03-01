@@ -165,6 +165,7 @@ const cache = new Map();
 const titleTranslateCache = new Map();
 const llmTranslateCache = new Map();
 const llmSummaryCache = new Map();
+const llmTitlePolishCache = new Map();
 
 function chinaDate(ts = Date.now()) {
   return new Date(ts).toLocaleDateString('en-CA', { timeZone: 'Asia/Shanghai' });
@@ -263,6 +264,41 @@ function isSummaryRelevantToTitle(summary = '', title = '') {
   const zhHit = titleZh && s.includes(titleZh.slice(0, 2));
 
   return hit >= 1 || !!zhHit;
+}
+
+async function polishChineseTitle(title = '') {
+  const source = clean(title);
+  if (!source) return '';
+  if (llmTitlePolishCache.has(source)) return llmTitlePolishCache.get(source);
+
+  const polished = await callLLM({
+    systemPrompt:
+      '你是中文科技媒体编辑。请把输入标题润色成自然、顺口、专业的中文标题。不要夸张，不要改变事实，不要口语化。只输出一行标题。',
+    userPrompt: source,
+    maxOutputTokens: 70,
+    temperature: 0.15,
+  });
+
+  const out = forceTitleChineseStyle(polished || source);
+  llmTitlePolishCache.set(source, out);
+  return out;
+}
+
+function dedupeAcrossCategories(categoryData = []) {
+  const seen = new Set();
+  return categoryData.map((cat) => {
+    const items = [];
+    for (const item of cat.items || []) {
+      const key = `${resolveScourLink(item.link || '')}::${clean(item.titleZh || item.title || '')}`.toLowerCase();
+      if (seen.has(key)) continue;
+      seen.add(key);
+      items.push(item);
+    }
+    return {
+      ...cat,
+      items,
+    };
+  });
 }
 
 function normalizeLLMTerm(text = '') {
@@ -481,9 +517,12 @@ async function translateTitleOnline(title = '') {
     if (translated) out = forceTitleChineseStyle(translated);
   }
 
-  llmTranslateCache.set(cacheKey, out);
-  titleTranslateCache.set(source, out);
-  return out;
+  const polished = await polishChineseTitle(out);
+  const finalTitle = polished || out;
+
+  llmTranslateCache.set(cacheKey, finalTitle);
+  titleTranslateCache.set(source, finalTitle);
+  return finalTitle;
 }
 
 function inferTopic(text = '') {
@@ -552,8 +591,15 @@ async function summarizeArticleInChinese(raw = '', titleZh = '') {
   });
 
   if (isReadableChineseSummary(finalSummary) && isSummaryRelevantToTitle(finalSummary, titleZh)) {
-    llmSummaryCache.set(cacheKey, finalSummary);
-    return finalSummary;
+    const polishedSummary = await callLLM({
+      systemPrompt: '请将输入总结润色为更自然的中文新闻摘要，保持事实不变，2-3句。只输出正文。',
+      userPrompt: finalSummary,
+      maxOutputTokens: 220,
+      temperature: 0.1,
+    });
+    const out = isReadableChineseSummary(polishedSummary) ? polishedSummary : finalSummary;
+    llmSummaryCache.set(cacheKey, out);
+    return out;
   }
 
   // retry once with stricter prompt
@@ -853,11 +899,13 @@ app.get('/', async (req, res) => {
     titleTranslateCache.clear();
     llmTranslateCache.clear();
     llmSummaryCache.clear();
+    llmTitlePolishCache.clear();
   }
   const data = await Promise.all(CATEGORIES.map((c) => getCategoryData(c, force)));
+  const dedupedData = dedupeAcrossCategories(data);
   const consciousness = await getConsciousnessDigest();
   res.render('index', {
-    categories: data,
+    categories: dedupedData,
     consciousness,
     generatedAt: new Date(),
   });
@@ -872,6 +920,7 @@ app.get('/api/category/:id', async (req, res) => {
     titleTranslateCache.clear();
     llmTranslateCache.clear();
     llmSummaryCache.clear();
+    llmTitlePolishCache.clear();
   }
   const data = await getCategoryData(category, force);
   res.json(data);
