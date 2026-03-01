@@ -124,6 +124,12 @@ h1 {
   font-weight: 700;
 }
 
+.icon-svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
 .nav-menu {
   border-radius: 12px;
   margin-bottom: 10px;

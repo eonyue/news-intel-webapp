@@ -16,11 +16,13 @@
       <div>
         <h1>Sci&Tech News Hub</h1>
         <p class="sub">每日科技简报 · 由神经现实呈现</p>
-        <p class="sub2">神经科学，人工智能，生命科学</p>
+        <p class="sub2">神经科学 ｜ 人工智能 ｜ 生命科学</p>
       </div>
       <div class="actions">
         <a class="icon-btn" href="/consciousness" title="意识简报" aria-label="意识简报">🧠</a>
-        <a class="icon-btn wechat-btn" href="https://mp.weixin.qq.com/s/BgZCDRICPzGcvI3ITpFgSg" target="_blank" rel="noreferrer" title="WeChat" aria-label="WeChat">微</a>
+        <a class="icon-btn wechat-btn" href="https://mp.weixin.qq.com/s/BgZCDRICPzGcvI3ITpFgSg" target="_blank" rel="noreferrer" title="WeChat" aria-label="WeChat">
+          <img class="icon-svg" src="/icons/wechat.svg" alt="WeChat" />
+        </a>
       </div>
     </header>
 
@@ -39,7 +41,7 @@
         <div class="panel-head">
           <div>
             <h2>🧠 意识简报</h2>
-            <p class="desc">每日同步 · <%= consciousness?.date || '' %></p>
+            <p class="desc">意识研究精选</p>
           </div>
           <div class="meta-wrap">
             <span class="count"><%= (consciousness?.items || []).length %> 条</span>
@@ -59,11 +61,7 @@
           <% }) %>
         </ul>
 
-        <div class="trend-box">
-          <strong>今日趋势观察：</strong>
-          <p><%= consciousness?.trendObservation || '暂无趋势观察。' %></p>
-          <p class="more-link-wrap"><a class="more-link" href="/consciousness">查看完整意识简报 →</a></p>
-        </div>
+        <p class="more-link-wrap"><a class="more-link" href="/consciousness">查看完整意识简报 →</a></p>
       </section>
 
       <% categories.forEach((cat) => { %>
