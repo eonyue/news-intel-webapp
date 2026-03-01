@@ -117,9 +117,9 @@ h1 {
 }
 
 .wechat-btn {
-  color: #d9ffe6;
-  background: rgba(18, 196, 95, 0.22);
-  border-color: rgba(52, 199, 89, 0.5);
+  color: #ffffff;
+  background: linear-gradient(130deg, var(--accent), var(--accent-2));
+  border-color: rgba(125, 194, 255, 0.62);
   font-size: 16px;
   font-weight: 700;
 }
