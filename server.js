@@ -446,7 +446,13 @@ async function translateTitleOnline(title = '') {
 
   const candidate = forceTitleChineseStyle(llmTitle || local || source);
   const latinCount = (candidate.match(/[A-Za-z]/g) || []).length;
-  const out = (hasChinese(candidate) && latinCount <= 14) ? candidate : local;
+  let out = (hasChinese(candidate) && latinCount <= 14) ? candidate : local;
+
+  const outLatinCount = (out.match(/[A-Za-z]/g) || []).length;
+  if (!hasChinese(out) || outLatinCount > 14) {
+    const translated = await translateTextToChinese(source);
+    if (translated) out = forceTitleChineseStyle(translated);
+  }
 
   llmTranslateCache.set(cacheKey, out);
   titleTranslateCache.set(source, out);
