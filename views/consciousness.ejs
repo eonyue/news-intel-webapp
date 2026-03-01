@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>意识简报 | News Intel</title>
+    <title>意识简报 | Sci&Tech News Hub</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
@@ -34,13 +34,12 @@
         </div>
 
         <ul class="items">
-          <% (digest.items || []).forEach((item, idx) => { %>
+          <% (digest.items || []).forEach((item) => { %>
           <li class="item">
-            <a class="title" href="<%= item.link %>" target="_blank" rel="noreferrer"><%= idx + 1 %>) <%= item.title %></a>
+            <a class="title" href="<%= item.link %>" target="_blank" rel="noreferrer"><%= item.title %></a>
             <p class="summary"><%= item.summary || '暂无摘要' %></p>
             <div class="row">
-              <span>来源：<%= item.source || '未知来源' %></span>
-              <span>DOI/链接</span>
+              <span>来源：<em><%= item.source || '未知来源' %></em></span>
             </div>
           </li>
           <% }) %>

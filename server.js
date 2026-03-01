@@ -667,8 +667,10 @@ async function getCategoryData(category, force = false) {
 app.get('/', async (req, res) => {
   const force = req.query.refresh === '1';
   const data = await Promise.all(CATEGORIES.map((c) => getCategoryData(c, force)));
+  const consciousness = await getConsciousnessDigest();
   res.render('index', {
     categories: data,
+    consciousness,
     generatedAt: new Date(),
   });
 });

@@ -3,40 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News Intel</title>
+    <title>Sci&Tech News Hub</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="bg-blur bg-blur-a"></div>
     <div class="bg-blur bg-blur-b"></div>
 
+    <% const catEmoji = { media: '📰', research: '🔬', trends: '📈' }; %>
+
     <header class="top glass">
       <div>
-        <h1>News Intel</h1>
-        <p class="sub">由神经现实呈现</p>
+        <h1>Sci&Tech News Hub</h1>
+        <p class="sub">每日科技简报 · 由神经现实呈现</p>
+        <p class="sub2">神经科学，人工智能，生命科学</p>
       </div>
       <div class="actions">
         <a class="icon-btn" href="/consciousness" title="意识简报" aria-label="意识简报">🧠</a>
-        <a class="icon-btn" href="/?refresh=1" title="刷新" aria-label="刷新">↻</a>
+        <a class="icon-btn wechat-btn" href="https://mp.weixin.qq.com/s/BgZCDRICPzGcvI3ITpFgSg" target="_blank" rel="noreferrer" title="WeChat" aria-label="WeChat">微</a>
       </div>
     </header>
 
     <details class="nav-menu glass">
-      <summary>☰ 栏目菜单</summary>
+      <summary>☰ 栏目</summary>
       <div class="menu-list">
-        <a href="/consciousness">🧠 意识简报</a>
+        <a href="#consciousness-home">🧠 意识简报</a>
         <% categories.forEach((cat) => { %>
-        <a href="#<%= cat.id %>"><%= cat.zhName || cat.name %></a>
+        <a href="#<%= cat.id %>"><%= catEmoji[cat.id] || '🗂️' %> <%= cat.zhName || cat.name %></a>
         <% }) %>
       </div>
     </details>
 
     <main>
+      <section class="panel glass" id="consciousness-home">
+        <div class="panel-head">
+          <div>
+            <h2>🧠 意识简报</h2>
+            <p class="desc">每日同步 · <%= consciousness?.date || '' %></p>
+          </div>
+          <div class="meta-wrap">
+            <span class="count"><%= (consciousness?.items || []).length %> 条</span>
+            <span class="meta"><%= consciousness?.updatedAt ? new Date(consciousness.updatedAt).toLocaleString('zh-CN') : '同步时间未知' %></span>
+          </div>
+        </div>
+
+        <ul class="items">
+          <% (consciousness?.items || []).slice(0, 6).forEach((item) => { %>
+          <li class="item">
+            <a class="title" href="<%= item.link %>" target="_blank" rel="noreferrer"><%= item.title %></a>
+            <p class="summary"><%= item.summary || '暂无摘要' %></p>
+            <div class="row">
+              <span>来源：<em><%= item.source || '未知来源' %></em></span>
+            </div>
+          </li>
+          <% }) %>
+        </ul>
+
+        <div class="trend-box">
+          <strong>今日趋势观察：</strong>
+          <p><%= consciousness?.trendObservation || '暂无趋势观察。' %></p>
+          <p class="more-link-wrap"><a class="more-link" href="/consciousness">查看完整意识简报 →</a></p>
+        </div>
+      </section>
+
       <% categories.forEach((cat) => { %>
       <section class="panel glass" id="<%= cat.id %>">
         <div class="panel-head">
           <div>
-            <h2><%= cat.zhName || cat.name %></h2>
+            <h2><%= catEmoji[cat.id] || '🗂️' %> <%= cat.zhName || cat.name %></h2>
             <p class="desc"><%= cat.zhDescription || cat.description %></p>
           </div>
           <div class="meta-wrap">
