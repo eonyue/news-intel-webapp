@@ -450,6 +450,32 @@ function inferTopic(text = '') {
   return '技术';
 }
 
+async function translateTextToChinese(text = '') {
+  const source = clean(text);
+  if (!source) return '';
+  if (hasChinese(source)) return source;
+
+  const llmOut = await callLLM({
+    systemPrompt:
+      '将输入英文内容翻译为自然、准确、简洁的中文新闻表达。保留专有名词。LLM统一译为“大模型”。只输出中文正文。',
+    userPrompt: source,
+    maxOutputTokens: 220,
+    temperature: 0.1,
+  });
+
+  if (llmOut && hasChinese(llmOut)) return llmOut;
+
+  try {
+    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-CN&dt=t&q=${encodeURIComponent(source)}`;
+    const textResp = await fetchTextWithTimeout(url, 8000);
+    const data = JSON.parse(textResp);
+    const translatedRaw = clean((data?.[0] || []).map((x) => (x && x[0]) || '').join(''));
+    return normalizeLLMTerm(translatedRaw || source);
+  } catch {
+    return source;
+  }
+}
+
 async function polishSummaryWithCodex(raw = '', titleZh = '') {
   const source = clean(raw);
   if (!source) return '';
@@ -465,15 +491,16 @@ async function polishSummaryWithCodex(raw = '', titleZh = '') {
     temperature: 0.2,
   });
 
-  if (codex) {
+  if (codex && hasChinese(codex)) {
     llmSummaryCache.set(cacheKey, codex);
     return codex;
   }
 
-  // fallback
+  // fallback: translate + compress first sentence
   const firstSentence = source.split(/(?<=[.!?])\s+/)[0] || source;
-  const compact = clean(firstSentence).slice(0, 180);
-  const out = compact.endsWith('。') ? compact : `${compact}。`;
+  const compact = clean(firstSentence).slice(0, 220);
+  const translated = await translateTextToChinese(compact);
+  const out = translated.endsWith('。') ? translated : `${translated}。`;
   llmSummaryCache.set(cacheKey, out);
   return out;
 }
