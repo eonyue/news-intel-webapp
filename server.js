@@ -33,13 +33,14 @@ const CATEGORIES = [
     tavilyQuery:
       'best in-depth media coverage today on AI large language models neuroscience life science technology',
     feeds: [
-      { url: 'https://venturebeat.com/category/ai/feed/', source: 'VentureBeat' },
-      { url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', source: 'The Verge' },
       { url: 'https://www.technologyreview.com/topic/artificial-intelligence/feed/', source: 'MIT Technology Review' },
-      { url: 'https://hnrss.org/newest?q=AI', source: 'Hacker News' },
-      { url: 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', source: 'ScienceDaily AI' },
-      { url: 'https://www.sciencedaily.com/rss/health_medicine/neuroscience.xml', source: 'ScienceDaily Neuroscience' },
-      { url: 'https://www.sciencedaily.com/rss/plants_animals/biology.xml', source: 'ScienceDaily Biology' },
+      { url: 'https://techcrunch.com/category/artificial-intelligence/feed/', source: 'TechCrunch AI' },
+      { url: 'https://techcrunch.com/category/startups/feed/', source: 'TechCrunch Startups' },
+      { url: 'https://www.theguardian.com/science/rss', source: 'The Guardian Science' },
+      { url: 'https://www.newscientist.com/subject/technology/feed/', source: 'New Scientist Tech' },
+      { url: 'https://www.scientificamerican.com/feed/', source: 'Scientific American' },
+      { url: 'https://theconversation.com/global/topics/artificial-intelligence-21/articles.atom', source: 'The Conversation AI' },
+      { url: 'https://www.statnews.com/feed/', source: 'STAT' },
     ],
   },
   {
