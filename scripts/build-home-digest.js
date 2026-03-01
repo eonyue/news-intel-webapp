@@ -162,7 +162,7 @@ async function main() {
 
   for (const id of CATEGORY_IDS) {
     const data = await fetchCategory(id);
-    const filteredItems = (data.items || [])
+    let filteredItems = (data.items || [])
       .filter((x) => readableSummary(x.summary || ''))
       .filter((x) => !isIndiaRelated(x))
       .filter((x) => !isUSPolitics(x))
@@ -171,6 +171,11 @@ async function main() {
         titleZh: polishTitleZh(x.titleZh || x.title || ''),
         summary: normalizeSummaryTo23Sentences(x.summary || ''),
       }));
+
+    // 媒体头条：严格白名单来源
+    if (id === 'media') {
+      filteredItems = filteredItems.filter((x) => isWhitelistSource(x));
+    }
 
     const deduped = dedupeItems(filteredItems);
     const prioritized = deduped.sort((a, b) => Number(isWhitelistSource(b)) - Number(isWhitelistSource(a)));
