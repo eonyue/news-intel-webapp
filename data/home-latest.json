@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T19:01:29.631Z",
+  "generatedAt": "2026-03-01T19:06:09.845Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772391671618,
+      "updatedAt": 1772391953046,
       "items": [
         {
           "title": "What’s next for Chinese open-source AI",
@@ -31,6 +31,27 @@
           "score": 8.49
         },
         {
+          "title": "New Scientist recommends the quantum soundscape of Liminals - New Scientist",
+          "titleZh": "《新科学家》推荐 Liminals 的量子音景 - 《新科学家》",
+          "source": "newscientist.com",
+          "link": "https://www.newscientist.com/article/mg26935840-400-new-scientist-recommends-the-quantum-soundscape-of-liminals/",
+          "rawSummary": "Topics: exhibition/ review Advertisement ## Sign up to our weekly newsletter Receive a weekly dose of discovery in your inbox. We'll also keep you up to date with New Scientist events and special offers. Sign up ## More from New Scientist Explore the latest news, articles and features #### Comment ### Return of Fallout, Paradise and Silo fuels passion for bunker sci-fi Culture#### Comment ### New Scientist recommends pioneering artist Ryoji Ikeda's new work Culture#### Comment ### Alex Garland’s The Bone Temple is brutal, brilliant - and mind-blowing Culture#### Space ### Blue Planet Red is wrong about Mars – but it's surprisingly poignant Culture #### Popular articles Trending New Scientist articles #### 1 [...] Trending New Scientist articles #### 1 AIs can’t stop recommending nuclear strikes in war game simulations #### 2 It’s your perception of sleep that’s making you feel tired all day #### 3 The world’s most elusive colour is worth billions – if we can find it #### 4 Birdwatching may reshape the brain and build its buffer against ageing #### 5 Rapamycin can add years to your life, or none at all – it’s a lottery #### 6 Cannibalism may explain why some orcas stay in family groups #### 7 Stone Age symbols may push back the earliest form of writing #### 8 Tiny predatory dinosaur weighed less than a chicken #### 9 Landmark vitiligo cream targets immune cells that disrupt pigmentation #### 10 Loophole found that makes quantum cloning possible Advertisement [...] Skip to content Sign in Subscribe now Subscribe now Subscribe now #### Comment # New Scientist recommends the quantum soundscape of Liminals The books, TV, games and more that New Scientist staff have enjoyed this week By Thomas Lewton 25 February 2026 A century ago, when quantum mechanics was developed, physicists felt they were peering into the abyss: everything they thought was real, wasn’t. Today, we talk easily about collapsing clouds of probability and spooky action at a distance.",
+          "publishedAt": "Wed, 25 Feb 2026 19:03:30 GMT",
+          "ts": 1772046210000,
+          "tavilyScore": 0.025450227199999998,
+          "summary": "主题：展览/回顾 广告 ## 订阅我们的每周通讯 在您的收件箱中接收每周的发现。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.1954502272
+          },
+          "tags": [
+            "神经科学"
+          ],
+          "score": 7.1954502272
+        },
+        {
           "title": "The human work behind humanoid robots is being hidden",
           "titleZh": "人形机器人背后的人类工作正在被隐藏",
           "source": "MIT Technology Review",
@@ -49,27 +70,6 @@
             "人工智能"
           ],
           "score": 7.83
-        },
-        {
-          "title": "New Scientist recommends the quantum soundscape of Liminals - New Scientist",
-          "titleZh": "《新科学家》推荐 Liminals 的量子音景 - 《新科学家》",
-          "source": "newscientist.com",
-          "link": "https://www.newscientist.com/article/mg26935840-400-new-scientist-recommends-the-quantum-soundscape-of-liminals/",
-          "rawSummary": "Trending New Scientist articles #### 1 AIs can’t stop recommending nuclear strikes in war game simulations #### 2 It’s your perception of sleep that’s making you feel tired all day #### 3 The world’s most elusive colour is worth billions – if we can find it #### 4 Birdwatching may reshape the brain and build its buffer against ageing #### 5 Rapamycin can add years to your life, or none at all – it’s a lottery #### 6 Cannibalism may explain why some orcas stay in family groups #### 7 Stone Age symbols may push back the earliest form of writing #### 8 Tiny predatory dinosaur weighed less than a chicken #### 9 Landmark vitiligo cream targets immune cells that disrupt pigmentation #### 10 Loophole found that makes quantum cloning possible Advertisement [...] Skip to content Sign in Subscribe now Subscribe now Subscribe now #### Comment # New Scientist recommends the quantum soundscape of Liminals The books, TV, games and more that New Scientist staff have enjoyed this week By Thomas Lewton 25 February 2026 A century ago, when quantum mechanics was developed, physicists felt they were peering into the abyss: everything they thought was real, wasn’t. Today, we talk easily about collapsing clouds of probability and spooky action at a distance. [...] Topics: exhibition/ review Advertisement ## Sign up to our weekly newsletter Receive a weekly dose of discovery in your inbox. We'll also keep you up to date with New Scientist events and special offers. Sign up ## More from New Scientist Explore the latest news, articles and features #### Comment ### Return of Fallout, Paradise and Silo fuels passion for bunker sci-fi Culture#### Comment ### New Scientist recommends pioneering artist Ryoji Ikeda's new work Culture#### Comment ### Alex Garland’s The Bone Temple is brutal, brilliant - and mind-blowing Culture#### Space ### Blue Planet Red is wrong about Mars – but it's surprisingly poignant Culture #### Popular articles Trending New Scientist articles #### 1",
-          "publishedAt": "Wed, 25 Feb 2026 19:03:30 GMT",
-          "ts": 1772046210000,
-          "tavilyScore": 0.088538056,
-          "summary": "新科学家热门文章 #### 1 人工智能无法停止在战争游戏模拟中推荐核打击 #### 2 你对睡眠的感知让你一整天都感到疲倦 #### 3 世界上最难以捉摸的颜色。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 7.258538056
-          },
-          "tags": [
-            "神经科学"
-          ],
-          "score": 7.258538056
         },
         {
           "title": "Are You ‘Agentic’ Enough for the AI Era?",
@@ -93,6 +93,30 @@
             "技术"
           ],
           "score": 7.17
+        },
+        {
+          "title": "Google’s Cloud AI lead on the three frontiers of model capability - TechCrunch",
+          "titleZh": "谷歌的 Cloud 人工智能 在模型能力的三个前沿领域处于领先地位",
+          "source": "techcrunch.com",
+          "link": "https://techcrunch.com/2026/02/23/googles-cloud-ai-lead-on-the-three-frontiers-of-model-capability/",
+          "rawSummary": "AI, Exclusive, Google, Vertex Russell Brandom AI Editor Russell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review. He can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489. View Bio October 13-15 San Francisco, CA Save up to $680 on your pass before February 27. Meet investors. Discover your next portfolio company. Hear from 250+ tech leaders, dive into 200+ sessions, and explore 300+ startups building what’s next. Don’t miss these one-time savings. REGISTER NOW ## Most Popular Bill Gurley says that right now, the worst thing you can do for your career is play it safe [...] When I spoke with Michael, I was particularly struck by one idea I hadn’t heard before. As he put it, AI models are pushing against three frontiers at once: raw intelligence, response time, and a third quality that has less to do with raw capability than with cost — whether a model can be deployed cheaply enough to run at massive, unpredictable scale. It’s a new way of thinking about model capabilities, and a particularly valuable one for anyone trying to push frontier models in a new direction. This interview has been edited for length and clarity. Why don’t you start by walking us through your experience in AI so far, and what you do at Google? [...] Russell Brandom As a product VP at Google Cloud, Michael Gerstenhaber works mostly on Vertex, the company’s unified platform for deploying enterprise AI. It gives him a high-level view of how companies are actually using AI models, and what still needs to be done to unleash the potential of agentic AI.",
+          "publishedAt": "Mon, 23 Feb 2026 19:18:42 GMT",
+          "ts": 1771874322000,
+          "tavilyScore": 0.81874656,
+          "summary": "AI，独家，谷歌，Vertex Russell Brandom AI 编辑 Russell Brandom 自 2012 年以来一直报道科技行业，重点关注平台政策和新兴技术。",
+          "judgement": {
+            "frontier": 7,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.14874656
+          },
+          "tags": [
+            "人工智能",
+            "智能体",
+            "AI安全",
+            "技术"
+          ],
+          "score": 7.14874656
         }
       ]
     },
@@ -102,7 +126,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772391681824,
+      "updatedAt": 1772391962758,
       "items": [
         {
           "title": "The human exposome could change everything we know about disease",
@@ -125,28 +149,6 @@
           "score": 8.17
         },
         {
-          "title": "This AI can improve your peer review — and make it more polite - Nature",
-          "titleZh": "《自然》杂志：这种人工智能可以改善你的同行评审，并使其更加礼貌",
-          "source": "nature.com",
-          "link": "https://www.nature.com/articles/d41586-026-00536-6",
-          "rawSummary": "## Search Advanced search ### Quick links Explore articles by subject Find a job Guide to authors Editorial policies [...] Access the most recent journalism from Nature's award-winning team Explore the latest features & opinion covering groundbreaking research Access through your institution or Sign in or create an account Continue with Google Continue with ORCiD doi: ## References 1. Thakkar, N. et al. Nature Mach. Intell. (2026). Article Google Scholar Download references Reprints and permissions ## Related Articles AI is transforming peer review — and many scientists are worried Three AI-powered steps to faster, smarter peer review Scientists hide messages in papers to game AI peer review More than half of researchers now use AI for peer review — often against guidance ## Subjects Machine learning Peer review ## Latest on: Machine learning Peer review [...] ## Latest on: Machine learning Peer review AI is threatening science jobs. Which ones are most at risk? News ‘An AlphaFold 4’ – scientists marvel at DeepMind drug spin-off’s exclusive new AI News AI offers way to image and assess clinical cell samples News & Views How AI slop is causing a crisis in computer science News AI could transform research assessment — and some academics are worried Career Column AI research deluge: why one conference is asking authors to rank their own papers Nature Index ## ### Jobs #### Global Recruitment for Faculty, Postdocs, and Specialists at Hangzhou Institute of Medicine, CAS Seeking exceptional Senior/Junior PIs, Postdocs, and Core Specialists globally year-round Hangzhou, China",
-          "publishedAt": "Mon, 23 Feb 2026 15:28:26 GMT",
-          "ts": 1771860506000,
-          "tavilyScore": 0.271929952,
-          "summary": "搜索 高级搜索 ### 快速链接 按主题探索文章 查找工作 作者指南 编辑政策 [...] 访问《自然》获奖团队的最新新闻 探索最新功能和。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 3,
-            "total": 8.101929952
-          },
-          "tags": [
-            "人工智能",
-            "AI安全"
-          ],
-          "score": 8.101929952
-        },
-        {
           "title": "Why You Can’t Say No to Snacks Even When Full",
           "titleZh": "为什么即使吃饱了也不能拒绝零食",
           "source": "Neuroscience News",
@@ -164,6 +166,27 @@
           "tags": [
             "神经科学",
             "脑机接口"
+          ],
+          "score": 8.17
+        },
+        {
+          "title": "This AI finds simple rules where humans see only chaos",
+          "titleZh": "这个人工智能找到了人类只看到混乱的简单规则",
+          "source": "ScienceDaily AI",
+          "link": "https://www.sciencedaily.com/releases/2025/12/251221091237.htm",
+          "rawSummary": "A new AI developed at Duke University can uncover simple, readable rules behind extremely complex systems. It studies how systems evolve over time and reduces thousands of variables into compact equations that still capture real behavior. The method works across physics, engineering, climate science, and biology. Researchers say it could help scientists understand systems where traditional equations are missing or too complicated to write down.",
+          "publishedAt": "2025-12-22T06:04:50.000Z",
+          "ts": 1766383490000,
+          "summary": "杜克大学开发的一种新人工智能可以揭示极其复杂系统背后的简单、可读的规则。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 7,
+            "total": 8.17
+          },
+          "tags": [
+            "人工智能",
+            "生命科学"
           ],
           "score": 8.17
         },
@@ -193,14 +216,14 @@
           "score": 8.17
         },
         {
-          "title": "This AI finds simple rules where humans see only chaos",
-          "titleZh": "这个人工智能找到了人类只看到混乱的简单规则",
-          "source": "ScienceDaily AI",
-          "link": "https://www.sciencedaily.com/releases/2025/12/251221091237.htm",
-          "rawSummary": "A new AI developed at Duke University can uncover simple, readable rules behind extremely complex systems. It studies how systems evolve over time and reduces thousands of variables into compact equations that still capture real behavior. The method works across physics, engineering, climate science, and biology. Researchers say it could help scientists understand systems where traditional equations are missing or too complicated to write down.",
-          "publishedAt": "2025-12-22T06:04:50.000Z",
-          "ts": 1766383490000,
-          "summary": "杜克大学开发的一种新人工智能可以揭示极其复杂系统背后的简单、可读的规则。",
+          "title": "Scientists discover a bacterial kill switch and it could change the fight against superbugs",
+          "titleZh": "科学家发现细菌杀死开关，它可能会改变对抗超级细菌的斗争",
+          "source": "ScienceDaily Biology",
+          "link": "https://www.sciencedaily.com/releases/2026/02/260228082723.htm",
+          "rawSummary": "Drug-resistant bacteria are becoming harder to treat, pushing scientists to look for new antibiotic targets. Researchers have now discovered that several unrelated viruses disable a key bacterial protein called MurJ, which is essential for building the bacterial cell wall. High-resolution imaging shows these viral proteins lock MurJ into a single position, stopping cell wall construction and leading to bacterial death.",
+          "publishedAt": "2026-02-28T14:20:04.000Z",
+          "ts": 1772288404000,
+          "summary": "耐药细菌变得越来越难治疗，促使科学家寻找新的抗生素靶点。",
           "judgement": {
             "frontier": 9,
             "depth": 8,
@@ -208,36 +231,32 @@
             "total": 8.17
           },
           "tags": [
-            "人工智能",
-            "生命科学"
+            "神经影像",
+            "蛋白质科学"
           ],
           "score": 8.17
         },
         {
-          "title": "Autonomy and Accountability in Bioprocessing - GEN - Genetic Engineering and Biotechnology News",
-          "titleZh": "生物加工中的自主权和问责制 - GEN - 基因工程和生物技术新闻",
-          "source": "genengnews.com",
-          "link": "https://www.genengnews.com/topics/bioprocessing/autonomy-and-accountability-in-bioprocessing/",
-          "rawSummary": "Copyright © 2026 Sage Publications or its affiliates, licensors, or contributors. All rights reserved, including those for text and data mining and training of large language models, artificial intelligence technologies, or similar technologies. GEN - Genetic Engineering and Biotechnology News MORE STORIES ### Healthcare Tech–Focused PATH Plans International Summit, Calls for Presentations ### Smoking Accelerates Biological Age, Says AI [...] Forgot your password? Get help Privacy Policy Password recovery Recover your password A password will be e-mailed to you. GEN – Genetic Engineering and Biotechnology News GEN Edge + Featured News + Multimedia Content + News + Insights Topics + Artificial Intelligence + Bioprocessing + Cancer + Drug Discovery + Genome Editing + Infectious Diseases + OMICs + Translational Medicine Magazine + Browse Issues + Subscribe Multimedia + Summits + Webinars + GEN Live + Learning Labs + Podcasts + Videos Resources + A-Lists + eBooks/Perspectives + Tutorials + Peer-Reviewed Journals - GEN Biotechnology - Re:Gen Open + New Products Subscribe + Get GEN Magazine + Get GEN eNewsletters [...] How to Avoid a Fall by Balancing Cost and Performance in Drug Discovery Related Media Robots on the Red Line: A Video Update from SLAS 2026 Reporting Live from JPM 2026: Alex Philippidis and Jonathan Grinstein, PhD AI in Protein Design: Hype vs. Reality Explained by David Baker Boston's Bioprocessing Buzz: GEN Reports Live from BPI 2025 The Future of Bioinformatics: Scaling Interactive and Computational Workflows with Seqera Bioprocessing in Boston: GEN Reports Live from BPI 2024 ##### Top 5 ##### Resources ##### Recommended For You #### Podcast ### Touching Base",
-          "publishedAt": "Wed, 25 Feb 2026 12:00:28 GMT",
-          "ts": 1772020828000,
-          "tavilyScore": 0.027907972800000003,
-          "summary": "版权所有 © 2026 Sage Publications 或其附属机构、许可方或贡献者。",
+          "title": "Structural alignment for energy–computation co-design - Nature",
+          "titleZh": "能源计算协同设计的结构调整",
+          "source": "nature.com",
+          "link": "https://www.nature.com/articles/s44287-026-00273-y",
+          "rawSummary": "## Search Advanced search ### Quick links Explore articles by subject Find a job Guide to authors Editorial policies Sign up for the Nature Briefing newsletter — what matters in science, free to your inbox daily. Get the most important science stories of the day, free in your inbox. Sign up for Nature Briefing [...] only $9.92 per issue Learn more Buy this article Purchase on SpringerLink Instant access to the full article PDF. USD 39.95 Prices may be subject to local taxes which are calculated during checkout ## References 1. International Energy Agency. AI is Set to Drive Surging Electricity Demand from Data Centres while Offering the Potential to Transform How the Energy Sector Works (2025). 2. Mills, J. NVIDIA Launches Omniverse DSX Blueprint, Enabling Global AI Infrastructure Ecosystem to Build Gigawatt-Scale AI Factories (2025). 3. Xie, L., Li, N. & Poor, H. V. Sustainable electrification in the era of AI. Nat. Rev. Electr. Eng. 1, 493–494 (2024). [...] Article Google Scholar 4. US Department of Energy, Office of Nuclear Energy. Advantages and Challenges of Nuclear-Powered Data Centers (2025). 5. International Energy Agency. Energy Supply for AI (2024). 6. Lin, H. et al. Power system and communication network co-simulation for smart grid applications. IEEE ISGT (2011). 7. Ruan, J., Xu, Z. & Su, H. Towards interdisciplinary integration of electrical engineering and earth science. Nat. Rev. Electr. Eng. 1, 278–279 (2024). Article Google Scholar 8. Censi, A. Uncertainty in monotone codesign problems. IEEE Robot. Autom. Lett. 2, 1556–1563 (2017). Article Google Scholar 9. Helbing, D. Globally networked risks and how to respond. Nature 497, 51–59 (2013).",
+          "publishedAt": "Mon, 23 Feb 2026 17:26:56 GMT",
+          "ts": 1771867616000,
+          "tavilyScore": 0.10687071040000001,
+          "summary": "搜索 高级搜索 ### 快速链接 按主题浏览文章 查找工作 作者指南 编辑政策 订阅《自然简报》时事通讯 — 科学领域的重要内容，每天免费发送到您的收件箱。",
           "judgement": {
             "frontier": 9,
-            "depth": 8,
+            "depth": 9,
             "reach": 3,
-            "total": 7.1979079727999995
+            "total": 7.6068707104
           },
           "tags": [
             "人工智能",
-            "AI安全",
-            "生命科学",
-            "生物技术",
-            "基因组学",
-            "蛋白质科学"
+            "技术"
           ],
-          "score": 7.1979079727999995
+          "score": 7.6068707104
         }
       ]
     },
@@ -247,7 +266,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1772391689631,
+      "updatedAt": 1772391969844,
       "items": [
         {
           "title": "Q4 2025 Healthtech VC Trends - PitchBook",
@@ -299,13 +318,13 @@
           "rawSummary": "R&D Partner Content ### 5th mRNA-Based Therapeutics Summit Europe The Summit is the leading European industry-focused forum dedicated to accelerating the development of messenger RNA (mRNA) medicines Get in-depth news, opinions, and features on pharma and healthcare sent straight to your inbox ## Trends & Insights ## industry trends ## Life Sciences ## pharma industry Category : Digital / Views & Analysis ### Editor's Picks - ##### Makary says FDA will \"end two-trial dogma\" for approvals - ##### NIH Director Bhattacharya will temporarily run CDC - ##### MSD and Mayo Clinic team up on AI drug discovery News - ##### Number of UK biotech companies rising, says report - ##### NHS study will pick apart mental illness with data science News [...] Nicole Raleigh ## Trends & Insights News ### NHS \"isn't delivering equitable care for rare diseases\" A Genetic Alliance UK report claims the NHS is failing to meet the needs of many of the 3.5 million people in the country who live with rare diseases. Sales & Marketing Sponsored ### Using AI-driven synthetic personas to take your insights fur... As AI continues to reshape the healthcare landscape, pharma teams are beginning to leverage synthetic personas. Market Access ### 12 questions with: Daniel Kohlstaedt Daniel Kohlstaedt, managing director of PurpleLeaf Strategy, with more than 18 years of experience in pharma, talks about his journey through the industry. Digital Sponsored ### Expert Directed Applied Intelligence: Redefining AI in Life ... [...] Designing medicines, not just models: Basecamp’s EDEN and aiPGI exemplify AI as a creator of therapeutic enzymes and antimicrobial peptides with high lab validation rates – an inflection beyond in silico screening. Precision analytics at scale: SOPHiA GENETICS passed 2 million genomic profiles analyzed on DDM and forged an MD Anderson collaboration – evidence that AI genomics networks are achieving clinical grade scale. Operational AI adoption pressure: Survey data (Argon & Co) showed 49% of life sciences leaders plan to invest in AI for efficiencies amid rising input costs and supply risk – pairing nicely with digital twins and predictive analytics in manufacturing/logistics.",
           "publishedAt": "Fri, 27 Feb 2026 16:32:24 GMT",
           "ts": 1772209944000,
-          "tavilyScore": 0.46195192,
+          "tavilyScore": 0.46216854400000007,
           "summary": "研发合作伙伴内容 ### 第五届欧洲 mRNA 治疗峰会 该峰会是欧洲领先的以行业为中心的论坛，致力于加速信使 RNA (mRNA) 药物的开发 获取深度新闻，。",
           "judgement": {
             "frontier": 9,
             "depth": 8,
             "reach": 3,
-            "total": 7.63195192
+            "total": 7.632168544
           },
           "tags": [
             "人工智能",
@@ -313,7 +332,7 @@
             "生物技术",
             "基因组学"
           ],
-          "score": 7.63195192
+          "score": 7.632168544
         }
       ]
     }
