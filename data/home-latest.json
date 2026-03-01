@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T18:57:25.046Z",
+  "generatedAt": "2026-03-01T19:00:14.327Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772391427756,
+      "updatedAt": 1772391596712,
       "items": [
         {
           "title": "What’s next for Chinese open-source AI",
@@ -49,6 +49,27 @@
             "人工智能"
           ],
           "score": 7.83
+        },
+        {
+          "title": "New Scientist recommends the quantum soundscape of Liminals - New Scientist",
+          "titleZh": "《新科学家》推荐 Liminals 的量子音景 - 《新科学家》",
+          "source": "newscientist.com",
+          "link": "https://www.newscientist.com/article/mg26935840-400-new-scientist-recommends-the-quantum-soundscape-of-liminals/",
+          "rawSummary": "Trending New Scientist articles #### 1 AIs can’t stop recommending nuclear strikes in war game simulations #### 2 It’s your perception of sleep that’s making you feel tired all day #### 3 The world’s most elusive colour is worth billions – if we can find it #### 4 Birdwatching may reshape the brain and build its buffer against ageing #### 5 Rapamycin can add years to your life, or none at all – it’s a lottery #### 6 Cannibalism may explain why some orcas stay in family groups #### 7 Stone Age symbols may push back the earliest form of writing #### 8 Tiny predatory dinosaur weighed less than a chicken #### 9 Landmark vitiligo cream targets immune cells that disrupt pigmentation #### 10 Loophole found that makes quantum cloning possible Advertisement [...] Skip to content Sign in Subscribe now Subscribe now Subscribe now #### Comment # New Scientist recommends the quantum soundscape of Liminals The books, TV, games and more that New Scientist staff have enjoyed this week By Thomas Lewton 25 February 2026 A century ago, when quantum mechanics was developed, physicists felt they were peering into the abyss: everything they thought was real, wasn’t. Today, we talk easily about collapsing clouds of probability and spooky action at a distance. [...] Topics: exhibition/ review Advertisement ## Sign up to our weekly newsletter Receive a weekly dose of discovery in your inbox. We'll also keep you up to date with New Scientist events and special offers. Sign up ## More from New Scientist Explore the latest news, articles and features #### Comment ### Return of Fallout, Paradise and Silo fuels passion for bunker sci-fi Culture#### Comment ### New Scientist recommends pioneering artist Ryoji Ikeda's new work Culture#### Comment ### Alex Garland’s The Bone Temple is brutal, brilliant - and mind-blowing Culture#### Space ### Blue Planet Red is wrong about Mars – but it's surprisingly poignant Culture #### Popular articles Trending New Scientist articles #### 1",
+          "publishedAt": "Wed, 25 Feb 2026 19:03:30 GMT",
+          "ts": 1772046210000,
+          "tavilyScore": 0.088538056,
+          "summary": "新科学家热门文章 #### 1 人工智能无法停止在战争游戏模拟中推荐核打击 #### 2 你对睡眠的感知让你一整天都感到疲倦 #### 3 世界上最难以捉摸的颜色。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.258538056
+          },
+          "tags": [
+            "神经科学"
+          ],
+          "score": 7.258538056
         }
       ]
     },
@@ -58,7 +79,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772391437133,
+      "updatedAt": 1772391606166,
       "items": [
         {
           "title": "The human exposome could change everything we know about disease",
@@ -81,47 +102,25 @@
           "score": 8.17
         },
         {
-          "title": "Structural alignment for energy–computation co-design - Nature",
-          "titleZh": "能源计算协同设计的结构调整",
+          "title": "Cover runners-up of 2025 - Nature",
+          "titleZh": "2025 年封面亚军",
           "source": "nature.com",
-          "link": "https://www.nature.com/articles/s44287-026-00273-y",
-          "rawSummary": "## Search Advanced search ### Quick links Explore articles by subject Find a job Guide to authors Editorial policies Sign up for the Nature Briefing newsletter — what matters in science, free to your inbox daily. Get the most important science stories of the day, free in your inbox. Sign up for Nature Briefing [...] only $9.92 per issue Learn more Buy this article Purchase on SpringerLink Instant access to the full article PDF. USD 39.95 Prices may be subject to local taxes which are calculated during checkout ## References 1. International Energy Agency. AI is Set to Drive Surging Electricity Demand from Data Centres while Offering the Potential to Transform How the Energy Sector Works (2025). 2. Mills, J. NVIDIA Launches Omniverse DSX Blueprint, Enabling Global AI Infrastructure Ecosystem to Build Gigawatt-Scale AI Factories (2025). 3. Xie, L., Li, N. & Poor, H. V. Sustainable electrification in the era of AI. Nat. Rev. Electr. Eng. 1, 493–494 (2024). [...] Article Google Scholar 4. US Department of Energy, Office of Nuclear Energy. Advantages and Challenges of Nuclear-Powered Data Centers (2025). 5. International Energy Agency. Energy Supply for AI (2024). 6. Lin, H. et al. Power system and communication network co-simulation for smart grid applications. IEEE ISGT (2011). 7. Ruan, J., Xu, Z. & Su, H. Towards interdisciplinary integration of electrical engineering and earth science. Nat. Rev. Electr. Eng. 1, 278–279 (2024). Article Google Scholar 8. Censi, A. Uncertainty in monotone codesign problems. IEEE Robot. Autom. Lett. 2, 1556–1563 (2017). Article Google Scholar 9. Helbing, D. Globally networked risks and how to respond. Nature 497, 51–59 (2013).",
-          "publishedAt": "Mon, 23 Feb 2026 17:26:56 GMT",
-          "ts": 1771867616000,
-          "tavilyScore": 0.10687071040000001,
-          "summary": "搜索 高级搜索 ### 快速链接 按主题浏览文章 查找工作 作者指南 编辑政策 订阅《自然简报》时事通讯 — 科学领域的重要内容，每天免费发送到您的收件箱。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 9,
-            "reach": 3,
-            "total": 7.6068707104
-          },
-          "tags": [
-            "人工智能",
-            "技术"
-          ],
-          "score": 7.6068707104
-        },
-        {
-          "title": "Vitamin K Refusal Puts Newborns at High Risk for Brain Injury",
-          "titleZh": "拒绝维生素 K 会使新生儿面临脑损伤的高风险",
-          "source": "Neuroscience News",
-          "link": "https://neurosciencenews.com/vitamin-k-newborn-brain-bleed-30205/",
-          "rawSummary": "Vitamin K Refusal Puts Newborns at High Risk for Brain Injury Featured Neurology Neuroscience &middot; February 26, 2026 Summary: Newborns are naturally born with low levels of vitamin K, which is essential for blood clotting. To prevent life-threatening bleeding, infants are typically given a vitamin K shot at birth. However, a systematic review reveals a concerning trend: more parents are refusing this essential supplement. Babies who do not receive the shot are 81 times more likely to develop &#8220;vitamin K deficiency bleeding,&#8221; a condition that often leads to brain hemorrhages, permanent neurological disability, or death. Researchers noted that this trend is often linked to broader healthcare hesitancy and inaccurate information. Increasing numbers of parents are refusing vitamin K shots for their newborns, putting infants at greater risk of avoidable brain injuries, according to a preliminary systematic review released February 26, 2026, that will be presented at the American Academy of Neurology’s 78 th Annual Meeting taking place April 18-22, 2026, in Chicago and online. A vitamin K injection is a supplement that provides babies with an essential vitamin that is naturally low in newborns. It is not a vaccine. Vitamin K is needed to help blood clot. Getting a vitamin K shot right after birth can prevent a rare but serious condition called vitamin K deficiency bleeding. Research confirms that the vitamin K injection at birth is a vital safeguard against preventable brain hemorrhages and lifelong neurological disability. Credit: Neuroscience News This condition can cause an intracerebral hemorrhage, a type of stroke, when a blood vessel bursts in the brain. It can lead to death or lifelong brain problems. “Vitamin K at birth is safe and effective, and while refusal is still uncommon with rates in the United States remaining under 1% in most hospitals, our review found in recent years, there have been increases in parents refusing this supplement for their newborns,” said study author Kate Semidey, MD, of Florida International University in Miami. “This trend is concerning because our review also found that babies who do not get the vitamin K injection are 81 times more likely to develop vitamin K deficiency bleeding.” For the review, researchers looked at 25 studies with two decades of global data. The studies examined vitamin K refusal, the incidence of vitamin K deficiency bleeding and outcomes, parent reasons for refusal and possible links to vaccine refusal. Researchers found in Minnesota, refusal rates rose from 0.9% in 2015 to 1.6% in 2019. In California, Connecticut, and Iowa, refusal ranged from 0.2% to 1.3% in 2018 and 2019, with over half of hospital staff perceiving increases. Internationally, refusal rates ranged from 1% to 3% in Canada, New Zealand and Scotland, and more than 30% in some birthing centers.",
-          "publishedAt": "2026-02-26T21:31:17.000Z",
-          "ts": 1772141477000,
-          "summary": "拒绝维生素 K 使新生儿面临脑损伤的高风险 神经病学 神经科学专题 · 2026 年 2 月 26 日 摘要：新生儿天生维生素 K 水平较低，而维生素 K 对于血液循环至关重要。",
+          "link": "https://www.nature.com/articles/s43588-026-00967-1",
+          "rawSummary": "## Search Advanced search ### Quick links Explore articles by subject Find a job Guide to authors Editorial policies Sign up for the Nature Briefing: AI and Robotics newsletter — what matters in AI and robotics research, free to your inbox weekly. Get the most important science stories of the day, free in your inbox. Sign up for Nature Briefing: AI and Robotics [...] Thank you for visiting nature.com. You are using a browser version with limited support for CSS. To obtain the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles and JavaScript. View all journals Search Log in Content Explore content About the journal Publish with us Sign up for alerts RSS feed Cover runners-up of 2025 Download PDF Download PDF Editorial Published: # Cover runners-up of 2025 Nature Computational Science volume 6, page 111 (2026)Cite this article ### Subjects Computational science Publishing We highlight some of our favorite cover suggestions from 2025. [...] Cover submitted for the paper by Kevin Maik Jablonka and colleagues. Credit: Indrajeet Mandal. Last but not least, an image submitted for the paper by Kevin Maik Jablonka and colleagues is also worth highlighting3.\"). The figure depicts a luminous wireframe hand — which represents artificial intelligence, and more specifically, a vision language models (VLM) — writing on a laboratory notebook filled with notes related to chemistry and materials science. Here, the act of writing represents active scientific thinking, interpretation of experimental data, and formation of meaningful conclusions. The paper introduces a benchmark — named MaCBench — to evaluate whether modern VLMs can truly reason across chemistry and materials science like a scientist, or merely recognize patterns.",
+          "publishedAt": "Thu, 26 Feb 2026 17:05:57 GMT",
+          "ts": 1772125557000,
+          "tavilyScore": 0.27096200000000004,
+          "summary": "搜索 高级搜索 ### 快速链接 按主题探索文章 寻找工作 作者指南 编辑政策 订阅《自然简报：人工智能和机器人》时事通讯 — 人工智能和机器人研究中的重要因素，。",
           "judgement": {
             "frontier": 9,
             "depth": 10,
-            "reach": 7,
-            "total": 8.83
+            "reach": 3,
+            "total": 8.100962
           },
           "tags": [
-            "AI安全",
-            "神经科学"
+            "人工智能"
           ],
-          "score": 8.83
+          "score": 8.100962
         },
         {
           "title": "Why You Can’t Say No to Snacks Even When Full",
@@ -141,6 +140,31 @@
           "tags": [
             "神经科学",
             "脑机接口"
+          ],
+          "score": 8.17
+        },
+        {
+          "title": "Study Reveals What Tau PET Scans Are Actually Seeing",
+          "titleZh": "研究揭示了 Tau PET 扫描的实际情况",
+          "source": "Neuroscience News",
+          "link": "https://neurosciencenews.com/tau-pet-inflammation-30213/",
+          "rawSummary": "Study Reveals What Tau PET Scans Are Actually Seeing Featured Neurology Neuroscience &middot; February 28, 2026 Summary: While tau PET scans are vital for &#8220;seeing&#8221; Alzheimer’s biology in living patients, they have a known quirk: the most common tracer, Flortaucipir (Tauvid), often &#8220;lights up&#8221; even when tau tangles aren&#8217;t the primary driver. In a high-precision study, researchers used AI-enabled, voxel-by-voxel alignment to compare PET scans directly with postmortem brain tissue. They discovered that in non-Alzheimer’s cases and even some controls, the PET signal was actually reacting to iron deposits and MAO-B (a marker of neuroinflammation) rather than tau itself. This &#8220;off-target&#8221; binding explains why scans can sometimes over-predict the presence of toxic tangles. Tau proteins play an important role in Alzheimer’s disease. Tau helps to stabilize neurons in the brain, but in Alzheimer’s disease, tau proteins can misfold and tangle inside neurons. These tangles spread across the brain forming toxic clumps that impair neuronal function and ultimately lead to cell death. PET scans are one of the few ways that clinicians and researchers can “see” Alzheimer’s disease biology in a living person. PET scans for tau are being increasingly used in specialty clinics and research to estimate the burden and distribution of tau tangles, providing information that can influence diagnostic confidence, prognosis discussions, and how patients are selected for novel Alzheimer’s therapies and tracked in Alzheimer’s drug trials. ?Researchers identified that iron and neuroinflammation can mimic tau pathology on PET scans, providing a roadmap for more accurate diagnostic interpretation. Credit: Neuroscience News At the same time, there is an important limitation to tau PET scans: the most widely used tau PET tracer (Flortaucipir/Tauvid) can also bind to other biological features &nbsp; in the&nbsp;brain, sometimes showing a low-level signal on scans even when tau is not the main driver of the results. This is especially true in non-Alzheimer’s disorders, where tau protein accumulations show a different structure than in Alzheimer’s disease. In a study appearing February 25 in Acta Neuropathologica , UC San Francisco researchers use a rare combination of patient tau PET imaging plus detailed postmortem brain tissue mapping, to clarify the extent to which non-tau factors influence the Flortaucipir tracer signal. With the aid of AI-enabled, voxel-by-voxel alignment between the PET scan and microscopy, the researchers computationally matched the PET signal to the corresponding tissue location and generated thousands of point-by-point comparisons per person, giving much higher anatomical precision than typical PET–autopsy studies. They then measured, side-by-side, the tissue features most relevant to interpreting flortaucipir: phospho-tau (tau pathology), ferric iron deposits and MAO-B, a marker linked to reactive astrocytes which are a key component of neuroinflammation. They found that in several non-Alzheimer’s tauopathies (and in a non-tau control case), the PET signal was better explained by iron and/or MAO-B–related processes than by tau itself. “Our results help explain&nbsp; why &nbsp;tau PET scans sometimes ‘light up’ beyond what tau pathology alone would predict,” says co-senior author Lea T. Grinberg, MD, PhD, a former UCSF neuroscientist and current professor of Neuroscience at the Mayo Clinic .“In Alzheimer’s disease, tau is a major contributor to flortaucipir signal—but not the only one.” The researchers believe these findings can help clinicians avoid over-interpretation of borderline signal in a tau PET scan and improve how scans are used for prognosis and trial decisions.",
+          "publishedAt": "2026-02-28T21:24:35.000Z",
+          "ts": 1772313875000,
+          "summary": "研究揭示了 Tau PET 扫描的实际情况 特色神经学 Neuroscience · 二月 28, 2026 摘要：虽然 tau PET 扫描对于“观察”活体患者的阿尔茨海默病生物学至关重要，但它们。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 7,
+            "total": 8.17
+          },
+          "tags": [
+            "人工智能",
+            "AI安全",
+            "神经科学",
+            "神经影像",
+            "生命科学",
+            "蛋白质科学"
           ],
           "score": 8.17
         },
@@ -166,26 +190,27 @@
           "score": 8.17
         },
         {
-          "title": "AI scientists and the robotic labs of tomorrow - pharmaphorum",
-          "titleZh": "人工智能科学家和未来的机器人实验室",
+          "title": "Agentic AI and the human element: Building trustworthy automation in clinical trials - pharmaphorum",
+          "titleZh": "代理人工智能和人的因素：在临床试验中建立值得信赖的自动化",
           "source": "pharmaphorum.com",
-          "link": "https://pharmaphorum.com/digital/ai-scientists-and-robotic-labs-tomorrow",
-          "rawSummary": "##### About the author David Ruau is head of business development for healthcare & life sciences, EMEA, at NVIDIA, where he partners to drive the use of AI and machine learning in pharmaceutical research. With a background in computational biology, his work has focused on stem cell reprogramming and the electronic health records analysis across therapeutic areas. He previously held senior roles at Bayer, AstraZeneca, and a healthcare AI company, and has authored more than 30 peer-reviewed publications in leading journals including Nature, Cell, and Stem Cells. Image David Ruau ## AI in life sciences News ### FDA maps new regulatory route for ultra-rare diseases [...] # AI scientists and the robotic labs of tomorrow Digital The life sciences are entering a decisive new phase. Over the past decade, artificial intelligence (AI) has proven its value as a powerful tool, helping researchers analyse vast datasets, surface hidden patterns, and accelerate individual stages of discovery. In 2026, however, AI’s role is evolving from exploration to orchestration. Rather than supporting isolated tasks, AI scientists – systems of agents that can work autonomously alongside human scientists – are already becoming essential collaborators embedded across the research lifecycle, fundamentally reshaping how innovation happens in healthcare and beyond. [...] ## AI scientists become core collaborators As 2026 progresses, AI scientists will no longer operate at the margins of life sciences research. Instead, they will become essential collaborators in the labs of tomorrow, working alongside human scientists and other AI-scientist platforms and established tools to co-author discovery itself. These AI systems will propose novel targets and molecular structures, simulate biological behaviour across complex virtual networks, suggest possible indication expansion and help direct both digital and physical experiments.",
-          "publishedAt": "Tue, 24 Feb 2026 10:50:02 GMT",
-          "ts": 1771930202000,
-          "tavilyScore": 0.380844352,
-          "summary": "关于作者 David Ruau 是 NVIDIA 欧洲、中东和非洲地区医疗保健和生命科学业务开发主管，他与 NVIDIA 合作推动人工智能和机器学习在制药研究中的应用。",
+          "link": "https://pharmaphorum.com/rd/agentic-ai-and-human-element-building-trustworthy-automation-clinical-trials",
+          "rawSummary": "Sales & Marketing Sponsored ### Using AI-driven synthetic personas to take your insights fur... As AI continues to reshape the healthcare landscape, pharma teams are beginning to leverage synthetic personas. R&D ### Deep Dive: Research and Development 2025 Every breakthrough in medicine, every new treatment that changes lives, starts with research. Digital Sponsored ### Expert Directed Applied Intelligence: Redefining AI in Life ... In a new white paper from Lumanity, explore why the most powerful AI will always be human-directed. Oncology Sponsored ### Collaboration & personalisation in rare disease R&D, with AO... For Rare Disease Day, in an AOP Health-sponsored podcast Melissa Fellner, VP of Global Therapeutic Areas, Commercial Operations, discussed their work. Digital [...] ## automation ## clinical trial enrolment ## human in the loop Category : R&D / Views & Analysis ### Editor's Picks - ##### Makary says FDA will \"end two-trial dogma\" for approvals - ##### NIH Director Bhattacharya will temporarily run CDC - ##### MSD and Mayo Clinic team up on AI drug discovery News - ##### Number of UK biotech companies rising, says report - ##### NHS study will pick apart mental illness with data science News ### Eisai unveils digital platform for kidney cancer patients Eisai has launched a 'digital destination', called Kompass, that aims to support patients after they have been given a diagnosis of kidney cancer. Sales & Marketing Sponsored ### Using AI-driven synthetic personas to take your insights fur... [...] ##### About the author Ece Kalvaci is a software engineer at Lindus Health, with dual MSc degrees in Computer Science and Data Science. She develops ML pipelines for clinical trial data extraction and predictive modelling while also leading work on ML-powered tools for protocol design. Image Ece Kalvaci ## AI in clinical trials News ### Eisai unveils digital platform for kidney cancer patients Eisai has launched a 'digital destination', called Kompass, that aims to support patients after they have been given a diagnosis of kidney cancer. R&D ### Results, reality, and recalibration: Unpacking AI hype at SC... SCOPE 2026 was dominated by one big topic: AI. You couldn’t walk five steps without hearing about something that AI was going to fix. Sales & Marketing Sponsored",
+          "publishedAt": "Thu, 26 Feb 2026 19:22:45 GMT",
+          "ts": 1772133765000,
+          "tavilyScore": 0.09565464000000001,
+          "summary": "销售和营销赞助 ### 使用人工智能驱动的合成角色将您的见解进一步...。",
           "judgement": {
             "frontier": 9,
             "depth": 8,
             "reach": 3,
-            "total": 7.550844352
+            "total": 7.26565464
           },
           "tags": [
             "人工智能",
-            "生命科学"
+            "生物技术",
+            "技术"
           ],
-          "score": 7.550844352
+          "score": 7.26565464
         }
       ]
     },
@@ -195,7 +220,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1772391445046,
+      "updatedAt": 1772391614326,
       "items": [
         {
           "title": "Q4 2025 Healthtech VC Trends - PitchBook",
