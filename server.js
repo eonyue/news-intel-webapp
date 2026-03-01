@@ -29,7 +29,7 @@ const CATEGORIES = [
     zhName: '媒体头条',
     description: 'Broad-reach media coverage around AI, neuroscience, life science and technology',
     zhDescription: 'AI / 神经科学 / 生命科学 / 技术主流媒体报道',
-    limit: 5,
+    limit: 18,
     tavilyQuery:
       'best in-depth media coverage today on AI large language models neuroscience life science technology',
     feeds: [
@@ -45,7 +45,7 @@ const CATEGORIES = [
     zhName: '研究速递',
     description: 'Research-heavy updates from journals, labs, and arXiv',
     zhDescription: '科研导向更新（含 arXiv）',
-    limit: 5,
+    limit: 18,
     tavilyQuery:
       'latest research in AI neuroscience life science from arXiv Nature Science Neuroscience News',
     feeds: [
@@ -63,7 +63,7 @@ const CATEGORIES = [
     zhName: '技术趋势',
     description: 'Developer and ecosystem trend signals',
     zhDescription: '开发者生态与技术趋势信号',
-    limit: 5,
+    limit: 18,
     tavilyQuery:
       'top trend signals this week on AI agents developer tooling chips software infrastructure and health tech',
     feeds: [

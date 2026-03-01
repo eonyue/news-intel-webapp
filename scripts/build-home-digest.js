@@ -8,6 +8,8 @@ const OUT = process.env.HOME_DIGEST_OUT || path.join(__dirname, '..', 'data', 'h
 
 const CATEGORY_IDS = ['media', 'research', 'trends'];
 const TOPICS = ['ai', 'neuro', 'life'];
+const FIXED_PER_CATEGORY = 6;
+const FIXED_PER_TOPIC = 2;
 
 function clean(text = '') {
   return String(text || '').replace(/\s+/g, ' ').trim();
@@ -36,6 +38,11 @@ function dedupeItems(items = []) {
   });
 }
 
+function isIndiaRelated(item = {}) {
+  const text = `${item.titleZh || ''} ${item.title || ''} ${item.source || ''} ${item.link || ''} ${item.rawSummary || ''} ${item.summary || ''}`.toLowerCase();
+  return /(\bindia\b|\bindian\b|印度)/.test(text);
+}
+
 function classifyTopic(item = {}) {
   const text = `${item.titleZh || ''} ${item.title || ''} ${(item.tags || []).join(' ')} ${item.summary || ''}`.toLowerCase();
 
@@ -53,10 +60,9 @@ function classifyTopic(item = {}) {
   return 'ai';
 }
 
-function rebalanceByTopic(items = []) {
+function rebalanceByTopic(items = [], target = FIXED_PER_CATEGORY) {
   if (!items.length) return items;
 
-  const target = items.length;
   const buckets = {
     ai: [],
     neuro: [],
@@ -69,28 +75,20 @@ function rebalanceByTopic(items = []) {
     buckets[topic].push(item);
   }
 
-  const base = Math.floor(target / 3);
-  let remainder = target - base * 3;
-  const quota = { ai: base, neuro: base, life: base };
-  for (const t of TOPICS) {
-    if (remainder <= 0) break;
-    quota[t] += 1;
-    remainder -= 1;
-  }
-
   const selected = [];
   const selectedKey = new Set();
 
+  // hard quota: 2 per topic
   for (const t of TOPICS) {
-    for (const item of buckets[t].slice(0, quota[t])) {
+    for (const item of buckets[t].slice(0, FIXED_PER_TOPIC)) {
       const key = `${item.link || ''}::${clean(item.titleZh || item.title || '')}`.toLowerCase();
-      if (!selectedKey.has(key)) {
-        selected.push(item);
-        selectedKey.add(key);
-      }
+      if (selectedKey.has(key)) continue;
+      selected.push(item);
+      selectedKey.add(key);
     }
   }
 
+  // fallback fill only if some topic lacks enough candidates
   if (selected.length < target) {
     for (const item of sorted) {
       const key = `${item.link || ''}::${clean(item.titleZh || item.title || '')}`.toLowerCase();
@@ -118,10 +116,11 @@ async function main() {
     const data = await fetchCategory(id);
     const filteredItems = (data.items || [])
       .filter((x) => readableSummary(x.summary || ''))
+      .filter((x) => !isIndiaRelated(x))
       .map((x) => ({ ...x, summary: clean(x.summary || '') }));
 
     const deduped = dedupeItems(filteredItems);
-    const balanced = rebalanceByTopic(deduped);
+    const balanced = rebalanceByTopic(deduped, FIXED_PER_CATEGORY);
 
     categories.push({
       ...data,
@@ -139,7 +138,7 @@ async function main() {
       globalSeen.add(key);
       return true;
     });
-    cat.items = rebalanceByTopic(cat.items);
+    cat.items = rebalanceByTopic(cat.items, FIXED_PER_CATEGORY);
   }
 
   const payload = {
