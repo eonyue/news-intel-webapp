@@ -220,10 +220,15 @@ function isReadableChineseSummary(text = '') {
   if (!hasChinese(s)) return false;
   if (/[�]/.test(s)) return false;
   if (/(undefined|null|\[object Object\]|lorem ipsum)/i.test(s)) return false;
-  if (s.length < 20) return false;
-  if (chineseRatio(s) < 0.2) return false;
+  if (/^#+\s*/.test(s)) return false;
+  if (/^\W+$/.test(s)) return false;
+  if (/^[（(【\[]?.{0,10}[）)】\]]?[。.!?]?$/.test(s)) return false;
+  if (/授予号|doi|arxiv|版权所有|all rights reserved/i.test(s)) return false;
+  if (s.length < 28) return false;
+  if (s.length > 260) return false;
+  if (chineseRatio(s) < 0.35) return false;
   const sentenceCount = s.split(/[。！？!?]/).filter(Boolean).length;
-  if (sentenceCount > 6) return false;
+  if (sentenceCount < 1 || sentenceCount > 5) return false;
   return true;
 }
 
@@ -233,7 +238,18 @@ function forceTitleChineseStyle(text = '') {
     .replace(/\bAI\b/gi, '人工智能')
     .replace(/\bAGI\b/gi, '通用人工智能')
     .replace(/\bLLMs?\b/gi, '大模型')
+    .replace(/\(\s*[A-Z]{2,10}\s*\)/g, '')
     .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
+function sanitizeSummaryText(text = '') {
+  return clean(text)
+    .replace(/^#+\s*/g, '')
+    .replace(/\b(doi|arxiv)\s*[:：]?\s*\S+/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/[（(]\s*[）)]/g, '')
+    .replace(/^[：:;，,。.]+/, '')
     .trim();
 }
 
@@ -529,7 +545,7 @@ async function translateTitleOnline(title = '') {
   }
 
   const polished = await polishChineseTitle(out);
-  const finalTitle = polished || out;
+  const finalTitle = forceTitleChineseStyle(polished || out);
 
   llmTranslateCache.set(cacheKey, finalTitle);
   titleTranslateCache.set(source, finalTitle);
@@ -589,11 +605,12 @@ async function summarizeArticleInChinese(raw = '', titleZh = '') {
       temperature: 0.2,
     });
 
-    if (chunkSummary) partials.push(chunkSummary);
+    const cleanedChunk = sanitizeSummaryText(chunkSummary);
+    if (isReadableChineseSummary(cleanedChunk)) partials.push(cleanedChunk);
   }
 
   const mergedInput = partials.length ? partials.join('\n') : source.slice(0, 2500);
-  const finalSummary = await callLLM({
+  const finalSummaryRaw = await callLLM({
     systemPrompt:
       '你是科技新闻编辑。请根据输入内容输出“文章总结”，用中文2-3句，讲清核心发现/事件、关键意义和潜在影响。风格客观、简洁，不要空话，不编造。LLM统一译为“大模型”。只输出总结正文。',
     userPrompt: `标题：${titleZh}\n素材：${mergedInput}`,
@@ -601,27 +618,32 @@ async function summarizeArticleInChinese(raw = '', titleZh = '') {
     temperature: 0.2,
   });
 
+  const finalSummary = sanitizeSummaryText(finalSummaryRaw);
   if (isReadableChineseSummary(finalSummary) && isSummaryRelevantToTitle(finalSummary, titleZh)) {
-    const polishedSummary = await callLLM({
+    const polishedRaw = await callLLM({
       systemPrompt: '请将输入总结润色为更自然的中文新闻摘要，保持事实不变，2-3句。只输出正文。',
       userPrompt: finalSummary,
       maxOutputTokens: 220,
       temperature: 0.1,
     });
-    const out = isReadableChineseSummary(polishedSummary) ? polishedSummary : finalSummary;
+    const polishedSummary = sanitizeSummaryText(polishedRaw);
+    const out = (isReadableChineseSummary(polishedSummary) && isSummaryRelevantToTitle(polishedSummary, titleZh))
+      ? polishedSummary
+      : finalSummary;
     llmSummaryCache.set(cacheKey, out);
     return out;
   }
 
   // retry once with stricter prompt
-  const retrySummary = await callLLM({
+  const retrySummaryRaw = await callLLM({
     systemPrompt:
-      '请输出高可读中文文章总结：2-3句，逻辑完整，避免术语堆砌，不要乱码或中英夹杂，不编造事实。只输出中文总结正文。',
+      '请输出高可读中文文章总结：2-3句，逻辑完整，避免术语堆砌，不要乱码或中英夹杂，不编造事实。禁止输出markdown标记。只输出中文总结正文。',
     userPrompt: `标题：${titleZh}\n素材：${mergedInput}`,
     maxOutputTokens: 220,
     temperature: 0.1,
   });
 
+  const retrySummary = sanitizeSummaryText(retrySummaryRaw);
   if (isReadableChineseSummary(retrySummary) && isSummaryRelevantToTitle(retrySummary, titleZh)) {
     llmSummaryCache.set(cacheKey, retrySummary);
     return retrySummary;
@@ -631,7 +653,7 @@ async function summarizeArticleInChinese(raw = '', titleZh = '') {
   const firstSentence = source.split(/(?<=[.!?])\s+/)[0] || source;
   const compact = clean(firstSentence).slice(0, 220);
   const translated = await translateTextToChinese(compact);
-  const plain = translated.endsWith('。') ? translated : `${translated}。`;
+  const plain = sanitizeSummaryText(translated.endsWith('。') ? translated : `${translated}。`);
   llmSummaryCache.set(cacheKey, plain);
   return plain;
 }
