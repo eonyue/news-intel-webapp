@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-02T02:22:34.368Z",
+  "generatedAt": "2026-03-02T05:16:21.103Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772418140079,
+      "updatedAt": 1772428557078,
       "items": [
         {
           "title": "What’s next for Chinese open-source AI",
@@ -31,6 +31,48 @@
           "score": 8.49
         },
         {
+          "title": "New Scientist recommends the quantum soundscape of Liminals - New Scientist",
+          "titleZh": "《新科学家》推荐 Liminals 的量子音景 - 《新科学家》",
+          "source": "newscientist.com",
+          "link": "https://www.newscientist.com/article/mg26935840-400-new-scientist-recommends-the-quantum-soundscape-of-liminals/",
+          "rawSummary": "Trending New Scientist articles #### 1 AIs can’t stop recommending nuclear strikes in war game simulations #### 2 It’s your perception of sleep that’s making you feel tired all day #### 3 The world’s most elusive colour is worth billions – if we can find it #### 4 Birdwatching may reshape the brain and build its buffer against ageing #### 5 Rapamycin can add years to your life, or none at all – it’s a lottery #### 6 Cannibalism may explain why some orcas stay in family groups #### 7 Stone Age symbols may push back the earliest form of writing #### 8 Tiny predatory dinosaur weighed less than a chicken #### 9 Landmark vitiligo cream targets immune cells that disrupt pigmentation #### 10 Loophole found that makes quantum cloning possible Advertisement [...] Skip to content Sign in Subscribe now Subscribe now Subscribe now #### Comment # New Scientist recommends the quantum soundscape of Liminals The books, TV, games and more that New Scientist staff have enjoyed this week By Thomas Lewton 25 February 2026 A century ago, when quantum mechanics was developed, physicists felt they were peering into the abyss: everything they thought was real, wasn’t. Today, we talk easily about collapsing clouds of probability and spooky action at a distance. [...] Topics: exhibition/ review Advertisement ## Sign up to our weekly newsletter Receive a weekly dose of discovery in your inbox. We'll also keep you up to date with New Scientist events and special offers. Sign up ## More from New Scientist Explore the latest news, articles and features #### Comment ### Return of Fallout, Paradise and Silo fuels passion for bunker sci-fi Culture#### Comment ### New Scientist recommends pioneering artist Ryoji Ikeda's new work Culture#### Comment ### Alex Garland’s The Bone Temple is brutal, brilliant - and mind-blowing Culture#### Space ### Blue Planet Red is wrong about Mars – but it's surprisingly poignant Culture #### Popular articles Trending New Scientist articles #### 1",
+          "publishedAt": "Wed, 25 Feb 2026 19:03:30 GMT",
+          "ts": 1772046210000,
+          "tavilyScore": 0.088538056,
+          "summary": "新科学家热门文章 #### 1 人工智能无法停止在战争游戏模拟中推荐核打击 #### 2 你对睡眠的感知让你一整天都感到疲倦 #### 3 世界上最难以捉摸的颜色。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.258538056
+          },
+          "tags": [
+            "神经科学",
+            "科学发现"
+          ],
+          "score": 7.258538056
+        },
+        {
+          "title": "The human work behind humanoid robots is being hidden",
+          "titleZh": "人形机器人背后的人类工作正在被隐藏",
+          "source": "MIT Technology Review",
+          "link": "https://www.technologyreview.com/2026/02/23/1133508/the-human-work-behind-humanoid-robots-is-being-hidden/",
+          "rawSummary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. In January, Nvidia’s Jensen Huang, the head of the world’s most valuable company, proclaimed that we are entering the era of physical AI, when artificial intelligence will move beyond language and chatbots…",
+          "publishedAt": "2026-02-23T17:05:00.000Z",
+          "ts": 1771866300000,
+          "summary": "这个故事最初出现在我们关于人工智能的每周通讯《算法》中。",
+          "judgement": {
+            "frontier": 7,
+            "depth": 8,
+            "reach": 9,
+            "total": 7.83
+          },
+          "tags": [
+            "人工智能"
+          ],
+          "score": 7.83
+        },
+        {
           "title": "Are You ‘Agentic’ Enough for the AI Era?",
           "titleZh": "人工智能时代你足够“代理”吗？",
           "source": "Wired AI",
@@ -52,26 +94,6 @@
             "技术"
           ],
           "score": 7.17
-        },
-        {
-          "title": "The human work behind humanoid robots is being hidden",
-          "titleZh": "人形机器人背后的人类工作正在被隐藏",
-          "source": "MIT Technology Review",
-          "link": "https://www.technologyreview.com/2026/02/23/1133508/the-human-work-behind-humanoid-robots-is-being-hidden/",
-          "rawSummary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. In January, Nvidia’s Jensen Huang, the head of the world’s most valuable company, proclaimed that we are entering the era of physical AI, when artificial intelligence will move beyond language and chatbots…",
-          "publishedAt": "2026-02-23T17:05:00.000Z",
-          "ts": 1771866300000,
-          "summary": "这个故事最初出现在我们关于人工智能的每周通讯《算法》中。",
-          "judgement": {
-            "frontier": 7,
-            "depth": 8,
-            "reach": 9,
-            "total": 7.83
-          },
-          "tags": [
-            "人工智能"
-          ],
-          "score": 7.83
         }
       ]
     },
@@ -81,90 +103,195 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772418148395,
+      "updatedAt": 1772428574433,
       "items": [
         {
-          "title": "Why GPS fails in cities. And how it was brilliantly fixed",
-          "titleZh": "为什么 GPS 在城市中失效。以及它是如何完美修复的",
-          "source": "ScienceDaily AI",
-          "link": "https://www.sciencedaily.com/releases/2025/10/251009033124.htm",
-          "rawSummary": "Our everyday GPS struggles in “urban canyons,” where skyscrapers bounce satellite signals, confusing even advanced navigation systems. NTNU scientists created SmartNav, combining satellite corrections, wave analysis, and Google’s 3D building data for remarkable precision. Their method achieved accuracy within 10 centimeters during testing. The breakthrough could make reliable urban navigation accessible and affordable worldwide.",
-          "publishedAt": "2025-10-09T07:31:24.000Z",
-          "ts": 1759995084000,
-          "summary": "我们的日常 GPS 在“城市峡谷”中举步维艰，那里的摩天大​​楼反射卫星信号，甚至让先进的导航系统感到困惑。",
+          "title": "From Moderation to Mediation: Can LLMs Serve as Mediators in Online Flame Wars?",
+          "titleZh": "从调解到调解：大模型可以在网络口水战中充当调解人吗？",
+          "source": "arXiv cs.AI",
+          "link": "https://arxiv.org/abs/2512.03005",
+          "rawSummary": "arXiv:2512.03005v5 Announce Type: replace Abstract: The rapid advancement of large language models (LLMs) has opened new possibilities for AI for good applications. As LLMs increasingly mediate online communication, their potential to foster empathy and constructive dialogue becomes an important frontier for responsible AI research. This work explores whether LLMs can serve not only as moderators that detect harmful content, but as mediators capable of understanding and de-escalating online conflicts. Our framework decomposes mediation into two subtasks: judgment, where an LLM evaluates the fairness and emotional dynamics of a conversation, and steering, where it generates empathetic, de-escalatory messages to guide participants toward resolution. To assess mediation quality, we construct a large Reddit-based dataset and propose a multi-stage evaluation pipeline combining principle-based scoring, user simulation, and human comparison. Experiments show that API-based models outperform open-source counterparts in both reasoning and intervention alignment when doing mediation. Our findings highlight both the promise and limitations of current LLMs as emerging agents for online social mediation.",
+          "publishedAt": "2026-03-02T05:00:00.000Z",
+          "ts": 1772427600000,
+          "summary": "公告类型：替换 摘要：大型语言模型（大模型）的快速发展为人工智能的良好应用开辟了新的可能性。",
           "judgement": {
-            "frontier": 7,
+            "frontier": 9,
+            "depth": 10,
+            "reach": 8,
+            "total": 9.08
+          },
+          "tags": [
+            "人工智能",
+            "大模型",
+            "AI安全",
+            "科研进展"
+          ],
+          "score": 9.08
+        },
+        {
+          "title": "Animal behavioral analysis and neural encoding with transformer-based self-supervised pretraining",
+          "titleZh": "基于 Transformer 的自监督预训练的动物行为分析和神经编码",
+          "source": "arXiv q-bio.NC",
+          "link": "https://arxiv.org/abs/2507.09513",
+          "rawSummary": "arXiv:2507.09513v2 Announce Type: replace Abstract: The brain can only be fully understood through the lens of the behavior it generates -- a guiding principle in modern neuroscience research that nevertheless presents significant technical challenges. Many studies capture behavior with cameras, but video analysis approaches typically rely on specialized models requiring extensive labeled data. We address this limitation with BEAST(BEhavioral Analysis via Self-supervised pretraining of Transformers), a novel and scalable framework that pretrains experiment-specific vision transformers for diverse neuro-behavior analyses. BEAST combines masked autoencoding with temporal contrastive learning to effectively leverage unlabeled video data. Through comprehensive evaluation across multiple species, we demonstrate improved performance in three critical neuro-behavioral tasks: extracting behavioral features that correlate with neural activity, and pose estimation and action segmentation in both the single- and multi-animal settings. Our method establishes a powerful and versatile backbone model that accelerates behavioral analysis in scenarios where labeled data remains scarce.",
+          "publishedAt": "2026-03-02T05:00:00.000Z",
+          "ts": 1772427600000,
+          "summary": "公告类型：替换 摘要：大脑只能通过其产生的行为的镜头才能被充分理解——这是现代神经科学研究的指导原则，但它提出了。",
+          "judgement": {
+            "frontier": 9,
             "depth": 10,
             "reach": 7,
-            "total": 7.99
+            "total": 8.83
           },
           "tags": [
+            "大模型",
+            "神经科学",
+            "科研进展"
+          ],
+          "score": 8.83
+        },
+        {
+          "title": "U-CAN: Utility-Aware Contrastive Attenuation for Efficient Unlearning in Generative Recommendation",
+          "titleZh": "U-CAN：生成推荐中有效遗忘的效用感知对比衰减",
+          "source": "arXiv cs.LG",
+          "link": "https://arxiv.org/abs/2602.23400",
+          "rawSummary": "arXiv:2602.23400v1 Announce Type: new Abstract: Generative Recommendation (GenRec) typically leverages Large Language Models (LLMs) to redefine personalization as an instruction-driven sequence generation task. However, fine-tuning on user logs inadvertently encodes sensitive attributes into model parameters, raising critical privacy concerns. Existing Machine Unlearning (MU) techniques struggle to navigate this tension due to the Polysemy Dilemma, where neurons superimpose sensitive data with general reasoning patterns, leading to catastrophic utility loss under traditional gradient or pruning methods. To address this, we propose Utility-aware Contrastive AttenuatioN (U-CAN), a precision unlearning framework that operates on low-rank adapters. U-CAN quantifies risk by contrasting activations and focuses on neurons with asymmetric responses that are highly sensitive to the forgetting set but suppressed on the retention set. To safeguard performance, we introduce a utility-aware calibration mechanism that combines weight magnitudes with retention-set activation norms, assigning higher utility scores to dimensions that contribute strongly to retention performance. Unlike binary pruning, which often fragments network structure, U-CAN develop adaptive soft attenuation with a differentiable decay function to selectively down-scale high-risk parameters on LoRA adapters, suppressing sensitive retrieval pathways and preserving the topological connectivity of reasoning circuits. Experiments on two public datasets across seven metrics demonstrate that U-CAN achieves strong privacy forgetting, utility retention, and computational efficiency.",
+          "publishedAt": "2026-03-02T05:00:00.000Z",
+          "ts": 1772427600000,
+          "summary": "公告类型：新 摘要：生成推荐 (GenRec) 通常利用大型语言模型 (大模型) 将个性化重新定义为指令驱动的序列生成任务。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 7,
+            "total": 8.83
+          },
+          "tags": [
+            "AI安全",
             "科学发现"
           ],
-          "score": 7.99
+          "score": 8.83
         },
         {
-          "title": "Laughing at Your Blunders Beats Embarrassment",
-          "titleZh": "嘲笑自己的错误可以战胜尴尬",
-          "source": "Neuroscience News",
-          "link": "https://neurosciencenews.com/laughter-embarrassment-social-psychology-30219/",
-          "rawSummary": "Research suggests that responding to minor social mishaps with humor rather than embarrassment significantly boosts how others perceive your warmth and authenticity. Credit: Neuroscience News Laughing at Your Blunders Beats Embarrassment Featured Neuroscience Psychology &middot; March 1, 2026 Summary: We often think that acting embarrassed after a social stumble—like tripping or misnaming a colleague—shows humility and respect for social norms. However, a new study suggests that for minor, harmless mistakes, laughing at yourself is a far more effective reputational recovery strategy. Across six experiments with over 3,000 participants, researchers found that people who laugh at their own blunders are perceived as warmer, more competent, and more authentic than those who display traditional embarrassment. When you make a small mistake that doesn’t harm anyone else – such as tripping over a curb or misremembering a name – people will like you more if you can laugh at yourself rather than act embarrassed, finds research published by the American Psychological Association. “Our findings suggest that people often overestimate how harshly others judge their minor social mistakes,” said study co-author Övül Sezer, PhD, of the Cornell University SC Johnson School of Business. “For minor, harmless blunders, laughing at yourself can signal social confidence, reduce tension and communicate that the mistake was accidental.” The study was published in the&nbsp; Journal of Personality and Social Psychology . Prior research has found there are social benefits to acting embarrassed after committing a faux pas – people like to see embarrassment because it signals remorse and respect for social norms, according to Sezer.&nbsp; “But in everyday life, we often see another response &#8212; people laugh at themselves. We wanted to understand whether laughing at yourself might sometimes be even more effective than showing embarrassment – and if so, when,” she said.&nbsp; In six online experiments with more than 3,000 total participants, researchers asked participants to read about other people’s embarrassing mishaps, such as walking into a glass door at a party or accidentally waving to the wrong person at the theatre. Participants were then shown how the people in the stories reacted. In some experiments, they were told that the people acted embarrassed or that they laughed at themselves; in other experiments they were shown pictures of embarrassed-looking or laughing people. Overall, participants judged the people who laughed at their own minor blunders to be warmer, more competent and more authentic than those who acted embarrassed.",
-          "publishedAt": "2026-03-01T20:42:02.000Z",
-          "ts": 1772397722000,
-          "summary": "研究表明，用幽默而不是尴尬来应对轻微的社交事故可以显着提高别人对你的温暖和真实的看法。",
+          "title": "HumanMCP: A Human-Like Query Dataset for Evaluating MCP Tool Retrieval Performance",
+          "titleZh": "HumanMCP：用于评估 MCP 工具检索性能的类人查询数据集",
+          "source": "arXiv cs.AI",
+          "link": "https://arxiv.org/abs/2602.23367",
+          "rawSummary": "arXiv:2602.23367v1 Announce Type: new Abstract: Model Context Protocol (MCP) servers contain a collection of thousands of open-source standardized tools, linking LLMs to external systems; however, existing datasets and benchmarks lack realistic, human-like user queries, remaining a critical gap in evaluating the tool usage and ecosystems of MCP servers. Existing datasets often do contain tool descriptions but fail to represent how different users portray their requests, leading to poor generalization and inflated reliability of certain benchmarks. This paper introduces the first large-scale MCP dataset featuring diverse, high-quality diverse user queries generated specifically to match 2800 tools across 308 MCP servers, developing on the MCP Zero dataset. Each tool is paired with multiple unique user personas that we have generated, to capture varying levels of user intent ranging from precise task requests, and ambiguous, exploratory commands, reflecting the complexity of real-world interaction patterns.",
+          "publishedAt": "2026-03-02T05:00:00.000Z",
+          "ts": 1772427600000,
+          "summary": "公告类型：新 摘要：模型上下文协议（MCP）服务器包含数千个开源标准化工具的集合，将大模型链接到外部系统；然而，现有的数据集和b。",
           "judgement": {
             "frontier": 9,
-            "depth": 8,
+            "depth": 10,
             "reach": 7,
-            "total": 8.17
-          },
-          "tags": [
-            "神经科学",
-            "科研进展"
-          ],
-          "score": 8.17
-        },
-        {
-          "title": "Developing a human hepatocyte model with enhanced drug-metabolizing enzyme activity",
-          "titleZh": "开发药物代谢酶活性增强的人肝细胞模型",
-          "source": "Medical Xpress",
-          "link": "https://medicalxpress.com/news/2026-02-human-hepatocyte-drug-metabolizing-enzyme.html",
-          "rawSummary": "A research team led by Associate Professor Shinpei Yamaguchi and the late Professor Masako Tada of the Faculty of Science, together with Professor Yojiro Anzai and Lecturer Yohei Iizaka of the Faculty of Pharmaceutical Sciences at Toho University, have developed a new HepaRG cell line with markedly enhanced activity of CYP2D6, a major drug-metabolizing enzyme. This engineered human hepatocyte model enables more human-relevant evaluation of drug-induced hepatotoxicity mediated by CYP2D6. The study was published in the journal PLOS ONE on December 29, 2025.",
-          "publishedAt": "2026-02-28T22:30:01.000Z",
-          "ts": 1772317801000,
-          "summary": "由理学院山口新平副教授和已故多田正子教授领导的研究小组，以及药学部安西洋次郎教授和饭坂洋平讲师。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 7,
-            "total": 8.17
+            "total": 8.83
           },
           "tags": [
             "科研进展"
           ],
-          "score": 8.17
+          "score": 8.83
         },
         {
-          "title": "Why You Can’t Say No to Snacks Even When Full",
-          "titleZh": "为什么即使吃饱了也不能拒绝零食",
-          "source": "Neuroscience News",
-          "link": "https://neurosciencenews.com/food-reward-satiety-snacking-30216/",
-          "rawSummary": "By monitoring brainwaves with EEG scans, researchers found that while participants reported being &#8220;full&#8221; and showed no conscious desire for more food, their brains refused to &#8220;devalue&#8221; the rewarding sight of snacks. This suggests that food-rich environments can trigger overeating by overriding the body’s natural appetite controls. Research from the University of East Anglia (UEA) may finally explain why we still reach for the biscuit tin, even when we’re full. A new study reveals that the human brain continues to respond to tempting food cues even after we’ve eaten enough. In a world of endless adverts and snack cues on every corner, the team say their findings shed light on why so many of us struggle to maintain a healthy weight. ew research reveals that the brain&#8217;s reward system ignores satiety signals, continuing to value food cues even when hunger is absent. Credit: Neuroscience News Lead researcher Dr Thomas Sambrook, from UEA’s School of Psychology, said: “Obesity has become a major worldwide health crisis. But rising obesity isn’t simply about willpower &#8211; it’s a sign that our food-rich environments and learned responses to mouth-watering cues are overpowering the body’s natural appetite controls. “We wanted to better understand how our brains react to food cues when we are already feeling full. “We studied people’s brainwaves after eating and found that even though their stomachs might be satisfied, their brains didn’t seem to care. “In fact, no amount of fullness could switch off the brain&#8217;s response to delicious looking food. This suggests that food cues may trigger overeating in the absence of hunger.” In the study, 76 volunteers were monitored using Electroencephalogram (EEG) brain scans as they played a reward‑based learning game with food such as sweets, chocolate, crisps and popcorn. Halfway through the task, participants were given a meal of one of the foods until they didn’t want another bite.",
-          "publishedAt": "2026-03-01T18:31:39.000Z",
-          "ts": 1772389899000,
-          "summary": "通过脑电图扫描监测脑电波，研究人员发现，虽然参与者报告自己“吃饱了”，并且没有表现出有意识地想要更多食物，但他们的大脑拒绝“贬低”奖励的价值。",
+          "title": "Truncated Step-Level Sampling with Process Rewards for Retrieval-Augmented Reasoning",
+          "titleZh": "带有过程奖励的截断步骤级采样用于检索增强推理",
+          "source": "arXiv cs.CL",
+          "link": "https://arxiv.org/abs/2602.23440",
+          "rawSummary": "arXiv:2602.23440v1 Announce Type: new Abstract: Training large language models to reason with search engines via reinforcement learning is hindered by a fundamental credit assignment problem: existing methods such as Search-R1 provide only a sparse outcome reward after an entire multi-step trajectory, making it infeasible to attribute success or failure to individual reasoning and retrieval decisions. Process-reward methods like StepSearch alleviate this by introducing step-level supervision, but rely on heuristic rewards such as TF-IDF overlap with gold documents, and still sample k complete trajectories per example, retaining high gradient variance. We propose SLATE, a framework built on two complementary ideas: (1) truncated step-level sampling, which generates k trajectories that share a common prefix and differ only at the next step, and (2) dense LLM-as-judge rewards, which replace heuristic scoring with a capable LLM evaluator that assesses the quality of each reasoning step, search query, and answer, providing richer and more reliable supervision. We theoretically prove that under the same dense reward structure, truncated sampling reduces the variance of advantage estimates by up to a factor of T compared to full-trajectory sampling for T-step trajectories, yielding lower-variance, better-targeted policy gradients. Experiments on seven QA benchmarks confirm that SLATE consistently outperforms both sparse-reward and process-reward baselines, with the largest gains on harder multi-hop tasks and smaller models.",
+          "publishedAt": "2026-03-02T05:00:00.000Z",
+          "ts": 1772427600000,
+          "summary": "公告类型：新 摘要：通过强化学习训练大型语言模型与搜索引擎进行推理受到基本信用分配问题的阻碍：现有方法（例如 Sea）。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 7,
+            "total": 8.83
+          },
+          "tags": [
+            "大模型",
+            "AI安全"
+          ],
+          "score": 8.83
+        },
+        {
+          "title": "CiteAudit: You Cited It, But Did You Read It? A Benchmark for Verifying Scientific References in the LLM Era",
+          "titleZh": "CiteAudit：您引用了它，但您读过它吗？ 大模型时代验证科学参考文献的基准",
+          "source": "arXiv cs.CL",
+          "link": "https://arxiv.org/abs/2602.23452",
+          "rawSummary": "arXiv:2602.23452v1 Announce Type: new Abstract: Scientific research relies on accurate citation for attribution and integrity, yet large language models (LLMs) introduce a new risk: fabricated references that appear plausible but correspond to no real publications. Such hallucinated citations have already been observed in submissions and accepted papers at major machine learning venues, exposing vulnerabilities in peer review. Meanwhile, rapidly growing reference lists make manual verification impractical, and existing automated tools remain fragile to noisy and heterogeneous citation formats and lack standardized evaluation. We present the first comprehensive benchmark and detection framework for hallucinated citations in scientific writing. Our multi-agent verification pipeline decomposes citation checking into claim extraction, evidence retrieval, passage matching, reasoning, and calibrated judgment to assess whether a cited source truly supports its claim. We construct a large-scale human-validated dataset across domains and define unified metrics for citation faithfulness and evidence alignment. Experiments with state-of-the-art LLMs reveal substantial citation errors and show that our framework significantly outperforms prior methods in both accuracy and interpretability. This work provides the first scalable infrastructure for auditing citations in the LLM era and practical tools to improve the trustworthiness of scientific references.",
+          "publishedAt": "2026-03-02T05:00:00.000Z",
+          "ts": 1772427600000,
+          "summary": "公告类型：新 摘要：科学研究依赖于准确引用的归属和完整性，但大型语言模型 (大模型) 引入了新的风险：伪造的参考文献看起来很漂亮。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 7,
+            "total": 8.83
+          },
+          "tags": [
+            "人工智能",
+            "大模型",
+            "智能体",
+            "AI安全",
+            "科研进展",
+            "技术"
+          ],
+          "score": 8.83
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "name": "Tech Trends",
+      "zhName": "技术趋势",
+      "description": "Tech & biotech company moves, market changes and funding trends",
+      "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
+      "updatedAt": 1772428581103,
+      "items": [
+        {
+          "title": "Morning Bid: Another day, another AI mood swing - Reuters",
+          "titleZh": "早间竞价：又是一天，又是一次人工智能情绪波动 - 路透中文网",
+          "source": "reuters.com",
+          "link": "https://www.reuters.com/business/finance/global-markets-view-usa-2026-02-25/",
+          "rawSummary": "Even though Nvidia shares are only up 2% for the year so far, options markets are braced for a post-earnings swing of plus/minus 5%. The scale of the firm these days means that's a swing of about $230 billion in market cap either way. After the S&P 500's 0.77% jump on Tuesday, futures were up ahead of today's bell. Elsewhere, Asia's stocks motored higher on Wednesday amid a growing focus on what AI capex is doing for companies aiding the infrastructure buildout. South Korea's Kospi benchmark, which has risen a staggering 45% already this year, rose 2%, while Japan's Nikkei gained 2.2%. [...] Chart represents slow-down in Nvidia's revenue growth With its earnings update due later on Wednesday, Nvidia revenue is expected to have jumped 68% to $66 billion, and analysts assume its first-quarter revenue forecast will show another 64% jump to $72 billion. The company has surpassed sales expectations for the past 13 quarters, though the scale of those beats has shrunk, competition in AI chips is rising, and the bar to impress moves ever higher. After powering much of the U.S. stock market rally for the past three years, Nvidia's stock has risen about 2% so far in 2026. Today's events to watch U.S. corporate earnings: NVIDIA, Lowe's, Salesforce, Zoom U.S. 5-year note auction [...] ### Information you can trust Reuters, the news and media division of Thomson Reuters, is the world’s largest multimedia news provider, reaching billions of people worldwide every day. Reuters provides business, financial, national and international news to professionals via desktop terminals, the world's media organizations, industry events and directly to consumers. ### Follow Us []( []( []( []( []( []( ### LSEG Products #### Workspace, opens new tab Access unmatched financial data, news and content in a highly-customised workflow experience on desktop, web and mobile. #### Data Catalogue, opens new tab Browse an unrivalled portfolio of real-time and historical market data and insights from worldwide sources and experts.",
+          "publishedAt": "Wed, 25 Feb 2026 11:39:48 GMT",
+          "ts": 1772019588000,
+          "tavilyScore": 1.3005877440000002,
+          "summary": "尽管 Nvidia 股价今年迄今仅上涨 2%，但期权市场已做好了盈利后正负 5% 波动的准备。",
           "judgement": {
             "frontier": 9,
             "depth": 8,
-            "reach": 7,
-            "total": 8.17
+            "reach": 3,
+            "total": 8.470587744
           },
           "tags": [
-            "神经科学",
-            "脑机接口",
-            "科研进展"
+            "人工智能",
+            "技术"
           ],
-          "score": 8.17
+          "score": 8.470587744
+        },
+        {
+          "title": "Boston AI startup can predict risk of breast cancer before tumors appear - The Boston Globe",
+          "titleZh": "波士顿人工智能初创公司可以在肿瘤出现之前预测乳腺癌风险 - 波士顿环球报",
+          "source": "bostonglobe.com",
+          "link": "https://www.bostonglobe.com/2026/02/24/business/breast-cancer-ai-detection-clairity/",
+          "rawSummary": "Advertisement --- 💵 Quantum cybersecurity firm Aliro in Boston raised $15 millionin a deal led by Gutbrain Ventures. 🔌 EV developer Indigo Technologies in Woburn received a $4 million loan from MassDevelopment’s Emerging Technology Fund. ☀️ Community solar developer Solstice in Cambridge was acquired by Boston-based Perch Energy. Terms of the deal were not disclosed. 📦 Supply chain software firm Dray Dog in Dover, N.H., was acquired by California-based firm CargoSprint. Terms of the deal were not disclosed. 👋 Software developer Code Metal in Boston hired Ryan Aytay, former chief executive of Tableau, as president and chief operating officer. 🖨️ Somerville-based 3D printing company Formlabs added Rob Willett, former chief executive of Cognex, to its board of directors. [...] ⏸️ Maine considers a moratorium on data centers as businesses look to New England. Read more from Julia Tilton of The Daily Yonder. 🎁 Klaviyo founders give $6 million to boost MIT startups, Boston’s competitiveness. Read more from business reporter Jon Chesto. 🤑 Boston-based Code Metal, which writes AI software to run hardware such as drones, sensors, and robots, raised $125 million in a deal led by Salesforce Ventures and including Accel, B Capital, Smith Point Capital, J2 Ventures, and RTX. The deal valued Code Metal at $1.25 billion. 🌎 Rare earth mineral producer Phoenix Tailings in Woburn raised $30 million of equity from investors Traxys, Eni Next, and Geodesic Alliance Fund. Phoenix also raised $10 million of debt from Nomura. Advertisement --- [...] “There’s much in medicine that can be a black box,” Lehman said. “We are doing lots of research [to figure out] what are the features in a mammogram that the deep learning model is picking up on.” With Silicon Valley dominating in AI innovation so far, the Boston tech scene could use a lot more startups like Clairity, investors and entrepreneurs said. Health care startup investor Michael Greeley, general partner at Flare Capital in Boston, said he expects to see more and more researchers in the region creating startups that combine AI and medical data. A company like Clairity “underscores the power of our community as the health care and technology sectors continue to collaborate given the proximity to each other,“ Greeley said.",
+          "publishedAt": "Tue, 24 Feb 2026 21:16:07 GMT",
+          "ts": 1771967767000,
+          "tavilyScore": 1.4973077760000002,
+          "summary": "广告 --- 💵 波士顿量子网络安全公司 Aliro 在由 Gutbrain Ventures 牵头的交易中筹集了 1500 万美元。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 6,
+            "reach": 3,
+            "total": 8.007307776
+          },
+          "tags": [
+            "人工智能",
+            "科研进展",
+            "能源科技",
+            "技术"
+          ],
+          "score": 8.007307776
         },
         {
           "title": "This AI finds simple rules where humans see only chaos",
@@ -188,85 +315,46 @@
           "score": 8.17
         },
         {
-          "title": "Scientists discover a bacterial kill switch and it could change the fight against superbugs",
-          "titleZh": "科学家发现细菌杀死开关，它可能会改变对抗超级细菌的斗争",
-          "source": "ScienceDaily Biology",
-          "link": "https://www.sciencedaily.com/releases/2026/02/260228082723.htm",
-          "rawSummary": "Drug-resistant bacteria are becoming harder to treat, pushing scientists to look for new antibiotic targets. Researchers have now discovered that several unrelated viruses disable a key bacterial protein called MurJ, which is essential for building the bacterial cell wall. High-resolution imaging shows these viral proteins lock MurJ into a single position, stopping cell wall construction and leading to bacterial death.",
-          "publishedAt": "2026-02-28T14:20:04.000Z",
-          "ts": 1772288404000,
-          "summary": "耐药细菌变得越来越难治疗，促使科学家寻找新的抗生素靶点。",
+          "title": "MatX's $500m, QC Capital backs virtual pediatrics and The Raine Group's new partner - Axios",
+          "titleZh": "MatX 5 亿美元、QC Capital 支持虚拟儿科和 Raine Group 的新合作伙伴 Axios",
+          "source": "amp.axios.com",
+          "link": "https://amp.axios.com/pro-rata-premium-first-look-matx-qc-capital-raine-e2e23561-c459-452d-a04c-e2d0e6cca8aa.html",
+          "rawSummary": "• Evoke Security, a Washington-based cybersecurity company, raised a $4m pre-seed round led by Crosspoint Capital Partners, with participation from Red Cell Partners. Go deeper • Jampack AI, an NYC-based wholesale operations automation platform, raised a $3.2m seed led by Maveron, joined by Timber Grove Ventures. Go deeper ## Private Equity • Arcline Investment Management agreed to buy Hydraulics International, a provider of ground support equipment, mobile test systems, and specialized pumps. Go deeper • CampusWorks, backed by Atlantic Street Capital, merged with Dynamic Campus, a higher education IT services firm. dynamiccampus.com • Capital Constellation, backed by Wafra, invested in Gallatin Point Capital, a private investment firm. Go deeper [...] • Brookfield Asset Management bought U.K.-based Ori, an AI cloud provider, and merged it with its newly formed Radiant. Ori's backers include Fortitude Capital, Wa'ed Ventures, 6 Degrees Capital, Atempo Growth and NextEra Energy. Go deeper ## Public Offerings 🚑 MiniMed Group, a diabetes management device business being carved out of Medtronic (NYSE: MDT), plans to raise $742m in an offering of 28 million shares priced between $25 to $28. Go deeper 💊 Salspera, a Cambridge, Mass.-based cancer biotech, plans to raise $85m by offering 5.7 million shares priced between $14 and $16. Go deeper ## It's Personnel • Anthony Kontoleon, former partner and CEO of the Americas at Azura Partners, joined The Raine Group as partner. Go deeper [...] • Topspin Consumer Partners invested in Grid, a Dallas-based maker of lockers and flooring solutions for fitness facilities. Go deeper • Victor Capital Partners invested in Specialty Fenestration Group, a maker of high-security windows and doors. River Associates Investments exited. Go deeper 🚑 QC Capital Group invested in My Pediatric Doctor, a 24/7 urgent care pediatric telemedicine company. Go deeper ## M&A • ADT, a Boca Raton, Fla.-based home security company,acquired Origin Wireless, an AI company that can analyze and track motion without cameras, for $170m. Go deeper",
+          "publishedAt": "Tue, 24 Feb 2026 20:59:41 GMT",
+          "ts": 1771966781000,
+          "tavilyScore": 1.5865913600000001,
+          "summary": "• 总部位于华盛顿的网络安全公司 Evoke Security 筹集了 400 万美元的种子前融资，由 Crosspoint Capital Partners 领投，Red Cell Partners 参与。",
           "judgement": {
             "frontier": 9,
-            "depth": 8,
-            "reach": 7,
-            "total": 8.17
-          },
-          "tags": [
-            "神经影像",
-            "蛋白质科学",
-            "科学发现"
-          ],
-          "score": 8.17
-        }
-      ]
-    },
-    {
-      "id": "trends",
-      "name": "Tech Trends",
-      "zhName": "技术趋势",
-      "description": "Tech & biotech company moves, market changes and funding trends",
-      "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1772418154368,
-      "items": [
-        {
-          "title": "Q4 2025 Healthtech VC Trends - PitchBook",
-          "titleZh": "2025 年第四季度健康科技风险投资趋势",
-          "source": "pitchbook.com",
-          "link": "https://pitchbook.com/news/reports/q4-2025-healthtech-vc-trends",
-          "rawSummary": "Q4 2025 # Healthtech VC Trends PitchBook clients can access the full report and its Excel data pack via the Research Center on the PitchBook Platform. Healthtech exits hit a record high while AI reshapes investment priorities Healthtech venture funding staged a strong comeback in 2025, with startups raising $15.3 billion—up 26% YoY—as larger deal sizes and AI-driven growth rounds powered the rebound. Fourth-quarter funding dipped slightly from earlier highs but remained more than double the prior-year quarter, underscoring renewed investor confidence. The median pre-money valuation rose to $31 million, reflecting sustained demand for AI-enabled healthcare delivery, operations, and revenue-cycle solutions. [...] Table of contents | | | --- | | Healthtech landscape | 3 | | Quarterly analysis | 4 | | Key takeaways | 4 | | VC activity | 4 | | Valuations | 5 | | Exit activity | 5 | | AI investment dominates subsector allocation | 5 | | Funding relative to prior three-year averages | 6 | | Healthtech VC deal summary | 19 | Healthtech VC deal value hit a record high in 2025, driven by larger deal sizes and AI-powered growth rounds fueling the sector’s strongest funding rebound in years. Healthtech VC Trends Healthtech Market Map Tech Emerging Technology Healthcare LinkedIn Twitter Facebook Email Additional Research ### Pharma Biotools VC Trends [...] Activity was especially strong in operations, analytics, and electronic health records, while AI-heavy segments such as clinical documentation, digital care, and provider education attracted outsized capital. The year also saw record VC exit volume, rising IPO momentum led by Omada Health and Hinge Health, and a sharp rebound in PE dealmaking. With AI now central to both clinical and administrative workflows, the data points to continued opportunity across healthtech segments—and a healthy pipeline of late-stage companies positioning for exits in 2026. Table of contents",
-          "publishedAt": "Wed, 25 Feb 2026 17:58:49 GMT",
-          "ts": 1772042329000,
-          "tavilyScore": 0.9093512000000001,
-          "summary": "2025 年第 4 季度# Healthtech VC 趋势 PitchBook 客户可以通过 PitchBook 平台上的研究中心访问完整报告及其 Excel 数据包。",
-          "judgement": {
-            "frontier": 7,
-            "depth": 8,
+            "depth": 6,
             "reach": 3,
-            "total": 7.2393512
+            "total": 8.09659136
           },
           "tags": [
             "人工智能",
-            "科研进展",
-            "技术"
+            "生物技术"
           ],
-          "score": 7.2393512
+          "score": 8.09659136
         },
         {
-          "title": "Trends & Insights, January 2026: A pharmaphorum industry report - pharmaphorum",
-          "titleZh": "趋势与见解，2026 年 1 月：Pharmaphorum 行业报告",
-          "source": "pharmaphorum.com",
-          "link": "https://pharmaphorum.com/digital/trends-insights-january-2026-pharmaphorum-industry-report",
-          "rawSummary": "R&D Partner Content ### 5th mRNA-Based Therapeutics Summit Europe The Summit is the leading European industry-focused forum dedicated to accelerating the development of messenger RNA (mRNA) medicines Get in-depth news, opinions, and features on pharma and healthcare sent straight to your inbox ## Trends & Insights ## industry trends ## Life Sciences ## pharma industry Category : Digital / Views & Analysis ### Editor's Picks - ##### Makary says FDA will \"end two-trial dogma\" for approvals - ##### NIH Director Bhattacharya will temporarily run CDC - ##### MSD and Mayo Clinic team up on AI drug discovery News - ##### Number of UK biotech companies rising, says report - ##### NHS study will pick apart mental illness with data science News [...] Nicole Raleigh ## Trends & Insights News ### NHS \"isn't delivering equitable care for rare diseases\" A Genetic Alliance UK report claims the NHS is failing to meet the needs of many of the 3.5 million people in the country who live with rare diseases. Sales & Marketing Sponsored ### Using AI-driven synthetic personas to take your insights fur... As AI continues to reshape the healthcare landscape, pharma teams are beginning to leverage synthetic personas. Market Access ### 12 questions with: Daniel Kohlstaedt Daniel Kohlstaedt, managing director of PurpleLeaf Strategy, with more than 18 years of experience in pharma, talks about his journey through the industry. Digital Sponsored ### Expert Directed Applied Intelligence: Redefining AI in Life ... [...] Designing medicines, not just models: Basecamp’s EDEN and aiPGI exemplify AI as a creator of therapeutic enzymes and antimicrobial peptides with high lab validation rates – an inflection beyond in silico screening. Precision analytics at scale: SOPHiA GENETICS passed 2 million genomic profiles analyzed on DDM and forged an MD Anderson collaboration – evidence that AI genomics networks are achieving clinical grade scale. Operational AI adoption pressure: Survey data (Argon & Co) showed 49% of life sciences leaders plan to invest in AI for efficiencies amid rising input costs and supply risk – pairing nicely with digital twins and predictive analytics in manufacturing/logistics.",
-          "publishedAt": "Fri, 27 Feb 2026 16:32:24 GMT",
-          "ts": 1772209944000,
-          "tavilyScore": 0.46195192,
-          "summary": "研发合作伙伴内容 ### 第五届欧洲 mRNA 治疗峰会 该峰会是欧洲领先的以行业为中心的论坛，致力于加速信使 RNA (mRNA) 药物的开发 获取深度新闻，。",
+          "title": "Why GPS fails in cities. And how it was brilliantly fixed",
+          "titleZh": "为什么 GPS 在城市中失效。以及它是如何完美修复的",
+          "source": "ScienceDaily AI",
+          "link": "https://www.sciencedaily.com/releases/2025/10/251009033124.htm",
+          "rawSummary": "Our everyday GPS struggles in “urban canyons,” where skyscrapers bounce satellite signals, confusing even advanced navigation systems. NTNU scientists created SmartNav, combining satellite corrections, wave analysis, and Google’s 3D building data for remarkable precision. Their method achieved accuracy within 10 centimeters during testing. The breakthrough could make reliable urban navigation accessible and affordable worldwide.",
+          "publishedAt": "2025-10-09T07:31:24.000Z",
+          "ts": 1759995084000,
+          "summary": "我们的日常 GPS 在“城市峡谷”中举步维艰，那里的摩天大​​楼反射卫星信号，甚至让先进的导航系统感到困惑。",
           "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 7.63195192
+            "frontier": 7,
+            "depth": 10,
+            "reach": 7,
+            "total": 7.99
           },
           "tags": [
-            "人工智能",
-            "AI安全",
-            "生物技术",
-            "基因组学",
-            "科研进展",
             "科学发现"
           ],
-          "score": 7.63195192
+          "score": 7.99
         }
       ]
     }
