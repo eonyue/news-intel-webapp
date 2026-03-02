@@ -1,39 +1,45 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-01",
-  "updatedAt": "2026-03-01T11:18:06Z",
-  "trendObservation": "今日信号显示，意识研究正从宏大理论争论转向“可测量、可干预、可临床转化”的路径，尤其聚焦意识评估标准化与神经调控工具。",
+  "date": "2026-03-02",
+  "updatedAt": "2026-03-02T04:01:25Z",
+  "trendObservation": "过去24小时的‘意识相关’研究报道明显向临床可预测性与可量化脑信号倾斜：从认知衰退预测到奖赏与自我相关加工，研究正把抽象的意识问题转译为可验证的数据模型。",
   "items": [
     {
-      "title": "经颅聚焦超声被用于探索意识机制的新工具",
-      "summary": "报道指出，经颅聚焦超声（tFUS）正在成为意识研究中的新型因果干预工具，可在更高空间精度下调节深层脑区活动。该方向被认为有助于把意识理论与可重复实验更紧密对接。",
-      "source": "Medical Xpress",
-      "link": "https://medicalxpress.com/news/2026-01-tool-consciousness.html"
+      "title": "机器学习可预测阿尔茨海默病患者认知与功能下降速度",
+      "summary": "一项发表在 Communications Medicine 的研究使用常规门诊数据，建立了预测阿尔茨海默病与轻度认知障碍患者衰退速率的模型。该工作有助于更早识别高风险人群，并为临床分层管理提供工具。",
+      "source": "News-Medical（基于 Communications Medicine 论文）",
+      "link": "https://www.news-medical.net/news/20260301/Machine-learning-predicts-who-will-decline-faster-in-Alzheimere28099s-disease-using-routine-clinic-data.aspx"
     },
     {
-      "title": "意识障碍患者评估提出新框架，强调临床可比性",
-      "summary": "新方法主张在意识障碍（DoC）评估中采用更统一的参考框架，以提升跨机构、跨团队数据可比性。该进展可支持更稳健的预后判断与多中心研究协作。",
-      "source": "Medical Xpress",
-      "link": "https://medicalxpress.com/news/2026-01-approach-patients-disorders-consciousness.html"
+      "title": "大脑“化学图谱”研究显示阿尔茨海默病不止是淀粉样斑块问题",
+      "summary": "Rice University 团队通过AI方法构建了无染料全脑分子图谱，提示阿尔茨海默病涉及更广泛的化学层面重塑。该结果为理解意识与认知衰退背后的系统性脑变化提供了新证据。",
+      "source": "ScienceDaily（Rice University）",
+      "link": "http://www.sciencedaily.com/releases/2026/02/260228093505.htm"
     },
     {
-      "title": "“离体体验”质性研究为主观意识体验提供新证据",
-      "summary": "研究通过系统访谈离体体验者，强调第一人称主观报告在意识科学中的价值。作者认为，这类现象不应被简单视作噪声，而应纳入可检验的体验-神经模型。",
-      "source": "Neuroscience News",
-      "link": "https://neurosciencenews.com/out-of-body-experience-consciousness-28814/"
+      "title": "青少年抑郁预测研究整合神经生物标记与社会人口学风险",
+      "summary": "Molecular Psychiatry 新研究将脑相关生物标记与风险评分结合，用于前瞻性预测青少年抑郁。虽然主题聚焦情绪障碍，但其核心方法（脑信号+行为风险融合）对意识状态与主观体验的量化研究具有方法学意义。",
+      "source": "Molecular Psychiatry（Nature Portfolio）",
+      "link": "https://www.nature.com/articles/s41380-026-03481-y"
     },
     {
-      "title": "研究争论：意识可能更多服务于社会协同而非个体收益",
-      "summary": "相关论文观点认为，意识的核心适应价值可能在于社会交流、意图对齐与群体协作，而不仅是个体内部决策优化。该视角推动意识研究与社会神经科学进一步融合。",
-      "source": "Neuroscience News",
-      "link": "https://neurosciencenews.com/consciousness-social-neuroscience-26434/"
+      "title": "微胶质细胞介导的突触修剪被发现参与慢性疼痛及相关情绪行为",
+      "summary": "发表于 Experimental & Molecular Medicine 的研究发现，前额叶回路中微胶质细胞CR3通路会影响谷氨酸能功能，进而关联慢性肌肉疼痛及焦虑样行为。该工作为“痛觉如何进入主观意识体验”提供了细胞与回路层线索。",
+      "source": "Experimental & Molecular Medicine（Nature Portfolio）",
+      "link": "https://www.nature.com/articles/s12276-026-01666-7"
     },
     {
-      "title": "高精度前额叶神经调控随机试验显示可改变认知偏向",
-      "summary": "《Molecular Psychiatry》随机对照研究显示，高精度经颅直流刺激可调节与社会焦虑相关的认知偏向。虽然并非直接“意识理论”研究，但为“意识/注意状态可干预”提供了可操作证据。",
-      "source": "Nature (Molecular Psychiatry)",
-      "link": "https://www.nature.com/articles/s41380-026-03520-8"
+      "title": "研究提示“吃饱后仍想吃”与奖赏系统持续激活有关",
+      "summary": "基于《Appetite》发表研究的报道指出，即便饱腹后，大脑对高诱惑食物线索仍保持较强反应。该发现支持“意识层面的意志控制”与“非意识奖赏驱动”并行影响决策。",
+      "source": "New York Post（引述 University of East Anglia / Appetite）",
+      "link": "https://nypost.com/2026/03/01/health/scientists-pinpoint-why-resisting-a-donut-can-feel-impossible-even-when-youre-full/"
+    },
+    {
+      "title": "自我披露的神经奖赏效应再受关注：社会互动中的自我相关加工",
+      "summary": "《卫报》科学栏目梳理多项神经影像证据，指出谈论“自我信息”可激活奖赏相关脑区。该趋势反映意识研究正从‘是否有意识’延展到‘自我体验如何塑造行为与社会连接’。",
+      "source": "The Guardian（Science）",
+      "link": "https://www.theguardian.com/science/2026/mar/01/should-you-overshare-more"
     }
   ]
 }
