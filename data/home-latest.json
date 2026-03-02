@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-02T05:16:21.103Z",
+  "generatedAt": "2026-03-02T13:03:50.388Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772428557078,
+      "updatedAt": 1772456603272,
       "items": [
         {
           "title": "What’s next for Chinese open-source AI",
@@ -35,22 +35,22 @@
           "titleZh": "《新科学家》推荐 Liminals 的量子音景 - 《新科学家》",
           "source": "newscientist.com",
           "link": "https://www.newscientist.com/article/mg26935840-400-new-scientist-recommends-the-quantum-soundscape-of-liminals/",
-          "rawSummary": "Trending New Scientist articles #### 1 AIs can’t stop recommending nuclear strikes in war game simulations #### 2 It’s your perception of sleep that’s making you feel tired all day #### 3 The world’s most elusive colour is worth billions – if we can find it #### 4 Birdwatching may reshape the brain and build its buffer against ageing #### 5 Rapamycin can add years to your life, or none at all – it’s a lottery #### 6 Cannibalism may explain why some orcas stay in family groups #### 7 Stone Age symbols may push back the earliest form of writing #### 8 Tiny predatory dinosaur weighed less than a chicken #### 9 Landmark vitiligo cream targets immune cells that disrupt pigmentation #### 10 Loophole found that makes quantum cloning possible Advertisement [...] Skip to content Sign in Subscribe now Subscribe now Subscribe now #### Comment # New Scientist recommends the quantum soundscape of Liminals The books, TV, games and more that New Scientist staff have enjoyed this week By Thomas Lewton 25 February 2026 A century ago, when quantum mechanics was developed, physicists felt they were peering into the abyss: everything they thought was real, wasn’t. Today, we talk easily about collapsing clouds of probability and spooky action at a distance. [...] Topics: exhibition/ review Advertisement ## Sign up to our weekly newsletter Receive a weekly dose of discovery in your inbox. We'll also keep you up to date with New Scientist events and special offers. Sign up ## More from New Scientist Explore the latest news, articles and features #### Comment ### Return of Fallout, Paradise and Silo fuels passion for bunker sci-fi Culture#### Comment ### New Scientist recommends pioneering artist Ryoji Ikeda's new work Culture#### Comment ### Alex Garland’s The Bone Temple is brutal, brilliant - and mind-blowing Culture#### Space ### Blue Planet Red is wrong about Mars – but it's surprisingly poignant Culture #### Popular articles Trending New Scientist articles #### 1",
+          "rawSummary": "Topics: exhibition/ review Advertisement ## Sign up to our weekly newsletter Receive a weekly dose of discovery in your inbox. We'll also keep you up to date with New Scientist events and special offers. Sign up ## More from New Scientist Explore the latest news, articles and features #### Comment ### Return of Fallout, Paradise and Silo fuels passion for bunker sci-fi Culture#### Comment ### New Scientist recommends pioneering artist Ryoji Ikeda's new work Culture#### Comment ### Alex Garland’s The Bone Temple is brutal, brilliant - and mind-blowing Culture#### Space ### Blue Planet Red is wrong about Mars – but it's surprisingly poignant Culture #### Popular articles Trending New Scientist articles #### 1 [...] Trending New Scientist articles #### 1 AIs can’t stop recommending nuclear strikes in war game simulations #### 2 It’s your perception of sleep that’s making you feel tired all day #### 3 The world’s most elusive colour is worth billions – if we can find it #### 4 Birdwatching may reshape the brain and build its buffer against ageing #### 5 Rapamycin can add years to your life, or none at all – it’s a lottery #### 6 Cannibalism may explain why some orcas stay in family groups #### 7 Stone Age symbols may push back the earliest form of writing #### 8 Tiny predatory dinosaur weighed less than a chicken #### 9 Landmark vitiligo cream targets immune cells that disrupt pigmentation #### 10 Loophole found that makes quantum cloning possible Advertisement [...] Skip to content Sign in Subscribe now Subscribe now Subscribe now #### Comment # New Scientist recommends the quantum soundscape of Liminals The books, TV, games and more that New Scientist staff have enjoyed this week By Thomas Lewton 25 February 2026 A century ago, when quantum mechanics was developed, physicists felt they were peering into the abyss: everything they thought was real, wasn’t. Today, we talk easily about collapsing clouds of probability and spooky action at a distance.",
           "publishedAt": "Wed, 25 Feb 2026 19:03:30 GMT",
           "ts": 1772046210000,
-          "tavilyScore": 0.088538056,
-          "summary": "新科学家热门文章 #### 1 人工智能无法停止在战争游戏模拟中推荐核打击 #### 2 你对睡眠的感知让你一整天都感到疲倦 #### 3 世界上最难以捉摸的颜色。",
+          "tavilyScore": 0.025450227199999998,
+          "summary": "主题：展览/回顾 广告 ## 订阅我们的每周通讯 在您的收件箱中接收每周的发现。",
           "judgement": {
             "frontier": 9,
             "depth": 8,
             "reach": 3,
-            "total": 7.258538056
+            "total": 7.1954502272
           },
           "tags": [
             "神经科学",
             "科学发现"
           ],
-          "score": 7.258538056
+          "score": 7.1954502272
         },
         {
           "title": "The human work behind humanoid robots is being hidden",
@@ -73,27 +73,28 @@
           "score": 7.83
         },
         {
-          "title": "Are You ‘Agentic’ Enough for the AI Era?",
-          "titleZh": "人工智能时代你足够“代理”吗？",
-          "source": "Wired AI",
-          "link": "https://www.wired.com/story/silicon-valley-agentic-individuals-future-of-work/",
-          "rawSummary": "“Today’s agents might already be more capable than all three of us here in the room,” says Akshay Kothari, cofounder and chief operating officer of the $11 billion productivity startup Notion . “Taste is something we think is pretty unique to Notion, but you can imagine agents getting pretty good at that too. Eventually, the only thing left for humans is agency.” That idea might sound outrageous to most people, but it will come as no surprise to many in Silicon Valley . A viral Harper&#x27;s essay brought the subject to a head recently. It followed a few young people in San Francisco and concluded that being agentic has less to do with productivity and “more to do with constantly chasing attention online.” But in my conversations with founders, researchers, and investors, I came to a different conclusion. The tech industry is grappling with a very real shift in how software engineers do their jobs. Millions of developers are using AI coding agents like Claude Code and Codex to automate much of their work (some tech companies are even requiring it ). For many, a massive piece of their value is now tied to deciding what AI coding agents should work on. The shift is unsettling to those who enjoyed the act of sitting down and actually writing code, but for some of the industry’s most “agentic,” it’s an opportunity. Simon Last, another Notion cofounder, uses AI coding agents more than anyone I’ve ever met. He coded for nearly two decades—then abruptly stopped. Now, he’s using up to four AI coding agents at any given time (he prefers Codex to Claude Code). If he’s at a party or sleeping, Last gets what he calls “token anxiety” if he doesn’t have agents working in the background. He doesn’t like to use more than four, though, because he says it causes “context overload” on his human brain. “Knowing how to harness these agents is now the most important skill in the world, and it’s not really something you can train for,” says Last. “You have to be very open-minded, curious, and willing to try whatever the newest thing is. The value of that sort of person is going up exponentially, because the value they can create, by extension, is going up exponentially.” To be fair, Last is kind of describing himself. He acts as a “super IC” for Notion, and he doesn’t manage humans, only agents. But the way he manages them is not unlike how a manager oversees employees. Last is constantly delegating work to AI agents, then closely reviewing and fixing their code. Kothari says Notion has always hired people with high agency, but the value of doing so has gone up dramatically in recent months. Even though the company is using AI agents to automate work, Notion is busier than ever. Employees are shipping products at a higher velocity and doing more work overall, the cofounders claim. Notion isn’t downsizing its team because of AI, but it is hiring differently. “There&#x27;s more value in the Valley today to have a few Simons than thousands of engineers,” says Kothari. He says the people Notion hires need to understand “the new way of working.” If you’re not a software engineer, this can be a little hard to process. AI agents aren’t very useful for people in many industries. A recent survey from Gallup found that most Americans still don’t use AI much in their jobs , though the number of people who do is rising. Kothari is increasingly convinced the “new way of work” will eventually hit finance, legal, creative, and other industries. If and when that happens, you can imagine more Americans beginning to ask themselves, am I agentic? Jennifer Li, a general partner at Andreessen Horowitz who works on the AI infrastructure team, says it’s hard to find a company she’s invested in where employees don’t use AI coding tools. “If we do come across people who are oblivious to it, it’s a big red flag. It impacts how we think about picking founders.” Of course, Li notes that just because you use a lot of AI agents doesn’t make you a “high-agency” person—ideally you’re using them in a smart way. Some engineers who work on highly sophisticated infrastructure systems can’t use AI coding agents much, she adds. For teams that are using them, there’s a “no slop rule”: the person who submitted the code is still responsible if it’s wrong.",
-          "publishedAt": "2026-02-26T19:00:00.000Z",
-          "ts": 1772132400000,
-          "summary": "价值 110 亿美元的生产力初创公司 Notion 的联合创始人兼首席运营官阿克谢·科塔里 (Akshay Kothari) 表示：“今天的特工可能已经比房间里的我们三个人更有能力了。”。",
+          "title": "Google’s Cloud AI lead on the three frontiers of model capability - TechCrunch",
+          "titleZh": "谷歌的 Cloud 人工智能 在模型能力的三个前沿领域处于领先地位",
+          "source": "techcrunch.com",
+          "link": "https://techcrunch.com/2026/02/23/googles-cloud-ai-lead-on-the-three-frontiers-of-model-capability/",
+          "rawSummary": "AI, Exclusive, Google, Vertex Russell Brandom AI Editor Russell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review. He can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489. View Bio October 13-15 San Francisco, CA Save up to $680 on your pass before February 27. Meet investors. Discover your next portfolio company. Hear from 250+ tech leaders, dive into 200+ sessions, and explore 300+ startups building what’s next. Don’t miss these one-time savings. REGISTER NOW ## Most Popular Bill Gurley says that right now, the worst thing you can do for your career is play it safe [...] When I spoke with Michael, I was particularly struck by one idea I hadn’t heard before. As he put it, AI models are pushing against three frontiers at once: raw intelligence, response time, and a third quality that has less to do with raw capability than with cost — whether a model can be deployed cheaply enough to run at massive, unpredictable scale. It’s a new way of thinking about model capabilities, and a particularly valuable one for anyone trying to push frontier models in a new direction. This interview has been edited for length and clarity. Why don’t you start by walking us through your experience in AI so far, and what you do at Google? [...] Russell Brandom As a product VP at Google Cloud, Michael Gerstenhaber works mostly on Vertex, the company’s unified platform for deploying enterprise AI. It gives him a high-level view of how companies are actually using AI models, and what still needs to be done to unleash the potential of agentic AI.",
+          "publishedAt": "Mon, 23 Feb 2026 19:18:42 GMT",
+          "ts": 1771874322000,
+          "tavilyScore": 0.81874656,
+          "summary": "AI，独家，谷歌，Vertex Russell Brandom AI 编辑 Russell Brandom 自 2012 年以来一直报道科技行业，重点关注平台政策和新兴技术。",
           "judgement": {
-            "frontier": 9,
+            "frontier": 7,
             "depth": 8,
             "reach": 3,
-            "total": 7.17
+            "total": 7.14874656
           },
           "tags": [
             "人工智能",
             "智能体",
-            "神经科学",
+            "AI安全",
             "技术"
           ],
-          "score": 7.17
+          "score": 7.14874656
         }
       ]
     },
@@ -103,7 +104,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772428574433,
+      "updatedAt": 1772456623565,
       "items": [
         {
           "title": "From Moderation to Mediation: Can LLMs Serve as Mediators in Online Flame Wars?",
@@ -245,29 +246,27 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1772428581103,
+      "updatedAt": 1772456630387,
       "items": [
         {
-          "title": "Morning Bid: Another day, another AI mood swing - Reuters",
-          "titleZh": "早间竞价：又是一天，又是一次人工智能情绪波动 - 路透中文网",
-          "source": "reuters.com",
-          "link": "https://www.reuters.com/business/finance/global-markets-view-usa-2026-02-25/",
-          "rawSummary": "Even though Nvidia shares are only up 2% for the year so far, options markets are braced for a post-earnings swing of plus/minus 5%. The scale of the firm these days means that's a swing of about $230 billion in market cap either way. After the S&P 500's 0.77% jump on Tuesday, futures were up ahead of today's bell. Elsewhere, Asia's stocks motored higher on Wednesday amid a growing focus on what AI capex is doing for companies aiding the infrastructure buildout. South Korea's Kospi benchmark, which has risen a staggering 45% already this year, rose 2%, while Japan's Nikkei gained 2.2%. [...] Chart represents slow-down in Nvidia's revenue growth With its earnings update due later on Wednesday, Nvidia revenue is expected to have jumped 68% to $66 billion, and analysts assume its first-quarter revenue forecast will show another 64% jump to $72 billion. The company has surpassed sales expectations for the past 13 quarters, though the scale of those beats has shrunk, competition in AI chips is rising, and the bar to impress moves ever higher. After powering much of the U.S. stock market rally for the past three years, Nvidia's stock has risen about 2% so far in 2026. Today's events to watch U.S. corporate earnings: NVIDIA, Lowe's, Salesforce, Zoom U.S. 5-year note auction [...] ### Information you can trust Reuters, the news and media division of Thomson Reuters, is the world’s largest multimedia news provider, reaching billions of people worldwide every day. Reuters provides business, financial, national and international news to professionals via desktop terminals, the world's media organizations, industry events and directly to consumers. ### Follow Us []( []( []( []( []( []( ### LSEG Products #### Workspace, opens new tab Access unmatched financial data, news and content in a highly-customised workflow experience on desktop, web and mobile. #### Data Catalogue, opens new tab Browse an unrivalled portfolio of real-time and historical market data and insights from worldwide sources and experts.",
-          "publishedAt": "Wed, 25 Feb 2026 11:39:48 GMT",
-          "ts": 1772019588000,
-          "tavilyScore": 1.3005877440000002,
-          "summary": "尽管 Nvidia 股价今年迄今仅上涨 2%，但期权市场已做好了盈利后正负 5% 波动的准备。",
+          "title": "Why GPS fails in cities. And how it was brilliantly fixed",
+          "titleZh": "为什么 GPS 在城市中失效。以及它是如何完美修复的",
+          "source": "ScienceDaily AI",
+          "link": "https://www.sciencedaily.com/releases/2025/10/251009033124.htm",
+          "rawSummary": "Our everyday GPS struggles in “urban canyons,” where skyscrapers bounce satellite signals, confusing even advanced navigation systems. NTNU scientists created SmartNav, combining satellite corrections, wave analysis, and Google’s 3D building data for remarkable precision. Their method achieved accuracy within 10 centimeters during testing. The breakthrough could make reliable urban navigation accessible and affordable worldwide.",
+          "publishedAt": "2025-10-09T07:31:24.000Z",
+          "ts": 1759995084000,
+          "summary": "我们的日常 GPS 在“城市峡谷”中举步维艰，那里的摩天大​​楼反射卫星信号，甚至让先进的导航系统感到困惑。",
           "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 8.470587744
+            "frontier": 7,
+            "depth": 10,
+            "reach": 7,
+            "total": 7.99
           },
           "tags": [
-            "人工智能",
-            "技术"
+            "科学发现"
           ],
-          "score": 8.470587744
+          "score": 7.99
         },
         {
           "title": "Boston AI startup can predict risk of breast cancer before tumors appear - The Boston Globe",
@@ -337,24 +336,30 @@
           "score": 8.09659136
         },
         {
-          "title": "Why GPS fails in cities. And how it was brilliantly fixed",
-          "titleZh": "为什么 GPS 在城市中失效。以及它是如何完美修复的",
-          "source": "ScienceDaily AI",
-          "link": "https://www.sciencedaily.com/releases/2025/10/251009033124.htm",
-          "rawSummary": "Our everyday GPS struggles in “urban canyons,” where skyscrapers bounce satellite signals, confusing even advanced navigation systems. NTNU scientists created SmartNav, combining satellite corrections, wave analysis, and Google’s 3D building data for remarkable precision. Their method achieved accuracy within 10 centimeters during testing. The breakthrough could make reliable urban navigation accessible and affordable worldwide.",
-          "publishedAt": "2025-10-09T07:31:24.000Z",
-          "ts": 1759995084000,
-          "summary": "我们的日常 GPS 在“城市峡谷”中举步维艰，那里的摩天大​​楼反射卫星信号，甚至让先进的导航系统感到困惑。",
+          "title": "Q4 2025 Pharma Biotools VC Trends - PitchBook",
+          "titleZh": "2025 年第 4 季度 Pharma Biotools 风险投资趋势",
+          "source": "pitchbook.com",
+          "link": "https://pitchbook.com/news/reports/q4-2025-pharma-biotools-vc-trends",
+          "rawSummary": "Pharma biotools VC deal activity rebounded in 2025, with deal value reaching $5.7 billion and deal count surging to a record 537—signaling renewed investor confidence after three years of contraction. [...] The pharma biotools sector regained momentum in 2025 as venture funding rebounded following three years of contraction, driven by investor appetite for asset-light business models and AI-enabled technologies that support drug discovery and development. Deal value rose modestly for the year and remained stable in Q4, signaling a normalization of activity rather than renewed decline. Investment concentrated heavily in generative AI, quantum computing, microfluidics, and synthetic biology, as companies delivering high-fidelity data generation, automation, and software-like services attracted outsized interest. Major Q4 financings for AI-driven protein design platforms and automation-focused tools underscored how investors are backing the emerging “scientific stack” that connects [...] M&A activity remained subdued, although Halozyme Therapeutics’ acquisition of Elektrofi for up to $900 million marked the sector’s largest exit since 2021 and highlighted continued demand for technologies embedded in biologics delivery and manufacturing workflows. China also emerged as a key growth market, with deal count rising more than 80% YoY and investment concentrated in AI-driven platforms and enabling infrastructure for next-generation therapeutics. Overall, pharma biotools VC activity is stabilizing as investors prioritize platforms capable of generating high-quality datasets, enabling automation, and accelerating commercialization across the broader biopharma ecosystem. Table of contents",
+          "publishedAt": "Tue, 24 Feb 2026 19:25:21 GMT",
+          "ts": 1771961121000,
+          "tavilyScore": 1.59768992,
+          "summary": "制药生物工具风险投资交易活动在 2025 年出现反弹，交易价值达到 57 亿美元，交易数量激增至创纪录的 537 笔，标志着投资者在经历三年收缩后信心重拾。",
           "judgement": {
             "frontier": 7,
-            "depth": 10,
-            "reach": 7,
-            "total": 7.99
+            "depth": 8,
+            "reach": 3,
+            "total": 7.927689920000001
           },
           "tags": [
-            "科学发现"
+            "人工智能",
+            "生命科学",
+            "生物技术",
+            "蛋白质科学",
+            "科学发现",
+            "技术"
           ],
-          "score": 7.99
+          "score": 7.927689920000001
         }
       ]
     }
