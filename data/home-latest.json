@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T19:06:09.845Z",
+  "generatedAt": "2026-03-02T02:22:34.368Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772391953046,
+      "updatedAt": 1772418140079,
       "items": [
         {
           "title": "What’s next for Chinese open-source AI",
@@ -29,47 +29,6 @@
             "技术"
           ],
           "score": 8.49
-        },
-        {
-          "title": "New Scientist recommends the quantum soundscape of Liminals - New Scientist",
-          "titleZh": "《新科学家》推荐 Liminals 的量子音景 - 《新科学家》",
-          "source": "newscientist.com",
-          "link": "https://www.newscientist.com/article/mg26935840-400-new-scientist-recommends-the-quantum-soundscape-of-liminals/",
-          "rawSummary": "Topics: exhibition/ review Advertisement ## Sign up to our weekly newsletter Receive a weekly dose of discovery in your inbox. We'll also keep you up to date with New Scientist events and special offers. Sign up ## More from New Scientist Explore the latest news, articles and features #### Comment ### Return of Fallout, Paradise and Silo fuels passion for bunker sci-fi Culture#### Comment ### New Scientist recommends pioneering artist Ryoji Ikeda's new work Culture#### Comment ### Alex Garland’s The Bone Temple is brutal, brilliant - and mind-blowing Culture#### Space ### Blue Planet Red is wrong about Mars – but it's surprisingly poignant Culture #### Popular articles Trending New Scientist articles #### 1 [...] Trending New Scientist articles #### 1 AIs can’t stop recommending nuclear strikes in war game simulations #### 2 It’s your perception of sleep that’s making you feel tired all day #### 3 The world’s most elusive colour is worth billions – if we can find it #### 4 Birdwatching may reshape the brain and build its buffer against ageing #### 5 Rapamycin can add years to your life, or none at all – it’s a lottery #### 6 Cannibalism may explain why some orcas stay in family groups #### 7 Stone Age symbols may push back the earliest form of writing #### 8 Tiny predatory dinosaur weighed less than a chicken #### 9 Landmark vitiligo cream targets immune cells that disrupt pigmentation #### 10 Loophole found that makes quantum cloning possible Advertisement [...] Skip to content Sign in Subscribe now Subscribe now Subscribe now #### Comment # New Scientist recommends the quantum soundscape of Liminals The books, TV, games and more that New Scientist staff have enjoyed this week By Thomas Lewton 25 February 2026 A century ago, when quantum mechanics was developed, physicists felt they were peering into the abyss: everything they thought was real, wasn’t. Today, we talk easily about collapsing clouds of probability and spooky action at a distance.",
-          "publishedAt": "Wed, 25 Feb 2026 19:03:30 GMT",
-          "ts": 1772046210000,
-          "tavilyScore": 0.025450227199999998,
-          "summary": "主题：展览/回顾 广告 ## 订阅我们的每周通讯 在您的收件箱中接收每周的发现。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 7.1954502272
-          },
-          "tags": [
-            "神经科学"
-          ],
-          "score": 7.1954502272
-        },
-        {
-          "title": "The human work behind humanoid robots is being hidden",
-          "titleZh": "人形机器人背后的人类工作正在被隐藏",
-          "source": "MIT Technology Review",
-          "link": "https://www.technologyreview.com/2026/02/23/1133508/the-human-work-behind-humanoid-robots-is-being-hidden/",
-          "rawSummary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. In January, Nvidia’s Jensen Huang, the head of the world’s most valuable company, proclaimed that we are entering the era of physical AI, when artificial intelligence will move beyond language and chatbots…",
-          "publishedAt": "2026-02-23T17:05:00.000Z",
-          "ts": 1771866300000,
-          "summary": "这个故事最初出现在我们关于人工智能的每周通讯《算法》中。",
-          "judgement": {
-            "frontier": 7,
-            "depth": 8,
-            "reach": 9,
-            "total": 7.83
-          },
-          "tags": [
-            "人工智能"
-          ],
-          "score": 7.83
         },
         {
           "title": "Are You ‘Agentic’ Enough for the AI Era?",
@@ -95,28 +54,24 @@
           "score": 7.17
         },
         {
-          "title": "Google’s Cloud AI lead on the three frontiers of model capability - TechCrunch",
-          "titleZh": "谷歌的 Cloud 人工智能 在模型能力的三个前沿领域处于领先地位",
-          "source": "techcrunch.com",
-          "link": "https://techcrunch.com/2026/02/23/googles-cloud-ai-lead-on-the-three-frontiers-of-model-capability/",
-          "rawSummary": "AI, Exclusive, Google, Vertex Russell Brandom AI Editor Russell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review. He can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489. View Bio October 13-15 San Francisco, CA Save up to $680 on your pass before February 27. Meet investors. Discover your next portfolio company. Hear from 250+ tech leaders, dive into 200+ sessions, and explore 300+ startups building what’s next. Don’t miss these one-time savings. REGISTER NOW ## Most Popular Bill Gurley says that right now, the worst thing you can do for your career is play it safe [...] When I spoke with Michael, I was particularly struck by one idea I hadn’t heard before. As he put it, AI models are pushing against three frontiers at once: raw intelligence, response time, and a third quality that has less to do with raw capability than with cost — whether a model can be deployed cheaply enough to run at massive, unpredictable scale. It’s a new way of thinking about model capabilities, and a particularly valuable one for anyone trying to push frontier models in a new direction. This interview has been edited for length and clarity. Why don’t you start by walking us through your experience in AI so far, and what you do at Google? [...] Russell Brandom As a product VP at Google Cloud, Michael Gerstenhaber works mostly on Vertex, the company’s unified platform for deploying enterprise AI. It gives him a high-level view of how companies are actually using AI models, and what still needs to be done to unleash the potential of agentic AI.",
-          "publishedAt": "Mon, 23 Feb 2026 19:18:42 GMT",
-          "ts": 1771874322000,
-          "tavilyScore": 0.81874656,
-          "summary": "AI，独家，谷歌，Vertex Russell Brandom AI 编辑 Russell Brandom 自 2012 年以来一直报道科技行业，重点关注平台政策和新兴技术。",
+          "title": "The human work behind humanoid robots is being hidden",
+          "titleZh": "人形机器人背后的人类工作正在被隐藏",
+          "source": "MIT Technology Review",
+          "link": "https://www.technologyreview.com/2026/02/23/1133508/the-human-work-behind-humanoid-robots-is-being-hidden/",
+          "rawSummary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. In January, Nvidia’s Jensen Huang, the head of the world’s most valuable company, proclaimed that we are entering the era of physical AI, when artificial intelligence will move beyond language and chatbots…",
+          "publishedAt": "2026-02-23T17:05:00.000Z",
+          "ts": 1771866300000,
+          "summary": "这个故事最初出现在我们关于人工智能的每周通讯《算法》中。",
           "judgement": {
             "frontier": 7,
             "depth": 8,
-            "reach": 3,
-            "total": 7.14874656
+            "reach": 9,
+            "total": 7.83
           },
           "tags": [
-            "人工智能",
-            "智能体",
-            "AI安全",
-            "技术"
+            "人工智能"
           ],
-          "score": 7.14874656
+          "score": 7.83
         }
       ]
     },
@@ -126,17 +81,37 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772391962758,
+      "updatedAt": 1772418148395,
       "items": [
         {
-          "title": "The human exposome could change everything we know about disease",
-          "titleZh": "人类暴露组可能会改变我们对疾病的了解",
-          "source": "ScienceDaily Biology",
-          "link": "https://www.sciencedaily.com/releases/2026/02/260213223904.htm",
-          "rawSummary": "Scientists are launching an ambitious global effort to map the “human exposome” — the lifelong mix of environmental and chemical exposures that drive most diseases. Backed by new partnerships with governments, UNESCO, and international science advisory bodies, the initiative is rapidly expanding across continents. Powered by AI and advanced data tools, the movement seeks to shift medicine beyond genetics and toward the real-world factors shaping human health.",
-          "publishedAt": "2026-02-14T13:06:46.000Z",
-          "ts": 1771074406000,
-          "summary": "科学家们正在发起一项雄心勃勃的全球努力，绘制“人类暴露组”图谱——导致大多数疾病的终生环境和化学暴露组合。",
+          "title": "Why GPS fails in cities. And how it was brilliantly fixed",
+          "titleZh": "为什么 GPS 在城市中失效。以及它是如何完美修复的",
+          "source": "ScienceDaily AI",
+          "link": "https://www.sciencedaily.com/releases/2025/10/251009033124.htm",
+          "rawSummary": "Our everyday GPS struggles in “urban canyons,” where skyscrapers bounce satellite signals, confusing even advanced navigation systems. NTNU scientists created SmartNav, combining satellite corrections, wave analysis, and Google’s 3D building data for remarkable precision. Their method achieved accuracy within 10 centimeters during testing. The breakthrough could make reliable urban navigation accessible and affordable worldwide.",
+          "publishedAt": "2025-10-09T07:31:24.000Z",
+          "ts": 1759995084000,
+          "summary": "我们的日常 GPS 在“城市峡谷”中举步维艰，那里的摩天大​​楼反射卫星信号，甚至让先进的导航系统感到困惑。",
+          "judgement": {
+            "frontier": 7,
+            "depth": 10,
+            "reach": 7,
+            "total": 7.99
+          },
+          "tags": [
+            "科学发现"
+          ],
+          "score": 7.99
+        },
+        {
+          "title": "Laughing at Your Blunders Beats Embarrassment",
+          "titleZh": "嘲笑自己的错误可以战胜尴尬",
+          "source": "Neuroscience News",
+          "link": "https://neurosciencenews.com/laughter-embarrassment-social-psychology-30219/",
+          "rawSummary": "Research suggests that responding to minor social mishaps with humor rather than embarrassment significantly boosts how others perceive your warmth and authenticity. Credit: Neuroscience News Laughing at Your Blunders Beats Embarrassment Featured Neuroscience Psychology &middot; March 1, 2026 Summary: We often think that acting embarrassed after a social stumble—like tripping or misnaming a colleague—shows humility and respect for social norms. However, a new study suggests that for minor, harmless mistakes, laughing at yourself is a far more effective reputational recovery strategy. Across six experiments with over 3,000 participants, researchers found that people who laugh at their own blunders are perceived as warmer, more competent, and more authentic than those who display traditional embarrassment. When you make a small mistake that doesn’t harm anyone else – such as tripping over a curb or misremembering a name – people will like you more if you can laugh at yourself rather than act embarrassed, finds research published by the American Psychological Association. “Our findings suggest that people often overestimate how harshly others judge their minor social mistakes,” said study co-author Övül Sezer, PhD, of the Cornell University SC Johnson School of Business. “For minor, harmless blunders, laughing at yourself can signal social confidence, reduce tension and communicate that the mistake was accidental.” The study was published in the&nbsp; Journal of Personality and Social Psychology . Prior research has found there are social benefits to acting embarrassed after committing a faux pas – people like to see embarrassment because it signals remorse and respect for social norms, according to Sezer.&nbsp; “But in everyday life, we often see another response &#8212; people laugh at themselves. We wanted to understand whether laughing at yourself might sometimes be even more effective than showing embarrassment – and if so, when,” she said.&nbsp; In six online experiments with more than 3,000 total participants, researchers asked participants to read about other people’s embarrassing mishaps, such as walking into a glass door at a party or accidentally waving to the wrong person at the theatre. Participants were then shown how the people in the stories reacted. In some experiments, they were told that the people acted embarrassed or that they laughed at themselves; in other experiments they were shown pictures of embarrassed-looking or laughing people. Overall, participants judged the people who laughed at their own minor blunders to be warmer, more competent and more authentic than those who acted embarrassed.",
+          "publishedAt": "2026-03-01T20:42:02.000Z",
+          "ts": 1772397722000,
+          "summary": "研究表明，用幽默而不是尴尬来应对轻微的社交事故可以显着提高别人对你的温暖和真实的看法。",
           "judgement": {
             "frontier": 9,
             "depth": 8,
@@ -144,7 +119,28 @@
             "total": 8.17
           },
           "tags": [
-            "人工智能"
+            "神经科学",
+            "科研进展"
+          ],
+          "score": 8.17
+        },
+        {
+          "title": "Developing a human hepatocyte model with enhanced drug-metabolizing enzyme activity",
+          "titleZh": "开发药物代谢酶活性增强的人肝细胞模型",
+          "source": "Medical Xpress",
+          "link": "https://medicalxpress.com/news/2026-02-human-hepatocyte-drug-metabolizing-enzyme.html",
+          "rawSummary": "A research team led by Associate Professor Shinpei Yamaguchi and the late Professor Masako Tada of the Faculty of Science, together with Professor Yojiro Anzai and Lecturer Yohei Iizaka of the Faculty of Pharmaceutical Sciences at Toho University, have developed a new HepaRG cell line with markedly enhanced activity of CYP2D6, a major drug-metabolizing enzyme. This engineered human hepatocyte model enables more human-relevant evaluation of drug-induced hepatotoxicity mediated by CYP2D6. The study was published in the journal PLOS ONE on December 29, 2025.",
+          "publishedAt": "2026-02-28T22:30:01.000Z",
+          "ts": 1772317801000,
+          "summary": "由理学院山口新平副教授和已故多田正子教授领导的研究小组，以及药学部安西洋次郎教授和饭坂洋平讲师。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 7,
+            "total": 8.17
+          },
+          "tags": [
+            "科研进展"
           ],
           "score": 8.17
         },
@@ -165,7 +161,8 @@
           },
           "tags": [
             "神经科学",
-            "脑机接口"
+            "脑机接口",
+            "科研进展"
           ],
           "score": 8.17
         },
@@ -191,31 +188,6 @@
           "score": 8.17
         },
         {
-          "title": "Study Reveals What Tau PET Scans Are Actually Seeing",
-          "titleZh": "研究揭示了 Tau PET 扫描的实际情况",
-          "source": "Neuroscience News",
-          "link": "https://neurosciencenews.com/tau-pet-inflammation-30213/",
-          "rawSummary": "Study Reveals What Tau PET Scans Are Actually Seeing Featured Neurology Neuroscience &middot; February 28, 2026 Summary: While tau PET scans are vital for &#8220;seeing&#8221; Alzheimer’s biology in living patients, they have a known quirk: the most common tracer, Flortaucipir (Tauvid), often &#8220;lights up&#8221; even when tau tangles aren&#8217;t the primary driver. In a high-precision study, researchers used AI-enabled, voxel-by-voxel alignment to compare PET scans directly with postmortem brain tissue. They discovered that in non-Alzheimer’s cases and even some controls, the PET signal was actually reacting to iron deposits and MAO-B (a marker of neuroinflammation) rather than tau itself. This &#8220;off-target&#8221; binding explains why scans can sometimes over-predict the presence of toxic tangles. Tau proteins play an important role in Alzheimer’s disease. Tau helps to stabilize neurons in the brain, but in Alzheimer’s disease, tau proteins can misfold and tangle inside neurons. These tangles spread across the brain forming toxic clumps that impair neuronal function and ultimately lead to cell death. PET scans are one of the few ways that clinicians and researchers can “see” Alzheimer’s disease biology in a living person. PET scans for tau are being increasingly used in specialty clinics and research to estimate the burden and distribution of tau tangles, providing information that can influence diagnostic confidence, prognosis discussions, and how patients are selected for novel Alzheimer’s therapies and tracked in Alzheimer’s drug trials. ?Researchers identified that iron and neuroinflammation can mimic tau pathology on PET scans, providing a roadmap for more accurate diagnostic interpretation. Credit: Neuroscience News At the same time, there is an important limitation to tau PET scans: the most widely used tau PET tracer (Flortaucipir/Tauvid) can also bind to other biological features &nbsp; in the&nbsp;brain, sometimes showing a low-level signal on scans even when tau is not the main driver of the results. This is especially true in non-Alzheimer’s disorders, where tau protein accumulations show a different structure than in Alzheimer’s disease. In a study appearing February 25 in Acta Neuropathologica , UC San Francisco researchers use a rare combination of patient tau PET imaging plus detailed postmortem brain tissue mapping, to clarify the extent to which non-tau factors influence the Flortaucipir tracer signal. With the aid of AI-enabled, voxel-by-voxel alignment between the PET scan and microscopy, the researchers computationally matched the PET signal to the corresponding tissue location and generated thousands of point-by-point comparisons per person, giving much higher anatomical precision than typical PET–autopsy studies. They then measured, side-by-side, the tissue features most relevant to interpreting flortaucipir: phospho-tau (tau pathology), ferric iron deposits and MAO-B, a marker linked to reactive astrocytes which are a key component of neuroinflammation. They found that in several non-Alzheimer’s tauopathies (and in a non-tau control case), the PET signal was better explained by iron and/or MAO-B–related processes than by tau itself. “Our results help explain&nbsp; why &nbsp;tau PET scans sometimes ‘light up’ beyond what tau pathology alone would predict,” says co-senior author Lea T. Grinberg, MD, PhD, a former UCSF neuroscientist and current professor of Neuroscience at the Mayo Clinic .“In Alzheimer’s disease, tau is a major contributor to flortaucipir signal—but not the only one.” The researchers believe these findings can help clinicians avoid over-interpretation of borderline signal in a tau PET scan and improve how scans are used for prognosis and trial decisions.",
-          "publishedAt": "2026-02-28T21:24:35.000Z",
-          "ts": 1772313875000,
-          "summary": "研究揭示了 Tau PET 扫描的实际情况 特色神经学 Neuroscience · 二月 28, 2026 摘要：虽然 tau PET 扫描对于“观察”活体患者的阿尔茨海默病生物学至关重要，但它们。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 7,
-            "total": 8.17
-          },
-          "tags": [
-            "人工智能",
-            "AI安全",
-            "神经科学",
-            "神经影像",
-            "生命科学",
-            "蛋白质科学"
-          ],
-          "score": 8.17
-        },
-        {
           "title": "Scientists discover a bacterial kill switch and it could change the fight against superbugs",
           "titleZh": "科学家发现细菌杀死开关，它可能会改变对抗超级细菌的斗争",
           "source": "ScienceDaily Biology",
@@ -232,31 +204,10 @@
           },
           "tags": [
             "神经影像",
-            "蛋白质科学"
+            "蛋白质科学",
+            "科学发现"
           ],
           "score": 8.17
-        },
-        {
-          "title": "Structural alignment for energy–computation co-design - Nature",
-          "titleZh": "能源计算协同设计的结构调整",
-          "source": "nature.com",
-          "link": "https://www.nature.com/articles/s44287-026-00273-y",
-          "rawSummary": "## Search Advanced search ### Quick links Explore articles by subject Find a job Guide to authors Editorial policies Sign up for the Nature Briefing newsletter — what matters in science, free to your inbox daily. Get the most important science stories of the day, free in your inbox. Sign up for Nature Briefing [...] only $9.92 per issue Learn more Buy this article Purchase on SpringerLink Instant access to the full article PDF. USD 39.95 Prices may be subject to local taxes which are calculated during checkout ## References 1. International Energy Agency. AI is Set to Drive Surging Electricity Demand from Data Centres while Offering the Potential to Transform How the Energy Sector Works (2025). 2. Mills, J. NVIDIA Launches Omniverse DSX Blueprint, Enabling Global AI Infrastructure Ecosystem to Build Gigawatt-Scale AI Factories (2025). 3. Xie, L., Li, N. & Poor, H. V. Sustainable electrification in the era of AI. Nat. Rev. Electr. Eng. 1, 493–494 (2024). [...] Article Google Scholar 4. US Department of Energy, Office of Nuclear Energy. Advantages and Challenges of Nuclear-Powered Data Centers (2025). 5. International Energy Agency. Energy Supply for AI (2024). 6. Lin, H. et al. Power system and communication network co-simulation for smart grid applications. IEEE ISGT (2011). 7. Ruan, J., Xu, Z. & Su, H. Towards interdisciplinary integration of electrical engineering and earth science. Nat. Rev. Electr. Eng. 1, 278–279 (2024). Article Google Scholar 8. Censi, A. Uncertainty in monotone codesign problems. IEEE Robot. Autom. Lett. 2, 1556–1563 (2017). Article Google Scholar 9. Helbing, D. Globally networked risks and how to respond. Nature 497, 51–59 (2013).",
-          "publishedAt": "Mon, 23 Feb 2026 17:26:56 GMT",
-          "ts": 1771867616000,
-          "tavilyScore": 0.10687071040000001,
-          "summary": "搜索 高级搜索 ### 快速链接 按主题浏览文章 查找工作 作者指南 编辑政策 订阅《自然简报》时事通讯 — 科学领域的重要内容，每天免费发送到您的收件箱。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 9,
-            "reach": 3,
-            "total": 7.6068707104
-          },
-          "tags": [
-            "人工智能",
-            "技术"
-          ],
-          "score": 7.6068707104
         }
       ]
     },
@@ -266,7 +217,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1772391969844,
+      "updatedAt": 1772418154368,
       "items": [
         {
           "title": "Q4 2025 Healthtech VC Trends - PitchBook",
@@ -286,29 +237,10 @@
           },
           "tags": [
             "人工智能",
+            "科研进展",
             "技术"
           ],
           "score": 7.2393512
-        },
-        {
-          "title": "Brain inspired machines are better at math than expected",
-          "titleZh": "受大脑启发的机器在数学方面比预期更好",
-          "source": "ScienceDaily AI",
-          "link": "https://www.sciencedaily.com/releases/2026/02/260213223923.htm",
-          "rawSummary": "Neuromorphic computers modeled after the human brain can now solve the complex equations behind physics simulations — something once thought possible only with energy-hungry supercomputers. The breakthrough could lead to powerful, low-energy supercomputers while revealing new secrets about how our brains process information.",
-          "publishedAt": "2026-02-14T15:19:40.000Z",
-          "ts": 1771082380000,
-          "summary": "以人脑为模型的神经形态计算机现在可以解决物理模拟背后的复杂方程——这曾经被认为只有耗能超级计算机才能实现。",
-          "judgement": {
-            "frontier": 7,
-            "depth": 8,
-            "reach": 7,
-            "total": 7.33
-          },
-          "tags": [
-            "神经科学"
-          ],
-          "score": 7.33
         },
         {
           "title": "Trends & Insights, January 2026: A pharmaphorum industry report - pharmaphorum",
@@ -318,21 +250,23 @@
           "rawSummary": "R&D Partner Content ### 5th mRNA-Based Therapeutics Summit Europe The Summit is the leading European industry-focused forum dedicated to accelerating the development of messenger RNA (mRNA) medicines Get in-depth news, opinions, and features on pharma and healthcare sent straight to your inbox ## Trends & Insights ## industry trends ## Life Sciences ## pharma industry Category : Digital / Views & Analysis ### Editor's Picks - ##### Makary says FDA will \"end two-trial dogma\" for approvals - ##### NIH Director Bhattacharya will temporarily run CDC - ##### MSD and Mayo Clinic team up on AI drug discovery News - ##### Number of UK biotech companies rising, says report - ##### NHS study will pick apart mental illness with data science News [...] Nicole Raleigh ## Trends & Insights News ### NHS \"isn't delivering equitable care for rare diseases\" A Genetic Alliance UK report claims the NHS is failing to meet the needs of many of the 3.5 million people in the country who live with rare diseases. Sales & Marketing Sponsored ### Using AI-driven synthetic personas to take your insights fur... As AI continues to reshape the healthcare landscape, pharma teams are beginning to leverage synthetic personas. Market Access ### 12 questions with: Daniel Kohlstaedt Daniel Kohlstaedt, managing director of PurpleLeaf Strategy, with more than 18 years of experience in pharma, talks about his journey through the industry. Digital Sponsored ### Expert Directed Applied Intelligence: Redefining AI in Life ... [...] Designing medicines, not just models: Basecamp’s EDEN and aiPGI exemplify AI as a creator of therapeutic enzymes and antimicrobial peptides with high lab validation rates – an inflection beyond in silico screening. Precision analytics at scale: SOPHiA GENETICS passed 2 million genomic profiles analyzed on DDM and forged an MD Anderson collaboration – evidence that AI genomics networks are achieving clinical grade scale. Operational AI adoption pressure: Survey data (Argon & Co) showed 49% of life sciences leaders plan to invest in AI for efficiencies amid rising input costs and supply risk – pairing nicely with digital twins and predictive analytics in manufacturing/logistics.",
           "publishedAt": "Fri, 27 Feb 2026 16:32:24 GMT",
           "ts": 1772209944000,
-          "tavilyScore": 0.46216854400000007,
+          "tavilyScore": 0.46195192,
           "summary": "研发合作伙伴内容 ### 第五届欧洲 mRNA 治疗峰会 该峰会是欧洲领先的以行业为中心的论坛，致力于加速信使 RNA (mRNA) 药物的开发 获取深度新闻，。",
           "judgement": {
             "frontier": 9,
             "depth": 8,
             "reach": 3,
-            "total": 7.632168544
+            "total": 7.63195192
           },
           "tags": [
             "人工智能",
             "AI安全",
             "生物技术",
-            "基因组学"
+            "基因组学",
+            "科研进展",
+            "科学发现"
           ],
-          "score": 7.632168544
+          "score": 7.63195192
         }
       ]
     }
