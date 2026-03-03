@@ -284,6 +284,8 @@ function isReadableChineseSummary(text = '') {
 
 function forceTitleChineseStyle(text = '') {
   return clean(text)
+    .replace(/\s*[-|–—]\s*(Nature|Science|Cell|Neuron|arXiv|Reuters|The Verge|TechCrunch|Engadget|MIT Technology Review)\s*$/i, '')
+    .replace(/\s*[-|–—]\s*来源[:：]?\s*[^\s]+$/i, '')
     .replace(/\s*[-|–—]\s*[^\u4e00-\u9fa5]*$/g, '')
     .replace(/\bAI\b/gi, '人工智能')
     .replace(/\bAGI\b/gi, '通用人工智能')
@@ -291,6 +293,40 @@ function forceTitleChineseStyle(text = '') {
     .replace(/\(\s*[A-Z]{2,10}\s*\)/g, '')
     .replace(/\s{2,}/g, ' ')
     .trim();
+}
+
+const TITLE_PROTECTED_TERMS = [
+  'Anthropic',
+  'Claude',
+  'Donut Lab',
+  'OpenAI',
+  'DeepMind',
+  'NVIDIA',
+  'Meta',
+  'Microsoft',
+  'Google',
+];
+
+function protectTerms(text = '') {
+  let out = String(text || '');
+  const used = [];
+  TITLE_PROTECTED_TERMS.forEach((term, idx) => {
+    const token = `__TERM_${idx}__`;
+    const re = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+    if (re.test(out)) {
+      out = out.replace(re, token);
+      used.push({ token, term });
+    }
+  });
+  return { text: out, used };
+}
+
+function restoreTerms(text = '', used = []) {
+  let out = String(text || '');
+  for (const item of used) {
+    out = out.replace(new RegExp(item.token, 'g'), item.term);
+  }
+  return out;
 }
 
 function sanitizeSummaryText(text = '') {
@@ -640,7 +676,9 @@ async function translateTitleOnline(title = '') {
     return out;
   }
 
-  const translatedTitle = await translateTextToChinese(source);
+  const protectedPack = protectTerms(source);
+  const translatedTitleRaw = await translateTextToChinese(protectedPack.text);
+  const translatedTitle = restoreTerms(translatedTitleRaw, protectedPack.used);
   const candidate = forceTitleChineseStyle(translatedTitle || local || source);
   const latinCount = (candidate.match(/[A-Za-z]/g) || []).length;
   let out = (hasChinese(candidate) && latinCount <= 6) ? candidate : local;
@@ -667,13 +705,18 @@ async function translateTitleOnline(title = '') {
 
   const finalLatin = (finalTitle.match(/[A-Za-z]/g) || []).length;
   if (!hasChinese(finalTitle) || finalLatin > 2 || chineseRatio(finalTitle) < 0.6) {
-    const hardZh = await translateTextToChinese(source);
+    const p2 = protectTerms(source);
+    const hardZhRaw = await translateTextToChinese(p2.text);
+    const hardZh = restoreTerms(hardZhRaw, p2.used);
     if (hardZh) finalTitle = forceTitleChineseStyle(hardZh);
   }
 
-  const ensured = (hasChinese(finalTitle) && chineseRatio(finalTitle) >= 0.6)
-    ? finalTitle
-    : forceTitleChineseStyle(await translateTextToChinese(source));
+  let ensured = finalTitle;
+  if (!(hasChinese(finalTitle) && chineseRatio(finalTitle) >= 0.6)) {
+    const p3 = protectTerms(source);
+    const ensuredRaw = await translateTextToChinese(p3.text);
+    ensured = forceTitleChineseStyle(restoreTerms(ensuredRaw, p3.used));
+  }
 
   llmTranslateCache.set(cacheKey, ensured || finalTitle);
   titleTranslateCache.set(source, ensured || finalTitle);
