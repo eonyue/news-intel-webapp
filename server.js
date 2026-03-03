@@ -267,6 +267,7 @@ function isReadableChineseSummary(text = '') {
   if (/^\W+$/.test(s)) return false;
   if (/^[（(【\[]?.{0,10}[）)】\]]?[。.!?]?$/.test(s)) return false;
   if (/授予号|doi|arxiv|版权所有|all rights reserved|公告类型|article pubmed|google scholar|references/i.test(s)) return false;
+  if (/抱歉|无法|不可用|没有可共享|无可用链接|not available|cannot share/i.test(s)) return false;
   if (s.length < 28) return false;
   if (s.length > 260) return false;
   if (chineseRatio(s) < 0.6) return false;
