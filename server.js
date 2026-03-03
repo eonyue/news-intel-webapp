@@ -671,9 +671,11 @@ async function translateTitleOnline(title = '') {
     if (hardZh) finalTitle = forceTitleChineseStyle(hardZh);
   }
 
-  llmTranslateCache.set(cacheKey, finalTitle);
-  titleTranslateCache.set(source, finalTitle);
-  return finalTitle;
+  const ensured = hasChinese(finalTitle) ? finalTitle : forceTitleChineseStyle(await translateTextToChinese(source));
+
+  llmTranslateCache.set(cacheKey, ensured || finalTitle);
+  titleTranslateCache.set(source, ensured || finalTitle);
+  return ensured || finalTitle;
 }
 
 function inferTopic(text = '') {
@@ -980,15 +982,9 @@ async function enrichItem(item) {
 
   const titleZh = await translateTitleOnline(item.title);
   const rawSummary = sanitizeResearchRawText(text || item.rawSummary || '');
-  let summary = await summarizeArticleInChinese(rawSummary, titleZh || item.title);
-
-  const summaryLatin = (summary.match(/[A-Za-z]/g) || []).length;
-  if (!hasChinese(summary) || summaryLatin > 12) {
-    const hardZhSummary = await translateTextToChinese(summary || rawSummary);
-    if (hardZhSummary) summary = hardZhSummary;
-  }
+  const summary = '';
   const judgement = scoreJudgement({ ...item, rawSummary, title: titleZh || item.title });
-  const tags = buildTags({ ...item, rawSummary, title: titleZh || item.title });
+  const tags = [];
 
   return {
     ...item,
@@ -1025,7 +1021,8 @@ async function fetchCategory(category) {
     });
   }
   const enriched = await Promise.all(filtered.map(enrichItem));
-  const sorted = enriched.sort((a, b) => (b.score || 0) - (a.score || 0));
+  const zhOnly = enriched.filter((x) => hasChinese(x.titleZh || ''));
+  const sorted = zhOnly.sort((a, b) => (b.score || 0) - (a.score || 0));
 
   const bySourceCount = new Map();
   const selected = [];
