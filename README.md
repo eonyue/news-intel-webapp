@@ -25,10 +25,11 @@ npm run dev
 - `PORT`（默认 `4321`）
 - `TAVILY_API_KEY` / `TAVILY_KEY`
 - `TAVILY_ENDPOINT`
-- `MINIMAX_API_KEY`（有值时优先使用 MiniMax 做标题翻译/摘要润色）
-- `MINIMAX_MODEL`（默认 `MiniMax-Text-01`）
-- `MINIMAX_ENDPOINT`（默认 `https://api.minimax.chat/v1/text/chatcompletion_v2`）
-- `OPENAI_API_KEY`（MiniMax 不可用时回退）
+- `TENCENT_SECRET_ID`（腾讯云文本翻译）
+- `TENCENT_SECRET_KEY`（腾讯云文本翻译）
+- `TENCENT_REGION`（默认 `ap-guangzhou`）
+- `MINIMAX_API_KEY`（已弃用，不再用于翻译）
+- `OPENAI_API_KEY`（仅用于可选摘要润色回退）
 - `OPENAI_MODEL`（默认 `gpt-5.3-codex`）
 - `OPENAI_ENDPOINT`
 

@@ -2,6 +2,7 @@ const express = require('express');
 const Parser = require('rss-parser');
 const fs = require('fs/promises');
 const path = require('path');
+const crypto = require('crypto');
 
 const app = express();
 const parser = new Parser({ timeout: 15000 });
@@ -17,7 +18,12 @@ const OPENAI_ENDPOINT = process.env.OPENAI_ENDPOINT || 'https://api.openai.com/v
 
 const MINIMAX_API_KEY = process.env.MINIMAX_API_KEY || '';
 const MINIMAX_MODEL = process.env.MINIMAX_MODEL || 'MiniMax-M2.5';
-const MINIMAX_ENDPOINT = process.env.MINIMAX_ENDPOINT || 'https://api.minimax.chat/v1/text/chatcompletion_v2';
+const MINIMAX_ENDPOINT = process.env.MINIMAX_ENDPOINT || 'https://api.minimaxi.com/v1/text/chatcompletion_v2';
+
+const TENCENT_SECRET_ID = process.env.TENCENT_SECRET_ID || '';
+const TENCENT_SECRET_KEY = process.env.TENCENT_SECRET_KEY || '';
+const TENCENT_REGION = process.env.TENCENT_REGION || 'ap-guangzhou';
+const TENCENT_TMT_ENDPOINT = 'https://tmt.tencentcloudapi.com';
 
 const CONSCIOUSNESS_DATA_FILE = path.join(__dirname, 'data', 'consciousness-latest.json');
 const HOME_DATA_FILE = path.join(__dirname, 'data', 'home-latest.json');
@@ -466,6 +472,74 @@ async function fetchTextWithTimeout(url, timeoutMs = 12000, init = {}) {
   }
 }
 
+async function tencentTranslateToChinese(text = '') {
+  const source = clean(text);
+  if (!source) return '';
+  if (!TENCENT_SECRET_ID || !TENCENT_SECRET_KEY) return '';
+
+  const service = 'tmt';
+  const host = 'tmt.tencentcloudapi.com';
+  const action = 'TextTranslate';
+  const version = '2018-03-21';
+  const region = TENCENT_REGION;
+  const algorithm = 'TC3-HMAC-SHA256';
+  const timestamp = Math.floor(Date.now() / 1000);
+  const date = new Date(timestamp * 1000).toISOString().slice(0, 10);
+
+  const payloadObj = {
+    SourceText: source,
+    Source: 'auto',
+    Target: 'zh',
+    ProjectId: 0,
+  };
+  const payload = JSON.stringify(payloadObj);
+  const hashedRequestPayload = crypto.createHash('sha256').update(payload).digest('hex');
+
+  const canonicalHeaders =
+    `content-type:application/json; charset=utf-8\n` +
+    `host:${host}\n` +
+    `x-tc-action:${action.toLowerCase()}\n`;
+  const signedHeaders = 'content-type;host;x-tc-action';
+  const canonicalRequest =
+    `POST\n/\n\n${canonicalHeaders}\n${signedHeaders}\n${hashedRequestPayload}`;
+
+  const credentialScope = `${date}/${service}/tc3_request`;
+  const hashedCanonicalRequest = crypto.createHash('sha256').update(canonicalRequest).digest('hex');
+  const stringToSign =
+    `${algorithm}\n${timestamp}\n${credentialScope}\n${hashedCanonicalRequest}`;
+
+  const hmac = (key, msg) => crypto.createHmac('sha256', key).update(msg).digest();
+  const secretDate = hmac(`TC3${TENCENT_SECRET_KEY}`, date);
+  const secretService = hmac(secretDate, service);
+  const secretSigning = hmac(secretService, 'tc3_request');
+  const signature = crypto.createHmac('sha256', secretSigning).update(stringToSign).digest('hex');
+
+  const authorization =
+    `${algorithm} Credential=${TENCENT_SECRET_ID}/${credentialScope}, SignedHeaders=${signedHeaders}, Signature=${signature}`;
+
+  try {
+    const respText = await fetchTextWithTimeout(TENCENT_TMT_ENDPOINT, 12000, {
+      method: 'POST',
+      headers: {
+        Authorization: authorization,
+        'Content-Type': 'application/json; charset=utf-8',
+        Host: host,
+        'X-TC-Action': action,
+        'X-TC-Timestamp': String(timestamp),
+        'X-TC-Version': version,
+        'X-TC-Region': region,
+      },
+      body: payload,
+    });
+
+    const data = JSON.parse(respText);
+    const translated = clean(data?.Response?.TargetText || '');
+    return normalizeLLMTerm(translated);
+  } catch {
+    return '';
+  }
+}
+
 async function callOpenAI({ systemPrompt, userPrompt, maxOutputTokens = 180, temperature = 0.2 }) {
   if (!OPENAI_API_KEY) return '';
 
@@ -548,11 +622,7 @@ async function callMiniMax({ systemPrompt, userPrompt, maxOutputTokens = 180, te
 }
 
 async function callLLM(params) {
-  if (MINIMAX_API_KEY) {
-    const out = await callMiniMax(params);
-    if (out) return out;
-  }
-
+  // MiniMax is deprecated for this project; keep only OpenAI fallback for optional summarization.
   return callOpenAI(params);
 }
 
@@ -570,15 +640,8 @@ async function translateTitleOnline(title = '') {
     return out;
   }
 
-  const llmTitle = await callLLM({
-    systemPrompt:
-      '将英文新闻标题翻译为自然、简洁、准确的中文标题。保留必要专有名词（如人名、公司名），其余尽量中文化。禁止输出英文整句。LLM统一译为“大模型”。只输出一行中文标题。',
-    userPrompt: source,
-    maxOutputTokens: 90,
-    temperature: 0.1,
-  });
-
-  const candidate = forceTitleChineseStyle(llmTitle || local || source);
+  const translatedTitle = await translateTextToChinese(source);
+  const candidate = forceTitleChineseStyle(translatedTitle || local || source);
   const latinCount = (candidate.match(/[A-Za-z]/g) || []).length;
   let out = (hasChinese(candidate) && latinCount <= 6) ? candidate : local;
 
@@ -625,6 +688,9 @@ async function translateTextToChinese(text = '') {
   const source = clean(text);
   if (!source) return '';
   if (hasChinese(source)) return source;
+
+  const tencentOut = await tencentTranslateToChinese(source);
+  if (tencentOut && hasChinese(tencentOut)) return tencentOut;
 
   const llmOut = await callLLM({
     systemPrompt:
@@ -1074,11 +1140,12 @@ app.get('/health', async (_req, res) => {
     service: 'news-intel-webapp',
     now: new Date().toISOString(),
     tavilyEnabled: !!TAVILY_API_KEY,
-    minimaxEnabled: !!MINIMAX_API_KEY,
+    minimaxEnabled: false,
     minimaxModel: MINIMAX_MODEL,
+    tencentTranslateEnabled: !!(TENCENT_SECRET_ID && TENCENT_SECRET_KEY),
     codexEnabled: !!OPENAI_API_KEY,
     codexModel: OPENAI_MODEL,
-    llmProvider: MINIMAX_API_KEY ? 'minimax' : (OPENAI_API_KEY ? 'openai' : 'none'),
+    llmProvider: OPENAI_API_KEY ? 'openai' : 'none',
     itemsPerSource: ITEMS_PER_SOURCE,
     consciousnessDataFile: CONSCIOUSNESS_DATA_FILE,
     homeDataFile: HOME_DATA_FILE,
