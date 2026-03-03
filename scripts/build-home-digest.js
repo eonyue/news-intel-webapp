@@ -76,6 +76,30 @@ function normalizeSummaryTo23Sentences(summary = '') {
   return clean(parts.slice(0, 3).join(' '));
 }
 
+async function translateToChinese(text = '') {
+  const source = clean(text);
+  if (!source) return source;
+  if (hasChinese(source)) return source;
+
+  try {
+    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-CN&dt=t&q=${encodeURIComponent(source)}`;
+    const resp = await fetch(url, { headers: { Accept: 'application/json' } });
+    if (!resp.ok) return source;
+    const data = await resp.json();
+    const translated = clean((data?.[0] || []).map((x) => (x && x[0]) || '').join(''));
+    return translated || source;
+  } catch {
+    return source;
+  }
+}
+
+async function ensureChineseTitle(item = {}) {
+  const current = polishTitleZh(item.titleZh || item.title || '');
+  if (hasChinese(current)) return current;
+  const translated = await translateToChinese(item.title || current);
+  return polishTitleZh(translated || current);
+}
+
 function dedupeItems(items = []) {
   const seen = new Set();
   return items.filter((item) => {
@@ -162,15 +186,17 @@ async function main() {
 
   for (const id of CATEGORY_IDS) {
     const data = await fetchCategory(id);
-    let filteredItems = (data.items || [])
-      .filter((x) => readableSummary(x.summary || ''))
-      .filter((x) => !isIndiaRelated(x))
-      .filter((x) => !isUSPolitics(x))
-      .map((x) => ({
-        ...x,
-        titleZh: polishTitleZh(x.titleZh || x.title || ''),
-        summary: normalizeSummaryTo23Sentences(x.summary || ''),
-      }));
+    let filteredItems = await Promise.all(
+      (data.items || [])
+        .filter((x) => readableSummary(x.summary || ''))
+        .filter((x) => !isIndiaRelated(x))
+        .filter((x) => !isUSPolitics(x))
+        .map(async (x) => ({
+          ...x,
+          titleZh: await ensureChineseTitle(x),
+          summary: normalizeSummaryTo23Sentences(x.summary || ''),
+        }))
+    );
 
     // 媒体头条：严格白名单来源
     if (id === 'media') {
