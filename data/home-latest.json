@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-03T07:50:40.718Z",
+  "generatedAt": "2026-03-03T13:02:45.453Z",
   "categories": [
     {
       "id": "media",
@@ -7,50 +7,8 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772524239911,
-      "items": [
-        {
-          "title": "What’s next for Chinese open-source AI",
-          "titleZh": "中国开源人工智能的下一步是什么",
-          "source": "MIT Technology Review",
-          "link": "https://www.technologyreview.com/2026/02/12/1132811/whats-next-for-chinese-open-source-ai/",
-          "rawSummary": "MIT Technology Review’s What’s Next series looks across industries, trends, and technologies to give you a first look at the future. You can read the rest of them here. The past year has marked a turning point for Chinese AI. Since DeepSeek released its R1 reasoning model in January 2025, Chinese companies have repeatedly delivered AI…",
-          "publishedAt": "2026-02-12T10:00:00.000Z",
-          "ts": 1770890400000,
-          "summary": "《麻省理工学院技术评论》的“下一步是什么”系列涵盖了各个行业、趋势和技术，让您对未来有一个初步的了解。",
-          "judgement": {
-            "frontier": 7,
-            "depth": 10,
-            "reach": 9,
-            "total": 8.49
-          },
-          "tags": [
-            "人工智能",
-            "技术"
-          ],
-          "score": 8.49
-        },
-        {
-          "title": "The human work behind humanoid robots is being hidden",
-          "titleZh": "人形机器人背后的人类工作正在被隐藏",
-          "source": "MIT Technology Review",
-          "link": "https://www.technologyreview.com/2026/02/23/1133508/the-human-work-behind-humanoid-robots-is-being-hidden/",
-          "rawSummary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. In January, Nvidia’s Jensen Huang, the head of the world’s most valuable company, proclaimed that we are entering the era of physical AI, when artificial intelligence will move beyond language and chatbots…",
-          "publishedAt": "2026-02-23T17:05:00.000Z",
-          "ts": 1771866300000,
-          "summary": "这个故事最初出现在我们关于人工智能的每周通讯《算法》中。",
-          "judgement": {
-            "frontier": 7,
-            "depth": 8,
-            "reach": 9,
-            "total": 7.83
-          },
-          "tags": [
-            "人工智能"
-          ],
-          "score": 7.83
-        }
-      ]
+      "updatedAt": 1772542939778,
+      "items": []
     },
     {
       "id": "research",
@@ -58,135 +16,77 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772524240314,
+      "updatedAt": 1772542963756,
       "items": [
         {
-          "title": "When AI Gives Advice: Evaluating AI and Human Responses to Online Advice-Seeking for Well-Being",
-          "titleZh": "When 人工智能 Gives Advice: Evaluating 人工智能 and Human Responses to Online Advice",
-          "source": "arXiv cs.AI",
-          "link": "https://arxiv.org/abs/2512.08937",
-          "rawSummary": "arXiv:2512.08937v2 Announce Type: replace-cross Abstract: Seeking advice is a core human behavior that the internet has reinvented twice: first through forums and Q&A communities that crowdsource public guidance, and now through large language models (LLMs). Yet the quality of this LLM advice for everyday well-being scenarios remains unclear. How does it compare, not only against human comments, but against the wisdom of the online crowd? We ran two studies (N=210) in which experts compared top-voted Reddit advice with LLM-generated advice. LLMs ranked significantly higher overall and on effectiveness, warmth, and willingness to seek advice again. GPT-4o beat GPT-5 on all metrics except sycophancy, suggesting that benchmark gains need not improve advice-giving. In Study-2, we examined how human and algorithmic advice could be combined, and found that human advice can be unobtrusively polished to compete with AI-generated comments. We conclude with design implications for advice-giving agents and ecosystems blending AI, crowd input, and expert oversight.",
-          "publishedAt": "2026-03-03T05:00:00.000Z",
-          "ts": 1772514000000,
-          "summary": "Announce Type: replace-cross Abstract: Seeking advice is a core human behavior that the internet has reinvented twice: first through forums and Q&A communities that crowdsource public guidance, and now。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 8,
-            "total": 9.08
-          },
+          "title": "抓取失败：Nature Communications",
+          "titleZh": "抓取失败：Nature Communications",
+          "source": "Nature Communications",
+          "link": "https://www.nature.com/ncomms.rss",
+          "rawSummary": "",
+          "summary": "无法获取 https://www.nature.com/ncomms.rss（Status code 406）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
           "tags": [
-            "人工智能",
-            "大模型",
-            "科研进展"
-          ],
-          "score": 9.08
+            "抓取异常"
+          ]
         },
         {
-          "title": "Inferring brain plasticity rule under long-term stimulation with structured recurrent dynamics",
-          "titleZh": "用结构化循环动力学推断长期刺激下的大脑可塑性规则",
-          "source": "arXiv q-bio.NC",
-          "link": "https://arxiv.org/abs/2603.00213",
-          "rawSummary": "arXiv:2603.00213v1 Announce Type: new Abstract: Understanding how long-term stimulation reshapes neural circuits requires uncovering the rules of brain plasticity. While short-term synaptic modifications have been extensively characterized, the principles that drive circuit-level reorganization across hours to weeks remain unknown. Here, we formalize these principles as a latent dynamical law that governs how recurrent connectivity evolves under repeated interventions. To capture this law, we introduce the Stimulus-Evoked Evolution Recurrent dynamics (STEER) framework, a dual-timescale model that disentangles fast neural activity from slow plastic changes. STEER represents plasticity as low-dimensional latent coefficients evolving under a learnable recurrence, enabling testable inference of plasticity rules rather than absorbing them into black-box parameters. We validate STEER with four benchmarks: synthetic Lorenz systems with controlled parameter shifts, BCM-based networks with biologically grounded plasticity, a task learning setting with adaptively optimized external stimulation and longitudinal recordings from Parkinsonian rats receiving closed-loop DBS. Our results demonstrate that STEER recovers interpretable update equations, predicts network adaptation under unseen stimulation schedules, and supports the design of improved intervention protocols. By elevating long-term plasticity from a hidden confound to an identifiable dynamical object, STEER provides a data-driven foundation for both mechanistic insight and principled optimization of brain stimulation.",
-          "publishedAt": "2026-03-03T05:00:00.000Z",
-          "ts": 1772514000000,
-          "summary": "Announce Type: new Abstract: Understanding how long-term stimulation reshapes neural circuits requires uncovering the rules of brain plasticity.。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 7,
-            "total": 8.83
-          },
+          "title": "抓取失败：Nature Neuroscience",
+          "titleZh": "抓取失败：Nature Neuroscience",
+          "source": "Nature Neuroscience",
+          "link": "https://www.nature.com/neuro.rss",
+          "rawSummary": "",
+          "summary": "无法获取 https://www.nature.com/neuro.rss（Request timed out after 15000ms）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
           "tags": [
-            "神经科学"
-          ],
-          "score": 8.83
+            "抓取异常"
+          ]
         },
         {
-          "title": "Generative AI & Fictionality: How Novels Power Large Language Models",
-          "titleZh": "Generative 人工智能 & Fictionality: How Novels Power Large Language Models",
-          "source": "arXiv cs.CL",
-          "link": "https://arxiv.org/abs/2603.01220",
-          "rawSummary": "arXiv:2603.01220v1 Announce Type: new Abstract: Generative models, like the one in ChatGPT, are powered by their training data. The models are simply next-word predictors, based on patterns learned from vast amounts of pre-existing text. Since the first generation of GPT, it is striking that the most popular datasets have included substantial collections of novels. For the engineers and research scientists who build these models, there is a common belief that the language in fiction is rich enough to cover all manner of social and communicative phenomena, yet the belief has gone mostly unexamined. How does fiction shape the outputs of generative AI? Specifically, what are novels' effects relative to other forms of text, such as newspapers, Reddit, and Wikipedia? Since the 1970s, literature scholars such as Catherine Gallagher and James Phelan have developed robust and insightful accounts of how fiction operates as a form of discourse and language. Through our study of an influential open-source model (BERT), we find that LLMs leverage familiar attributes and affordances of fiction, while also fomenting new qualities and forms of social response. We argue that if contemporary culture is increasingly shaped by generative AI and machine learning, any analysis of today's various modes of cultural production must account for a relatively novel dimension: computational training data.",
-          "publishedAt": "2026-03-03T05:00:00.000Z",
-          "ts": 1772514000000,
-          "summary": "Announce Type: new Abstract: Generative models, like the one in ChatGPT, are powered by their training data.。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 8,
-            "total": 9.08
-          },
+          "title": "抓取失败：NeurIPS",
+          "titleZh": "抓取失败：NeurIPS",
+          "source": "NeurIPS",
+          "link": "https://neurips.cc/virtual/2025/papers.rss",
+          "rawSummary": "",
+          "summary": "无法获取 https://neurips.cc/virtual/2025/papers.rss（Status code 500）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
           "tags": [
-            "人工智能",
-            "大模型",
-            "科研进展"
-          ],
-          "score": 9.08
+            "抓取异常"
+          ]
         },
         {
-          "title": "TraderBench: How Robust Are AI Agents in Adversarial Capital Markets?",
-          "titleZh": "TraderBench: How Robust Are 人工智能 Agents in Adversarial Capital Markets?",
-          "source": "arXiv cs.AI",
-          "link": "https://arxiv.org/abs/2603.00285",
-          "rawSummary": "arXiv:2603.00285v1 Announce Type: new Abstract: Evaluating AI agents in finance faces two key challenges: static benchmarks require costly expert annotation yet miss the dynamic decision-making central to real-world trading, while LLM-based judges introduce uncontrolled variance on domain-specific tasks. We introduce TraderBench, a benchmark that addresses both issues. It combines expert-verified static tasks (knowledge retrieval, analytical reasoning) with adversarial trading simulations scored purely on realized performance-Sharpe ratio, returns, and drawdown-eliminating judge variance entirely. The framework features two novel tracks: crypto trading with four progressive market-manipulation transforms, and options derivatives scoring across P&L accuracy, Greeks, and risk management. Trading scenarios can be refreshed with new market data to prevent benchmark contamination. Evaluating 13 models (8B open-source to frontier) on ~50 tasks, we find: (1) 8 of 13 models score ~33 on crypto with <1-point variation across adversarial conditions, exposing fixed non-adaptive strategies; (2) extended thinking helps retrieval (+26 points) but has zero impact on trading (+0.3 crypto, -0.1 options). These findings reveal that current agents lack genuine market adaptation, underscoring the need for performance-grounded evaluation in finance.",
-          "publishedAt": "2026-03-03T05:00:00.000Z",
-          "ts": 1772514000000,
-          "summary": "Announce Type: new Abstract: Evaluating AI agents in finance faces two key challenges: static benchmarks require costly expert annotation yet miss the dynamic decision-making central to real-world trad。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 7,
-            "total": 8.83
-          },
+          "title": "抓取失败：ICLR",
+          "titleZh": "抓取失败：ICLR",
+          "source": "ICLR",
+          "link": "https://openreview.net/group?id=ICLR.cc/2025/Conference.rss",
+          "rawSummary": "",
+          "summary": "无法获取 https://openreview.net/group?id=ICLR.cc/2025/Conference.rss（Attribute without value Line: 0 Column: 7447 Char: i）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
           "tags": [
-            "人工智能",
-            "大模型",
-            "AI安全"
-          ],
-          "score": 8.83
+            "抓取异常"
+          ]
         },
         {
-          "title": "SimpleTool: Parallel Decoding for Real-Time LLM Function Calling",
-          "titleZh": "SimpleTool：实时LLM函数调用的并行解码",
-          "source": "arXiv cs.CL",
-          "link": "https://arxiv.org/abs/2603.00030",
-          "rawSummary": "arXiv:2603.00030v1 Announce Type: new Abstract: LLM-based function calling enables intelligent agents to interact with external tools and environments, yet autoregressive decoding imposes a fundamental latency bottleneck that limits real-time applications such as embodied intelligence, game AI, and interactive avatars (e.g., 10 Hz control frequency). We observe that function calling differs fundamentally from free-form text generation: structured outputs exhibit substantial token redundancy (delimiters, parameter names), and arguments exhibit weak causal dependencies. Crucially, these two properties must be exploited jointly to achieve real-time performance. We present SimpleTool, which introduces special tokens that serve a dual role: compressing low-entropy tokens (4-6x reduction) while acting as mode selectors that enable independent parallel generation of function name and arguments. This synergistic design achieves 3-6x end-to-end speedup (up to 9.6x) with only +8.2% parallelization overhead. Experiments on five benchmarks across Qwen-series models (0.5B-14B) demonstrate substantial speedup while maintaining competitive or improved accuracy. On Mobile Actions, ST-Qwen-0.5B outperforms Google's FunctionGemma in both accuracy and latency consistency. With quantization on consumer-grade GPU, SimpleTool achieves 61.2ms P50 latency, enabling 16 Hz real-time control at 4B model scale, bridging the gap between LLM function calling and latency-critical real-world deployment.",
-          "publishedAt": "2026-03-03T05:00:00.000Z",
-          "ts": 1772514000000,
-          "summary": "Announce Type: new Abstract: LLM-based function calling enables intelligent agents to interact with external tools and environments, yet autoregressive decoding imposes a fundamental latency bottleneck。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 7,
-            "total": 8.83
-          },
+          "title": "抓取失败：ACL Anthology",
+          "titleZh": "抓取失败：ACL Anthology",
+          "source": "ACL Anthology",
+          "link": "https://aclanthology.org/events/acl-2025/feed.xml",
+          "rawSummary": "",
+          "summary": "无法获取 https://aclanthology.org/events/acl-2025/feed.xml（Status code 404）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
           "tags": [
-            "人工智能",
-            "大模型"
-          ],
-          "score": 8.83
-        },
-        {
-          "title": "Transit Network Design with Two-Level Demand Uncertainties: A Machine Learning and Contextual Stochastic Optimization Framework",
-          "titleZh": "具有两级需求不确定性的交通网络设计：机器学习和上下文随机优化框架",
-          "source": "arXiv cs.LG",
-          "link": "https://arxiv.org/abs/2603.00010",
-          "rawSummary": "arXiv:2603.00010v1 Announce Type: new Abstract: Transit Network Design is a well-studied problem in the field of transportation, typically addressed by solving optimization models under fixed demand assumptions. Considering the limitations of these assumptions, this paper proposes a new framework, namely the Two-Level Rider Choice Transit Network Design (2LRC-TND), that leverages machine learning and contextual stochastic optimization (CSO) through constraint programming (CP) to incorporate two layers of demand uncertainties into the network design process. The first level identifies travelers who rely on public transit (core demand), while the second level captures the conditional adoption behavior of those who do not (latent demand), based on the availability and quality of transit services. To capture these two types of uncertainties, 2LRC-TND relies on two travel mode choice models, that use multiple machine learning models. To design a network, 2LRC-TND integrates the resulting choice models into a CSO that is solved using a CP-SAT solver. 2LRC-TND is evaluated through a case study involving over 6,600 travel arcs and more than 38,000 trips in the Atlanta metropolitan area. The computational results demonstrate the effectiveness of the 2LRC-TND in designing transit networks that account for demand uncertainties and contextual information, offering a more realistic alternative to fixed-demand models.",
-          "publishedAt": "2026-03-03T05:00:00.000Z",
-          "ts": 1772514000000,
-          "summary": "Announce Type: new Abstract: Transit Network Design is a well-studied problem in the field of transportation, typically addressed by solving optimization models under fixed demand assumptions.。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 7,
-            "total": 8.83
-          },
-          "tags": [
-            "人工智能",
-            "科研进展"
-          ],
-          "score": 8.83
+            "抓取异常"
+          ]
         }
       ]
     },
@@ -196,98 +96,21 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1772524240717,
+      "updatedAt": 1772542965453,
       "items": [
         {
-          "title": "Why GPS fails in cities. And how it was brilliantly fixed",
-          "titleZh": "为什么 GPS 在城市中失效。以及它是如何完美修复的",
-          "source": "ScienceDaily AI",
-          "link": "https://www.sciencedaily.com/releases/2025/10/251009033124.htm",
-          "rawSummary": "Our everyday GPS struggles in “urban canyons,” where skyscrapers bounce satellite signals, confusing even advanced navigation systems. NTNU scientists created SmartNav, combining satellite corrections, wave analysis, and Google’s 3D building data for remarkable precision. Their method achieved accuracy within 10 centimeters during testing. The breakthrough could make reliable urban navigation accessible and affordable worldwide.",
-          "publishedAt": "2025-10-09T07:31:24.000Z",
-          "ts": 1759995084000,
-          "summary": "我们的日常 GPS 在“城市峡谷”中举步维艰，那里的摩天大​​楼反射卫星信号，甚至让先进的导航系统感到困惑。",
-          "judgement": {
-            "frontier": 7,
-            "depth": 10,
-            "reach": 7,
-            "total": 7.99
-          },
+          "title": "抓取失败：Reuters Technology",
+          "titleZh": "抓取失败：Reuters Technology",
+          "source": "Reuters Technology",
+          "link": "https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best&best-sectors=technology",
+          "rawSummary": "",
+          "summary": "无法获取 https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best&best-sectors=technology（Status code 404）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
           "tags": [
-            "科学发现"
-          ],
-          "score": 7.99
-        },
-        {
-          "title": "This AI finds simple rules where humans see only chaos",
-          "titleZh": "这个人工智能找到了人类只看到混乱的简单规则",
-          "source": "ScienceDaily AI",
-          "link": "https://www.sciencedaily.com/releases/2025/12/251221091237.htm",
-          "rawSummary": "A new AI developed at Duke University can uncover simple, readable rules behind extremely complex systems. It studies how systems evolve over time and reduces thousands of variables into compact equations that still capture real behavior. The method works across physics, engineering, climate science, and biology. Researchers say it could help scientists understand systems where traditional equations are missing or too complicated to write down.",
-          "publishedAt": "2025-12-22T06:04:50.000Z",
-          "ts": 1766383490000,
-          "summary": "杜克大学开发的一种新人工智能可以揭示极其复杂系统背后的简单、可读的规则。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 7,
-            "total": 8.17
-          },
-          "tags": [
-            "人工智能",
-            "生命科学"
-          ],
-          "score": 8.17
-        },
-        {
-          "title": "Trends & Insights, January 2026: A pharmaphorum industry report - pharmaphorum",
-          "titleZh": "趋势与见解，2026 年 1 月：Pharmaphorum 行业报告",
-          "source": "pharmaphorum.com",
-          "link": "https://pharmaphorum.com/digital/trends-insights-january-2026-pharmaphorum-industry-report",
-          "rawSummary": "R&D Partner Content ### 5th mRNA-Based Therapeutics Summit Europe The Summit is the leading European industry-focused forum dedicated to accelerating the development of messenger RNA (mRNA) medicines Get in-depth news, opinions, and features on pharma and healthcare sent straight to your inbox ## Trends & Insights ## industry trends ## Life Sciences ## pharma industry Category : Digital / Views & Analysis ### Editor's Picks - ##### Makary says FDA will \"end two-trial dogma\" for approvals - ##### NIH Director Bhattacharya will temporarily run CDC - ##### MSD and Mayo Clinic team up on AI drug discovery News - ##### Number of UK biotech companies rising, says report - ##### NHS study will pick apart mental illness with data science News [...] Nicole Raleigh ## Trends & Insights News ### NHS \"isn't delivering equitable care for rare diseases\" A Genetic Alliance UK report claims the NHS is failing to meet the needs of many of the 3.5 million people in the country who live with rare diseases. Sales & Marketing Sponsored ### Using AI-driven synthetic personas to take your insights fur... As AI continues to reshape the healthcare landscape, pharma teams are beginning to leverage synthetic personas. Market Access ### 12 questions with: Daniel Kohlstaedt Daniel Kohlstaedt, managing director of PurpleLeaf Strategy, with more than 18 years of experience in pharma, talks about his journey through the industry. Digital Sponsored ### Expert Directed Applied Intelligence: Redefining AI in Life ... [...] Designing medicines, not just models: Basecamp’s EDEN and aiPGI exemplify AI as a creator of therapeutic enzymes and antimicrobial peptides with high lab validation rates – an inflection beyond in silico screening. Precision analytics at scale: SOPHiA GENETICS passed 2 million genomic profiles analyzed on DDM and forged an MD Anderson collaboration – evidence that AI genomics networks are achieving clinical grade scale. Operational AI adoption pressure: Survey data (Argon & Co) showed 49% of life sciences leaders plan to invest in AI for efficiencies amid rising input costs and supply risk – pairing nicely with digital twins and predictive analytics in manufacturing/logistics.",
-          "publishedAt": "Fri, 27 Feb 2026 16:32:24 GMT",
-          "ts": 1772209944000,
-          "tavilyScore": 0.46216854400000007,
-          "summary": "研发合作伙伴内容 ### 第五届欧洲 mRNA 治疗峰会 该峰会是欧洲领先的以行业为中心的论坛，致力于加速信使 RNA (mRNA) 药物的开发 获取深度新闻，。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 7.632168544
-          },
-          "tags": [
-            "人工智能",
-            "AI安全",
-            "生物技术",
-            "基因组学",
-            "科研进展",
-            "科学发现"
-          ],
-          "score": 7.632168544
-        },
-        {
-          "title": "Ease Health Secures $41M for AI-Native Behavioral Health OS - HIT Consultant",
-          "titleZh": "Ease Health 为人工智能原生行为健康操作系统筹集了 4100 万美元 - HIT 顾问",
-          "source": "hitconsultant.net",
-          "link": "https://hitconsultant.net/2026/03/02/ease-health-funding-behavioral-health-ehr-ai/",
-          "rawSummary": "Image 19: OpenAI Debuts ChatGPT Health: A ‘Digital Front Door’ That Connects Medical Records to Agentic AI #### OpenAI Debuts ChatGPT Health: A ‘Digital Front Door’ That Connects Medical Records to Agentic AI Image 20: From Genes to Hackers: The Hidden Cybersecurity Risks in Life Sciences #### From Genes to Hackers: The Hidden Cybersecurity Risks in Life Sciences Image 21: Utah Becomes First State to Approve AI System for Prescription Renewals #### Utah Becomes First State to Approve AI System for Prescription Renewals Image 22: NYC Health + Hospitals to Acquire Maimonides in $2.2B Safety Net Overhaul #### NYC Health + Hospitals to Acquire Maimonides in $2.2B Safety Net Overhaul Image 23 Image 24 Image 25 Secondary Sidebar Image 26 Image 27 Image 28 Footer Image 29 [...] Search the site ... ### Subscribe to HIT Consultant Latest insightful articles delivered straight to your inbox weekly. Submit a Tip or Pitch ### Featured Research Report Image 122026 Best in KLAS Awards: The Full List of Software & Services Winners ### Most-Read Image 13: The \"Platform\" Squeeze: Epic Releases Native AI Charting, Putting Venture-Backed Scribes on Notice #### The “Platform” Squeeze: Epic Releases Native AI Charting, Putting Venture-Backed Scribes on Notice Image 14: Analysis: Oracle Cerner’s Plans for a National EHR #### Oracle May Cut 30k Jobs and Sell Cerner to Fund $156B OpenAI Deal [...] Image 15: The $1.9B Exit: Why CommonSpirit is Insourcing Revenue Cycle and Tenet is Betting Big on Conifer AI #### The $1.9B Exit: Why CommonSpirit is Insourcing Revenue Cycle and Tenet is Betting Big on Conifer AI Image 16: KLAS 2026 Rankings: Aledade and Guidehealth Named Top VBC Enablement Firms #### KLAS 2026 Rankings: Aledade and Guidehealth Named Top VBC Enablement Firms Image 17: Beyond the Hype: New KLAS Data Validates the Financial and Clinical ROI of Ambient AI #### Beyond the Hype: New KLAS Data Validates the Financial and Clinical ROI of Ambient AI Image 18: Anthropic Debuts ‘Claude for Healthcare’ and Opus 4.5 to Engineer the Future of Life Sciences #### Anthropic Debuts ‘Claude for Healthcare’ and Opus 4.5 to Engineer the Future of Life Sciences",
-          "publishedAt": "Mon, 02 Mar 2026 16:59:00 GMT",
-          "ts": 1772470740000,
-          "tavilyScore": 0.298510688,
-          "summary": "图 19：OpenAI 首次推出 ChatGPT Health：将医疗记录连接到 Agentic AI 的“数字前门” #### OpenAI 首次推出 ChatGPT Health：将医疗记录连接到 Agentic AI 的“数字前门” 图 20：F。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 7.468510688
-          },
-          "tags": [
-            "人工智能",
-            "智能体",
-            "科研进展",
-            "技术"
-          ],
-          "score": 7.468510688
+            "抓取异常"
+          ]
         }
       ]
     }
