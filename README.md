@@ -35,10 +35,12 @@ npm run dev
 
 ## API
 
-- `GET /api/category/:id` 单栏目 JSON（若存在 `data/home-latest.json`，优先返回本地产物）
+- `GET /api/category/:id` 单栏目 JSON（优先返回 `data/home-latest.json`）
 - `GET /api/consciousness` 意识简报 JSON
 - `POST /api/admin/publish-home` 上传本地筛选后的首页 JSON（需 `x-admin-token`，Vercel 上可能超时，不建议作为主链路）
 - `GET /health` 健康检查
+
+说明：前端/普通用户访问不会触发实时翻译。`refresh=1` 仅在携带 `token=<ADMIN_REFRESH_TOKEN>` 时生效。
 
 ## 意识简报同步机制
 

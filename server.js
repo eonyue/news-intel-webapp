@@ -1067,7 +1067,8 @@ async function getCategoryData(category, force = false) {
 }
 
 app.get('/', async (req, res) => {
-  const force = req.query.refresh === '1';
+  const adminRefreshToken = process.env.ADMIN_REFRESH_TOKEN || '';
+  const force = req.query.refresh === '1' && adminRefreshToken && req.query.token === adminRefreshToken;
 
   if (force) {
     titleTranslateCache.clear();
@@ -1076,7 +1077,10 @@ app.get('/', async (req, res) => {
     llmTitlePolishCache.clear();
   }
 
-  const liveData = dedupeAcrossCategories(await Promise.all(CATEGORIES.map((c) => getCategoryData(c, force))));
+  const homeDigest = await getHomeDigest();
+  const liveData = homeDigest.ok
+    ? homeDigest.categories
+    : dedupeAcrossCategories(await Promise.all(CATEGORIES.map((c) => getCategoryData(c, force))));
 
   const consciousness = await getConsciousnessDigest();
   res.render('index', {
@@ -1090,7 +1094,17 @@ app.get('/api/category/:id', async (req, res) => {
   const category = CATEGORIES.find((c) => c.id === req.params.id);
   if (!category) return res.status(404).json({ error: 'category_not_found' });
 
-  const force = req.query.refresh === '1';
+  const adminRefreshToken = process.env.ADMIN_REFRESH_TOKEN || '';
+  const force = req.query.refresh === '1' && adminRefreshToken && req.query.token === adminRefreshToken;
+
+  if (!force) {
+    const homeDigest = await getHomeDigest();
+    if (homeDigest.ok) {
+      const hit = homeDigest.categories.find((x) => x.id === req.params.id);
+      if (hit) return res.json(hit);
+    }
+  }
+
   if (force) {
     titleTranslateCache.clear();
     llmTranslateCache.clear();
@@ -1135,6 +1149,7 @@ app.post('/api/admin/publish-home', async (req, res) => {
 });
 
 app.get('/health', async (_req, res) => {
+  const homeDigest = await getHomeDigest();
   res.json({
     ok: true,
     service: 'news-intel-webapp',
@@ -1149,7 +1164,8 @@ app.get('/health', async (_req, res) => {
     itemsPerSource: ITEMS_PER_SOURCE,
     consciousnessDataFile: CONSCIOUSNESS_DATA_FILE,
     homeDataFile: HOME_DATA_FILE,
-    homeDigestEnabled: false,
+    homeDigestEnabled: homeDigest.ok,
+    refreshMode: 'admin-token-only',
   });
 });
 
