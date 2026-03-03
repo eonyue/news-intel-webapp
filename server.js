@@ -666,12 +666,14 @@ async function translateTitleOnline(title = '') {
   let finalTitle = forceTitleChineseStyle(polished || out);
 
   const finalLatin = (finalTitle.match(/[A-Za-z]/g) || []).length;
-  if (!hasChinese(finalTitle) || finalLatin > 2) {
+  if (!hasChinese(finalTitle) || finalLatin > 2 || chineseRatio(finalTitle) < 0.6) {
     const hardZh = await translateTextToChinese(source);
     if (hardZh) finalTitle = forceTitleChineseStyle(hardZh);
   }
 
-  const ensured = hasChinese(finalTitle) ? finalTitle : forceTitleChineseStyle(await translateTextToChinese(source));
+  const ensured = (hasChinese(finalTitle) && chineseRatio(finalTitle) >= 0.6)
+    ? finalTitle
+    : forceTitleChineseStyle(await translateTextToChinese(source));
 
   llmTranslateCache.set(cacheKey, ensured || finalTitle);
   titleTranslateCache.set(source, ensured || finalTitle);
@@ -689,7 +691,7 @@ function inferTopic(text = '') {
 async function translateTextToChinese(text = '') {
   const source = clean(text);
   if (!source) return '';
-  if (hasChinese(source)) return source;
+  if (hasChinese(source) && chineseRatio(source) > 0.6) return source;
 
   const tencentOut = await tencentTranslateToChinese(source);
   if (tencentOut && hasChinese(tencentOut)) return tencentOut;
