@@ -1114,7 +1114,7 @@ async function getCategoryData(category, force = false) {
 }
 
 app.get('/', async (req, res) => {
-  const adminRefreshToken = process.env.ADMIN_REFRESH_TOKEN || '';
+  const adminRefreshToken = process.env.ADMIN_REFRESH_NEW_TOKEN || '';
   const force = !!adminRefreshToken && req.query.refresh === adminRefreshToken;
 
   if (force) {
@@ -1138,7 +1138,7 @@ app.get('/api/category/:id', async (req, res) => {
   const category = CATEGORIES.find((c) => c.id === req.params.id);
   if (!category) return res.status(404).json({ error: 'category_not_found' });
 
-  const adminRefreshToken = process.env.ADMIN_REFRESH_TOKEN || '';
+  const adminRefreshToken = process.env.ADMIN_REFRESH_NEW_TOKEN || '';
   const force = !!adminRefreshToken && req.query.refresh === adminRefreshToken;
 
   if (force) {

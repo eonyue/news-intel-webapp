@@ -40,7 +40,7 @@ npm run dev
 - `POST /api/admin/publish-home` 上传本地筛选后的首页 JSON（需 `x-admin-token`，Vercel 上可能超时，不建议作为主链路）
 - `GET /health` 健康检查
 
-说明：前端/普通用户访问不会触发实时翻译。`refresh=1` 仅在携带 `token=<ADMIN_REFRESH_TOKEN>` 时生效。
+说明：前端/普通用户访问不会触发实时翻译。仅在 `refresh=<ADMIN_REFRESH_NEW_TOKEN>` 时才会触发强制更新。
 
 ## 意识简报同步机制
 
