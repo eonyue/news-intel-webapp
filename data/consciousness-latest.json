@@ -1,45 +1,39 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-02",
-  "updatedAt": "2026-03-02T04:01:25Z",
-  "trendObservation": "过去24小时的‘意识相关’研究报道明显向临床可预测性与可量化脑信号倾斜：从认知衰退预测到奖赏与自我相关加工，研究正把抽象的意识问题转译为可验证的数据模型。",
+  "date": "2026-03-03",
+  "updatedAt": "2026-03-03T04:04:50Z",
+  "trendObservation": "过去24小时内高热度更新集中在“意识测量与伦理外延”——从冥想神经动力学到AI拟人交互风险，研究正从纯理论转向可操作评估与治理框架。",
   "items": [
     {
-      "title": "机器学习可预测阿尔茨海默病患者认知与功能下降速度",
-      "summary": "一项发表在 Communications Medicine 的研究使用常规门诊数据，建立了预测阿尔茨海默病与轻度认知障碍患者衰退速率的模型。该工作有助于更早识别高风险人群，并为临床分层管理提供工具。",
-      "source": "News-Medical（基于 Communications Medicine 论文）",
-      "link": "https://www.news-medical.net/news/20260301/Machine-learning-predicts-who-will-decline-faster-in-Alzheimere28099s-disease-using-routine-clinic-data.aspx"
+      "title": "脑磁图研究：不同禅修方式会以不同模式重塑意识相关脑动态",
+      "summary": "研究者对资深佛教修行者进行脑磁图记录，发现止禅（Samatha）与内观（Vipassana）会产生可区分的神经动力学特征。两类练习都提高了脑活动复杂度，并降低了时间可预测性，提示意识状态可被特定训练方式系统性调节。",
+      "source": "PsyPost（基于同行评审研究报道）",
+      "link": "https://www.psypost.org/brain-scans-of-buddhist-monks-reveal-how-different-meditation-styles-alter-consciousness/"
     },
     {
-      "title": "大脑“化学图谱”研究显示阿尔茨海默病不止是淀粉样斑块问题",
-      "summary": "Rice University 团队通过AI方法构建了无染料全脑分子图谱，提示阿尔茨海默病涉及更广泛的化学层面重塑。该结果为理解意识与认知衰退背后的系统性脑变化提供了新证据。",
-      "source": "ScienceDaily（Rice University）",
-      "link": "http://www.sciencedaily.com/releases/2026/02/260228093505.htm"
+      "title": "Brown大学团队警示：把聊天机器人当“治疗师”存在显著伦理风险",
+      "summary": "最新研究指出，即使将LLM设定为心理咨询角色，也会在危机处理、偏见放大与“欺骗性同理心”上出现系统性问题。论文强调“看似理解主观体验”与真正具备意识或临床胜任力之间存在关键鸿沟。",
+      "source": "ScienceDaily（报道 Brown University 研究）",
+      "link": "https://www.sciencedaily.com/releases/2026/03/260302030642.htm"
     },
     {
-      "title": "青少年抑郁预测研究整合神经生物标记与社会人口学风险",
-      "summary": "Molecular Psychiatry 新研究将脑相关生物标记与风险评分结合，用于前瞻性预测青少年抑郁。虽然主题聚焦情绪障碍，但其核心方法（脑信号+行为风险融合）对意识状态与主观体验的量化研究具有方法学意义。",
-      "source": "Molecular Psychiatry（Nature Portfolio）",
-      "link": "https://www.nature.com/articles/s41380-026-03481-y"
+      "title": "AI分子图谱揭示阿尔茨海默病并非仅是斑块问题",
+      "summary": "Rice University 团队结合无染料激光成像与机器学习，绘制出阿尔茨海默病脑组织分子图谱，发现代谢与脂质异常广泛分布于多脑区。该结果支持“整体脑状态失衡”视角，为理解意识衰退与认知退化提供更系统线索。",
+      "source": "ScienceDaily（报道 Rice University 研究）",
+      "link": "https://www.sciencedaily.com/releases/2026/02/260228093505.htm"
     },
     {
-      "title": "微胶质细胞介导的突触修剪被发现参与慢性疼痛及相关情绪行为",
-      "summary": "发表于 Experimental & Molecular Medicine 的研究发现，前额叶回路中微胶质细胞CR3通路会影响谷氨酸能功能，进而关联慢性肌肉疼痛及焦虑样行为。该工作为“痛觉如何进入主观意识体验”提供了细胞与回路层线索。",
-      "source": "Experimental & Molecular Medicine（Nature Portfolio）",
-      "link": "https://www.nature.com/articles/s12276-026-01666-7"
+      "title": "“肝-脑轴”新证据：运动可通过血脑屏障机制改善记忆相关功能",
+      "summary": "研究发现，运动可诱导外周器官释放关键酶，降低损害血脑屏障的蛋白水平，并在老龄模型中改善炎症与记忆表现。该机制为意识清晰度与认知维持的生物学基础研究提供了可干预通路。",
+      "source": "ScienceDaily（神经退行性研究报道）",
+      "link": "https://www.sciencedaily.com/releases/2026/02/260219040752.htm"
     },
     {
-      "title": "研究提示“吃饱后仍想吃”与奖赏系统持续激活有关",
-      "summary": "基于《Appetite》发表研究的报道指出，即便饱腹后，大脑对高诱惑食物线索仍保持较强反应。该发现支持“意识层面的意志控制”与“非意识奖赏驱动”并行影响决策。",
-      "source": "New York Post（引述 University of East Anglia / Appetite）",
-      "link": "https://nypost.com/2026/03/01/health/scientists-pinpoint-why-resisting-a-donut-can-feel-impossible-even-when-youre-full/"
-    },
-    {
-      "title": "自我披露的神经奖赏效应再受关注：社会互动中的自我相关加工",
-      "summary": "《卫报》科学栏目梳理多项神经影像证据，指出谈论“自我信息”可激活奖赏相关脑区。该趋势反映意识研究正从‘是否有意识’延展到‘自我体验如何塑造行为与社会连接’。",
-      "source": "The Guardian（Science）",
-      "link": "https://www.theguardian.com/science/2026/mar/01/should-you-overshare-more"
+      "title": "Frontiers综述：AI加速时代下“意识科学”进入伦理-技术并进阶段",
+      "summary": "Frontiers in Science 综述呼吁以对抗式协作和可证伪实验推进意识理论竞争，重点讨论如何建立跨对象（患者、动物、类脑系统、AI）的意识判据。文章强调，一旦意识检测能力提升，医学、法律与AI治理将同步重构。",
+      "source": "Frontiers in Science（经 EurekAlert 发布）",
+      "link": "https://www.frontiersin.org/journals/science/articles/10.3389/fsci.2025.1546279/full"
     }
   ]
 }
