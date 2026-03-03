@@ -39,7 +39,7 @@ const CATEGORIES = [
     zhName: '媒体头条',
     description: 'Broad-reach media coverage around AI, neuroscience, life science and technology',
     zhDescription: 'AI / 神经科学 / 生命科学 / 技术主流媒体报道',
-    limit: 18,
+    limit: 8,
     tavilyQuery:
       'top tech and science stories from premium editorial sources about AI neuroscience life science',
     feeds: [
@@ -62,7 +62,7 @@ const CATEGORIES = [
     zhName: '研究速递',
     description: 'Research-heavy updates from journals, labs, and arXiv',
     zhDescription: '科研导向更新（含 arXiv）',
-    limit: 18,
+    limit: 8,
     tavilyQuery:
       'latest research from top journals and conferences in AI neuroscience and life science: Nature Science Cell Neuron Nature Neuroscience Nature Communications NeurIPS ICML ICLR CVPR ACL',
     feeds: [
@@ -89,7 +89,7 @@ const CATEGORIES = [
     zhName: '技术趋势',
     description: 'Tech & biotech company moves, market changes and funding trends',
     zhDescription: '科技/生物医疗公司动向、市场变化与投融资趋势',
-    limit: 18,
+    limit: 8,
     tavilyQuery:
       'technology company moves, AI market changes, funding and product trends from The Verge TechCrunch Engadget Reuters AI',
     feeds: [
@@ -1055,8 +1055,7 @@ async function fetchCategory(category) {
 
 async function getCategoryData(category, force = false) {
   const current = cache.get(category.id);
-  const fresh = current && Date.now() - current.updatedAt < CACHE_TTL_MS;
-  if (!force && fresh) return current;
+  if (!force && current) return current;
 
   const items = await fetchCategory(category);
   const payload = {
@@ -1073,7 +1072,8 @@ async function getCategoryData(category, force = false) {
 }
 
 app.get('/', async (req, res) => {
-  const force = req.query.refresh === '1';
+  const adminRefreshToken = process.env.ADMIN_REFRESH_TOKEN || '';
+  const force = !!adminRefreshToken && req.query.refresh === adminRefreshToken;
 
   if (force) {
     titleTranslateCache.clear();
@@ -1096,7 +1096,8 @@ app.get('/api/category/:id', async (req, res) => {
   const category = CATEGORIES.find((c) => c.id === req.params.id);
   if (!category) return res.status(404).json({ error: 'category_not_found' });
 
-  const force = req.query.refresh === '1';
+  const adminRefreshToken = process.env.ADMIN_REFRESH_TOKEN || '';
+  const force = !!adminRefreshToken && req.query.refresh === adminRefreshToken;
 
   if (force) {
     titleTranslateCache.clear();
@@ -1158,7 +1159,7 @@ app.get('/health', async (_req, res) => {
     consciousnessDataFile: CONSCIOUSNESS_DATA_FILE,
     homeDataFile: HOME_DATA_FILE,
     homeDigestEnabled: false,
-    refreshMode: 'public-refresh-enabled',
+    refreshMode: 'admin-refresh-token',
   });
 });
 
