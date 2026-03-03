@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-03T05:29:24.061Z",
+  "generatedAt": "2026-03-03T05:34:03.828Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772515731976,
+      "updatedAt": 1772516006562,
       "items": [
         {
           "title": "What’s next for Chinese open-source AI",
@@ -58,8 +58,137 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772515756913,
-      "items": []
+      "updatedAt": 1772516036692,
+      "items": [
+        {
+          "title": "When AI Gives Advice: Evaluating AI and Human Responses to Online Advice-Seeking for Well-Being",
+          "titleZh": "When 人工智能 Gives Advice: Evaluating 人工智能 and Human Responses to Online Advice",
+          "source": "arXiv cs.AI",
+          "link": "https://arxiv.org/abs/2512.08937",
+          "rawSummary": "arXiv:2512.08937v2 Announce Type: replace-cross Abstract: Seeking advice is a core human behavior that the internet has reinvented twice: first through forums and Q&A communities that crowdsource public guidance, and now through large language models (LLMs). Yet the quality of this LLM advice for everyday well-being scenarios remains unclear. How does it compare, not only against human comments, but against the wisdom of the online crowd? We ran two studies (N=210) in which experts compared top-voted Reddit advice with LLM-generated advice. LLMs ranked significantly higher overall and on effectiveness, warmth, and willingness to seek advice again. GPT-4o beat GPT-5 on all metrics except sycophancy, suggesting that benchmark gains need not improve advice-giving. In Study-2, we examined how human and algorithmic advice could be combined, and found that human advice can be unobtrusively polished to compete with AI-generated comments. We conclude with design implications for advice-giving agents and ecosystems blending AI, crowd input, and expert oversight.",
+          "publishedAt": "2026-03-03T05:00:00.000Z",
+          "ts": 1772514000000,
+          "summary": "Announce Type: replace-cross Abstract: Seeking advice is a core human behavior that the internet has reinvented twice: first through forums and Q&A communities that crowdsource public guidance, and now。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 8,
+            "total": 9.08
+          },
+          "tags": [
+            "人工智能",
+            "大模型",
+            "科研进展"
+          ],
+          "score": 9.08
+        },
+        {
+          "title": "Inferring brain plasticity rule under long-term stimulation with structured recurrent dynamics",
+          "titleZh": "Inferring brain plasticity rule under long",
+          "source": "arXiv q-bio.NC",
+          "link": "https://arxiv.org/abs/2603.00213",
+          "rawSummary": "arXiv:2603.00213v1 Announce Type: new Abstract: Understanding how long-term stimulation reshapes neural circuits requires uncovering the rules of brain plasticity. While short-term synaptic modifications have been extensively characterized, the principles that drive circuit-level reorganization across hours to weeks remain unknown. Here, we formalize these principles as a latent dynamical law that governs how recurrent connectivity evolves under repeated interventions. To capture this law, we introduce the Stimulus-Evoked Evolution Recurrent dynamics (STEER) framework, a dual-timescale model that disentangles fast neural activity from slow plastic changes. STEER represents plasticity as low-dimensional latent coefficients evolving under a learnable recurrence, enabling testable inference of plasticity rules rather than absorbing them into black-box parameters. We validate STEER with four benchmarks: synthetic Lorenz systems with controlled parameter shifts, BCM-based networks with biologically grounded plasticity, a task learning setting with adaptively optimized external stimulation and longitudinal recordings from Parkinsonian rats receiving closed-loop DBS. Our results demonstrate that STEER recovers interpretable update equations, predicts network adaptation under unseen stimulation schedules, and supports the design of improved intervention protocols. By elevating long-term plasticity from a hidden confound to an identifiable dynamical object, STEER provides a data-driven foundation for both mechanistic insight and principled optimization of brain stimulation.",
+          "publishedAt": "2026-03-03T05:00:00.000Z",
+          "ts": 1772514000000,
+          "summary": "Announce Type: new Abstract: Understanding how long-term stimulation reshapes neural circuits requires uncovering the rules of brain plasticity.。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 7,
+            "total": 8.83
+          },
+          "tags": [
+            "神经科学"
+          ],
+          "score": 8.83
+        },
+        {
+          "title": "Generative AI & Fictionality: How Novels Power Large Language Models",
+          "titleZh": "Generative 人工智能 & Fictionality: How Novels Power Large Language Models",
+          "source": "arXiv cs.CL",
+          "link": "https://arxiv.org/abs/2603.01220",
+          "rawSummary": "arXiv:2603.01220v1 Announce Type: new Abstract: Generative models, like the one in ChatGPT, are powered by their training data. The models are simply next-word predictors, based on patterns learned from vast amounts of pre-existing text. Since the first generation of GPT, it is striking that the most popular datasets have included substantial collections of novels. For the engineers and research scientists who build these models, there is a common belief that the language in fiction is rich enough to cover all manner of social and communicative phenomena, yet the belief has gone mostly unexamined. How does fiction shape the outputs of generative AI? Specifically, what are novels' effects relative to other forms of text, such as newspapers, Reddit, and Wikipedia? Since the 1970s, literature scholars such as Catherine Gallagher and James Phelan have developed robust and insightful accounts of how fiction operates as a form of discourse and language. Through our study of an influential open-source model (BERT), we find that LLMs leverage familiar attributes and affordances of fiction, while also fomenting new qualities and forms of social response. We argue that if contemporary culture is increasingly shaped by generative AI and machine learning, any analysis of today's various modes of cultural production must account for a relatively novel dimension: computational training data.",
+          "publishedAt": "2026-03-03T05:00:00.000Z",
+          "ts": 1772514000000,
+          "summary": "Announce Type: new Abstract: Generative models, like the one in ChatGPT, are powered by their training data.。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 8,
+            "total": 9.08
+          },
+          "tags": [
+            "人工智能",
+            "大模型",
+            "科研进展"
+          ],
+          "score": 9.08
+        },
+        {
+          "title": "TraderBench: How Robust Are AI Agents in Adversarial Capital Markets?",
+          "titleZh": "TraderBench: How Robust Are 人工智能 Agents in Adversarial Capital Markets?",
+          "source": "arXiv cs.AI",
+          "link": "https://arxiv.org/abs/2603.00285",
+          "rawSummary": "arXiv:2603.00285v1 Announce Type: new Abstract: Evaluating AI agents in finance faces two key challenges: static benchmarks require costly expert annotation yet miss the dynamic decision-making central to real-world trading, while LLM-based judges introduce uncontrolled variance on domain-specific tasks. We introduce TraderBench, a benchmark that addresses both issues. It combines expert-verified static tasks (knowledge retrieval, analytical reasoning) with adversarial trading simulations scored purely on realized performance-Sharpe ratio, returns, and drawdown-eliminating judge variance entirely. The framework features two novel tracks: crypto trading with four progressive market-manipulation transforms, and options derivatives scoring across P&L accuracy, Greeks, and risk management. Trading scenarios can be refreshed with new market data to prevent benchmark contamination. Evaluating 13 models (8B open-source to frontier) on ~50 tasks, we find: (1) 8 of 13 models score ~33 on crypto with <1-point variation across adversarial conditions, exposing fixed non-adaptive strategies; (2) extended thinking helps retrieval (+26 points) but has zero impact on trading (+0.3 crypto, -0.1 options). These findings reveal that current agents lack genuine market adaptation, underscoring the need for performance-grounded evaluation in finance.",
+          "publishedAt": "2026-03-03T05:00:00.000Z",
+          "ts": 1772514000000,
+          "summary": "Announce Type: new Abstract: Evaluating AI agents in finance faces two key challenges: static benchmarks require costly expert annotation yet miss the dynamic decision-making central to real-world trad。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 7,
+            "total": 8.83
+          },
+          "tags": [
+            "人工智能",
+            "大模型",
+            "AI安全"
+          ],
+          "score": 8.83
+        },
+        {
+          "title": "SimpleTool: Parallel Decoding for Real-Time LLM Function Calling",
+          "titleZh": "SimpleTool: Parallel Decoding for Real",
+          "source": "arXiv cs.CL",
+          "link": "https://arxiv.org/abs/2603.00030",
+          "rawSummary": "arXiv:2603.00030v1 Announce Type: new Abstract: LLM-based function calling enables intelligent agents to interact with external tools and environments, yet autoregressive decoding imposes a fundamental latency bottleneck that limits real-time applications such as embodied intelligence, game AI, and interactive avatars (e.g., 10 Hz control frequency). We observe that function calling differs fundamentally from free-form text generation: structured outputs exhibit substantial token redundancy (delimiters, parameter names), and arguments exhibit weak causal dependencies. Crucially, these two properties must be exploited jointly to achieve real-time performance. We present SimpleTool, which introduces special tokens that serve a dual role: compressing low-entropy tokens (4-6x reduction) while acting as mode selectors that enable independent parallel generation of function name and arguments. This synergistic design achieves 3-6x end-to-end speedup (up to 9.6x) with only +8.2% parallelization overhead. Experiments on five benchmarks across Qwen-series models (0.5B-14B) demonstrate substantial speedup while maintaining competitive or improved accuracy. On Mobile Actions, ST-Qwen-0.5B outperforms Google's FunctionGemma in both accuracy and latency consistency. With quantization on consumer-grade GPU, SimpleTool achieves 61.2ms P50 latency, enabling 16 Hz real-time control at 4B model scale, bridging the gap between LLM function calling and latency-critical real-world deployment.",
+          "publishedAt": "2026-03-03T05:00:00.000Z",
+          "ts": 1772514000000,
+          "summary": "Announce Type: new Abstract: LLM-based function calling enables intelligent agents to interact with external tools and environments, yet autoregressive decoding imposes a fundamental latency bottleneck。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 7,
+            "total": 8.83
+          },
+          "tags": [
+            "人工智能",
+            "大模型"
+          ],
+          "score": 8.83
+        },
+        {
+          "title": "Transit Network Design with Two-Level Demand Uncertainties: A Machine Learning and Contextual Stochastic Optimization Framework",
+          "titleZh": "Transit Network Design with Two",
+          "source": "arXiv cs.LG",
+          "link": "https://arxiv.org/abs/2603.00010",
+          "rawSummary": "arXiv:2603.00010v1 Announce Type: new Abstract: Transit Network Design is a well-studied problem in the field of transportation, typically addressed by solving optimization models under fixed demand assumptions. Considering the limitations of these assumptions, this paper proposes a new framework, namely the Two-Level Rider Choice Transit Network Design (2LRC-TND), that leverages machine learning and contextual stochastic optimization (CSO) through constraint programming (CP) to incorporate two layers of demand uncertainties into the network design process. The first level identifies travelers who rely on public transit (core demand), while the second level captures the conditional adoption behavior of those who do not (latent demand), based on the availability and quality of transit services. To capture these two types of uncertainties, 2LRC-TND relies on two travel mode choice models, that use multiple machine learning models. To design a network, 2LRC-TND integrates the resulting choice models into a CSO that is solved using a CP-SAT solver. 2LRC-TND is evaluated through a case study involving over 6,600 travel arcs and more than 38,000 trips in the Atlanta metropolitan area. The computational results demonstrate the effectiveness of the 2LRC-TND in designing transit networks that account for demand uncertainties and contextual information, offering a more realistic alternative to fixed-demand models.",
+          "publishedAt": "2026-03-03T05:00:00.000Z",
+          "ts": 1772514000000,
+          "summary": "Announce Type: new Abstract: Transit Network Design is a well-studied problem in the field of transportation, typically addressed by solving optimization models under fixed demand assumptions.。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 10,
+            "reach": 7,
+            "total": 8.83
+          },
+          "tags": [
+            "人工智能",
+            "科研进展"
+          ],
+          "score": 8.83
+        }
+      ]
     },
     {
       "id": "trends",
@@ -67,7 +196,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1772515764061,
+      "updatedAt": 1772516043828,
       "items": [
         {
           "title": "Why GPS fails in cities. And how it was brilliantly fixed",
