@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-03T02:24:35.112Z",
+  "generatedAt": "2026-03-03T05:15:14.631Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1772504652324,
+      "updatedAt": 1772514889030,
       "items": [
         {
           "title": "What’s next for Chinese open-source AI",
@@ -58,141 +58,8 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1772504668818,
-      "items": [
-        {
-          "title": "From Moderation to Mediation: Can LLMs Serve as Mediators in Online Flame Wars?",
-          "titleZh": "From Moderation to Mediation: Can 大模型 Serve as Mediators in Online Flame Wars?",
-          "source": "arXiv cs.AI",
-          "link": "https://arxiv.org/abs/2512.03005",
-          "rawSummary": "arXiv:2512.03005v5 Announce Type: replace Abstract: The rapid advancement of large language models (LLMs) has opened new possibilities for AI for good applications. As LLMs increasingly mediate online communication, their potential to foster empathy and constructive dialogue becomes an important frontier for responsible AI research. This work explores whether LLMs can serve not only as moderators that detect harmful content, but as mediators capable of understanding and de-escalating online conflicts. Our framework decomposes mediation into two subtasks: judgment, where an LLM evaluates the fairness and emotional dynamics of a conversation, and steering, where it generates empathetic, de-escalatory messages to guide participants toward resolution. To assess mediation quality, we construct a large Reddit-based dataset and propose a multi-stage evaluation pipeline combining principle-based scoring, user simulation, and human comparison. Experiments show that API-based models outperform open-source counterparts in both reasoning and intervention alignment when doing mediation. Our findings highlight both the promise and limitations of current LLMs as emerging agents for online social mediation.",
-          "publishedAt": "2026-03-02T05:00:00.000Z",
-          "ts": 1772427600000,
-          "summary": "公告类型：替换 摘要：大型语言模型（大模型）的快速发展为人工智能的良好应用开辟了新的可能性。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 8,
-            "total": 9.08
-          },
-          "tags": [
-            "人工智能",
-            "大模型",
-            "AI安全",
-            "科研进展"
-          ],
-          "score": 9.08
-        },
-        {
-          "title": "Animal behavioral analysis and neural encoding with transformer-based self-supervised pretraining",
-          "titleZh": "基于 Transformer 的自监督预训练的动物行为分析和神经编码",
-          "source": "arXiv q-bio.NC",
-          "link": "https://arxiv.org/abs/2507.09513",
-          "rawSummary": "arXiv:2507.09513v2 Announce Type: replace Abstract: The brain can only be fully understood through the lens of the behavior it generates -- a guiding principle in modern neuroscience research that nevertheless presents significant technical challenges. Many studies capture behavior with cameras, but video analysis approaches typically rely on specialized models requiring extensive labeled data. We address this limitation with BEAST(BEhavioral Analysis via Self-supervised pretraining of Transformers), a novel and scalable framework that pretrains experiment-specific vision transformers for diverse neuro-behavior analyses. BEAST combines masked autoencoding with temporal contrastive learning to effectively leverage unlabeled video data. Through comprehensive evaluation across multiple species, we demonstrate improved performance in three critical neuro-behavioral tasks: extracting behavioral features that correlate with neural activity, and pose estimation and action segmentation in both the single- and multi-animal settings. Our method establishes a powerful and versatile backbone model that accelerates behavioral analysis in scenarios where labeled data remains scarce.",
-          "publishedAt": "2026-03-02T05:00:00.000Z",
-          "ts": 1772427600000,
-          "summary": "公告类型：替换 摘要：大脑只能通过其产生的行为的镜头才能被充分理解——这是现代神经科学研究的指导原则，但它提出了。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 7,
-            "total": 8.83
-          },
-          "tags": [
-            "大模型",
-            "神经科学",
-            "科研进展"
-          ],
-          "score": 8.83
-        },
-        {
-          "title": "U-CAN: Utility-Aware Contrastive Attenuation for Efficient Unlearning in Generative Recommendation",
-          "titleZh": "U-CAN：生成推荐中有效遗忘的效用感知对比衰减",
-          "source": "arXiv cs.LG",
-          "link": "https://arxiv.org/abs/2602.23400",
-          "rawSummary": "arXiv:2602.23400v1 Announce Type: new Abstract: Generative Recommendation (GenRec) typically leverages Large Language Models (LLMs) to redefine personalization as an instruction-driven sequence generation task. However, fine-tuning on user logs inadvertently encodes sensitive attributes into model parameters, raising critical privacy concerns. Existing Machine Unlearning (MU) techniques struggle to navigate this tension due to the Polysemy Dilemma, where neurons superimpose sensitive data with general reasoning patterns, leading to catastrophic utility loss under traditional gradient or pruning methods. To address this, we propose Utility-aware Contrastive AttenuatioN (U-CAN), a precision unlearning framework that operates on low-rank adapters. U-CAN quantifies risk by contrasting activations and focuses on neurons with asymmetric responses that are highly sensitive to the forgetting set but suppressed on the retention set. To safeguard performance, we introduce a utility-aware calibration mechanism that combines weight magnitudes with retention-set activation norms, assigning higher utility scores to dimensions that contribute strongly to retention performance. Unlike binary pruning, which often fragments network structure, U-CAN develop adaptive soft attenuation with a differentiable decay function to selectively down-scale high-risk parameters on LoRA adapters, suppressing sensitive retrieval pathways and preserving the topological connectivity of reasoning circuits. Experiments on two public datasets across seven metrics demonstrate that U-CAN achieves strong privacy forgetting, utility retention, and computational efficiency.",
-          "publishedAt": "2026-03-02T05:00:00.000Z",
-          "ts": 1772427600000,
-          "summary": "公告类型：新 摘要：生成推荐 (GenRec) 通常利用大型语言模型 (大模型) 将个性化重新定义为指令驱动的序列生成任务。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 7,
-            "total": 8.83
-          },
-          "tags": [
-            "AI安全",
-            "科学发现"
-          ],
-          "score": 8.83
-        },
-        {
-          "title": "HumanMCP: A Human-Like Query Dataset for Evaluating MCP Tool Retrieval Performance",
-          "titleZh": "HumanMCP: A Human",
-          "source": "arXiv cs.AI",
-          "link": "https://arxiv.org/abs/2602.23367",
-          "rawSummary": "arXiv:2602.23367v1 Announce Type: new Abstract: Model Context Protocol (MCP) servers contain a collection of thousands of open-source standardized tools, linking LLMs to external systems; however, existing datasets and benchmarks lack realistic, human-like user queries, remaining a critical gap in evaluating the tool usage and ecosystems of MCP servers. Existing datasets often do contain tool descriptions but fail to represent how different users portray their requests, leading to poor generalization and inflated reliability of certain benchmarks. This paper introduces the first large-scale MCP dataset featuring diverse, high-quality diverse user queries generated specifically to match 2800 tools across 308 MCP servers, developing on the MCP Zero dataset. Each tool is paired with multiple unique user personas that we have generated, to capture varying levels of user intent ranging from precise task requests, and ambiguous, exploratory commands, reflecting the complexity of real-world interaction patterns.",
-          "publishedAt": "2026-03-02T05:00:00.000Z",
-          "ts": 1772427600000,
-          "summary": "公告类型：新 摘要：模型上下文协议（MCP）服务器包含数千个开源标准化工具的集合，将大模型链接到外部系统；然而，现有的数据集和b。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 7,
-            "total": 8.83
-          },
-          "tags": [
-            "科研进展"
-          ],
-          "score": 8.83
-        },
-        {
-          "title": "Truncated Step-Level Sampling with Process Rewards for Retrieval-Augmented Reasoning",
-          "titleZh": "带有过程奖励的截断步骤级采样用于检索增强推理",
-          "source": "arXiv cs.CL",
-          "link": "https://arxiv.org/abs/2602.23440",
-          "rawSummary": "arXiv:2602.23440v1 Announce Type: new Abstract: Training large language models to reason with search engines via reinforcement learning is hindered by a fundamental credit assignment problem: existing methods such as Search-R1 provide only a sparse outcome reward after an entire multi-step trajectory, making it infeasible to attribute success or failure to individual reasoning and retrieval decisions. Process-reward methods like StepSearch alleviate this by introducing step-level supervision, but rely on heuristic rewards such as TF-IDF overlap with gold documents, and still sample k complete trajectories per example, retaining high gradient variance. We propose SLATE, a framework built on two complementary ideas: (1) truncated step-level sampling, which generates k trajectories that share a common prefix and differ only at the next step, and (2) dense LLM-as-judge rewards, which replace heuristic scoring with a capable LLM evaluator that assesses the quality of each reasoning step, search query, and answer, providing richer and more reliable supervision. We theoretically prove that under the same dense reward structure, truncated sampling reduces the variance of advantage estimates by up to a factor of T compared to full-trajectory sampling for T-step trajectories, yielding lower-variance, better-targeted policy gradients. Experiments on seven QA benchmarks confirm that SLATE consistently outperforms both sparse-reward and process-reward baselines, with the largest gains on harder multi-hop tasks and smaller models.",
-          "publishedAt": "2026-03-02T05:00:00.000Z",
-          "ts": 1772427600000,
-          "summary": "公告类型：新 摘要：通过强化学习训练大型语言模型与搜索引擎进行推理受到基本信用分配问题的阻碍：现有方法（例如 Sea）。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 7,
-            "total": 8.83
-          },
-          "tags": [
-            "大模型",
-            "AI安全"
-          ],
-          "score": 8.83
-        },
-        {
-          "title": "CiteAudit: You Cited It, But Did You Read It? A Benchmark for Verifying Scientific References in the LLM Era",
-          "titleZh": "CiteAudit：您引用了它，但您读过它吗？ 大模型时代验证科学参考文献的基准",
-          "source": "arXiv cs.CL",
-          "link": "https://arxiv.org/abs/2602.23452",
-          "rawSummary": "arXiv:2602.23452v1 Announce Type: new Abstract: Scientific research relies on accurate citation for attribution and integrity, yet large language models (LLMs) introduce a new risk: fabricated references that appear plausible but correspond to no real publications. Such hallucinated citations have already been observed in submissions and accepted papers at major machine learning venues, exposing vulnerabilities in peer review. Meanwhile, rapidly growing reference lists make manual verification impractical, and existing automated tools remain fragile to noisy and heterogeneous citation formats and lack standardized evaluation. We present the first comprehensive benchmark and detection framework for hallucinated citations in scientific writing. Our multi-agent verification pipeline decomposes citation checking into claim extraction, evidence retrieval, passage matching, reasoning, and calibrated judgment to assess whether a cited source truly supports its claim. We construct a large-scale human-validated dataset across domains and define unified metrics for citation faithfulness and evidence alignment. Experiments with state-of-the-art LLMs reveal substantial citation errors and show that our framework significantly outperforms prior methods in both accuracy and interpretability. This work provides the first scalable infrastructure for auditing citations in the LLM era and practical tools to improve the trustworthiness of scientific references.",
-          "publishedAt": "2026-03-02T05:00:00.000Z",
-          "ts": 1772427600000,
-          "summary": "公告类型：新 摘要：科学研究依赖于准确引用的归属和完整性，但大型语言模型 (大模型) 引入了新的风险：伪造的参考文献看起来很漂亮。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 10,
-            "reach": 7,
-            "total": 8.83
-          },
-          "tags": [
-            "人工智能",
-            "大模型",
-            "智能体",
-            "AI安全",
-            "科研进展",
-            "技术"
-          ],
-          "score": 8.83
-        }
-      ]
+      "updatedAt": 1772514914574,
+      "items": []
     },
     {
       "id": "trends",
@@ -200,119 +67,91 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1772504675112,
+      "updatedAt": 1772514914631,
       "items": [
         {
-          "title": "Ease Health Secures $41M for AI-Native Behavioral Health OS - HIT Consultant",
-          "titleZh": "Ease Health 为人工智能原生行为健康操作系统筹集了 4100 万美元 - HIT 顾问",
-          "source": "hitconsultant.net",
-          "link": "https://hitconsultant.net/2026/03/02/ease-health-funding-behavioral-health-ehr-ai/",
-          "rawSummary": "Ease Health Secures $41M for AI-Native Behavioral Health OS Skip to main content Skip to secondary menu Skip to primary sidebar Skip to secondary sidebar Skip to footer Image 1 Image 2 Image 3 Menu Opinion Health ITSubmenu Behavioral Health Care Coordination EMR/EHR Interoperability Patient Engagement Population Health Management Revenue Cycle Management Social Determinants of Health Digital HealthSubmenu AI Blockchain Precision Medicine Telehealth Wearables Life Sciences Investments M&A Value-based CareSubmenu Accountable Care (ACOs) Medicare Advantage [...] Image 15: The $1.9B Exit: Why CommonSpirit is Insourcing Revenue Cycle and Tenet is Betting Big on Conifer AI #### The $1.9B Exit: Why CommonSpirit is Insourcing Revenue Cycle and Tenet is Betting Big on Conifer AI Image 16: KLAS 2026 Rankings: Aledade and Guidehealth Named Top VBC Enablement Firms #### KLAS 2026 Rankings: Aledade and Guidehealth Named Top VBC Enablement Firms Image 17: Beyond the Hype: New KLAS Data Validates the Financial and Clinical ROI of Ambient AI #### Beyond the Hype: New KLAS Data Validates the Financial and Clinical ROI of Ambient AI Image 18: Anthropic Debuts ‘Claude for Healthcare’ and Opus 4.5 to Engineer the Future of Life Sciences #### Anthropic Debuts ‘Claude for Healthcare’ and Opus 4.5 to Engineer the Future of Life Sciences [...] Search the site ... ### Subscribe to HIT Consultant Latest insightful articles delivered straight to your inbox weekly. Submit a Tip or Pitch ### Featured Research Report Image 122026 Best in KLAS Awards: The Full List of Software & Services Winners ### Most-Read Image 13: The \"Platform\" Squeeze: Epic Releases Native AI Charting, Putting Venture-Backed Scribes on Notice #### The “Platform” Squeeze: Epic Releases Native AI Charting, Putting Venture-Backed Scribes on Notice Image 14: Analysis: Oracle Cerner’s Plans for a National EHR #### Oracle May Cut 30k Jobs and Sell Cerner to Fund $156B OpenAI Deal",
-          "publishedAt": "Mon, 02 Mar 2026 16:59:00 GMT",
-          "ts": 1772470740000,
-          "tavilyScore": 1.48628216,
-          "summary": "Ease Health 为 AI 原生行为健康操作系统筹集了 4100 万美元 跳到主要内容 跳到二级菜单 跳到主侧边栏 跳到辅助侧边栏 跳到页脚 图片 1 图片 2 图片 3 菜单 Opinion Health ITSubme。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 8.65628216
-          },
+          "title": "抓取失败：TechCrunch Startups",
+          "titleZh": "抓取失败：TechCrunch Startups",
+          "source": "TechCrunch Startups",
+          "link": "https://techcrunch.com/category/startups/feed/",
+          "rawSummary": "",
+          "summary": "无法获取 https://techcrunch.com/category/startups/feed/（getaddrinfo EBUSY techcrunch.com）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
           "tags": [
-            "人工智能",
-            "科研进展",
-            "技术"
-          ],
-          "score": 8.65628216
+            "抓取异常"
+          ]
         },
         {
-          "title": "Boston AI startup can predict risk of breast cancer before tumors appear - The Boston Globe",
-          "titleZh": "波士顿人工智能初创公司可以在肿瘤出现之前预测乳腺癌风险 - 波士顿环球报",
-          "source": "bostonglobe.com",
-          "link": "https://www.bostonglobe.com/2026/02/24/business/breast-cancer-ai-detection-clairity/",
-          "rawSummary": "Advertisement --- 💵 Quantum cybersecurity firm Aliro in Boston raised $15 millionin a deal led by Gutbrain Ventures. 🔌 EV developer Indigo Technologies in Woburn received a $4 million loan from MassDevelopment’s Emerging Technology Fund. ☀️ Community solar developer Solstice in Cambridge was acquired by Boston-based Perch Energy. Terms of the deal were not disclosed. 📦 Supply chain software firm Dray Dog in Dover, N.H., was acquired by California-based firm CargoSprint. Terms of the deal were not disclosed. 👋 Software developer Code Metal in Boston hired Ryan Aytay, former chief executive of Tableau, as president and chief operating officer. 🖨️ Somerville-based 3D printing company Formlabs added Rob Willett, former chief executive of Cognex, to its board of directors. [...] ⏸️ Maine considers a moratorium on data centers as businesses look to New England. Read more from Julia Tilton of The Daily Yonder. 🎁 Klaviyo founders give $6 million to boost MIT startups, Boston’s competitiveness. Read more from business reporter Jon Chesto. 🤑 Boston-based Code Metal, which writes AI software to run hardware such as drones, sensors, and robots, raised $125 million in a deal led by Salesforce Ventures and including Accel, B Capital, Smith Point Capital, J2 Ventures, and RTX. The deal valued Code Metal at $1.25 billion. 🌎 Rare earth mineral producer Phoenix Tailings in Woburn raised $30 million of equity from investors Traxys, Eni Next, and Geodesic Alliance Fund. Phoenix also raised $10 million of debt from Nomura. Advertisement --- [...] “There’s much in medicine that can be a black box,” Lehman said. “We are doing lots of research [to figure out] what are the features in a mammogram that the deep learning model is picking up on.” With Silicon Valley dominating in AI innovation so far, the Boston tech scene could use a lot more startups like Clairity, investors and entrepreneurs said. Health care startup investor Michael Greeley, general partner at Flare Capital in Boston, said he expects to see more and more researchers in the region creating startups that combine AI and medical data. A company like Clairity “underscores the power of our community as the health care and technology sectors continue to collaborate given the proximity to each other,“ Greeley said.",
-          "publishedAt": "Tue, 24 Feb 2026 21:16:07 GMT",
-          "ts": 1771967767000,
-          "tavilyScore": 1.4973077760000002,
-          "summary": "广告 --- 💵 波士顿量子网络安全公司 Aliro 在由 Gutbrain Ventures 牵头的交易中筹集了 1500 万美元。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 6,
-            "reach": 3,
-            "total": 8.007307776
-          },
+          "title": "抓取失败：TechCrunch AI",
+          "titleZh": "抓取失败：TechCrunch 人工智能",
+          "source": "TechCrunch AI",
+          "link": "https://techcrunch.com/category/artificial-intelligence/feed/",
+          "rawSummary": "",
+          "summary": "无法获取 https://techcrunch.com/category/artificial-intelligence/feed/（getaddrinfo EBUSY techcrunch.com）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
           "tags": [
-            "人工智能",
-            "科研进展",
-            "能源科技",
-            "技术"
-          ],
-          "score": 8.007307776
+            "抓取异常"
+          ]
         },
         {
-          "title": "This AI finds simple rules where humans see only chaos",
-          "titleZh": "这个人工智能找到了人类只看到混乱的简单规则",
+          "title": "抓取失败：STAT",
+          "titleZh": "抓取失败：STAT",
+          "source": "STAT",
+          "link": "https://www.statnews.com/feed/",
+          "rawSummary": "",
+          "summary": "无法获取 https://www.statnews.com/feed/（getaddrinfo EBUSY www.statnews.com）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
+          "tags": [
+            "抓取异常"
+          ]
+        },
+        {
+          "title": "抓取失败：Quartz",
+          "titleZh": "抓取失败：Quartz",
+          "source": "Quartz",
+          "link": "https://qz.com/rss",
+          "rawSummary": "",
+          "summary": "无法获取 https://qz.com/rss（getaddrinfo EBUSY qz.com）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
+          "tags": [
+            "抓取异常"
+          ]
+        },
+        {
+          "title": "抓取失败：MIT Technology Review",
+          "titleZh": "抓取失败：MIT Technology Review",
+          "source": "MIT Technology Review",
+          "link": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+          "rawSummary": "",
+          "summary": "无法获取 https://www.technologyreview.com/topic/artificial-intelligence/feed/（getaddrinfo EBUSY www.technologyreview.com）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
+          "tags": [
+            "抓取异常"
+          ]
+        },
+        {
+          "title": "抓取失败：ScienceDaily AI",
+          "titleZh": "抓取失败：ScienceDaily 人工智能",
           "source": "ScienceDaily AI",
-          "link": "https://www.sciencedaily.com/releases/2025/12/251221091237.htm",
-          "rawSummary": "A new AI developed at Duke University can uncover simple, readable rules behind extremely complex systems. It studies how systems evolve over time and reduces thousands of variables into compact equations that still capture real behavior. The method works across physics, engineering, climate science, and biology. Researchers say it could help scientists understand systems where traditional equations are missing or too complicated to write down.",
-          "publishedAt": "2025-12-22T06:04:50.000Z",
-          "ts": 1766383490000,
-          "summary": "杜克大学开发的一种新人工智能可以揭示极其复杂系统背后的简单、可读的规则。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 7,
-            "total": 8.17
-          },
+          "link": "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml",
+          "rawSummary": "",
+          "summary": "无法获取 https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml（getaddrinfo EBUSY www.sciencedaily.com）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
           "tags": [
-            "人工智能",
-            "生命科学"
-          ],
-          "score": 8.17
-        },
-        {
-          "title": "Morning Bid: Another day, another AI mood swing - Reuters",
-          "titleZh": "早间竞价：又是一天，又是一次人工智能情绪波动 - 路透中文网",
-          "source": "reuters.com",
-          "link": "https://www.reuters.com/business/finance/global-markets-view-usa-2026-02-25/",
-          "rawSummary": "Even though Nvidia shares are only up 2% for the year so far, options markets are braced for a post-earnings swing of plus/minus 5%. The scale of the firm these days means that's a swing of about $230 billion in market cap either way. After the S&P 500's 0.77% jump on Tuesday, futures were up ahead of today's bell. Elsewhere, Asia's stocks motored higher on Wednesday amid a growing focus on what AI capex is doing for companies aiding the infrastructure buildout. South Korea's Kospi benchmark, which has risen a staggering 45% already this year, rose 2%, while Japan's Nikkei gained 2.2%. [...] Chart represents slow-down in Nvidia's revenue growth With its earnings update due later on Wednesday, Nvidia revenue is expected to have jumped 68% to $66 billion, and analysts assume its first-quarter revenue forecast will show another 64% jump to $72 billion. The company has surpassed sales expectations for the past 13 quarters, though the scale of those beats has shrunk, competition in AI chips is rising, and the bar to impress moves ever higher. After powering much of the U.S. stock market rally for the past three years, Nvidia's stock has risen about 2% so far in 2026. Today's events to watch U.S. corporate earnings: NVIDIA, Lowe's, Salesforce, Zoom U.S. 5-year note auction [...] ### Information you can trust Reuters, the news and media division of Thomson Reuters, is the world’s largest multimedia news provider, reaching billions of people worldwide every day. Reuters provides business, financial, national and international news to professionals via desktop terminals, the world's media organizations, industry events and directly to consumers. ### Follow Us []( []( []( []( []( []( ### LSEG Products #### Workspace, opens new tab Access unmatched financial data, news and content in a highly-customised workflow experience on desktop, web and mobile. #### Data Catalogue, opens new tab Browse an unrivalled portfolio of real-time and historical market data and insights from worldwide sources and experts.",
-          "publishedAt": "Wed, 25 Feb 2026 11:39:48 GMT",
-          "ts": 1772019588000,
-          "tavilyScore": 1.3005877440000002,
-          "summary": "尽管 Nvidia 股价今年迄今仅上涨 2%，但期权市场已做好了盈利后正负 5% 波动的准备。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 8,
-            "reach": 3,
-            "total": 8.470587744
-          },
-          "tags": [
-            "人工智能",
-            "技术"
-          ],
-          "score": 8.470587744
-        },
-        {
-          "title": "MatX's $500m, QC Capital backs virtual pediatrics and The Raine Group's new partner - Axios",
-          "titleZh": "MatX 5 亿美元、QC Capital 支持虚拟儿科和 Raine Group 的新合作伙伴 Axios",
-          "source": "amp.axios.com",
-          "link": "https://amp.axios.com/pro-rata-premium-first-look-matx-qc-capital-raine-e2e23561-c459-452d-a04c-e2d0e6cca8aa.html",
-          "rawSummary": "• Evoke Security, a Washington-based cybersecurity company, raised a $4m pre-seed round led by Crosspoint Capital Partners, with participation from Red Cell Partners. Go deeper • Jampack AI, an NYC-based wholesale operations automation platform, raised a $3.2m seed led by Maveron, joined by Timber Grove Ventures. Go deeper ## Private Equity • Arcline Investment Management agreed to buy Hydraulics International, a provider of ground support equipment, mobile test systems, and specialized pumps. Go deeper • CampusWorks, backed by Atlantic Street Capital, merged with Dynamic Campus, a higher education IT services firm. dynamiccampus.com • Capital Constellation, backed by Wafra, invested in Gallatin Point Capital, a private investment firm. Go deeper [...] • Brookfield Asset Management bought U.K.-based Ori, an AI cloud provider, and merged it with its newly formed Radiant. Ori's backers include Fortitude Capital, Wa'ed Ventures, 6 Degrees Capital, Atempo Growth and NextEra Energy. Go deeper ## Public Offerings 🚑 MiniMed Group, a diabetes management device business being carved out of Medtronic (NYSE: MDT), plans to raise $742m in an offering of 28 million shares priced between $25 to $28. Go deeper 💊 Salspera, a Cambridge, Mass.-based cancer biotech, plans to raise $85m by offering 5.7 million shares priced between $14 and $16. Go deeper ## It's Personnel • Anthony Kontoleon, former partner and CEO of the Americas at Azura Partners, joined The Raine Group as partner. Go deeper [...] • Topspin Consumer Partners invested in Grid, a Dallas-based maker of lockers and flooring solutions for fitness facilities. Go deeper • Victor Capital Partners invested in Specialty Fenestration Group, a maker of high-security windows and doors. River Associates Investments exited. Go deeper 🚑 QC Capital Group invested in My Pediatric Doctor, a 24/7 urgent care pediatric telemedicine company. Go deeper ## M&A • ADT, a Boca Raton, Fla.-based home security company,acquired Origin Wireless, an AI company that can analyze and track motion without cameras, for $170m. Go deeper",
-          "publishedAt": "Tue, 24 Feb 2026 20:59:41 GMT",
-          "ts": 1771966781000,
-          "tavilyScore": 1.5865913600000001,
-          "summary": "• 总部位于华盛顿的网络安全公司 Evoke Security 筹集了 400 万美元的种子前融资，由 Crosspoint Capital Partners 领投，Red Cell Partners 参与。",
-          "judgement": {
-            "frontier": 9,
-            "depth": 6,
-            "reach": 3,
-            "total": 8.09659136
-          },
-          "tags": [
-            "人工智能",
-            "生物技术"
-          ],
-          "score": 8.09659136
+            "抓取异常"
+          ]
         }
       ]
     }
