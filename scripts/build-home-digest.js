@@ -34,7 +34,7 @@ function hasChinese(text = '') {
 
 function readableSummary(s = '') {
   const t = clean(s);
-  if (!t || !hasChinese(t)) return false;
+  if (!t) return false;
   if (/[�]/.test(t)) return false;
   if (/^#+\s*/.test(t)) return false;
   if (t.length < 28 || t.length > 320) return false;
