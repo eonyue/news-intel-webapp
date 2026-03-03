@@ -666,7 +666,7 @@ async function translateTitleOnline(title = '') {
   let finalTitle = forceTitleChineseStyle(polished || out);
 
   const finalLatin = (finalTitle.match(/[A-Za-z]/g) || []).length;
-  if (!hasChinese(finalTitle) || finalLatin > 6) {
+  if (!hasChinese(finalTitle) || finalLatin > 2) {
     const hardZh = await translateTextToChinese(source);
     if (hardZh) finalTitle = forceTitleChineseStyle(hardZh);
   }
@@ -980,7 +980,13 @@ async function enrichItem(item) {
 
   const titleZh = await translateTitleOnline(item.title);
   const rawSummary = sanitizeResearchRawText(text || item.rawSummary || '');
-  const summary = await summarizeArticleInChinese(rawSummary, titleZh || item.title);
+  let summary = await summarizeArticleInChinese(rawSummary, titleZh || item.title);
+
+  const summaryLatin = (summary.match(/[A-Za-z]/g) || []).length;
+  if (!hasChinese(summary) || summaryLatin > 12) {
+    const hardZhSummary = await translateTextToChinese(summary || rawSummary);
+    if (hardZhSummary) summary = hardZhSummary;
+  }
   const judgement = scoreJudgement({ ...item, rawSummary, title: titleZh || item.title });
   const tags = buildTags({ ...item, rawSummary, title: titleZh || item.title });
 
