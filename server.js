@@ -1025,11 +1025,17 @@ async function enrichItem(item) {
     }
   }
 
-  const titleZh = await translateTitleOnline(item.title);
+  // Keep English titles by default (no auto title translation).
+  const titleZh = item.title;
   const rawSummary = sanitizeResearchRawText(text || item.rawSummary || '');
-  const summary = '';
-  const judgement = scoreJudgement({ ...item, rawSummary, title: titleZh || item.title });
-  const tags = [];
+  let summary = await summarizeArticleInChinese(rawSummary, item.title);
+  if (!summary) {
+    summary = clean(rawSummary).slice(0, 220);
+    if (summary && !/[。！？!?]$/.test(summary)) summary += '。';
+  }
+
+  const judgement = scoreJudgement({ ...item, rawSummary, title: item.title });
+  const tags = buildTags({ ...item, rawSummary, title: item.title });
 
   return {
     ...item,
@@ -1159,6 +1165,20 @@ app.get('/consciousness', async (_req, res) => {
 app.get('/api/consciousness', async (_req, res) => {
   const digest = await getConsciousnessDigest();
   res.json(digest);
+});
+
+app.post('/api/translate-batch', async (req, res) => {
+  try {
+    const texts = Array.isArray(req.body?.texts) ? req.body.texts : [];
+    const safeTexts = texts.slice(0, 40).map((t) => clean(String(t || '')).slice(0, 1200));
+    const translated = [];
+    for (const t of safeTexts) {
+      translated.push(await translateTextToChinese(t));
+    }
+    res.json({ ok: true, translated });
+  } catch (e) {
+    res.status(500).json({ ok: false, error: 'translate_failed' });
+  }
 });
 
 app.post('/api/admin/publish-home', async (req, res) => {

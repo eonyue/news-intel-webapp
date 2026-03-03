@@ -35,8 +35,9 @@ npm run dev
 
 ## API
 
-- `GET /api/category/:id` 单栏目 JSON（优先返回 `data/home-latest.json`）
+- `GET /api/category/:id` 单栏目 JSON
 - `GET /api/consciousness` 意识简报 JSON
+- `POST /api/translate-batch` 页面翻译按钮批量翻译接口（腾讯云翻译）
 - `POST /api/admin/publish-home` 上传本地筛选后的首页 JSON（需 `x-admin-token`，Vercel 上可能超时，不建议作为主链路）
 - `GET /health` 健康检查
 
