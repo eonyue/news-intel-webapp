@@ -266,10 +266,10 @@ function isReadableChineseSummary(text = '') {
   if (/^#+\s*/.test(s)) return false;
   if (/^\W+$/.test(s)) return false;
   if (/^[（(【\[]?.{0,10}[）)】\]]?[。.!?]?$/.test(s)) return false;
-  if (/授予号|doi|arxiv|版权所有|all rights reserved/i.test(s)) return false;
+  if (/授予号|doi|arxiv|版权所有|all rights reserved|公告类型|article pubmed|google scholar|references/i.test(s)) return false;
   if (s.length < 28) return false;
   if (s.length > 260) return false;
-  if (chineseRatio(s) < 0.35) return false;
+  if (chineseRatio(s) < 0.6) return false;
   const sentenceCount = s.split(/[。！？!?]/).filter(Boolean).length;
   if (sentenceCount < 1 || sentenceCount > 5) return false;
   return true;
@@ -290,9 +290,20 @@ function sanitizeSummaryText(text = '') {
   return clean(text)
     .replace(/^#+\s*/g, '')
     .replace(/\b(doi|arxiv)\s*[:：]?\s*\S+/gi, '')
+    .replace(/\b(Announce Type|Abstract|Article|PubMed|Google Scholar|References?)\b[:：]?/gi, '')
     .replace(/\s{2,}/g, ' ')
     .replace(/[（(]\s*[）)]/g, '')
     .replace(/^[：:;，,。.]+/, '')
+    .trim();
+}
+
+function sanitizeResearchRawText(text = '') {
+  return clean(text)
+    .replace(/Announce Type:[\s\S]*?Abstract:/i, '')
+    .replace(/Article\s+PubMed\s+Google Scholar[\s\S]*/i, '')
+    .replace(/##\s*Latest on:[\s\S]*/i, '')
+    .replace(/##\s*References?[\s\S]*/i, '')
+    .replace(/\s{2,}/g, ' ')
     .trim();
 }
 
@@ -568,12 +579,12 @@ async function translateTitleOnline(title = '') {
 
   const candidate = forceTitleChineseStyle(llmTitle || local || source);
   const latinCount = (candidate.match(/[A-Za-z]/g) || []).length;
-  let out = (hasChinese(candidate) && latinCount <= 10) ? candidate : local;
+  let out = (hasChinese(candidate) && latinCount <= 6) ? candidate : local;
 
   let outLatinCount = (out.match(/[A-Za-z]/g) || []).length;
-  if (!hasChinese(out) || outLatinCount > 10) {
+  if (!hasChinese(out) || outLatinCount > 6) {
     const translated = await callLLM({
-      systemPrompt: '请将标题翻译为自然中文，除品牌/人名外尽量不要保留英文词。只输出一行中文标题。',
+      systemPrompt: '请将标题完整翻译为中文，除人名外不要保留英文词。输出一行中文标题。',
       userPrompt: source,
       maxOutputTokens: 90,
       temperature: 0.1,
@@ -582,13 +593,19 @@ async function translateTitleOnline(title = '') {
   }
 
   outLatinCount = (out.match(/[A-Za-z]/g) || []).length;
-  if (!hasChinese(out) || outLatinCount > 10) {
+  if (!hasChinese(out) || outLatinCount > 6) {
     const translated = await translateTextToChinese(source);
     if (translated) out = forceTitleChineseStyle(translated);
   }
 
   const polished = await polishChineseTitle(out);
-  const finalTitle = forceTitleChineseStyle(polished || out);
+  let finalTitle = forceTitleChineseStyle(polished || out);
+
+  const finalLatin = (finalTitle.match(/[A-Za-z]/g) || []).length;
+  if (!hasChinese(finalTitle) || finalLatin > 6) {
+    const hardZh = await translateTextToChinese(source);
+    if (hardZh) finalTitle = forceTitleChineseStyle(hardZh);
+  }
 
   llmTranslateCache.set(cacheKey, finalTitle);
   titleTranslateCache.set(source, finalTitle);
@@ -895,7 +912,7 @@ async function enrichItem(item) {
   }
 
   const titleZh = await translateTitleOnline(item.title);
-  const rawSummary = text || item.rawSummary || '';
+  const rawSummary = sanitizeResearchRawText(text || item.rawSummary || '');
   const summary = await summarizeArticleInChinese(rawSummary, titleZh || item.title);
   const judgement = scoreJudgement({ ...item, rawSummary, title: titleZh || item.title });
   const tags = buildTags({ ...item, rawSummary, title: titleZh || item.title });
