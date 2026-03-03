@@ -16,7 +16,7 @@ const OPENAI_MODEL = process.env.OPENAI_MODEL || 'gpt-5.3-codex';
 const OPENAI_ENDPOINT = process.env.OPENAI_ENDPOINT || 'https://api.openai.com/v1/responses';
 
 const MINIMAX_API_KEY = process.env.MINIMAX_API_KEY || '';
-const MINIMAX_MODEL = process.env.MINIMAX_MODEL || 'MiniMax-Text-01';
+const MINIMAX_MODEL = process.env.MINIMAX_MODEL || 'MiniMax-M2.5';
 const MINIMAX_ENDPOINT = process.env.MINIMAX_ENDPOINT || 'https://api.minimax.chat/v1/text/chatcompletion_v2';
 
 const CONSCIOUSNESS_DATA_FILE = path.join(__dirname, 'data', 'consciousness-latest.json');
@@ -512,11 +512,11 @@ async function callMiniMax({ systemPrompt, userPrompt, maxOutputTokens = 180, te
     const body = {
       model: MINIMAX_MODEL,
       messages: [
-        { role: 'system', content: systemPrompt },
-        { role: 'user', content: userPrompt },
+        { role: 'system', name: 'MiniMax AI', content: systemPrompt },
+        { role: 'user', name: '用户', content: userPrompt },
       ],
       temperature,
-      max_tokens: maxOutputTokens,
+      max_completion_tokens: maxOutputTokens,
     };
 
     const text = await fetchTextWithTimeout(
