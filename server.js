@@ -22,6 +22,10 @@ const MINIMAX_ENDPOINT = process.env.MINIMAX_ENDPOINT || 'https://api.minimax.ch
 const CONSCIOUSNESS_DATA_FILE = path.join(__dirname, 'data', 'consciousness-latest.json');
 const HOME_DATA_FILE = path.join(__dirname, 'data', 'home-latest.json');
 
+const MEDIA_WHITELIST_DOMAINS = [
+  'wired.com','technologyreview.com','aeon.co','psyche.co','quantamagazine.org','theatlantic.com','nautil.us','thetransmitter.org','spectrum.ieee.org','sciencefocus.com','theconversation.com','vox.com','popsci.com','scientificamerican.com','statnews.com','popularmechanics.com','the-scientist.com','futurism.com','techcrunch.com','engadget.com','newatlas.com','cnet.com','inverse.com','theguardian.com','qz.com','eurekalert.org','newscientist.com'
+];
+
 const CATEGORIES = [
   {
     id: 'media',
@@ -31,21 +35,19 @@ const CATEGORIES = [
     zhDescription: 'AI / 神经科学 / 生命科学 / 技术主流媒体报道',
     limit: 18,
     tavilyQuery:
-      'best in-depth media coverage today on AI large language models neuroscience life science technology',
+      'top tech and science stories from premium editorial sources about AI neuroscience life science',
     feeds: [
+      { url: 'https://www.wired.com/feed/tag/ai/latest/rss', source: 'Wired' },
       { url: 'https://www.technologyreview.com/topic/artificial-intelligence/feed/', source: 'MIT Technology Review' },
-      { url: 'https://techcrunch.com/category/artificial-intelligence/feed/', source: 'TechCrunch AI' },
-      { url: 'https://techcrunch.com/category/startups/feed/', source: 'TechCrunch Startups' },
-      { url: 'https://www.theguardian.com/science/rss', source: 'The Guardian Science' },
-      { url: 'https://www.theguardian.com/technology/artificial-intelligence-ai/rss', source: 'The Guardian AI' },
-      { url: 'https://www.newscientist.com/subject/technology/feed/', source: 'New Scientist Tech' },
-      { url: 'https://www.scientificamerican.com/feed/', source: 'Scientific American' },
-      { url: 'https://www.wired.com/feed/tag/ai/latest/rss', source: 'Wired AI' },
       { url: 'https://www.quantamagazine.org/feed/', source: 'Quanta Magazine' },
       { url: 'https://nautil.us/feed/', source: 'Nautilus' },
-      { url: 'https://psyche.co/feed', source: 'Psyche' },
-      { url: 'https://theconversation.com/global/topics/artificial-intelligence-21/articles.atom', source: 'The Conversation AI' },
+      { url: 'https://theconversation.com/global/topics/artificial-intelligence-21/articles.atom', source: 'The Conversation' },
+      { url: 'https://www.scientificamerican.com/feed/', source: 'Scientific American' },
       { url: 'https://www.statnews.com/feed/', source: 'STAT' },
+      { url: 'https://www.newscientist.com/subject/technology/feed/', source: 'New Scientist' },
+      { url: 'https://techcrunch.com/category/artificial-intelligence/feed/', source: 'TechCrunch' },
+      { url: 'https://www.theguardian.com/science/rss', source: 'The Guardian' },
+      { url: 'https://www.eurekalert.org/rss/technology_engineering.xml', source: 'EurekAlert' },
     ],
   },
   {
@@ -73,11 +75,6 @@ const CATEGORIES = [
       { url: 'https://neurips.cc/virtual/2025/papers.rss', source: 'NeurIPS' },
       { url: 'https://openreview.net/group?id=ICLR.cc/2025/Conference.rss', source: 'ICLR' },
       { url: 'https://aclanthology.org/events/acl-2025/feed.xml', source: 'ACL Anthology' },
-      { url: 'https://neurosciencenews.com/feed/', source: 'Neuroscience News' },
-      { url: 'https://medicalxpress.com/rss-feed/', source: 'Medical Xpress' },
-      { url: 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', source: 'ScienceDaily AI' },
-      { url: 'https://www.sciencedaily.com/rss/health_medicine/neuroscience.xml', source: 'ScienceDaily Neuroscience' },
-      { url: 'https://www.sciencedaily.com/rss/plants_animals/biology.xml', source: 'ScienceDaily Biology' },
     ],
   },
   {
@@ -88,15 +85,13 @@ const CATEGORIES = [
     zhDescription: '科技/生物医疗公司动向、市场变化与投融资趋势',
     limit: 18,
     tavilyQuery:
-      'latest trends in technology and biotech companies, market movements, fundraising, venture capital, M&A, earnings, AI and healthcare industry',
+      'technology company moves, AI market changes, funding and product trends from The Verge TechCrunch Engadget Reuters AI',
     feeds: [
+      { url: 'https://www.theverge.com/rss/index.xml', source: 'The Verge' },
       { url: 'https://techcrunch.com/category/startups/feed/', source: 'TechCrunch Startups' },
       { url: 'https://techcrunch.com/category/artificial-intelligence/feed/', source: 'TechCrunch AI' },
-      { url: 'https://www.statnews.com/feed/', source: 'STAT' },
-      { url: 'https://qz.com/rss', source: 'Quartz' },
-      { url: 'https://www.technologyreview.com/topic/artificial-intelligence/feed/', source: 'MIT Technology Review' },
-      { url: 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', source: 'ScienceDaily AI' },
-      { url: 'https://www.sciencedaily.com/rss/health_medicine/medical_technology.xml', source: 'ScienceDaily MedTech' },
+      { url: 'https://www.engadget.com/rss.xml', source: 'Engadget' },
+      { url: 'https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best&best-sectors=technology', source: 'Reuters Technology' },
     ],
   },
 ];
@@ -931,18 +926,32 @@ async function fetchCategory(category) {
     }
   }
 
-  const filtered = deduped.filter((it) => !it.error && !isUSPolitics(it) && isInScopeTopic(it));
+  let filtered = deduped.filter((it) => !it.error && !isUSPolitics(it) && isInScopeTopic(it));
+
+  if (category.id === 'media') {
+    filtered = filtered.filter((it) => {
+      const d = domain(it.link || '');
+      return MEDIA_WHITELIST_DOMAINS.some((w) => d === w || d.endsWith(`.${w}`));
+    });
+  }
   const enriched = await Promise.all(filtered.map(enrichItem));
   const sorted = enriched.sort((a, b) => (b.score || 0) - (a.score || 0));
 
   const bySourceCount = new Map();
   const selected = [];
+  let arxivCount = 0;
   for (const item of sorted) {
     const sk = sourceKey(item);
     const n = bySourceCount.get(sk) || 0;
     if (n >= ITEMS_PER_SOURCE) continue;
+
+    if (category.id === 'research' && /arxiv/i.test(item.source || '')) {
+      if (arxivCount >= 2) continue;
+    }
+
     bySourceCount.set(sk, n + 1);
     selected.push(item);
+    if (category.id === 'research' && /arxiv/i.test(item.source || '')) arxivCount += 1;
     if (selected.length >= category.limit) break;
   }
 
@@ -975,7 +984,6 @@ async function getCategoryData(category, force = false) {
 
 app.get('/', async (req, res) => {
   const force = req.query.refresh === '1';
-  const useLive = req.query.live === '1' || force;
 
   if (force) {
     titleTranslateCache.clear();
@@ -984,10 +992,7 @@ app.get('/', async (req, res) => {
     llmTitlePolishCache.clear();
   }
 
-  const homeDigest = useLive ? { ok: false, categories: [] } : await getHomeDigest();
-  const liveData = homeDigest.ok
-    ? homeDigest.categories
-    : dedupeAcrossCategories(await Promise.all(CATEGORIES.map((c) => getCategoryData(c, force))));
+  const liveData = dedupeAcrossCategories(await Promise.all(CATEGORIES.map((c) => getCategoryData(c, force))));
 
   const consciousness = await getConsciousnessDigest();
   res.render('index', {
@@ -1002,14 +1007,6 @@ app.get('/api/category/:id', async (req, res) => {
   if (!category) return res.status(404).json({ error: 'category_not_found' });
 
   const force = req.query.refresh === '1';
-  if (!force) {
-    const homeDigest = await getHomeDigest();
-    if (homeDigest.ok) {
-      const hit = homeDigest.categories.find((x) => x.id === req.params.id);
-      if (hit) return res.json(hit);
-    }
-  }
-
   if (force) {
     titleTranslateCache.clear();
     llmTranslateCache.clear();
@@ -1054,7 +1051,6 @@ app.post('/api/admin/publish-home', async (req, res) => {
 });
 
 app.get('/health', async (_req, res) => {
-  const homeDigest = await getHomeDigest();
   res.json({
     ok: true,
     service: 'news-intel-webapp',
@@ -1068,7 +1064,7 @@ app.get('/health', async (_req, res) => {
     itemsPerSource: ITEMS_PER_SOURCE,
     consciousnessDataFile: CONSCIOUSNESS_DATA_FILE,
     homeDataFile: HOME_DATA_FILE,
-    homeDigestEnabled: homeDigest.ok,
+    homeDigestEnabled: false,
   });
 });
 
