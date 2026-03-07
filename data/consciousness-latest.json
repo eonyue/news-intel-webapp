@@ -1,45 +1,39 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-06",
-  "updatedAt": "2026-03-06T04:06:33Z",
-  "trendObservation": "过去24小时内的意识研究更偏向‘可测量性’：从7T-fMRI、fNIRS到EEG同步熵指标，研究重心正从理论争论走向可重复的临床与实验范式。",
+  "date": "2026-03-07",
+  "updatedAt": "2026-03-07T04:02:36Z",
+  "trendObservation": "近期意识研究呈现“从主观体验到可测机制”的收敛趋势：一方面聚焦有意识/无意识加工差异，另一方面强调习惯化与脑网络物理约束对行为和体验的底层塑形作用。",
   "items": [
     {
-      "title": "重复暴露可触发‘错觉式觉知’：隐式统计学习出现可报告意识片段",
-      "summary": "PNAS新研究显示，人在无意学习环境规律时，重复模式会诱发主观‘我意识到了’的体验，但这些意识表征并不总是准确，提示隐式学习与显式觉知之间存在系统性偏差。",
-      "source": "PNAS（Proceedings of the National Academy of Sciences）",
-      "link": "https://doi.org/10.1073/pnas.2526432123"
+      "title": "日常行为约65%由“自动驾驶”习惯触发，而非即时有意识决策",
+      "summary": "University of Surrey 等团队在《Psychology & Health》报道，手机随机抽样追踪显示多数日常行为由情境线索自动触发。研究强调，意识目标能否落地，很大程度取决于是否形成稳定习惯回路。",
+      "source": "ScienceDaily（基于 University of Surrey / Psychology & Health）",
+      "link": "https://www.sciencedaily.com/releases/2026/03/260305223226.htm"
     },
     {
-      "title": "7T静息态fMRI揭示意识障碍患者内在脑活动多维异常",
-      "summary": "Brain Topography发表研究比较意识障碍患者与健康对照，发现超高场7T下多种静息态指标可捕捉到与觉醒/最小意识状态相关的脑网络改变，为精细分层评估提供依据。",
-      "source": "Brain Topography",
-      "link": "https://doi.org/10.1007/s10548-026-01185-8"
+      "title": "梳水母感觉中枢显示早期“类脑”组织复杂性，挑战神经系统起源叙事",
+      "summary": "University of Bergen 团队通过体积电镜重建发现，梳水母反口器官含17类细胞并具多模态信号整合能力。研究提出，早期动物可能已出现“准中枢化”信息协调结构，为意识与神经系统演化研究提供新参照。",
+      "source": "ScienceDaily（基于 University of Bergen / Science Advances）",
+      "link": "https://www.sciencedaily.com/releases/2026/03/260305223208.htm"
     },
     {
-      "title": "卒中后持续意识障碍：前额叶网络异常获fNIRS证据支持",
-      "summary": "Behavioural Brain Research研究指出，卒中后长期意识障碍患者在前额叶功能连接模式上存在显著偏移，支持前额叶网络作为意识恢复评估与干预的重要靶点。",
-      "source": "Behavioural Brain Research",
-      "link": "https://doi.org/10.1016/j.bbr.2025.115987"
+      "title": "脑组织“力学环境”可塑造神经导向信号：Piezo1连接物理与化学线路",
+      "summary": "Max Planck/FAU/Cambridge 联合研究显示，组织硬度可经 Piezo1 调控 Semaphorin 3A 等导向分子，影响轴突路径形成。该结果为“意识相关网络如何被发育期微环境塑形”提供机制线索。",
+      "source": "ScienceDaily（基于 Nature Materials / Max Planck Institute for the Science of Light）",
+      "link": "https://www.sciencedaily.com/releases/2026/03/260304184233.htm"
     },
     {
-      "title": "眼动可作为长期意识障碍‘残余觉知’指示器：范围综述更新",
-      "summary": "Neurological Sciences发布综述，汇总行为学与神经证据，认为眼动信号在识别难以通过传统床旁量表捕捉的残余意识方面具有临床潜力。",
-      "source": "Neurological Sciences",
-      "link": "https://doi.org/10.1007/s10072-026-08932-6"
+      "title": "跨诊断fMRI揭示：童年/青春期创伤会差异性改变有意识与无意识情绪加工",
+      "summary": "《Molecular Psychiatry》对635人样本显示：13岁前受虐与非意识负性情绪加工中的海马反应增强相关；13–18岁受虐则与有意识情绪加工中的杏仁核高反应相关。结果支持“意识层级×发育时间窗”双维度模型。",
+      "source": "Nature（Molecular Psychiatry）",
+      "link": "https://www.nature.com/articles/s41380-026-03511-9"
     },
     {
-      "title": "EEG全局同步新指标提出：主成分熵用于量化脑网络协同",
-      "summary": "Scientific Reports提出‘主成分熵’指标，以补足传统成对连接分析的局限，帮助更整体地评估全脑同步与信息整合，为意识状态定量评估提供新工具。",
-      "source": "Scientific Reports",
-      "link": "https://doi.org/10.1038/s41598-026-36434-0"
-    },
-    {
-      "title": "MIT发布经颅聚焦超声研究路线图：瞄准意识神经机制因果检验",
-      "summary": "MIT研究团队在EurekAlert披露研究路线图，计划用经颅聚焦超声对深层及分布式脑区实施更可控扰动，以验证不同意识理论对因果神经回路的预测。",
-      "source": "MIT / EurekAlert",
-      "link": "https://www.eurekalert.org/news-releases/1112307"
+      "title": "ADHD结构亚型研究提示：主观注意体验可能对应不同神经形态通路",
+      "summary": "基于MRI与机器学习分型，研究识别出至少两类不同灰质模式，并对应不同注意/冲动行为谱。该发现为“意识控制感”相关症状（如注意维持、冲动抑制）走向分层干预提供证据。",
+      "source": "PsyPost（基于 General Psychiatry）",
+      "link": "https://www.psypost.org/brain-scans-reveal-two-distinct-physical-subtypes-of-adhd/"
     }
   ]
 }
