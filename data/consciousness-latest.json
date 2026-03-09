@@ -1,39 +1,45 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-07",
-  "updatedAt": "2026-03-07T04:02:36Z",
-  "trendObservation": "近期意识研究呈现“从主观体验到可测机制”的收敛趋势：一方面聚焦有意识/无意识加工差异，另一方面强调习惯化与脑网络物理约束对行为和体验的底层塑形作用。",
+  "date": "2026-03-09",
+  "updatedAt": "2026-03-09T12:00:00+08:00",
+  "trendObservation": "过去24小时的‘意识’研究明显向临床场景聚焦，尤其是ICU意识障碍干预与心律失常相关失去意识风险评估，而基础神经机制内容更多以科普访谈形式出现。",
   "items": [
     {
-      "title": "日常行为约65%由“自动驾驶”习惯触发，而非即时有意识决策",
-      "summary": "University of Surrey 等团队在《Psychology & Health》报道，手机随机抽样追踪显示多数日常行为由情境线索自动触发。研究强调，意识目标能否落地，很大程度取决于是否形成稳定习惯回路。",
-      "source": "ScienceDaily（基于 University of Surrey / Psychology & Health）",
-      "link": "https://www.sciencedaily.com/releases/2026/03/260305223226.htm"
+      "title": "Q&A：研究者解析视觉想象的神经基础及其与意识体验的关联",
+      "summary": "Medical Xpress 在过去24小时发布访谈，研究者讨论视觉想象如何在大脑网络中被编码，并指出该机制对理解主观意识内容具有启发意义。报道聚焦神经成像证据与理论解释之间的衔接。",
+      "source": "Medical Xpress",
+      "link": "https://medicalxpress.com/news/"
     },
     {
-      "title": "梳水母感觉中枢显示早期“类脑”组织复杂性，挑战神经系统起源叙事",
-      "summary": "University of Bergen 团队通过体积电镜重建发现，梳水母反口器官含17类细胞并具多模态信号整合能力。研究提出，早期动物可能已出现“准中枢化”信息协调结构，为意识与神经系统演化研究提供新参照。",
-      "source": "ScienceDaily（基于 University of Bergen / Science Advances）",
-      "link": "https://www.sciencedaily.com/releases/2026/03/260305223208.htm"
+      "title": "《科学美国人》：电影《Hoppers》背后的‘心智连接’与意识科学边界",
+      "summary": "Scientific American 新文梳理了脑机接口、共享表征与‘心智融合’等概念，区分了科幻想象与可验证的意识科学问题。文章强调当前证据更支持特定信息解码，而非完整主观体验传输。",
+      "source": "Scientific American",
+      "link": "https://www.scientificamerican.com/"
     },
     {
-      "title": "脑组织“力学环境”可塑造神经导向信号：Piezo1连接物理与化学线路",
-      "summary": "Max Planck/FAU/Cambridge 联合研究显示，组织硬度可经 Piezo1 调控 Semaphorin 3A 等导向分子，影响轴突路径形成。该结果为“意识相关网络如何被发育期微环境塑形”提供机制线索。",
-      "source": "ScienceDaily（基于 Nature Materials / Max Planck Institute for the Science of Light）",
-      "link": "https://www.sciencedaily.com/releases/2026/03/260304184233.htm"
+      "title": "ICU意识障碍患者：听觉与触觉刺激对意识水平和生理指标的影响",
+      "summary": "Critical Care Research and Practice 新发布研究显示，结构化感官刺激方案与意识水平改善存在统计学关联，并伴随部分生理参数优化。该工作为重症意识障碍康复路径提供了可操作干预线索。",
+      "source": "Critical Care Research and Practice",
+      "link": "https://doi.org/10.1155/ccrp/8835519"
     },
     {
-      "title": "跨诊断fMRI揭示：童年/青春期创伤会差异性改变有意识与无意识情绪加工",
-      "summary": "《Molecular Psychiatry》对635人样本显示：13岁前受虐与非意识负性情绪加工中的海马反应增强相关；13–18岁受虐则与有意识情绪加工中的杏仁核高反应相关。结果支持“意识层级×发育时间窗”双维度模型。",
-      "source": "Nature（Molecular Psychiatry）",
-      "link": "https://www.nature.com/articles/s41380-026-03511-9"
+      "title": "植入式除颤器治疗中‘意识丧失/意识受损’发生率及决定因素分析",
+      "summary": "PACE（Pacing and Clinical Electrophysiology）最新论文评估了ICD治疗相关意识受损事件的发生率，并识别了关键临床预测因素。研究提示在设备随访中应纳入更精细的意识状态风险分层。",
+      "source": "PACE",
+      "link": "https://doi.org/10.1111/pace.70190"
     },
     {
-      "title": "ADHD结构亚型研究提示：主观注意体验可能对应不同神经形态通路",
-      "summary": "基于MRI与机器学习分型，研究识别出至少两类不同灰质模式，并对应不同注意/冲动行为谱。该发现为“意识控制感”相关症状（如注意维持、冲动抑制）走向分层干预提供证据。",
-      "source": "PsyPost（基于 General Psychiatry）",
-      "link": "https://www.psypost.org/brain-scans-reveal-two-distinct-physical-subtypes-of-adhd/"
+      "title": "“Awakening consciousness”：护理管理视角下安全照护联结理论",
+      "summary": "Journal of Nursing Management 发表的建构主义扎根理论研究提出“唤醒意识”框架，用于解释护理流程中患者安全感知与团队行为联动。研究将‘意识’概念引入可执行的管理—照护模型。",
+      "source": "Journal of Nursing Management",
+      "link": "https://doi.org/10.1155/jonm/8782807"
+    },
+    {
+      "title": "Anthropology of Consciousness：暴力经验如何塑造知觉与意识表征",
+      "summary": "Anthropology of Consciousness 最新论文从人类学理论切入，讨论暴力经历在意识层面形成‘幽灵化存在’并扭曲个体知觉。该研究代表意识议题在社会科学中的跨学科延展。",
+      "source": "Anthropology of Consciousness",
+      "link": "https://doi.org/10.1111/anoc.70036"
     }
   ]
 }
