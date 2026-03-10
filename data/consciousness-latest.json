@@ -1,45 +1,39 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-09",
-  "updatedAt": "2026-03-09T12:00:00+08:00",
-  "trendObservation": "过去24小时的‘意识’研究明显向临床场景聚焦，尤其是ICU意识障碍干预与心律失常相关失去意识风险评估，而基础神经机制内容更多以科普访谈形式出现。",
+  "date": "2026-03-10",
+  "updatedAt": "2026-03-10T12:00:00+08:00",
+  "trendObservation": "过去24小时的意识研究明显呈现“机制量化+认知可报告性校准”双线并进：一边在网络模型中量化整合信息，另一边在行为实验中检验主观意识报告的可靠性与偏差。",
   "items": [
     {
-      "title": "Q&A：研究者解析视觉想象的神经基础及其与意识体验的关联",
-      "summary": "Medical Xpress 在过去24小时发布访谈，研究者讨论视觉想象如何在大脑网络中被编码，并指出该机制对理解主观意识内容具有启发意义。报道聚焦神经成像证据与理论解释之间的衔接。",
-      "source": "Medical Xpress",
-      "link": "https://medicalxpress.com/news/"
+      "title": "整合放电神经网络中的整合信息Φ可被条件性激活",
+      "summary": "华沙大学团队在《PLoS Computational Biology》模拟整合放电网络后发现，系统在特定参数下可出现非零Φ值。研究还指出网络动力学复杂度与Φ并不必然同向变化，且IIT 3.0指标对噪声鲁棒性有限。",
+      "source": "PLoS Computational Biology",
+      "link": "https://doi.org/10.1371/journal.pcbi.1014085"
     },
     {
-      "title": "《科学美国人》：电影《Hoppers》背后的‘心智连接’与意识科学边界",
-      "summary": "Scientific American 新文梳理了脑机接口、共享表征与‘心智融合’等概念，区分了科幻想象与可验证的意识科学问题。文章强调当前证据更支持特定信息解码，而非完整主观体验传输。",
-      "source": "Scientific American",
-      "link": "https://www.scientificamerican.com/"
+      "title": "神经生理学评论：动物意识与AI意识不应简单类比",
+      "summary": "UC San Diego 学者在《Journal of Neurophysiology》发文强调，仅凭行为很难直接判定动物是否有意识，关键仍是神经机制解释。文章同时认为，即便未来出现AI意识，其机制也可能与人类意识路径显著不同。",
+      "source": "Journal of Neurophysiology",
+      "link": "https://doi.org/10.1152/jn.00019.2026"
     },
     {
-      "title": "ICU意识障碍患者：听觉与触觉刺激对意识水平和生理指标的影响",
-      "summary": "Critical Care Research and Practice 新发布研究显示，结构化感官刺激方案与意识水平改善存在统计学关联，并伴随部分生理参数优化。该工作为重症意识障碍康复路径提供了可操作干预线索。",
-      "source": "Critical Care Research and Practice",
-      "link": "https://doi.org/10.1155/ccrp/8835519"
+      "title": "PNAS：重复线索会触发“错觉式意识感”",
+      "summary": "研究者在隐式统计学习任务中发现，测试序列中的重复模式会显著提升参与者“我意识到规则了”的主观报告，即使这种报告并不总是对应真实知识来源。该结果支持“意识报告可能是事后建模”的解释。",
+      "source": "PNAS",
+      "link": "https://doi.org/10.1073/pnas.2526432123"
     },
     {
-      "title": "植入式除颤器治疗中‘意识丧失/意识受损’发生率及决定因素分析",
-      "summary": "PACE（Pacing and Clinical Electrophysiology）最新论文评估了ICD治疗相关意识受损事件的发生率，并识别了关键临床预测因素。研究提示在设备随访中应纳入更精细的意识状态风险分层。",
-      "source": "PACE",
-      "link": "https://doi.org/10.1111/pace.70190"
+      "title": "PNAS：4月龄婴儿已出现注意瞬脱动态特征",
+      "summary": "法国团队通过眼动、瞳孔与EEG指标显示，4月龄婴儿在短刺激间隔下会漏检后续目标，呈现类似成人“注意瞬脱”现象。结果支持早期婴儿已具备某种全局工作空间式处理，但时间动态更慢。",
+      "source": "PNAS",
+      "link": "https://doi.org/10.1073/pnas.2526752123"
     },
     {
-      "title": "“Awakening consciousness”：护理管理视角下安全照护联结理论",
-      "summary": "Journal of Nursing Management 发表的建构主义扎根理论研究提出“唤醒意识”框架，用于解释护理流程中患者安全感知与团队行为联动。研究将‘意识’概念引入可执行的管理—照护模型。",
-      "source": "Journal of Nursing Management",
-      "link": "https://doi.org/10.1155/jonm/8782807"
-    },
-    {
-      "title": "Anthropology of Consciousness：暴力经验如何塑造知觉与意识表征",
-      "summary": "Anthropology of Consciousness 最新论文从人类学理论切入，讨论暴力经历在意识层面形成‘幽灵化存在’并扭曲个体知觉。该研究代表意识议题在社会科学中的跨学科延展。",
-      "source": "Anthropology of Consciousness",
-      "link": "https://doi.org/10.1111/anoc.70036"
+      "title": "实验脑研究：无“眼别来源”意识访问下仍可触发反射性注意",
+      "summary": "《Experimental Brain Research》新研究报告，单眼线索可在个体无法有意识报告“刺激来自哪只眼”的情况下驱动反射性注意定向。该结果提示，部分注意控制可在低意识可及度条件下运行。",
+      "source": "Experimental Brain Research",
+      "link": "https://doi.org/10.1007/s00221-026-07269-y"
     }
   ]
 }
