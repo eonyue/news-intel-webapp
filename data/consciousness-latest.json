@@ -1,39 +1,45 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-10",
-  "updatedAt": "2026-03-10T12:00:00+08:00",
-  "trendObservation": "过去24小时的意识研究明显呈现“机制量化+认知可报告性校准”双线并进：一边在网络模型中量化整合信息，另一边在行为实验中检验主观意识报告的可靠性与偏差。",
+  "date": "2026-03-11",
+  "updatedAt": "2026-03-11T15:32:00+08:00",
+  "trendObservation": "过去24小时的‘意识’话题明显从纯哲学讨论转向可干预、可测量的神经机制（去甲肾上腺素、睡眠梦境、冥想训练与隐性记忆）。",
   "items": [
     {
-      "title": "整合放电神经网络中的整合信息Φ可被条件性激活",
-      "summary": "华沙大学团队在《PLoS Computational Biology》模拟整合放电网络后发现，系统在特定参数下可出现非零Φ值。研究还指出网络动力学复杂度与Φ并不必然同向变化，且IIT 3.0指标对噪声鲁棒性有限。",
-      "source": "PLoS Computational Biology",
-      "link": "https://doi.org/10.1371/journal.pcbi.1014085"
+      "title": "Noradrenergic activity as a key target in modulating consciousness",
+      "summary": "Nature 最新论文聚焦去甲肾上腺素系统，讨论其作为调控意识状态的重要神经生物学靶点。该研究强化了‘意识可通过神经调制被系统性干预’的路径。",
+      "source": "Nature",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92dmtaUGtBS1RWWUVKYUtJTFNQYTFoZ3VXWVpyXzF3TGpSRGVyVkhZUUQ4NUx0Mm9SbkxheUdudmU3WXNCdHZrX3dyZ0h3eWZYSlljZmV5dkNWclJFRmtN?oc=5"
     },
     {
-      "title": "神经生理学评论：动物意识与AI意识不应简单类比",
-      "summary": "UC San Diego 学者在《Journal of Neurophysiology》发文强调，仅凭行为很难直接判定动物是否有意识，关键仍是神经机制解释。文章同时认为，即便未来出现AI意识，其机制也可能与人类意识路径显著不同。",
-      "source": "Journal of Neurophysiology",
-      "link": "https://doi.org/10.1152/jn.00019.2026"
+      "title": "Inside the Brains of Monks Who Have Meditated for 15,000 Hours",
+      "summary": "Nautilus 报道了高强度长期冥想者的大脑研究，关注冥想训练如何改变注意与觉察相关神经活动。该方向为‘训练驱动的意识可塑性’提供了新的实证窗口。",
+      "source": "Nautilus | Science Connected",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOY1lmazNVa1NfX2FBaVpmSHpOVXV5ekE4bWNNNHluLVhKS0k1djhZUFZIYlFJRzRGZXJqZGEydmNXTE51dzZOcm9lamFJMlNlU2RFd0JhZXZpaW5RRkxGWVowTURnVklSdUxLRm5pclY5bUJWOFE1TjFTNHlNUlhKYV9qYTZtTjh2WWhtbFFaSS0?oc=5"
     },
     {
-      "title": "PNAS：重复线索会触发“错觉式意识感”",
-      "summary": "研究者在隐式统计学习任务中发现，测试序列中的重复模式会显著提升参与者“我意识到规则了”的主观报告，即使这种报告并不总是对应真实知识来源。该结果支持“意识报告可能是事后建模”的解释。",
-      "source": "PNAS",
-      "link": "https://doi.org/10.1073/pnas.2526432123"
+      "title": "Everyday mental quirks like déjà vu might be natural byproducts of a resting mind",
+      "summary": "PsyPost 基于新研究解读‘既视感’等日常意识现象，认为其可能是大脑静息活动的自然副产物而非异常信号。该结果将主观体验与基础神经动力学更紧密连接。",
+      "source": "PsyPost",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZElJY2hyTlJhbjlrZFROTV81MkRibllDeVVGaTZyODVNSFhReHpkWnlIbVY2c3FYeUVFd1VHamh0UnJvQTZLekthaFByd2Y3QnZRdGc4NE5mRHY4VXJhb3FNYWxqeHJhVXVDTnQ1WVBQdXVUd0NPclVmbTZ1dWFPOC12M3dnd2JNek1jMVEwZlRNOVhjaERrMUd4Mk1lbFdyemJRS1JMaTVqZw?oc=5"
     },
     {
-      "title": "PNAS：4月龄婴儿已出现注意瞬脱动态特征",
-      "summary": "法国团队通过眼动、瞳孔与EEG指标显示，4月龄婴儿在短刺激间隔下会漏检后续目标，呈现类似成人“注意瞬脱”现象。结果支持早期婴儿已具备某种全局工作空间式处理，但时间动态更慢。",
-      "source": "PNAS",
-      "link": "https://doi.org/10.1073/pnas.2526752123"
+      "title": "Scientists use \"dream engineering\" to boost creative problem-solving during REM sleep",
+      "summary": "PsyPost 报道 REM 睡眠‘梦境工程’实验，显示在特定提示干预下，受试者的创造性问题解决能力可提升。研究把梦、意识状态与认知增强直接联系到可实验操控层面。",
+      "source": "PsyPost",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPREJFZ184NzFsaWFMVkt6QjNWUi0zcFI0VTMwQ1lyMzFpTUoyM3VpLXZOWHpoVzBFYnJsT25vTHRpc3M4OGNCRmdnZkZkdUVGNWt3aEtkTXFERklzM3ZpUjB5bWdSTS04VWtqWjU5T1JBVC04eGJ3eEhsOFpodjQ3cVByTnVVZmlsOV9Lc0VIa04wUGZ0Y3l2VUFsbFZIVU5LZE0wdlFHcEptOW5l?oc=5"
     },
     {
-      "title": "实验脑研究：无“眼别来源”意识访问下仍可触发反射性注意",
-      "summary": "《Experimental Brain Research》新研究报告，单眼线索可在个体无法有意识报告“刺激来自哪只眼”的情况下驱动反射性注意定向。该结果提示，部分注意控制可在低意识可及度条件下运行。",
-      "source": "Experimental Brain Research",
-      "link": "https://doi.org/10.1007/s00221-026-07269-y"
+      "title": "Some forgotten memories may still be active in your brain",
+      "summary": "Earth.com 援引神经科学研究指出，主观上‘遗忘’的信息可能仍以隐性形式保留于神经表征中。该发现对记忆、意识访问与临床认知评估都有潜在启发。",
+      "source": "Earth.com",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZzVPOWN3RGtyLUlaRF9lNEM4UjZ4blBJNUo1Y0szREpCQWgtMkRwYmlHNVFydFZDRGlLZzhGRzVNRld1NDU1OThiQ21ISnk1ekVMSkstZnpQVjIycDZSb2N1WkRqY1VteXJKQXZwek9WRXduMkFOZE5iUEtFSzFaeHNUclppa1hwb1dwbWJn?oc=5"
+    },
+    {
+      "title": "Consciousness may be more than the brain’s output — it may be an input, too",
+      "summary": "Big Think 结合最新理论争论，讨论‘意识是否不仅是大脑产物、还可能反向塑造神经处理’这一命题。尽管仍具争议，但体现出意识研究正在与因果建模问题更深耦合。",
+      "source": "Big Think",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdWJjZjhlUUstenNndkF6TXpNYnF1VzVpYS05OEpvTUNHazRkQnpUOU1pODZGbkVoUmRRZTV4eUF4TlVTeUd3MlFweEM1c2owbUx0VFRobG1WVEdZSlI2a0FZbmVkS0xZNVZQU0w4YnJtS3lPM1hDVnlscW1CWW9zTFhZampldG16YlBCcGwzT3FMc2dsVENOTy1WZ0s5c0hnLUJ5QWJfamZIVEk?oc=5"
     }
   ]
 }
