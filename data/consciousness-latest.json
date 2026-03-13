@@ -1,39 +1,39 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-12",
-  "updatedAt": "2026-03-12T12:00:00+08:00",
-  "trendObservation": "过去24小时的相关内容呈现‘方法学扩展’趋势：一方面继续细化人类意识的神经定位，另一方面把意识判据外推到昆虫、AI与类脑系统。",
+  "date": "2026-03-13",
+  "updatedAt": "2026-03-13T12:00:00+08:00",
+  "trendObservation": "过去24小时的意识相关研究更强调“可测量生物标志物+机制链路”，从蛋白结构、能量代谢到肠-脑信号，正把意识与认知状态从抽象概念推向可早筛、可干预的路径。",
   "items": [
     {
-      "title": "科学家定位与人类意识体验高度相关的关键脑区",
-      "summary": "最新脑成像研究报告指出，右海马旁回皮层、双侧中扣带皮层与右楔前叶代谢活动下降与意识状态变化显著相关。该结果为临床评估意识障碍提供了更具体的神经标记线索。",
-      "source": "AOL.com（转引神经科学研究）",
-      "link": "https://www.aol.com/articles/scientists-tracking-down-exact-location-140000388.html"
+      "title": "抑郁可能源于脑细胞能量调度失衡",
+      "summary": "昆士兰大学与明尼苏达大学团队发现，抑郁年轻患者的脑与血细胞在静息时ATP偏高，但在需求增加时难以进一步提升，提示“细胞能量弹性”受损。该机制可能解释疲劳与动机下降，并支持更早期分层诊疗。",
+      "source": "ScienceDaily（University of Queensland；期刊：Translational Psychiatry）",
+      "link": "https://www.sciencedaily.com/releases/2026/03/260312020107.htm"
     },
     {
-      "title": "“蜜蜂与ChatGPT是否有意识？”研究者提出跨生物/机器的新判据框架",
-      "summary": "研究者主张，判断意识不应只看行为表象，而应比较系统内部信息处理结构与整合方式。该思路尝试用统一框架讨论动物意识与AI意识争议。",
-      "source": "SciTechDaily（科学研究解读）",
+      "title": "新型血液蛋白“构象指纹”可区分阿尔茨海默病阶段",
+      "summary": "Scripps Research 报道，研究者通过质谱与机器学习分析血浆蛋白折叠结构变化，在健康、MCI 与阿尔茨海默病人群间实现较高区分度。相较传统“浓度型”标志物，这一路径更贴近蛋白稳态失衡机制。",
+      "source": "ScienceDaily（Scripps Research；期刊：Nature Aging）",
+      "link": "https://www.sciencedaily.com/releases/2026/03/260312020104.htm"
+    },
+    {
+      "title": "肠道菌群或通过迷走神经内感受通路加速记忆衰退",
+      "summary": "《Nature》小鼠研究显示，随年龄变化的菌群及代谢物可触发炎症信号，削弱肠-脑感觉传入并影响海马反应与记忆表现。结果支持“肠-脑-认知”机制在认知老化中的因果角色。",
+      "source": "News-Medical（解读 Nature 论文）",
+      "link": "https://www.news-medical.net/news/20260312/Gut-microbes-may-drive-memory-decline-during-aging-by-disrupting-vagal-brain-signaling.aspx"
+    },
+    {
+      "title": "阿尔茨海默病早期失眠机制：tau蛋白重编程葡萄糖利用",
+      "summary": "基于 University of Kentucky 等团队在 npj Dementia 的研究，tau 异常可将脑内葡萄糖利用偏向兴奋性通路，导致神经网络过度兴奋与睡眠碎片化。该结果把“睡眠异常”进一步前移为潜在早期信号。",
+      "source": "Gigazine（转引 npj Dementia / University of Kentucky）",
+      "link": "https://gigazine.net/gsc_news/en/20260313-alzheimers-tau-sleep-glucose/"
+    },
+    {
+      "title": "“蜜蜂与ChatGPT是否有意识”引发机制导向新框架",
+      "summary": "来自 The Conversation 的研究综述（涉及 Trends in Cognitive Sciences 与 Phil. Trans. B）强调：判断动物或AI是否具意识，不应只看行为表现，更应看其信息处理结构与反馈机制。该框架推动意识研究从“现象争论”转向“可检验指标”。",
+      "source": "SciTechDaily（转载 The Conversation，引用期刊研究）",
       "link": "https://scitechdaily.com/could-bees-and-chatgpt-be-conscious-scientists-are-seriously-asking/"
-    },
-    {
-      "title": "新研究：无意识条件下，大脑仍可“重新激活”被遗忘记忆",
-      "summary": "《Journal of Neuroscience》相关研究显示，即便个体没有主观意识到线索，神经系统仍可能重新调动已存储记忆表征。该发现对意识与记忆检索关系提出了更细粒度的机制解释。",
-      "source": "The Debrief（转引 Journal of Neuroscience）",
-      "link": "https://thedebrief.org/groundbreaking-research-may-reveal-how-forgotten-memories-can-be-reactivated-in-the-brain/"
-    },
-    {
-      "title": "Springer新文提出“Presence Scale”量表以测量最优意识状态",
-      "summary": "该研究在主观幸福与意识研究交叉领域提出并验证了“Presence（临在）”量表，用于量化“心智安静但高度清明”的体验维度。为意识状态的心理测量提供了新工具。",
-      "source": "Springer Nature（Journal of Happiness Studies）",
-      "link": "https://link.springer.com/article/10.1007/s10902-026-01026-2"
-    },
-    {
-      "title": "类脑器官学习任务再进展：实验室培养脑组织可完成控制挑战",
-      "summary": "媒体对最新实验研究的解读显示，源自动物干细胞的脑类器官在反馈训练下可学习完成“cart-pole”控制任务。该方向持续推动“学习能力—意识边界”讨论。",
-      "source": "Popular Mechanics（转引类脑研究）",
-      "link": "https://www.popularmechanics.com/science/health/a70596419/lab-brain-cart-pole-problem/"
     }
   ]
 }
