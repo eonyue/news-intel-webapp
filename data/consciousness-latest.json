@@ -1,39 +1,45 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-13",
-  "updatedAt": "2026-03-13T12:00:00+08:00",
-  "trendObservation": "过去24小时的意识相关研究更强调“可测量生物标志物+机制链路”，从蛋白结构、能量代谢到肠-脑信号，正把意识与认知状态从抽象概念推向可早筛、可干预的路径。",
+  "date": "2026-03-16",
+  "updatedAt": "2026-03-16T15:07:00+08:00",
+  "trendObservation": "今日的意识研究明显向“可测量机制”收敛：麻醉/觉醒调控、脑电特征提取与理论可证伪实验三条线正在加速汇合。",
   "items": [
     {
-      "title": "抑郁可能源于脑细胞能量调度失衡",
-      "summary": "昆士兰大学与明尼苏达大学团队发现，抑郁年轻患者的脑与血细胞在静息时ATP偏高，但在需求增加时难以进一步提升，提示“细胞能量弹性”受损。该机制可能解释疲劳与动机下降，并支持更早期分层诊疗。",
-      "source": "ScienceDaily（University of Queensland；期刊：Translational Psychiatry）",
-      "link": "https://www.sciencedaily.com/releases/2026/03/260312020107.htm"
+      "title": "Noradrenergic activity as a key target in modulating consciousness during and after anesthesia",
+      "summary": "研究提出去甲肾上腺素系统可能是调控麻醉中与麻醉后意识恢复的关键靶点。该工作为围术期意识监测与精准唤醒策略提供了机制线索。",
+      "source": "Scientific Reports (Nature)",
+      "link": "https://www.nature.com/articles/s41598-026-41819-2"
     },
     {
-      "title": "新型血液蛋白“构象指纹”可区分阿尔茨海默病阶段",
-      "summary": "Scripps Research 报道，研究者通过质谱与机器学习分析血浆蛋白折叠结构变化，在健康、MCI 与阿尔茨海默病人群间实现较高区分度。相较传统“浓度型”标志物，这一路径更贴近蛋白稳态失衡机制。",
-      "source": "ScienceDaily（Scripps Research；期刊：Nature Aging）",
-      "link": "https://www.sciencedaily.com/releases/2026/03/260312020104.htm"
+      "title": "A landmark experiment published in Nature puts leading theories of consciousness to the test",
+      "summary": "牛津大学团队解读了一项发表于 Nature 的里程碑实验，直接比较主流意识理论在真实神经数据上的可检验预测。研究强调“理论可证伪化”正在成为意识科学主线。",
+      "source": "University of Oxford",
+      "link": "https://www.psy.ox.ac.uk/news/a-landmark-experiment-published-in-nature-puts-leading-theories-of-consciousness-to-the-test"
     },
     {
-      "title": "肠道菌群或通过迷走神经内感受通路加速记忆衰退",
-      "summary": "《Nature》小鼠研究显示，随年龄变化的菌群及代谢物可触发炎症信号，削弱肠-脑感觉传入并影响海马反应与记忆表现。结果支持“肠-脑-认知”机制在认知老化中的因果角色。",
-      "source": "News-Medical（解读 Nature 论文）",
-      "link": "https://www.news-medical.net/news/20260312/Gut-microbes-may-drive-memory-decline-during-aging-by-disrupting-vagal-brain-signaling.aspx"
+      "title": "From hidden springs to endless oceans: exploring the complementary nature of consciousness and intelligence",
+      "summary": "论文从理论框架讨论“意识与智能”的互补关系，尝试将认知能力与主观体验放入同一解释空间。该工作有助于连接神经科学与AI意识讨论。",
+      "source": "Neuroscience of Consciousness (Oxford Academic)",
+      "link": "https://academic.oup.com/nc/article/2026/1/niag007/8519515"
     },
     {
-      "title": "阿尔茨海默病早期失眠机制：tau蛋白重编程葡萄糖利用",
-      "summary": "基于 University of Kentucky 等团队在 npj Dementia 的研究，tau 异常可将脑内葡萄糖利用偏向兴奋性通路，导致神经网络过度兴奋与睡眠碎片化。该结果把“睡眠异常”进一步前移为潜在早期信号。",
-      "source": "Gigazine（转引 npj Dementia / University of Kentucky）",
-      "link": "https://gigazine.net/gsc_news/en/20260313-alzheimers-tau-sleep-glucose/"
+      "title": "State-Dependent Remodeling of Astrocytic Proteome and Phosphorylation Signaling Networks Across Wake, Sleep, and General Anesthesia",
+      "summary": "研究比较清醒、睡眠与全麻状态下星形胶质细胞蛋白组和磷酸化网络变化，揭示脑状态转换的分子层机制。对“意识水平如何被生物学调控”提供新证据。",
+      "source": "NIH / PubMed Indexed Research",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/"
     },
     {
-      "title": "“蜜蜂与ChatGPT是否有意识”引发机制导向新框架",
-      "summary": "来自 The Conversation 的研究综述（涉及 Trends in Cognitive Sciences 与 Phil. Trans. B）强调：判断动物或AI是否具意识，不应只看行为表现，更应看其信息处理结构与反馈机制。该框架推动意识研究从“现象争论”转向“可检验指标”。",
-      "source": "SciTechDaily（转载 The Conversation，引用期刊研究）",
-      "link": "https://scitechdaily.com/could-bees-and-chatgpt-be-conscious-scientists-are-seriously-asking/"
+      "title": "Interoceptive cortical hemodynamics in healthy individuals and patients with disorders of consciousness: a pilot study",
+      "summary": "试点研究比较健康人群与意识障碍患者在内感受相关皮层血流动力学上的差异，探索床旁可用的意识评估生物标志。该方向对DoC临床分层与预后判断具有潜力。",
+      "source": "Atlas Universitesi Tip ve Saglik Bilimleri Dergisi",
+      "link": "https://doi.org/10.54270/atljm.2025.93"
+    },
+    {
+      "title": "Identifying relevant EEG features for personalized emotional videos: a cross-population analysis in healthy controls and patients with disorders of consciousness",
+      "summary": "研究从脑电信号中筛选对个体化情绪视频最相关的特征，并在健康者与意识障碍患者之间做交叉人群分析。结果支持用EEG建立更稳健的意识相关反应检测框架。",
+      "source": "Biomedical Signal Processing and Control",
+      "link": "https://doi.org/10.1016/j.bspc.2026.109669"
     }
   ]
 }
