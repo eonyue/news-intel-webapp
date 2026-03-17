@@ -1,39 +1,39 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-16",
-  "updatedAt": "2026-03-16T08:03:21Z",
-  "trendObservation": "过去24小时的相关报道显示，‘意识’议题继续向跨学科扩展：从神经电生理机制到肠-脑轴与日常行为对认知状态的长期塑形，研究叙事更强调系统层面的相互作用。",
+  "date": "2026-03-17",
+  "updatedAt": "2026-03-17T17:53:00+08:00",
+  "trendObservation": "过去24小时的新条目显示，意识研究一端继续推进理论与计算建模，另一端则更强调临床场景中的可操作评估与诊断。",
   "items": [
     {
-      "title": "假说提出：人类意识可能与地球电磁脉冲存在耦合",
-      "summary": "一则科学媒体报道介绍了来自都灵理工团队的理论工作，认为大脑神经元膜电过程可能与地球背景电磁节律发生弱耦合。该观点目前更偏机制假设，潜在意义在于为麻醉反应、精神状态与神经退行性疾病研究提供可检验线索。",
-      "source": "Earth.com",
-      "link": "https://www.earth.com/news/hypothesis-human-consciousness-is-in-tune-with-earths-electromagnetic-pulse/"
+      "title": "Qualia from quantum magic: a quantum resource approach to phenomenal consciousness",
+      "summary": "该文提出以量子资源理论刻画“现象意识（qualia）”的框架，尝试将主观体验映射为可分析的物理/信息结构。研究主要属于理论建模，旨在为意识难题提供可计算入口。",
+      "source": "Frontiers in Physics",
+      "link": "https://doi.org/10.3389/fphy.2025.1715825"
     },
     {
-      "title": "《Nature》相关研究被解读：衰老肠道可驱动记忆衰退",
-      "summary": "Medical Xpress 报道称，新研究显示肠道来源分子可通过肠-脑神经通路影响记忆形成，提示认知衰退并非只由脑内老化单独决定。文章还提到相关干预（如GLP-1通路）在模型中的逆转信号。",
-      "source": "Medical Xpress",
-      "link": "https://medicalxpress.com/news/2026-03-gut-age-memory-loss-reveals.html"
+      "title": "The Neuropeptidergic Modulation of Phenomenological Depth: A Review of Oxytocin’s Role in Facilitating States of Pure Consciousness",
+      "summary": "这篇综述聚焦催产素等神经肽如何调节主观体验“深度”，并讨论其与“纯意识状态”之间的潜在联系。作者建议未来以神经化学指标结合主观量表开展更严谨验证。",
+      "source": "Preprints.org",
+      "link": "https://doi.org/10.20944/preprints202603.1209.v1"
     },
     {
-      "title": "43年随访：适量咖啡/茶摄入与更低痴呆风险相关",
-      "summary": "SciTechDaily 汇总的一项长期队列分析显示，适量含咖啡因饮品与更好的长期认知结局相关。该结果属于关联性证据，但为‘日常行为如何塑造意识与认知状态’提供了流行病学层面的支持。",
-      "source": "SciTechDaily",
-      "link": "https://scitechdaily.com/43-year-study-finds-coffee-may-help-protect-the-brain-from-dementia/"
+      "title": "Metrics of Consciousness in Embodied 2D-3D Neural Network Hybrids",
+      "summary": "研究提出在具身2D-3D神经网络混合系统中衡量“意识相关指标”的方法，探索人工系统中复杂状态表征与意识度量的关系。核心贡献在于评价指标设计而非临床结论。",
+      "source": "ResearchHub (preprint)",
+      "link": "https://doi.org/10.55277/researchhub.3ved81t3"
     },
     {
-      "title": "鸟类观察“专家脑”研究获关注：与注意/感知相关脑区结构差异显现",
-      "summary": "媒体转述 Journal of Neuroscience 相关研究指出，相较新手，专家级观鸟者在与注意和感知处理相关脑区呈现可测结构差异。结果强化了‘长期经验训练可重塑主观体验基础神经系统’这一方向。",
-      "source": "HuffPost（转引 Journal of Neuroscience）",
-      "link": "https://www.huffpost.com/entry/study-suggests-becoming-an-expert-in-this-beloved-hobby-may-actually-protect-your-brain-health-goog_n_69b2de97e4b0aea6db0c2282"
+      "title": "In coronavirus patients with impaired consciousness, comprehensive and repeated examinations are necessary to determine the cause",
+      "summary": "该临床研究指出，对出现意识障碍的新冠患者，仅凭单次检查难以判明病因，需要系统且重复的多模态评估。结果强调了意识障碍诊疗流程中的动态监测价值。",
+      "source": "Encephalitis",
+      "link": "https://doi.org/10.47936/encephalitis.2025.00150"
     },
     {
-      "title": "AI作为“认知协作者”或可提升创造性输出",
-      "summary": "ScienceDaily 报道一项大样本设计任务研究，结果显示AI生成方案可激发更高多样性的创意探索。该发现并非直接研究意识本体，但与“人机协同如何改变人类注意、决策与主观认知过程”高度相关。",
-      "source": "ScienceDaily",
-      "link": "https://www.sciencedaily.com/releases/2026/03/260315004355.htm"
+      "title": "Consciousness and energy",
+      "summary": "该章节从精神医学与灵性觉醒交叉视角讨论“意识与能量”的概念框架，强调体验、意义建构与心理状态之间的关系。内容偏理论阐释，可作为跨学科讨论素材。",
+      "source": "Psychiatry and Spiritual Awakening",
+      "link": "https://doi.org/10.4324/9781003676461-3"
     }
   ]
 }
