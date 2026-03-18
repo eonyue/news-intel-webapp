@@ -1,39 +1,39 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-17",
-  "updatedAt": "2026-03-17T17:53:00+08:00",
-  "trendObservation": "过去24小时的新条目显示，意识研究一端继续推进理论与计算建模，另一端则更强调临床场景中的可操作评估与诊断。",
+  "date": "2026-03-18",
+  "updatedAt": "2026-03-18T08:14:04Z",
+  "trendObservation": "过去24小时里，“意识研究”明显呈现双轨并进：一条是临床量化评估与神经机制建模，另一条是跨学科扩展到冥想、教育与社会干预中的“意识”框架。",
   "items": [
     {
-      "title": "Qualia from quantum magic: a quantum resource approach to phenomenal consciousness",
-      "summary": "该文提出以量子资源理论刻画“现象意识（qualia）”的框架，尝试将主观体验映射为可分析的物理/信息结构。研究主要属于理论建模，旨在为意识难题提供可计算入口。",
-      "source": "Frontiers in Physics",
-      "link": "https://doi.org/10.3389/fphy.2025.1715825"
+      "title": "多中心重评 CRS-R：意识障碍评估可分解为“认知—运动”二维结构",
+      "summary": "Frontiers in Neurology 新发研究基于124例意识障碍患者，提出将传统 CRS-R 评分拆分为认知与运动两个维度。该模型旨在提升对最小意识状态与恢复轨迹的判别精度。",
+      "source": "Frontiers in Neurology",
+      "link": "https://doi.org/10.3389/fneur.2026.1728229"
     },
     {
-      "title": "The Neuropeptidergic Modulation of Phenomenological Depth: A Review of Oxytocin’s Role in Facilitating States of Pure Consciousness",
-      "summary": "这篇综述聚焦催产素等神经肽如何调节主观体验“深度”，并讨论其与“纯意识状态”之间的潜在联系。作者建议未来以神经化学指标结合主观量表开展更严谨验证。",
-      "source": "Preprints.org",
-      "link": "https://doi.org/10.20944/preprints202603.1209.v1"
+      "title": "专题社论：现象学、瑜伽与佛教冥想如何补充心理学中的意识研究",
+      "summary": "Frontiers in Psychology 当日上线社论，系统讨论第一人称经验传统如何与心理学实验范式互补。文章强调在意识研究中整合主观报告与可测量行为/生理指标。",
+      "source": "Frontiers in Psychology",
+      "link": "https://doi.org/10.3389/fpsyg.2026.1815107"
     },
     {
-      "title": "Metrics of Consciousness in Embodied 2D-3D Neural Network Hybrids",
-      "summary": "研究提出在具身2D-3D神经网络混合系统中衡量“意识相关指标”的方法，探索人工系统中复杂状态表征与意识度量的关系。核心贡献在于评价指标设计而非临床结论。",
-      "source": "ResearchHub (preprint)",
-      "link": "https://doi.org/10.55277/researchhub.3ved81t3"
+      "title": "批判意识视角下的 LGBTQ+ 青年干预：范围系统综述预印本发布",
+      "summary": "Center for Open Science（OSF）发布新预印本，梳理面向 LGBTQ+ 青年的干预策略，评估其是否真正促进“批判意识”发展。结论指向：结构性不平等识别与行动能力培养需要更明确的干预设计。",
+      "source": "Center for Open Science (OSF Preprints)",
+      "link": "https://doi.org/10.31234/osf.io/7ejkz_v1"
     },
     {
-      "title": "In coronavirus patients with impaired consciousness, comprehensive and repeated examinations are necessary to determine the cause",
-      "summary": "该临床研究指出，对出现意识障碍的新冠患者，仅凭单次检查难以判明病因，需要系统且重复的多模态评估。结果强调了意识障碍诊疗流程中的动态监测价值。",
-      "source": "Encephalitis",
-      "link": "https://doi.org/10.47936/encephalitis.2025.00150"
+      "title": "“超越大脑”的意识模型：自主神经系统在非常态意识中的作用",
+      "summary": "OSF 新预印本提出，意识状态变化不应只由中枢神经解释，还应纳入自主神经系统信号。该框架尝试为冥想、非常态体验与身心互作研究提供可检验路径。",
+      "source": "Center for Open Science (OSF Preprints)",
+      "link": "https://doi.org/10.31234/osf.io/5u7sy_v1"
     },
     {
-      "title": "Consciousness and energy",
-      "summary": "该章节从精神医学与灵性觉醒交叉视角讨论“意识与能量”的概念框架，强调体验、意义建构与心理状态之间的关系。内容偏理论阐释，可作为跨学科讨论素材。",
-      "source": "Psychiatry and Spiritual Awakening",
-      "link": "https://doi.org/10.4324/9781003676461-3"
+      "title": "《动物意识》编辑卷上线：聚焦理论、方法与伦理三重问题",
+      "summary": "Frontiers 当日收录《Animal Consciousness》编辑卷，集中讨论动物意识判据、跨物种比较方法与伦理边界。该出版物反映该领域从“是否有意识”转向“如何严谨测量与解释”的趋势。",
+      "source": "Frontiers (Edited Book)",
+      "link": "https://doi.org/10.3389/978-2-8325-7635-9"
     }
   ]
 }
