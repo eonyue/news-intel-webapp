@@ -1,39 +1,45 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-18",
-  "updatedAt": "2026-03-18T08:14:04Z",
-  "trendObservation": "过去24小时里，“意识研究”明显呈现双轨并进：一条是临床量化评估与神经机制建模，另一条是跨学科扩展到冥想、教育与社会干预中的“意识”框架。",
+  "date": "2026-03-19",
+  "updatedAt": "2026-03-19T20:30:00+08:00",
+  "trendObservation": "过去24小时的意识研究明显向‘临床可测量化’倾斜：从意识障碍分型、EEG连通性到PCI等指标，核心方向是把意识评估从描述性判断推进到可量化与可预测。",
   "items": [
     {
-      "title": "多中心重评 CRS-R：意识障碍评估可分解为“认知—运动”二维结构",
-      "summary": "Frontiers in Neurology 新发研究基于124例意识障碍患者，提出将传统 CRS-R 评分拆分为认知与运动两个维度。该模型旨在提升对最小意识状态与恢复轨迹的判别精度。",
+      "title": "分流术或改善长期意识障碍患者的继发性脑积水结局（匹配队列研究）",
+      "summary": "《Neurosurgical Review》发布匹配队列研究，聚焦长期意识障碍患者并发继发性脑积水时的分流术结局。研究提示在特定患者群体中，神经外科干预与后续功能结局存在可评估关联。",
+      "source": "Neurosurgical Review",
+      "link": "https://doi.org/10.1007/s10143-026-04211-2"
+    },
+    {
+      "title": "情绪音乐刺激下，最小意识状态与无反应觉醒综合征出现不同θ波EEG连通模式",
+      "summary": "《Frontiers in Neurology》研究比较了MCS与UWS患者在情绪音乐刺激下的θ频段脑电功能连接（wPLI）。结果支持将情境化神经电生理指标用于意识障碍分型与辅助诊断。",
+      "source": "Frontiers in Neurology",
+      "link": "https://doi.org/10.3389/fneur.2026.1777525"
+    },
+    {
+      "title": "多中心重评CRS-R量表：将意识评估拆分为“认知维度+运动/唤醒维度”",
+      "summary": "同刊另一项多中心研究（含外部验证数据）提出将CRS-R子项降维为两个核心维度，以减少单一总分对意识水平的混淆。该框架有望提升临床对隐匿意识的识别能力。",
       "source": "Frontiers in Neurology",
       "link": "https://doi.org/10.3389/fneur.2026.1728229"
     },
     {
-      "title": "专题社论：现象学、瑜伽与佛教冥想如何补充心理学中的意识研究",
-      "summary": "Frontiers in Psychology 当日上线社论，系统讨论第一人称经验传统如何与心理学实验范式互补。文章强调在意识研究中整合主观报告与可测量行为/生理指标。",
-      "source": "Frontiers in Psychology",
-      "link": "https://doi.org/10.3389/fpsyg.2026.1815107"
+      "title": "卵圆孔未闭与短暂意识丧失：病例报告提供新诊断线索",
+      "summary": "《Frontiers in Neuroscience》发表4例病例，提示卵圆孔未闭（PFO）可能与短暂意识丧失相关。研究强调在不明原因TLOC患者中应考虑心脑交互机制与结构性筛查。",
+      "source": "Frontiers in Neuroscience",
+      "link": "https://doi.org/10.3389/fnins.2026.1747877"
     },
     {
-      "title": "批判意识视角下的 LGBTQ+ 青年干预：范围系统综述预印本发布",
-      "summary": "Center for Open Science（OSF）发布新预印本，梳理面向 LGBTQ+ 青年的干预策略，评估其是否真正促进“批判意识”发展。结论指向：结构性不平等识别与行动能力培养需要更明确的干预设计。",
-      "source": "Center for Open Science (OSF Preprints)",
-      "link": "https://doi.org/10.31234/osf.io/7ejkz_v1"
+      "title": "意识与认知并行但需不同解释框架：从理论走向机制化模型",
+      "summary": "《Aperture Neuro》观点论文梳理了近二十年意识科学从相关性描述走向机制预测的路径，并强调意识与认知虽高度耦合但不可互相替代。文中讨论了PCI等指标在临床无反应患者中的诊断价值。",
+      "source": "Aperture Neuro",
+      "link": "https://doi.org/10.52294/001c.158354"
     },
     {
-      "title": "“超越大脑”的意识模型：自主神经系统在非常态意识中的作用",
-      "summary": "OSF 新预印本提出，意识状态变化不应只由中枢神经解释，还应纳入自主神经系统信号。该框架尝试为冥想、非常态体验与身心互作研究提供可检验路径。",
-      "source": "Center for Open Science (OSF Preprints)",
-      "link": "https://doi.org/10.31234/osf.io/5u7sy_v1"
-    },
-    {
-      "title": "《动物意识》编辑卷上线：聚焦理论、方法与伦理三重问题",
-      "summary": "Frontiers 当日收录《Animal Consciousness》编辑卷，集中讨论动物意识判据、跨物种比较方法与伦理边界。该出版物反映该领域从“是否有意识”转向“如何严谨测量与解释”的趋势。",
-      "source": "Frontiers (Edited Book)",
-      "link": "https://doi.org/10.3389/978-2-8325-7635-9"
+      "title": "《The Wet Room》：从代码与幻觉架构反思意识表征",
+      "summary": "《Philosophical Psychology》最新论文从哲学心理学角度讨论“意识—代码—幻觉架构”的关系，关注主观体验如何被模型化与误读。该研究为AI语境下的意识表征争论提供了新的概念工具。",
+      "source": "Philosophical Psychology",
+      "link": "https://doi.org/10.1080/09515089.2026.2647331"
     }
   ]
 }
