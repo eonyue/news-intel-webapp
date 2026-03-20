@@ -1,45 +1,39 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-19",
-  "updatedAt": "2026-03-19T20:30:00+08:00",
-  "trendObservation": "过去24小时的意识研究明显向‘临床可测量化’倾斜：从意识障碍分型、EEG连通性到PCI等指标，核心方向是把意识评估从描述性判断推进到可量化与可预测。",
+  "date": "2026-03-20",
+  "updatedAt": "2026-03-20T04:01:42Z",
+  "trendObservation": "今日高相关更新集中在‘意识状态的可测量神经机制’：从迷幻态、创伤后认知重构到微胶质调控兴奋性，研究都在把主观体验映射为可操作的网络与生物标志。",
   "items": [
     {
-      "title": "分流术或改善长期意识障碍患者的继发性脑积水结局（匹配队列研究）",
-      "summary": "《Neurosurgical Review》发布匹配队列研究，聚焦长期意识障碍患者并发继发性脑积水时的分流术结局。研究提示在特定患者群体中，神经外科干预与后续功能结局存在可评估关联。",
-      "source": "Neurosurgical Review",
-      "link": "https://doi.org/10.1007/s10143-026-04211-2"
+      "title": "PTSD认知重构与丘脑-皮层环路改变被直接关联",
+      "summary": "Nature子刊研究指出，PTSD患者在内侧前额叶对丘脑内侧背核的抑制较弱，并与负性认知严重度相关。结果支持‘意识内容（负性信念）可由分布式丘脑-皮层网络调制’这一机制框架。",
+      "source": "Nature Mental Health",
+      "link": "https://www.nature.com/articles/s44220-026-00614-8"
     },
     {
-      "title": "情绪音乐刺激下，最小意识状态与无反应觉醒综合征出现不同θ波EEG连通模式",
-      "summary": "《Frontiers in Neurology》研究比较了MCS与UWS患者在情绪音乐刺激下的θ频段脑电功能连接（wPLI）。结果支持将情境化神经电生理指标用于意识障碍分型与辅助诊断。",
-      "source": "Frontiers in Neurology",
-      "link": "https://doi.org/10.3389/fneur.2026.1777525"
+      "title": "裸盖菇素研究发现与“神秘体验强度”相关的脑电生物签名",
+      "summary": "发表于Progress in Neuro-Psychopharmacology and Biological Psychiatry的研究显示，裸盖菇素可将脑活动从相对静息模式推向更高参与度处理模式。基线脑电特征还能预测主观神秘体验强度，为改变意识状态量化提供线索。",
+      "source": "PsyPost（报道原始期刊研究）",
+      "link": "https://www.psypost.org/psilocybin-unlocks-a-specific-biological-signature-in-the-brain-linked-to-profound-mystical-states/"
     },
     {
-      "title": "多中心重评CRS-R量表：将意识评估拆分为“认知维度+运动/唤醒维度”",
-      "summary": "同刊另一项多中心研究（含外部验证数据）提出将CRS-R子项降维为两个核心维度，以减少单一总分对意识水平的混淆。该框架有望提升临床对隐匿意识的识别能力。",
-      "source": "Frontiers in Neurology",
-      "link": "https://doi.org/10.3389/fneur.2026.1728229"
+      "title": "阿尔茨海默病p-tau血液标志物被拓展到更广泛淀粉样变诊断",
+      "summary": "Nature Medicine文章提出，AD领域常用的磷酸化tau血液指标可用于其他淀粉样变疾病分层。对意识与认知退化研究而言，这意味着‘意识障碍前期识别’的体液工具可能更通用。",
+      "source": "Nature Medicine",
+      "link": "https://www.nature.com/articles/s41591-026-04336-3"
     },
     {
-      "title": "卵圆孔未闭与短暂意识丧失：病例报告提供新诊断线索",
-      "summary": "《Frontiers in Neuroscience》发表4例病例，提示卵圆孔未闭（PFO）可能与短暂意识丧失相关。研究强调在不明原因TLOC患者中应考虑心脑交互机制与结构性筛查。",
-      "source": "Frontiers in Neuroscience",
-      "link": "https://doi.org/10.3389/fnins.2026.1747877"
+      "title": "离子电子水凝胶神经形态假体实现多模态感知与闭环驱动",
+      "summary": "Nature Materials报道的离子电阻池（iontronic reservoir）系统可生成神经形态脉冲并执行闭环控制。该类‘类脑计算-感知一体化’平台为机器意识模型与神经意识机制验证提供新实验载体。",
+      "source": "Nature Materials",
+      "link": "https://www.nature.com/articles/s41563-026-02542-5"
     },
     {
-      "title": "意识与认知并行但需不同解释框架：从理论走向机制化模型",
-      "summary": "《Aperture Neuro》观点论文梳理了近二十年意识科学从相关性描述走向机制预测的路径，并强调意识与认知虽高度耦合但不可互相替代。文中讨论了PCI等指标在临床无反应患者中的诊断价值。",
-      "source": "Aperture Neuro",
-      "link": "https://doi.org/10.52294/001c.158354"
-    },
-    {
-      "title": "《The Wet Room》：从代码与幻觉架构反思意识表征",
-      "summary": "《Philosophical Psychology》最新论文从哲学心理学角度讨论“意识—代码—幻觉架构”的关系，关注主观体验如何被模型化与误读。该研究为AI语境下的意识表征争论提供了新的概念工具。",
-      "source": "Philosophical Psychology",
-      "link": "https://doi.org/10.1080/09515089.2026.2647331"
+      "title": "AXIS微胶质亚群被发现可直接促进神经元放电",
+      "summary": "Cell Research（Nature旗下）评论/研究解读指出，接触轴突初始段的特定微胶质亚群可上调神经元兴奋性。该发现为‘清醒度与意识可达性’提供了新的胶质-神经元调控视角。",
+      "source": "Cell Research (Nature Portfolio)",
+      "link": "https://www.nature.com/articles/s41422-026-01237-5"
     }
   ]
 }
