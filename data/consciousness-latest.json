@@ -1,39 +1,45 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-20",
-  "updatedAt": "2026-03-20T04:01:42Z",
-  "trendObservation": "今日高相关更新集中在‘意识状态的可测量神经机制’：从迷幻态、创伤后认知重构到微胶质调控兴奋性，研究都在把主观体验映射为可操作的网络与生物标志。",
+  "date": "2026-03-26",
+  "updatedAt": "2026-03-26T07:49:08Z",
+  "trendObservation": "今日高相关更新集中在“意识障碍可计算建模 + 睡眠/梦境主观体验量化”：研究正把意识从抽象哲学问题推进为可预测、可干预的神经系统问题。",
   "items": [
     {
-      "title": "PTSD认知重构与丘脑-皮层环路改变被直接关联",
-      "summary": "Nature子刊研究指出，PTSD患者在内侧前额叶对丘脑内侧背核的抑制较弱，并与负性认知严重度相关。结果支持‘意识内容（负性信念）可由分布式丘脑-皮层网络调制’这一机制框架。",
+      "title": "AI模型可预测脑损伤后意识中断并提示潜在恢复路径",
+      "summary": "Nature 报道的研究将对抗式AI与脑网络模型结合，用于推断脑损伤后“觉醒-觉知”系统失配机制，并探索个体化干预线索。该方向有望提升意识障碍分型与康复策略设计。",
+      "source": "Nature Neuroscience",
+      "link": "https://www.nature.com/articles/s41593-026-02223-1"
+    },
+    {
+      "title": "对抗式AI揭示意识障碍机制并加速治疗靶点筛选",
+      "summary": "配套研究显示，双AI博弈式建模可在缺乏可控实验模型的前提下反推意识障碍关键环路。其价值在于把“难以直接实验”的意识机制转化为可验证的计算假设。",
+      "source": "Nature Neuroscience",
+      "link": "https://www.nature.com/articles/s41593-026-02220-4"
+    },
+    {
+      "title": "“梦境真实感混淆”MÖBIUS模型提出意识状态新解释框架",
+      "summary": "Nature 论文提出对梦境沉浸与现实混淆的机制模型，连接 REM 睡眠体验、现实监测与临床症状表现。该工作为“改变意识状态”研究提供可操作的认知-神经框架。",
+      "source": "Nature Communications Biology",
+      "link": "https://www.nature.com/articles/s42003-026-09781-x"
+    },
+    {
+      "title": "生动梦境可能提高主观“睡眠深度”与恢复感",
+      "summary": "ScienceDaily 报道的睡眠实验显示，主观睡眠质量不只由“是否无意识”决定，梦境沉浸感也会显著影响醒后恢复体验。结果提示意识内容本身可参与健康感知形成。",
+      "source": "ScienceDaily（报道原始睡眠研究）",
+      "link": "http://www.sciencedaily.com/releases/2026/03/260326011458.htm"
+    },
+    {
+      "title": "PTSD中“认知重构”与丘脑-皮层环路改变被直接关联",
+      "summary": "Nature Mental Health 研究将负性认知改变与特定丘脑-皮层调控异常对应起来，支持心理治疗可通过可测神经环路影响主观体验与症状强度。",
       "source": "Nature Mental Health",
       "link": "https://www.nature.com/articles/s44220-026-00614-8"
     },
     {
-      "title": "裸盖菇素研究发现与“神秘体验强度”相关的脑电生物签名",
-      "summary": "发表于Progress in Neuro-Psychopharmacology and Biological Psychiatry的研究显示，裸盖菇素可将脑活动从相对静息模式推向更高参与度处理模式。基线脑电特征还能预测主观神秘体验强度，为改变意识状态量化提供线索。",
-      "source": "PsyPost（报道原始期刊研究）",
-      "link": "https://www.psypost.org/psilocybin-unlocks-a-specific-biological-signature-in-the-brain-linked-to-profound-mystical-states/"
-    },
-    {
-      "title": "阿尔茨海默病p-tau血液标志物被拓展到更广泛淀粉样变诊断",
-      "summary": "Nature Medicine文章提出，AD领域常用的磷酸化tau血液指标可用于其他淀粉样变疾病分层。对意识与认知退化研究而言，这意味着‘意识障碍前期识别’的体液工具可能更通用。",
-      "source": "Nature Medicine",
-      "link": "https://www.nature.com/articles/s41591-026-04336-3"
-    },
-    {
-      "title": "离子电子水凝胶神经形态假体实现多模态感知与闭环驱动",
-      "summary": "Nature Materials报道的离子电阻池（iontronic reservoir）系统可生成神经形态脉冲并执行闭环控制。该类‘类脑计算-感知一体化’平台为机器意识模型与神经意识机制验证提供新实验载体。",
-      "source": "Nature Materials",
-      "link": "https://www.nature.com/articles/s41563-026-02542-5"
-    },
-    {
-      "title": "AXIS微胶质亚群被发现可直接促进神经元放电",
-      "summary": "Cell Research（Nature旗下）评论/研究解读指出，接触轴突初始段的特定微胶质亚群可上调神经元兴奋性。该发现为‘清醒度与意识可达性’提供了新的胶质-神经元调控视角。",
-      "source": "Cell Research (Nature Portfolio)",
-      "link": "https://www.nature.com/articles/s41422-026-01237-5"
+      "title": "心搏骤停后血液标志物可预测长期认知结局",
+      "summary": "最新报道显示神经丝轻链等生物标志物与复苏后认知恢复相关，为“意识恢复后认知质量”评估提供更早期的客观量化工具。",
+      "source": "Neuroscience News（基于临床试验数据报道）",
+      "link": "https://neurosciencenews.com/nfl-biomarker-cardiac-arrest-cognition-30362/"
     }
   ]
 }
