@@ -1,45 +1,45 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-26",
-  "updatedAt": "2026-03-26T07:49:08Z",
-  "trendObservation": "今日高相关更新集中在“意识障碍可计算建模 + 睡眠/梦境主观体验量化”：研究正把意识从抽象哲学问题推进为可预测、可干预的神经系统问题。",
+  "date": "2026-03-30",
+  "updatedAt": "2026-03-30T12:00:00+08:00",
+  "trendObservation": "近期意识研究明显走向“可干预、可预测”的临床转化路线：AI建模与神经调控正在从解释意识机制迈向直接改善意识障碍。",
   "items": [
     {
-      "title": "AI模型可预测脑损伤后意识中断并提示潜在恢复路径",
-      "summary": "Nature 报道的研究将对抗式AI与脑网络模型结合，用于推断脑损伤后“觉醒-觉知”系统失配机制，并探索个体化干预线索。该方向有望提升意识障碍分型与康复策略设计。",
+      "title": "AI预测脑损伤如何破坏意识，并提出可恢复路径",
+      "summary": "《Nature Neuroscience》报道的研究显示，AI模型可从脑网络损伤模式预测意识受损程度，并用于推演潜在恢复策略。该方向有望提升意识障碍患者分层评估与个体化治疗设计。",
       "source": "Nature Neuroscience",
-      "link": "https://www.nature.com/articles/s41593-026-02223-1"
+      "link": "https://doi.org/10.1038/s41593-026-02223-1"
     },
     {
-      "title": "对抗式AI揭示意识障碍机制并加速治疗靶点筛选",
-      "summary": "配套研究显示，双AI博弈式建模可在缺乏可控实验模型的前提下反推意识障碍关键环路。其价值在于把“难以直接实验”的意识机制转化为可验证的计算假设。",
+      "title": "对抗式AI揭示意识障碍机制并指向治疗靶点",
+      "summary": "同刊另一项研究利用对抗式AI框架，识别与意识障碍相关的关键神经动力学特征，并提出可操作的干预线索。研究强调机器学习在复杂神经机制可解释性中的价值。",
       "source": "Nature Neuroscience",
-      "link": "https://www.nature.com/articles/s41593-026-02220-4"
+      "link": "https://doi.org/10.1038/s41593-026-02220-4"
     },
     {
-      "title": "“梦境真实感混淆”MÖBIUS模型提出意识状态新解释框架",
-      "summary": "Nature 论文提出对梦境沉浸与现实混淆的机制模型，连接 REM 睡眠体验、现实监测与临床症状表现。该工作为“改变意识状态”研究提供可操作的认知-神经框架。",
-      "source": "Nature Communications Biology",
-      "link": "https://www.nature.com/articles/s42003-026-09781-x"
+      "title": "基于“觉醒度/觉知度”双维脑信号分析，预测脊髓刺激疗效",
+      "summary": "《IEEE Journal of Biomedical and Health Informatics》研究提出针对意识障碍的双维度脑分析框架，可用于预测脊髓刺激（SCS）是否有效。该方法有望减少无效治疗尝试并优化临床决策。",
+      "source": "IEEE JBHI",
+      "link": "https://doi.org/10.1109/jbhi.2026.3677372"
     },
     {
-      "title": "生动梦境可能提高主观“睡眠深度”与恢复感",
-      "summary": "ScienceDaily 报道的睡眠实验显示，主观睡眠质量不只由“是否无意识”决定，梦境沉浸感也会显著影响醒后恢复体验。结果提示意识内容本身可参与健康感知形成。",
-      "source": "ScienceDaily（报道原始睡眠研究）",
-      "link": "http://www.sciencedaily.com/releases/2026/03/260326011458.htm"
+      "title": "鼓乐诱发的意识改变与θ频段神经追踪相关",
+      "summary": "《Scientific Reports》研究发现，θ频段神经追踪指标可预测打鼓训练中出现的意识状态改变强度。结果为“节律刺激—脑振荡—主观意识体验”关系提供了可量化证据。",
+      "source": "Scientific Reports",
+      "link": "https://doi.org/10.1038/s41598-026-37700-x"
     },
     {
-      "title": "PTSD中“认知重构”与丘脑-皮层环路改变被直接关联",
-      "summary": "Nature Mental Health 研究将负性认知改变与特定丘脑-皮层调控异常对应起来，支持心理治疗可通过可测神经环路影响主观体验与症状强度。",
-      "source": "Nature Mental Health",
-      "link": "https://www.nature.com/articles/s44220-026-00614-8"
+      "title": "具身脑类器官伦理争议：公众对“是否具备意识”的判断分歧",
+      "summary": "《Scientific Reports》文章指出，围绕具身脑类器官的伦理担忧高度受“意识定义”与基础哲学立场影响。研究建议在监管与科普中明确区分感知、反应与主观体验等层次。",
+      "source": "Scientific Reports",
+      "link": "https://doi.org/10.1038/s41598-026-43243-y"
     },
     {
-      "title": "心搏骤停后血液标志物可预测长期认知结局",
-      "summary": "最新报道显示神经丝轻链等生物标志物与复苏后认知恢复相关，为“意识恢复后认知质量”评估提供更早期的客观量化工具。",
-      "source": "Neuroscience News（基于临床试验数据报道）",
-      "link": "https://neurosciencenews.com/nfl-biomarker-cardiac-arrest-cognition-30362/"
+      "title": "意识的物理本质新假说：从神经科学证据重估意识生成机制",
+      "summary": "《Frontiers in Human Neuroscience》发布理论工作，尝试以神经科学框架统一意识的物理性解释。虽属假说性质，但为后续实验可证伪路径提供了结构化命题。",
+      "source": "Frontiers in Human Neuroscience",
+      "link": "https://europepmc.org/article/PMC/PMC13017804"
     }
   ]
 }
