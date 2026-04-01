@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T05:56:06.018Z",
+  "generatedAt": "2026-04-01T13:26:33.213Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1775022941390,
+      "updatedAt": 1775049984276,
       "items": []
     },
     {
@@ -16,8 +16,22 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1775022963369,
+      "updatedAt": 1775049990941,
       "items": [
+        {
+          "title": "抓取失败：Nature",
+          "titleZh": "抓取失败：Nature",
+          "source": "Nature",
+          "link": "https://www.nature.com/nature.rss",
+          "rawSummary": "",
+          "summary": "无法获取 https://www.nature.com/nature.rss（Status code 406）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
+          "tags": [
+            "抓取异常"
+          ]
+        },
         {
           "title": "抓取失败：Nature Communications",
           "titleZh": "抓取失败：Nature Communications",
@@ -66,7 +80,7 @@
           "source": "ACL Anthology",
           "link": "https://aclanthology.org/events/acl-2025/feed.xml",
           "rawSummary": "",
-          "summary": "无法获取 https://aclanthology.org/events/acl-2025/feed.xml（Request timed out after 15000ms）",
+          "summary": "无法获取 https://aclanthology.org/events/acl-2025/feed.xml（Status code 404）",
           "publishedAt": "",
           "ts": 0,
           "error": true,
@@ -82,7 +96,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1775022966018,
+      "updatedAt": 1775049993213,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
