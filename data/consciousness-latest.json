@@ -1,45 +1,45 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-03-30",
-  "updatedAt": "2026-03-30T12:00:00+08:00",
-  "trendObservation": "近期意识研究明显走向“可干预、可预测”的临床转化路线：AI建模与神经调控正在从解释意识机制迈向直接改善意识障碍。",
+  "date": "2026-04-03",
+  "updatedAt": "2026-04-03T12:00:00+08:00",
+  "trendObservation": "过去24小时的高质量更新显示：意识研究正沿两条主线并进——一条是临床可测量指标（连接组、癫痫发作特征）用于意识障碍分层，另一条是理论方法学反思（跨任务收敛与具身模型）用于提升‘意识证据’的可解释性。",
   "items": [
     {
-      "title": "AI预测脑损伤如何破坏意识，并提出可恢复路径",
-      "summary": "《Nature Neuroscience》报道的研究显示，AI模型可从脑网络损伤模式预测意识受损程度，并用于推演潜在恢复策略。该方向有望提升意识障碍患者分层评估与个体化治疗设计。",
-      "source": "Nature Neuroscience",
-      "link": "https://doi.org/10.1038/s41593-026-02223-1"
+      "title": "Bridging interoception and time perspective: toward an embodied model of consciousness",
+      "summary": "该研究在《Frontiers in Psychology》提出将内感受（interoception）与时间视角整合到同一具身框架中，尝试解释主观意识状态如何由身体信号与时间建构共同塑造。论文强调意识研究需要跨心理学与神经生理指标联动验证。",
+      "source": "Frontiers in Psychology",
+      "link": "https://doi.org/10.3389/fpsyg.2026.1725236"
     },
     {
-      "title": "对抗式AI揭示意识障碍机制并指向治疗靶点",
-      "summary": "同刊另一项研究利用对抗式AI框架，识别与意识障碍相关的关键神经动力学特征，并提出可操作的干预线索。研究强调机器学习在复杂神经机制可解释性中的价值。",
-      "source": "Nature Neuroscience",
-      "link": "https://doi.org/10.1038/s41593-026-02220-4"
+      "title": "Diverging results with converging operations: Implications for the study of consciousness and cognition",
+      "summary": "《Consciousness and Cognition》最新论文指出，不同实验范式在结果层面可能分歧，但在操作层面可实现收敛，这对意识与认知研究中的可重复性和理论整合具有方法学意义。研究建议用‘操作收敛’而非单一显著结果评估理论支持度。",
+      "source": "Consciousness and Cognition",
+      "link": "https://doi.org/10.1016/j.concog.2026.104049"
     },
     {
-      "title": "基于“觉醒度/觉知度”双维脑信号分析，预测脊髓刺激疗效",
-      "summary": "《IEEE Journal of Biomedical and Health Informatics》研究提出针对意识障碍的双维度脑分析框架，可用于预测脊髓刺激（SCS）是否有效。该方法有望减少无效治疗尝试并优化临床决策。",
-      "source": "IEEE JBHI",
-      "link": "https://doi.org/10.1109/jbhi.2026.3677372"
+      "title": "Connectome disruptions after hypoxic-ischaemic injury associate with consciousness disorder severity",
+      "summary": "《Brain Communications》报道，低氧缺血损伤后的脑连接组破坏程度与意识障碍严重度相关，提示结构/功能连接网络可作为临床分层与预后评估的候选指标。该方向有助于把意识障碍评估从行为量表扩展到网络生物标志物。",
+      "source": "Brain Communications",
+      "link": "https://doi.org/10.1093/braincomms/fcag117"
     },
     {
-      "title": "鼓乐诱发的意识改变与θ频段神经追踪相关",
-      "summary": "《Scientific Reports》研究发现，θ频段神经追踪指标可预测打鼓训练中出现的意识状态改变强度。结果为“节律刺激—脑振荡—主观意识体验”关系提供了可量化证据。",
-      "source": "Scientific Reports",
-      "link": "https://doi.org/10.1038/s41598-026-37700-x"
+      "title": "Prolonged focal impaired consciousness seizures: a biomarker of drug resistance in patients with epilepsy",
+      "summary": "同刊研究显示，持续时间更长的局灶性意识受损发作与癫痫耐药风险相关，提出可将‘意识受损发作特征’纳入治疗反应预测。结果强化了意识相关临床表型在精准神经病学中的价值。",
+      "source": "Brain Communications",
+      "link": "https://doi.org/10.1093/braincomms/fcag114"
     },
     {
-      "title": "具身脑类器官伦理争议：公众对“是否具备意识”的判断分歧",
-      "summary": "《Scientific Reports》文章指出，围绕具身脑类器官的伦理担忧高度受“意识定义”与基础哲学立场影响。研究建议在监管与科普中明确区分感知、反应与主观体验等层次。",
-      "source": "Scientific Reports",
-      "link": "https://doi.org/10.1038/s41598-026-43243-y"
+      "title": "Hume’s Conception of the Mind as an Instance of a Cognitive Architecture?",
+      "summary": "《Journal of Artificial Intelligence and Consciousness》新文从认知架构视角重读休谟心灵理论，讨论经典哲学模型如何映射到当代人工意识研究问题。该工作属于理论整合型进展，为AI意识论证提供历史与概念工具。",
+      "source": "Journal of Artificial Intelligence and Consciousness",
+      "link": "https://doi.org/10.1142/S2705078526400035"
     },
     {
-      "title": "意识的物理本质新假说：从神经科学证据重估意识生成机制",
-      "summary": "《Frontiers in Human Neuroscience》发布理论工作，尝试以神经科学框架统一意识的物理性解释。虽属假说性质，但为后续实验可证伪路径提供了结构化命题。",
-      "source": "Frontiers in Human Neuroscience",
-      "link": "https://europepmc.org/article/PMC/PMC13017804"
+      "title": "Anthropic Says That Claude Contains Its Own Kind of Emotions",
+      "summary": "WIRED在过去24小时发布专题，聚焦AI实验室内部对‘模型是否具备情感/意识样态’的分歧与证据标准争论。尽管并非单篇原始实验论文，但该报道集中呈现了意识研究在AI场景中的方法学边界与伦理争点。",
+      "source": "WIRED",
+      "link": "https://www.wired.com/story/anthropic-says-that-claude-contains-its-own-kind-of-emotions/"
     }
   ]
 }
