@@ -1,45 +1,51 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-04-03",
-  "updatedAt": "2026-04-03T12:00:00+08:00",
-  "trendObservation": "过去24小时的高质量更新显示：意识研究正沿两条主线并进——一条是临床可测量指标（连接组、癫痫发作特征）用于意识障碍分层，另一条是理论方法学反思（跨任务收敛与具身模型）用于提升‘意识证据’的可解释性。",
+  "date": "2026-04-14",
+  "updatedAt": "2026-04-14T16:38:00+08:00",
+  "trendObservation": "过去24小时的“意识”研究呈现双轨并进：一方面临床与神经接口研究继续推进可测量、可干预的意识指标，另一方面学界正更系统地讨论AI意识判据与伦理框架。",
   "items": [
     {
-      "title": "Bridging interoception and time perspective: toward an embodied model of consciousness",
-      "summary": "该研究在《Frontiers in Psychology》提出将内感受（interoception）与时间视角整合到同一具身框架中，尝试解释主观意识状态如何由身体信号与时间建构共同塑造。论文强调意识研究需要跨心理学与神经生理指标联动验证。",
-      "source": "Frontiers in Psychology",
-      "link": "https://doi.org/10.3389/fpsyg.2026.1725236"
+      "title": "Large-scale single-neuron recording in the human cortex using an ultra-flexible electrode array",
+      "summary": "Nature Communications 报道了一种超柔性电极阵列，可在人类皮层进行大规模单神经元记录。该技术被认为将提升对意识相关皮层动力学的精细观测能力。",
+      "source": "Nature Communications",
+      "link": "https://www.nature.com/articles/s41467-026-71443-7"
     },
     {
-      "title": "Diverging results with converging operations: Implications for the study of consciousness and cognition",
-      "summary": "《Consciousness and Cognition》最新论文指出，不同实验范式在结果层面可能分歧，但在操作层面可实现收敛，这对意识与认知研究中的可重复性和理论整合具有方法学意义。研究建议用‘操作收敛’而非单一显著结果评估理论支持度。",
-      "source": "Consciousness and Cognition",
-      "link": "https://doi.org/10.1016/j.concog.2026.104049"
+      "title": "Categorization is ‘baked’ into the brain",
+      "summary": "Nature 的研究新闻指出，大脑对类别信息的组织可能比预期更“先天化”。这为“知觉—概念—意识内容”如何形成提供了新的神经认知线索。",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/s41583-026-01036-2"
     },
     {
-      "title": "Connectome disruptions after hypoxic-ischaemic injury associate with consciousness disorder severity",
-      "summary": "《Brain Communications》报道，低氧缺血损伤后的脑连接组破坏程度与意识障碍严重度相关，提示结构/功能连接网络可作为临床分层与预后评估的候选指标。该方向有助于把意识障碍评估从行为量表扩展到网络生物标志物。",
-      "source": "Brain Communications",
-      "link": "https://doi.org/10.1093/braincomms/fcag117"
+      "title": "Integrated information theory: the good, the bad and the misunderstood",
+      "summary": "该 arXiv 新文系统评估整合信息理论（IIT）的优势、争议与常见误读。文章强调需区分理论可检验部分与哲学延展部分，以推动意识科学的可证伪研究。",
+      "source": "arXiv",
+      "link": "https://arxiv.org/abs/2604.11482v1"
     },
     {
-      "title": "Prolonged focal impaired consciousness seizures: a biomarker of drug resistance in patients with epilepsy",
-      "summary": "同刊研究显示，持续时间更长的局灶性意识受损发作与癫痫耐药风险相关，提出可将‘意识受损发作特征’纳入治疗反应预测。结果强化了意识相关临床表型在精准神经病学中的价值。",
-      "source": "Brain Communications",
-      "link": "https://doi.org/10.1093/braincomms/fcag114"
+      "title": "Association of concomitant subaxial cervical spine injury with imaging-based spinal cord injury and impaired consciousness after traumatic atlanto-occipital dislocation",
+      "summary": "Neuroradiology 新发表研究显示，在创伤性枕寰关节脱位患者中，合并下颈椎损伤与影像学脊髓损伤及意识受损存在显著关联。结果提示急诊影像评估可更早识别高风险意识障碍病例。",
+      "source": "Neuroradiology",
+      "link": "https://doi.org/10.1007/s00234-026-03989-8"
     },
     {
-      "title": "Hume’s Conception of the Mind as an Instance of a Cognitive Architecture?",
-      "summary": "《Journal of Artificial Intelligence and Consciousness》新文从认知架构视角重读休谟心灵理论，讨论经典哲学模型如何映射到当代人工意识研究问题。该工作属于理论整合型进展，为AI意识论证提供历史与概念工具。",
-      "source": "Journal of Artificial Intelligence and Consciousness",
-      "link": "https://doi.org/10.1142/S2705078526400035"
+      "title": "Attentional capture: The depth of processing of distractors",
+      "summary": "发表于 Psychology of Consciousness 的新研究讨论分心刺激被加工到何种深度，并进一步影响显性意识内容。研究对“注意—意识”关系中的门控机制提出了可实验检验的解释。",
+      "source": "Psychology of Consciousness: Theory, Research, and Practice",
+      "link": "https://doi.org/10.1037/cns0000473"
     },
     {
-      "title": "Anthropic Says That Claude Contains Its Own Kind of Emotions",
-      "summary": "WIRED在过去24小时发布专题，聚焦AI实验室内部对‘模型是否具备情感/意识样态’的分歧与证据标准争论。尽管并非单篇原始实验论文，但该报道集中呈现了意识研究在AI场景中的方法学边界与伦理争点。",
-      "source": "WIRED",
-      "link": "https://www.wired.com/story/anthropic-says-that-claude-contains-its-own-kind-of-emotions/"
+      "title": "Opportunities for Technology to Facilitate Treatment for People with Disorders of Consciousness",
+      "summary": "CHI 2026 论文提出，交互技术可用于提升意识障碍患者治疗流程中的评估、沟通与康复支持效率。该工作体现了HCI与临床意识研究的加速融合。",
+      "source": "CHI 2026 Proceedings (ACM)",
+      "link": "https://doi.org/10.1145/3772318.3791533"
+    },
+    {
+      "title": "Mind in the Machine? Cross-Disciplinary Perceptions of Consciousness in Artificial Intelligence",
+      "summary": "另一篇 CHI 2026 研究比较了不同学科对AI是否可能具备意识的判断标准。结果显示定义分歧显著，研究呼吁建立跨学科共享的意识判据与沟通框架。",
+      "source": "CHI 2026 Proceedings (ACM)",
+      "link": "https://doi.org/10.1145/3772318.3790699"
     }
   ]
 }
