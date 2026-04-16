@@ -1,51 +1,45 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-04-14",
-  "updatedAt": "2026-04-14T16:38:00+08:00",
-  "trendObservation": "过去24小时的“意识”研究呈现双轨并进：一方面临床与神经接口研究继续推进可测量、可干预的意识指标，另一方面学界正更系统地讨论AI意识判据与伦理框架。",
+  "date": "2026-04-16",
+  "updatedAt": "2026-04-16T21:10:00+08:00",
+  "trendObservation": "过去24小时的‘意识’研究更偏向临床转化（意识障碍诊断/重建）与跨学科理论整合，纯基础机制突破类报道相对较少。",
   "items": [
     {
-      "title": "Large-scale single-neuron recording in the human cortex using an ultra-flexible electrode array",
-      "summary": "Nature Communications 报道了一种超柔性电极阵列，可在人类皮层进行大规模单神经元记录。该技术被认为将提升对意识相关皮层动力学的精细观测能力。",
-      "source": "Nature Communications",
-      "link": "https://www.nature.com/articles/s41467-026-71443-7"
+      "title": "多中心中国队列：可解释多模态机器学习用于意识障碍诊断",
+      "summary": "《Journal of Translational Medicine》发布研究，基于大样本多中心数据构建可解释模型以区分不同意识障碍状态。研究强调将EEG/临床等多模态信息融合，可提升临床可用性与可解释性。",
+      "source": "Journal of Translational Medicine",
+      "link": "https://doi.org/10.1186/s12967-026-08108-y"
     },
     {
-      "title": "Categorization is ‘baked’ into the brain",
-      "summary": "Nature 的研究新闻指出，大脑对类别信息的组织可能比预期更“先天化”。这为“知觉—概念—意识内容”如何形成提供了新的神经认知线索。",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/s41583-026-01036-2"
+      "title": "意识障碍神经重建综述：前景与挑战",
+      "summary": "《The Neuroscientist》上线综述，系统评估意识障碍患者神经重建策略（含神经调控与网络层面干预）及其局限。文章指出未来关键在于精准分层与长期随访证据。",
+      "source": "The Neuroscientist",
+      "link": "https://doi.org/10.1177/10738584261434939"
     },
     {
-      "title": "Integrated information theory: the good, the bad and the misunderstood",
-      "summary": "该 arXiv 新文系统评估整合信息理论（IIT）的优势、争议与常见误读。文章强调需区分理论可检验部分与哲学延展部分，以推动意识科学的可证伪研究。",
-      "source": "arXiv",
-      "link": "https://arxiv.org/abs/2604.11482v1"
+      "title": "迷幻剂研究综述：连接意识、文化与临床实践",
+      "summary": "《Journal of Behavioral and Cognitive Therapy》发表综合评述，梳理现代迷幻剂研究在意识改变、文化语境与临床治疗之间的关联。文章强调从‘主观体验—治疗机制—临床落地’建立统一框架。",
+      "source": "Journal of Behavioral and Cognitive Therapy",
+      "link": "https://doi.org/10.1016/j.jbct.2026.100571"
     },
     {
-      "title": "Association of concomitant subaxial cervical spine injury with imaging-based spinal cord injury and impaired consciousness after traumatic atlanto-occipital dislocation",
-      "summary": "Neuroradiology 新发表研究显示，在创伤性枕寰关节脱位患者中，合并下颈椎损伤与影像学脊髓损伤及意识受损存在显著关联。结果提示急诊影像评估可更早识别高风险意识障碍病例。",
-      "source": "Neuroradiology",
-      "link": "https://doi.org/10.1007/s00234-026-03989-8"
+      "title": "比较视角下的意识本体：Sāṃkhya 与 Donald Hoffman 理论对话",
+      "summary": "《Human Arenas》新文从认识论边界与本体原初性切入，对印度哲学Sāṃkhya与Hoffman意识理论进行并置分析。该研究代表了意识研究中哲学—认知科学对话的持续升温。",
+      "source": "Human Arenas",
+      "link": "https://doi.org/10.1007/s42087-026-00587-1"
     },
     {
-      "title": "Attentional capture: The depth of processing of distractors",
-      "summary": "发表于 Psychology of Consciousness 的新研究讨论分心刺激被加工到何种深度，并进一步影响显性意识内容。研究对“注意—意识”关系中的门控机制提出了可实验检验的解释。",
-      "source": "Psychology of Consciousness: Theory, Research, and Practice",
-      "link": "https://doi.org/10.1037/cns0000473"
+      "title": "‘Quantum BIT’意识理论论文发布",
+      "summary": "《Biomedical Journal of Scientific & Technical Research》发布理论论文，尝试以量子信息化框架解释意识形成。虽然仍属高假设性模型，但反映出量子意识方向在方法论层面的活跃讨论。",
+      "source": "Biomedical Journal of Scientific & Technical Research",
+      "link": "https://doi.org/10.26717/bjstr.2025.61.009620"
     },
     {
-      "title": "Opportunities for Technology to Facilitate Treatment for People with Disorders of Consciousness",
-      "summary": "CHI 2026 论文提出，交互技术可用于提升意识障碍患者治疗流程中的评估、沟通与康复支持效率。该工作体现了HCI与临床意识研究的加速融合。",
-      "source": "CHI 2026 Proceedings (ACM)",
-      "link": "https://doi.org/10.1145/3772318.3791533"
-    },
-    {
-      "title": "Mind in the Machine? Cross-Disciplinary Perceptions of Consciousness in Artificial Intelligence",
-      "summary": "另一篇 CHI 2026 研究比较了不同学科对AI是否可能具备意识的判断标准。结果显示定义分歧显著，研究呼吁建立跨学科共享的意识判据与沟通框架。",
-      "source": "CHI 2026 Proceedings (ACM)",
-      "link": "https://doi.org/10.1145/3772318.3790699"
+      "title": "脑损伤患者隐匿意识检测转化进展（机构动态）",
+      "summary": "Stony Brook University 发布最新机构动态，聚焦利用先进监测技术识别‘无反应但仍存意识’患者，并推动康复路径优化。该方向与近期意识障碍诊疗研究形成呼应。",
+      "source": "Stony Brook Matters",
+      "link": "https://news.stonybrook.edu/"
     }
   ]
 }
