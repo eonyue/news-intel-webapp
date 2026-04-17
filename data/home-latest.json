@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-17T06:04:34.810Z",
+  "generatedAt": "2026-04-17T13:23:46.254Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1776405868000,
+      "updatedAt": 1776432216974,
       "items": []
     },
     {
@@ -16,15 +16,15 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1776405873658,
+      "updatedAt": 1776432222984,
       "items": [
         {
-          "title": "抓取失败：Nature Communications",
-          "titleZh": "抓取失败：Nature Communications",
-          "source": "Nature Communications",
-          "link": "https://www.nature.com/ncomms.rss",
+          "title": "抓取失败：Nature",
+          "titleZh": "抓取失败：Nature",
+          "source": "Nature",
+          "link": "https://www.nature.com/nature.rss",
           "rawSummary": "",
-          "summary": "无法获取 https://www.nature.com/ncomms.rss（Status code 406）",
+          "summary": "无法获取 https://www.nature.com/nature.rss（Status code 406）",
           "publishedAt": "",
           "ts": 0,
           "error": true,
@@ -82,7 +82,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1776405874810,
+      "updatedAt": 1776432226254,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
