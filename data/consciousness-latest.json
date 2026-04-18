@@ -1,39 +1,45 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-04-17",
-  "updatedAt": "2026-04-17T04:03:17Z",
-  "trendObservation": "过去24小时的公开学术更新显示：‘意识’研究正向跨学科扩展，神经可塑性、生理体验与文化-教育语境并行推进，但高质量新增条目总体偏少。",
+  "date": "2026-04-18",
+  "updatedAt": "2026-04-18T04:01:46Z",
+  "trendObservation": "近24小时的‘意识’相关报道呈现双线并进：一条线在临终体验、梦境与主观体验等核心意识问题上推进实证讨论，另一条线在AI语境下强化‘意识定义与可解释性’的跨学科紧迫性。",
   "items": [
     {
-      "title": "The Emerging Neurobiology of Psychedelics: Critical Periods, Metaplasticity, and Extracellular Matrix Remodeling",
-      "summary": "《Annual Review of Neuroscience》新综述系统梳理了致幻剂如何通过关键期样可塑性与细胞外基质重塑影响脑网络。该框架被视为理解药物诱发意识状态改变及其治疗潜力的重要理论基础。",
-      "source": "Annual Review of Neuroscience / PubMed",
-      "link": "https://pubmed.ncbi.nlm.nih.gov/41990390/"
+      "title": "近死体验是脑幻觉，还是一种真实的意识状态？",
+      "summary": "最新综述指出，临终相关的清晰主观体验仍在挑战既有神经科学解释框架。研究呼吁将神经生理监测与第一人称报告更系统地结合，以减少‘仅凭单一模型解释’的偏差。",
+      "source": "EurekAlert",
+      "link": "https://www.eurekalert.org/news-releases/1123036"
     },
     {
-      "title": "Marcus Clarke’s “Cannabis Indica” and Altered States of Consciousness in 19th-Century Australian Mass Media",
-      "summary": "该研究发表于《Journal of Australian Studies》，通过历史文本分析讨论‘大麻与意识改变’在19世纪大众媒体中的建构方式。虽然属人文路径，但为意识体验的社会叙事提供了可考证材料。",
-      "source": "Journal of Australian Studies (Taylor & Francis)",
-      "link": "https://doi.org/10.1080/14443058.2026.2655776"
+      "title": "意识：科学能否解释‘成为某种存在’的体验？",
+      "summary": "该报道汇总了围绕意识本体论的前沿争论：意识究竟是大脑涌现属性，还是更基础的自然属性。研究者强调，未来突破依赖神经数据、计算模型与哲学框架的联合验证。",
+      "source": "EurekAlert",
+      "link": "https://www.eurekalert.org/news-releases/1123000"
     },
     {
-      "title": "An invitation to theorise East Asian pedagogy: bodymind, dark consciousness, kata, and self-cultivation",
-      "summary": "《Asia Pacific Education Review》新文提出以‘身心一体（bodymind）+ dark consciousness + 型（kata）’解释东亚教育中的主观经验与自我修养。研究把意识问题带入教育理论与文化语境的交叉讨论。",
-      "source": "Asia Pacific Education Review (Springer)",
-      "link": "https://doi.org/10.1007/s12564-026-10113-1"
+      "title": "当我们做梦时，大脑是否‘醒着’？国际团队构建大型梦境脑活动数据库",
+      "summary": "国际研究联盟整合了迄今规模最大的睡眠—梦境脑活动记录，用于比较梦境期间不同脑区的动态模式。该资源被视为理解‘意识水平波动’与梦境体验机制的重要基础设施。",
+      "source": "EurekAlert",
+      "link": "https://www.eurekalert.org/news-releases/1102843"
     },
     {
-      "title": "Assessing Deviations From Chance in a Spatial Guessing Task (Supplemental Material)",
-      "summary": "《Psychology of Consciousness: Theory, Research, and Practice》发布相关补充材料，重点是空间猜测任务中“偏离随机水平”的统计评估框架。该方法学更新有助于提升意识相关行为实验的可重复性与判别力。",
-      "source": "APA Journal: Psychology of Consciousness",
-      "link": "https://doi.org/10.1037/cns0000460.supp"
+      "title": "科学家称：在AI加速背景下，解释意识已成“紧迫任务”",
+      "summary": "在Frontiers论坛相关讨论中，多位研究者指出，若缺乏可操作的意识定义，AI伦理与认知边界判断将持续失焦。共识是：意识科学与AI治理需要更紧密的共同语言。",
+      "source": "EurekAlert",
+      "link": "https://www.eurekalert.org/news-releases/1104015"
     },
     {
-      "title": "What If Consciousness Exists Beyond Your Brain",
-      "summary": "SciTechDaily 对 Christof Koch 的最新公开演讲进行科学报道，集中讨论“意识是否仅由大脑生成”这一核心争议。报道基于神经科学前沿讨论，反映理论层面的研究热度仍在上升。",
-      "source": "SciTechDaily（科学媒体）",
-      "link": "https://scitechdaily.com/what-if-consciousness-exists-beyond-your-brain/"
+      "title": "语言与意识的双向关系再受关注",
+      "summary": "新近研究观点认为，语言并不“创造”意识，但会深刻塑造意识内容的组织与可报告性。该方向正推动认知神经科学与语言学在实验设计上的进一步融合。",
+      "source": "EurekAlert",
+      "link": "https://www.eurekalert.org/news-releases/1116000"
+    },
+    {
+      "title": "被忽略的弱连接可预测行为：意识相关脑网络研究方法出现转向",
+      "summary": "Yale团队相关报道显示，过去常被当作“噪声”的弱脑连接同样具有行为预测价值。该发现提示意识与认知功能可能依赖分布式网络，而非少数“最强信号”通路。",
+      "source": "Neuroscience News（基于Yale研究）",
+      "link": "https://neurosciencenews.com/brain-signals-behavioral-prediction-30541/"
     }
   ]
 }
