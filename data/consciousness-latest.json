@@ -1,45 +1,39 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-04-18",
-  "updatedAt": "2026-04-18T04:01:46Z",
-  "trendObservation": "近24小时的‘意识’相关报道呈现双线并进：一条线在临终体验、梦境与主观体验等核心意识问题上推进实证讨论，另一条线在AI语境下强化‘意识定义与可解释性’的跨学科紧迫性。",
+  "date": "2026-04-19",
+  "updatedAt": "2026-04-19T12:00:00+08:00",
+  "trendObservation": "过去24小时的高质量“意识”更新以临床意识障碍干预与理论框架讨论为主，前沿突破更多表现为小样本临床与跨学科方法的持续累积。",
   "items": [
     {
-      "title": "近死体验是脑幻觉，还是一种真实的意识状态？",
-      "summary": "最新综述指出，临终相关的清晰主观体验仍在挑战既有神经科学解释框架。研究呼吁将神经生理监测与第一人称报告更系统地结合，以减少‘仅凭单一模型解释’的偏差。",
-      "source": "EurekAlert",
-      "link": "https://www.eurekalert.org/news-releases/1123036"
+      "title": "非创伤性意识障碍个案中阿曼他定应用效果公布",
+      "summary": "Cureus 发布病例报告，记录了阿曼他定用于非创伤性意识障碍（DoC）患者后的功能恢复变化。该研究虽为单病例，但为DoC药物干预提供了可跟踪的临床证据线索。",
+      "source": "Cureus（Springer Nature）",
+      "link": "https://doi.org/10.7759/cureus.107262"
     },
     {
-      "title": "意识：科学能否解释‘成为某种存在’的体验？",
-      "summary": "该报道汇总了围绕意识本体论的前沿争论：意识究竟是大脑涌现属性，还是更基础的自然属性。研究者强调，未来突破依赖神经数据、计算模型与哲学框架的联合验证。",
-      "source": "EurekAlert",
-      "link": "https://www.eurekalert.org/news-releases/1123000"
+      "title": "预测编码框架用于解释视觉意识机制再获新论文支持",
+      "summary": "新论文提出以“受控幻觉+精度加权”的预测编码模型，解释视觉意识如何在自上而下预测与感觉输入之间形成。研究强化了计算神经科学解释意识经验的路径。",
+      "source": "Journal of Education and Educational Research",
+      "link": "https://doi.org/10.54097/gh9kjh76"
     },
     {
-      "title": "当我们做梦时，大脑是否‘醒着’？国际团队构建大型梦境脑活动数据库",
-      "summary": "国际研究联盟整合了迄今规模最大的睡眠—梦境脑活动记录，用于比较梦境期间不同脑区的动态模式。该资源被视为理解‘意识水平波动’与梦境体验机制的重要基础设施。",
-      "source": "EurekAlert",
-      "link": "https://www.eurekalert.org/news-releases/1102843"
+      "title": "《意识研究》期刊聚焦音乐与意识耦合机制",
+      "summary": "Journal of Consciousness Studies 新发论文讨论音乐活动如何影响意识状态与群体协作体验，强调从现象学与认知科学双重视角理解意识调制。该方向拓展了“意识研究”从实验室到社会情境的外延。",
+      "source": "Journal of Consciousness Studies",
+      "link": "https://doi.org/10.53765/20512201.33.3.250"
     },
     {
-      "title": "科学家称：在AI加速背景下，解释意识已成“紧迫任务”",
-      "summary": "在Frontiers论坛相关讨论中，多位研究者指出，若缺乏可操作的意识定义，AI伦理与认知边界判断将持续失焦。共识是：意识科学与AI治理需要更紧密的共同语言。",
-      "source": "EurekAlert",
-      "link": "https://www.eurekalert.org/news-releases/1104015"
+      "title": "音乐相关触觉系统与意识-健康联系提出新模型",
+      "summary": "同刊另一篇研究讨论 Pacini 系统与低频声学刺激（HALF-MIS）对意识与健康体验的潜在影响，提出可检验的生理机制假设。研究尚需更大样本实验验证。",
+      "source": "Journal of Consciousness Studies",
+      "link": "https://doi.org/10.53765/20512201.33.3.016"
     },
     {
-      "title": "语言与意识的双向关系再受关注",
-      "summary": "新近研究观点认为，语言并不“创造”意识，但会深刻塑造意识内容的组织与可报告性。该方向正推动认知神经科学与语言学在实验设计上的进一步融合。",
-      "source": "EurekAlert",
-      "link": "https://www.eurekalert.org/news-releases/1116000"
-    },
-    {
-      "title": "被忽略的弱连接可预测行为：意识相关脑网络研究方法出现转向",
-      "summary": "Yale团队相关报道显示，过去常被当作“噪声”的弱脑连接同样具有行为预测价值。该发现提示意识与认知功能可能依赖分布式网络，而非少数“最强信号”通路。",
-      "source": "Neuroscience News（基于Yale研究）",
-      "link": "https://neurosciencenews.com/brain-signals-behavioral-prediction-30541/"
+      "title": "“音乐中的自我意识”被重新解释为进化-模因-认知过程",
+      "summary": "新论文将音乐中的“意识-自指”现象视为进化、模因传播与认知加工的共同产物，尝试连接文化演化与主观体验研究。该工作体现了意识研究向复杂系统解释框架延伸。",
+      "source": "Journal of Consciousness Studies",
+      "link": "https://doi.org/10.53765/20512201.33.3.101"
     }
   ]
 }
