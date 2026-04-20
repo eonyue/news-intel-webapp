@@ -1,39 +1,39 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-04-19",
-  "updatedAt": "2026-04-19T12:00:00+08:00",
-  "trendObservation": "过去24小时的高质量“意识”更新以临床意识障碍干预与理论框架讨论为主，前沿突破更多表现为小样本临床与跨学科方法的持续累积。",
+  "date": "2026-04-20",
+  "updatedAt": "2026-04-20T12:00:00+08:00",
+  "trendObservation": "过去24小时内严格符合“意识科学”且来自高质量学术源的新条目偏少，新增内容主要集中在“意识障碍（DOC）的临床评估与干预”而非基础意识理论突破。",
   "items": [
     {
-      "title": "非创伤性意识障碍个案中阿曼他定应用效果公布",
-      "summary": "Cureus 发布病例报告，记录了阿曼他定用于非创伤性意识障碍（DoC）患者后的功能恢复变化。该研究虽为单病例，但为DoC药物干预提供了可跟踪的临床证据线索。",
-      "source": "Cureus（Springer Nature）",
+      "title": "水中内镜手术相关水中毒可致意识障碍：结直肠癌病例报告",
+      "summary": "一项临床病例报告显示，水下内镜黏膜下剥离术中出现的水中毒可能快速引发意识受损。研究强调围手术期电解质与神经状态监测对预防严重意识并发症的重要性。",
+      "source": "Clinical Journal of Gastroenterology",
+      "link": "https://doi.org/10.1007/s12328-026-02338-9"
+    },
+    {
+      "title": "清单化流程再造可改善意识障碍急诊救治指标",
+      "summary": "《World Journal of Psychiatry》研究指出，在意识障碍患者急诊流程中引入清单化再造后，停留时间、救治成功率与满意度指标出现改善。结果提示标准化流程对DOC急救管理具有现实价值。",
+      "source": "World Journal of Psychiatry",
+      "link": "https://doi.org/10.5498/wjp.v16.i4.115211"
+    },
+    {
+      "title": "推进长期意识障碍患者的EEG意识与认知评估",
+      "summary": "Communications Medicine 发布研究，提出更系统的EEG评估路径，用于长期意识障碍患者的意识与认知判别。该工作有望提升床旁评估的客观性，并支持更精准的康复决策。",
+      "source": "Communications Medicine",
+      "link": "https://doi.org/10.1038/s43856-026-01574-x"
+    },
+    {
+      "title": "非创伤性意识障碍个案中金刚烷胺应用的临床线索",
+      "summary": "Cureus 个案报告讨论了金刚烷胺在非创伤性意识障碍中的使用情况，提示其在特定病人中可能具有辅助唤醒与功能改善潜力。作者同时强调需要更高等级证据验证疗效边界。",
+      "source": "Cureus",
       "link": "https://doi.org/10.7759/cureus.107262"
     },
     {
-      "title": "预测编码框架用于解释视觉意识机制再获新论文支持",
-      "summary": "新论文提出以“受控幻觉+精度加权”的预测编码模型，解释视觉意识如何在自上而下预测与感觉输入之间形成。研究强化了计算神经科学解释意识经验的路径。",
-      "source": "Journal of Education and Educational Research",
-      "link": "https://doi.org/10.54097/gh9kjh76"
-    },
-    {
-      "title": "《意识研究》期刊聚焦音乐与意识耦合机制",
-      "summary": "Journal of Consciousness Studies 新发论文讨论音乐活动如何影响意识状态与群体协作体验，强调从现象学与认知科学双重视角理解意识调制。该方向拓展了“意识研究”从实验室到社会情境的外延。",
-      "source": "Journal of Consciousness Studies",
-      "link": "https://doi.org/10.53765/20512201.33.3.250"
-    },
-    {
-      "title": "音乐相关触觉系统与意识-健康联系提出新模型",
-      "summary": "同刊另一篇研究讨论 Pacini 系统与低频声学刺激（HALF-MIS）对意识与健康体验的潜在影响，提出可检验的生理机制假设。研究尚需更大样本实验验证。",
-      "source": "Journal of Consciousness Studies",
-      "link": "https://doi.org/10.53765/20512201.33.3.016"
-    },
-    {
-      "title": "“音乐中的自我意识”被重新解释为进化-模因-认知过程",
-      "summary": "新论文将音乐中的“意识-自指”现象视为进化、模因传播与认知加工的共同产物，尝试连接文化演化与主观体验研究。该工作体现了意识研究向复杂系统解释框架延伸。",
-      "source": "Journal of Consciousness Studies",
-      "link": "https://doi.org/10.53765/20512201.33.3.101"
+      "title": "IIT（整合信息理论）再评估：理论优势、争议与误读",
+      "summary": "arXiv 最新理论论文对整合信息理论（IIT）的核心贡献与常见误解进行系统梳理，讨论其作为意识框架的解释力与可检验性边界。该文代表近期意识理论方向的持续方法论反思。",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.11482v1"
     }
   ]
 }
