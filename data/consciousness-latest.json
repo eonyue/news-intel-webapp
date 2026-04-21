@@ -1,39 +1,39 @@
 {
   "title": "【“意识研究”简报】",
   "curatedBy": "OpenClaw",
-  "date": "2026-04-20",
-  "updatedAt": "2026-04-20T12:00:00+08:00",
-  "trendObservation": "过去24小时内严格符合“意识科学”且来自高质量学术源的新条目偏少，新增内容主要集中在“意识障碍（DOC）的临床评估与干预”而非基础意识理论突破。",
+  "date": "2026-04-21",
+  "updatedAt": "2026-04-21T12:01:27.774670+08:00",
+  "trendObservation": "过去24小时的高质量更新显示，意识研究正从抽象理论继续转向‘可测量的神经表征’：一端是细胞与分子层面的病理机制，另一端是面向临床与BCI的实时解码技术。",
   "items": [
     {
-      "title": "水中内镜手术相关水中毒可致意识障碍：结直肠癌病例报告",
-      "summary": "一项临床病例报告显示，水下内镜黏膜下剥离术中出现的水中毒可能快速引发意识受损。研究强调围手术期电解质与神经状态监测对预防严重意识并发症的重要性。",
-      "source": "Clinical Journal of Gastroenterology",
-      "link": "https://doi.org/10.1007/s12328-026-02338-9"
+      "title": "全球首个人体石墨烯神经接口研究完成入组，推进脑信号解码",
+      "summary": "INBRAIN Neuroelectronics宣布其石墨烯神经接口首次人体研究完成入组，重点验证术中安全性与高分辨率神经信号记录能力。该方向被视为提升意识相关脑状态解码精度的重要工程路径。",
+      "source": "BioSpace（基于公司临床研究公告）",
+      "link": "https://www.biospace.com/press-releases/inbrain-neuroelectronics-completes-enrolment-of-worlds-first-in-human-study-of-graphene-neural-interfaces-for-brain-decoding-mapping"
     },
     {
-      "title": "清单化流程再造可改善意识障碍急诊救治指标",
-      "summary": "《World Journal of Psychiatry》研究指出，在意识障碍患者急诊流程中引入清单化再造后，停留时间、救治成功率与满意度指标出现改善。结果提示标准化流程对DOC急救管理具有现实价值。",
-      "source": "World Journal of Psychiatry",
-      "link": "https://doi.org/10.5498/wjp.v16.i4.115211"
+      "title": "《Nature》发布人类脑疾病单细胞转录组综述/研究进展",
+      "summary": "最新论文汇总并分析人类脑疾病中的单细胞与单核转录组图谱，显示神经退行性病变中的关键细胞类型与分子通路差异。此类“细胞级脑状态地图”正在为意识障碍相关机制研究提供更精细的生物学坐标。",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/s41380-026-03573-9"
     },
     {
-      "title": "推进长期意识障碍患者的EEG意识与认知评估",
-      "summary": "Communications Medicine 发布研究，提出更系统的EEG评估路径，用于长期意识障碍患者的意识与认知判别。该工作有望提升床旁评估的客观性，并支持更精准的康复决策。",
-      "source": "Communications Medicine",
-      "link": "https://doi.org/10.1038/s43856-026-01574-x"
+      "title": "《Scientific Reports》报道新型神经元生物发光标记与成像方法",
+      "summary": "研究团队提出可遗传编码的自主生物发光系统用于神经元标记与成像，降低对外源激发光的依赖。方法学创新有望改进对神经活动时空模式的追踪，为意识神经相关物（NCC）研究提供新工具。",
+      "source": "Scientific Reports（Nature Portfolio）",
+      "link": "https://www.nature.com/articles/s41598-026-46211-8"
     },
     {
-      "title": "非创伤性意识障碍个案中金刚烷胺应用的临床线索",
-      "summary": "Cureus 个案报告讨论了金刚烷胺在非创伤性意识障碍中的使用情况，提示其在特定病人中可能具有辅助唤醒与功能改善潜力。作者同时强调需要更高等级证据验证疗效边界。",
-      "source": "Cureus",
-      "link": "https://doi.org/10.7759/cureus.107262"
+      "title": "UC San Diego发布大样本青少年大麻使用与认知发育关系研究",
+      "summary": "基于逾1.1万名青少年纵向数据，研究发现大麻使用与记忆、注意及处理速度发育放缓相关。该结果为“意识内容与认知控制能力”的发育神经科学研究提供了新的群体证据。",
+      "source": "UC San Diego Today（大学官方科研新闻）",
+      "link": "https://today.ucsd.edu/story/largest-us-study-finds-teen-cannabis-use-linked-to-slower-cognitive-development"
     },
     {
-      "title": "IIT（整合信息理论）再评估：理论优势、争议与误读",
-      "summary": "arXiv 最新理论论文对整合信息理论（IIT）的核心贡献与常见误解进行系统梳理，讨论其作为意识框架的解释力与可检验性边界。该文代表近期意识理论方向的持续方法论反思。",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.11482v1"
+      "title": "新证据支持“孤独感—记忆下降”关联，指向意识体验与认知老化耦合",
+      "summary": "科学媒体基于纵向研究报道指出，持续孤独感与老年人即刻与延迟回忆能力下降相关。该结果强化了主观意识体验（情绪/社会感受）与客观认知轨迹之间的关联证据。",
+      "source": "WIRED（科学新闻解读）",
+      "link": "https://www.wired.com/story/theres-new-evidence-for-how-loneliness-affects-memory-in-old-age/"
     }
   ]
 }
