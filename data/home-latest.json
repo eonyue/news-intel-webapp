@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-22T06:01:19.861Z",
+  "generatedAt": "2026-04-22T13:45:01.869Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1776837671820,
+      "updatedAt": 1776865501289,
       "items": []
     },
     {
@@ -16,22 +16,8 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1776837677312,
+      "updatedAt": 1776865501635,
       "items": [
-        {
-          "title": "抓取失败：Nature Communications",
-          "titleZh": "抓取失败：Nature Communications",
-          "source": "Nature Communications",
-          "link": "https://www.nature.com/ncomms.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://www.nature.com/ncomms.rss（Status code 406）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
-        },
         {
           "title": "抓取失败：NeurIPS",
           "titleZh": "抓取失败：NeurIPS",
@@ -52,7 +38,7 @@
           "source": "ICLR",
           "link": "https://openreview.net/group?id=ICLR.cc/2025/Conference.rss",
           "rawSummary": "",
-          "summary": "无法获取 https://openreview.net/group?id=ICLR.cc/2025/Conference.rss（Status code 403）",
+          "summary": "无法获取 https://openreview.net/group?id=ICLR.cc/2025/Conference.rss（Attribute without value Line: 32 Column: 4690 Char: i）",
           "publishedAt": "",
           "ts": 0,
           "error": true,
@@ -82,7 +68,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1776837679861,
+      "updatedAt": 1776865501869,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
