@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T04:10:35.615Z",
+  "generatedAt": "2026-06-08T15:55:42.083Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1780891825783,
+      "updatedAt": 1780934129893,
       "items": []
     },
     {
@@ -16,7 +16,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1780891832065,
+      "updatedAt": 1780934139224,
       "items": [
         {
           "title": "抓取失败：Nature",
@@ -82,7 +82,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1780891835615,
+      "updatedAt": 1780934142082,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
