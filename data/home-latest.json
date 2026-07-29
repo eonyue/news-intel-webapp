@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T06:31:38.826Z",
+  "generatedAt": "2026-07-29T14:11:54.614Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1785306690551,
+      "updatedAt": 1785334307631,
       "items": []
     },
     {
@@ -16,36 +16,8 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1785306696294,
+      "updatedAt": 1785334313083,
       "items": [
-        {
-          "title": "抓取失败：Nature",
-          "titleZh": "抓取失败：Nature",
-          "source": "Nature",
-          "link": "https://www.nature.com/nature.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://www.nature.com/nature.rss（Status code 406）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
-        },
-        {
-          "title": "抓取失败：Nature Neuroscience",
-          "titleZh": "抓取失败：Nature Neuroscience",
-          "source": "Nature Neuroscience",
-          "link": "https://www.nature.com/neuro.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://www.nature.com/neuro.rss（Status code 406）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
-        },
         {
           "title": "抓取失败：NeurIPS",
           "titleZh": "抓取失败：NeurIPS",
@@ -96,7 +68,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1785306698826,
+      "updatedAt": 1785334314614,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
