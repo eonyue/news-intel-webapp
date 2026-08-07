@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T02:43:20.105Z",
+  "generatedAt": "2026-08-07T05:40:57.907Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1786070582818,
+      "updatedAt": 1786081240394,
       "items": []
     },
     {
@@ -16,77 +16,30 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1786070594702,
+      "updatedAt": 1786081251180,
       "items": [
         {
-          "title": "抓取失败：Nature",
-          "titleZh": "抓取失败：Nature",
-          "source": "Nature",
-          "link": "https://www.nature.com/nature.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://www.nature.com/nature.rss（Status code 406）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
+          "title": "GitHub - brycewang-stanford/Awesome-Journal-Skills: Journal-specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济研究 & 200+ more — your fast track to getting published. ｜ 覆盖主流期刊的 Claude Code/Codex 期刊技能包，从选题、识别策略到表格规范与审稿回复全流程，助你快速发论文。 · GitHub",
+          "titleZh": "GitHub - brycewang-stanford/Awesome-Journal-Skills: Journal-specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济研究 & 200+ more — your fast track to getting published. ｜ 覆盖主流期刊的 Claude Code/Codex 期刊技能包，从选题、识别策略到表格规范与审稿回复全流程，助你快速发论文。 · GitHub",
+          "source": "github.com",
+          "link": "https://github.com/brycewang-stanford/Awesome-Journal-Skills",
+          "rawSummary": "| CIKM-Skills | CIKM-Skills | | | | COLM-Skills | COLM-Skills | | | | COLT-Skills | COLT-Skills | | | | CSCW-Skills | CSCW-Skills | | | | CVPR-Skills | CVPR-Skills | | | | Caijing-Kexue | Caijing-Kexue | | | | Caijing-Wenti-Yanjiu | Caijing-Wenti-Yanjiu | | | | Caijing-Yanjiu | Caijing-Yanjiu | | | | Caimao-Jingji | Caimao-Jingji | | | | Caizheng-Yanjiu | Caizheng-Yanjiu | | | | Cancer-Cell-Skills | Cancer-Cell-Skills | | | | Cell-Skills | Cell-Skills | | | | Chanye-Jingji-Yanjiu | Chanye-Jingji-Yanjiu | | | | China-Economic-Quarterly-Skills | China-Economic-Quarterly-Skills | | | | China-Industrial-Economics-Skills | China-Industrial-Economics-Skills | | | | China-Rural-Economy-Skills | China-Rural-Economy-Skills | | | [...] | Name | Name | Last commit message | Last commit date | --- --- | | Latest commit History672 Commits 672 Commits | | .claude-plugin | .claude-plugin | | | | .github | .github | | | | .maintenance | .maintenance | | | | AAAI-Skills | AAAI-Skills | | | | AAMAS-Skills | AAMAS-Skills | | | | ACL-Skills | ACL-Skills | | | | ACM-CCS-Skills | ACM-CCS-Skills | | | | ACM-MM-Skills | ACM-MM-Skills | | | | AEJ-Applied-Economics-Skills | AEJ-Applied-Economics-Skills | | | | AEJ-Applied-Economics | AEJ-Applied-Economics | | | | AEJ-Economic-Policy-Skills | AEJ-Economic-Policy-Skills | | | | AEJ-Economic-Policy | AEJ-Economic-Policy | | | | AEJ-Macroeconomics-Skills | AEJ-Macroeconomics-Skills | | | | AEJ-Macroeconomics | AEJ-Macroeconomics | | | [...] | Comparative-Political-Studies-Skills | Comparative-Political-Studies-Skills | | | | Computer-Science-Conference-Skills | Computer-Science-Conference-Skills | | | | Computer-Science-Journal-Skills | Computer-Science-Journal-Skills | | | | Conservation-Biology-Skills | Conservation-Biology-Skills | | | | Contemporary-Accounting-Research-Skills | Contemporary-Accounting-Research-Skills | | | | Contemporary-Accounting-Research | Contemporary-Accounting-Research | | | | Criminology-Skills | Criminology-Skills | | | | Critical-Inquiry-Skills | Critical-Inquiry-Skills | | | | Current-Anthropology-Skills | Current-Anthropology-Skills | | | | DAC-Skills | DAC-Skills | | | | Dangdai-Caijing | Dangdai-Caijing | | | | Dangdai-Jingji-Kexue | Dangdai-Jingji-Kexue | | |",
+          "publishedAt": "Wed, 05 Aug 2026 05:00:00 GMT",
+          "ts": 1785906000000,
+          "tavilyScore": 0.1341888544,
+          "summary": "| CIKM-技能 | CIKM-技能 | | | | COLM-技能 | COLM-技能 | | | | COLT-技能| COLT-技能| | | | CSCW-技能 | CSCW-技能 | | | | CVPR-技能 | CVPR-技能 | | | |财经科学 |财经科学 | | | |财经周刊。",
+          "judgement": {
+            "frontier": 6,
+            "depth": 6,
+            "reach": 3,
+            "total": 5.3841888544
+          },
           "tags": [
-            "抓取异常"
-          ]
-        },
-        {
-          "title": "抓取失败：Nature Communications",
-          "titleZh": "抓取失败：Nature Communications",
-          "source": "Nature Communications",
-          "link": "https://www.nature.com/ncomms.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://www.nature.com/ncomms.rss（Status code 406）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
-        },
-        {
-          "title": "抓取失败：NeurIPS",
-          "titleZh": "抓取失败：NeurIPS",
-          "source": "NeurIPS",
-          "link": "https://neurips.cc/virtual/2025/papers.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://neurips.cc/virtual/2025/papers.rss（Status code 404）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
-        },
-        {
-          "title": "抓取失败：ICLR",
-          "titleZh": "抓取失败：ICLR",
-          "source": "ICLR",
-          "link": "https://openreview.net/group?id=ICLR.cc/2025/Conference.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://openreview.net/group?id=ICLR.cc/2025/Conference.rss（Attribute without value Line: 32 Column: 6330 Char: i）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
-        },
-        {
-          "title": "抓取失败：ACL Anthology",
-          "titleZh": "抓取失败：ACL Anthology",
-          "source": "ACL Anthology",
-          "link": "https://aclanthology.org/events/acl-2025/feed.xml",
-          "rawSummary": "",
-          "summary": "无法获取 https://aclanthology.org/events/acl-2025/feed.xml（Status code 404）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
+            "AI安全",
+            "生命科学",
+            "科研进展"
+          ],
+          "score": 5.3841888544
         }
       ]
     },
@@ -96,7 +49,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1786070600105,
+      "updatedAt": 1786081257907,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
