@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T05:06:07.635Z",
+  "generatedAt": "2026-08-09T12:53:00.970Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1786251955768,
+      "updatedAt": 1786279956717,
       "items": []
     },
     {
@@ -16,7 +16,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1786251960781,
+      "updatedAt": 1786279974223,
       "items": [
         {
           "title": "抓取失败：NeurIPS",
@@ -25,6 +25,20 @@
           "link": "https://neurips.cc/virtual/2025/papers.rss",
           "rawSummary": "",
           "summary": "无法获取 https://neurips.cc/virtual/2025/papers.rss（Status code 404）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
+          "tags": [
+            "抓取异常"
+          ]
+        },
+        {
+          "title": "抓取失败：Nature Neuroscience",
+          "titleZh": "抓取失败：Nature Neuroscience",
+          "source": "Nature Neuroscience",
+          "link": "https://www.nature.com/neuro.rss",
+          "rawSummary": "",
+          "summary": "无法获取 https://www.nature.com/neuro.rss（Status code 406）",
           "publishedAt": "",
           "ts": 0,
           "error": true,
@@ -68,7 +82,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1786251967634,
+      "updatedAt": 1786279980970,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
