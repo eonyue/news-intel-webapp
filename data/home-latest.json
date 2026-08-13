@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T13:11:20.802Z",
+  "generatedAt": "2026-08-13T02:04:09.323Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1786540261535,
+      "updatedAt": 1786586628860,
       "items": []
     },
     {
@@ -16,7 +16,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1786540273518,
+      "updatedAt": 1786586641205,
       "items": [
         {
           "title": "GitHub - brycewang-stanford/Awesome-Journal-Skills: Journal-specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济研究 & 200+ more — your fast track to getting published. ｜ 覆盖主流期刊的 Claude Code/Codex 期刊技能包，从选题、识别策略到表格规范与审稿回复全流程，助你快速发论文。 · GitHub",
@@ -49,7 +49,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1786540280802,
+      "updatedAt": 1786586649323,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
