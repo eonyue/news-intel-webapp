@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T16:27:22.051Z",
+  "generatedAt": "2026-09-18T03:40:22.564Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1789662411760,
+      "updatedAt": 1789702797452,
       "items": []
     },
     {
@@ -16,7 +16,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1789662433660,
+      "updatedAt": 1789702815681,
       "items": [
         {
           "title": "抓取失败：NeurIPS",
@@ -68,7 +68,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1789662442050,
+      "updatedAt": 1789702822564,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
