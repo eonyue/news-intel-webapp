@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T16:56:46.247Z",
+  "generatedAt": "2026-11-01T04:52:16.990Z",
   "categories": [
     {
       "id": "media",
@@ -7,8 +7,23 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1793465796436,
-      "items": []
+      "updatedAt": 1793508715834,
+      "items": [
+        {
+          "title": "抓取失败：MIT Technology Review",
+          "titleZh": "抓取失败：MIT Technology Review",
+          "source": "MIT Technology Review",
+          "link": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+          "rawSummary": "",
+          "summary": "无法获取 https://www.technologyreview.com/topic/artificial-intelligence/feed/（Status code 403）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
+          "tags": [
+            "抓取异常"
+          ]
+        }
+      ]
     },
     {
       "id": "research",
@@ -16,7 +31,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1793465803997,
+      "updatedAt": 1793508729526,
       "items": [
         {
           "title": "抓取失败：Nature Communications",
@@ -82,7 +97,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1793465806246,
+      "updatedAt": 1793508736990,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
