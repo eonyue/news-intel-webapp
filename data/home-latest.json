@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T19:12:48.379Z",
+  "generatedAt": "2026-11-04T05:14:26.937Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1793733132201,
+      "updatedAt": 1793769243157,
       "items": []
     },
     {
@@ -16,28 +16,28 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1793733149269,
+      "updatedAt": 1793769257218,
       "items": [
         {
           "title": "「phD」職缺- 2026年10月熱門工作機會",
           "titleZh": "「phD」職缺- 2026年10月熱門工作機會",
           "source": "1111.com.tw",
           "link": "https://www.1111.com.tw/search/job?page=1&ks=phD",
-          "rawSummary": "We investigate how disease-associated mutations in chromatin regulators and histones disrupt gene regulation. top-tier conferences, such as NeurIPS, ICML, ICLR",
-          "publishedAt": "Wed, 28 Oct 2026 19:00:00 GMT",
-          "ts": 1793214000000,
-          "tavilyScore": 0.579451616,
-          "summary": "We investigate how disease-associated mutations in chromatin regulators and histones disrupt gene regulation.。",
+          "rawSummary": "We investigate how disease-associated mutations in chromatin regulators and histones disrupt gene regulation. publishing at top-tier conferences, such as",
+          "publishedAt": "Wed, 28 Oct 2026 05:00:00 GMT",
+          "ts": 1793163600000,
+          "tavilyScore": 0.0762849216,
+          "summary": "我们研究与疾病相关的染色质调节因子和组蛋白突变如何破坏基因调控。",
           "judgement": {
             "frontier": 4,
             "depth": 3,
             "reach": 3,
-            "total": 3.999451616
+            "total": 3.4962849216
           },
           "tags": [
             "基因组学"
           ],
-          "score": 3.999451616
+          "score": 3.4962849216
         }
       ]
     },
@@ -47,7 +47,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1793733168379,
+      "updatedAt": 1793769266937,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
