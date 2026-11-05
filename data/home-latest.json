@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T19:28:32.252Z",
+  "generatedAt": "2026-11-05T05:35:45.812Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1793820493607,
+      "updatedAt": 1793856920503,
       "items": []
     },
     {
@@ -16,63 +16,28 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1793820505337,
+      "updatedAt": 1793856937352,
       "items": [
         {
-          "title": "抓取失败：NeurIPS",
-          "titleZh": "抓取失败：NeurIPS",
-          "source": "NeurIPS",
-          "link": "https://neurips.cc/virtual/2025/papers.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://neurips.cc/virtual/2025/papers.rss（Status code 404）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
+          "title": "「phD」職缺- 2026年10月熱門工作機會",
+          "titleZh": "「phD」職缺- 2026年10月熱門工作機會",
+          "source": "1111.com.tw",
+          "link": "https://www.1111.com.tw/search/job?page=1&ks=phD",
+          "rawSummary": "We investigate how disease-associated mutations in chromatin regulators and histones disrupt gene regulation. top-tier conferences, such as NeurIPS, ICML, ICLR",
+          "publishedAt": "Wed, 28 Oct 2026 05:00:00 GMT",
+          "ts": 1793163600000,
+          "tavilyScore": 0.5793433600000001,
+          "summary": "We investigate how disease-associated mutations in chromatin regulators and histones disrupt gene regulation.。",
+          "judgement": {
+            "frontier": 4,
+            "depth": 3,
+            "reach": 3,
+            "total": 3.99934336
+          },
           "tags": [
-            "抓取异常"
-          ]
-        },
-        {
-          "title": "抓取失败：Nature Neuroscience",
-          "titleZh": "抓取失败：Nature Neuroscience",
-          "source": "Nature Neuroscience",
-          "link": "https://www.nature.com/neuro.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://www.nature.com/neuro.rss（Status code 406）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
-        },
-        {
-          "title": "抓取失败：ICLR",
-          "titleZh": "抓取失败：ICLR",
-          "source": "ICLR",
-          "link": "https://openreview.net/group?id=ICLR.cc/2025/Conference.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://openreview.net/group?id=ICLR.cc/2025/Conference.rss（Attribute without value Line: 32 Column: 6380 Char: i）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
-        },
-        {
-          "title": "抓取失败：ACL Anthology",
-          "titleZh": "抓取失败：ACL Anthology",
-          "source": "ACL Anthology",
-          "link": "https://aclanthology.org/events/acl-2025/feed.xml",
-          "rawSummary": "",
-          "summary": "无法获取 https://aclanthology.org/events/acl-2025/feed.xml（Status code 404）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
+            "基因组学"
+          ],
+          "score": 3.99934336
         }
       ]
     },
@@ -82,7 +47,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1793820512252,
+      "updatedAt": 1793856945812,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
