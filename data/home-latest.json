@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T05:31:22.057Z",
+  "generatedAt": "2026-11-13T19:19:22.150Z",
   "categories": [
     {
       "id": "media",
@@ -7,7 +7,7 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1794547864372,
+      "updatedAt": 1794597546223,
       "items": []
     },
     {
@@ -16,49 +16,33 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1794547873761,
+      "updatedAt": 1794597555106,
       "items": [
         {
-          "title": "抓取失败：NeurIPS",
-          "titleZh": "抓取失败：NeurIPS",
-          "source": "NeurIPS",
-          "link": "https://neurips.cc/virtual/2025/papers.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://neurips.cc/virtual/2025/papers.rss（Status code 404）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
+          "title": "日程安排与嘉宾 | XAGI 2026 交叉智能大会",
+          "titleZh": "日程安排与嘉宾 | XAGI 2026 交叉智能大会",
+          "source": "x-agi.cc",
+          "link": "https://www.x-agi.cc/schedule",
+          "rawSummary": "#### 嘉宾介绍 北京大学 · 前沿交叉学科研究院 周沛劼，北京大学前沿交叉学科研究院国际机器学习研究中心和定量生物学中心研究员、博士生导师，博雅青年学者，国家级青年人才。2014年和2019年在北京大学数学科学学院获得计算数学学士和博士学位，获北京大学优秀博士论文奖；2020-2023年任美国加州大学尔湾分校数学系访问助理教授。主要从事计算系统生物学、单细胞组学动力学、复杂生物系统建模与AI for Science研究。相关成果发表在Nature正刊, 大子刊(NM, NCC, NMI,NG), NC, SA, PRX, MSB, AS等重要交叉学科期刊以及ICLR(Oral), ICML, NeurIPS, AAAI(Oral)等人工智能会议，并担任Nature Methods, PNAS, Nature Communications, Cell Genomics, Cell Systems, SIAP等多个期刊审稿人。 基于Bellman缺陷校正的科学机器学习与生成式人工智能的推理算法15:00-15:30 陆一平北京大学 陆一平头像 #### 演讲摘要 [...] #### 嘉宾介绍 北京大学 · 计算机学院 潘亮铭，北京大学计算机学院助理教授、研究员、博士生导师，国家级青年人才，智源青年学者。主要研究方向包括自然语言处理、机器学习、大语言模型与可解释人工智能，聚焦大模型内部机理理解与可解释性，并以此为基础构建可靠、可控、安全的大语言模型。已在 ICML、NeurIPS、ICLR、ACL等国际顶级会议和期刊发表论文 60 余篇，谷歌学术总引用量超过 7000 次，论文曾获包括最佳论文奖在内的多项荣誉奖励。主持包括 CCF-腾讯犀牛鸟基金、CCF-1688源宝合作基金在内的多项产学研合作。 科学大模型的数据自动化：数据整理、推理合成与定制评测14:30-15:00 刘泽群中关村学院 刘泽群头像 #### 演讲摘要 以大语言模型为代表的基础模型正在深刻重塑科学研究范式，在分子设计、医学诊断等领域展现出加速科学发现的巨大潜力。然而，科学大模型的发展在数据层面仍面临多重挑战：原始数据分散异构，推理过程缺乏显式记录，评测需求因任务而异。本报告围绕科学大模型“数据准备 - 推理学习 - 能力验证”的全生命周期，介绍我们在数据自动化方面的研究工作。在数据整理方面，我们提出多智能体协同框架 AIDE，实现科学数据检索、质量筛选与结构化组织的全流程自动化，将分散异构的原始数据转化为训练就绪的高质量资源。在推理合成方面，我们提出 DESRO，基于实验变量变化与结果差异反演潜在推理过程，并以分子优化为例实现可解释推理链的大规模合成。在定制评测方面，我们提出 SciCustom，以科学本体为语义骨架，将科学语料组织为可复用的细粒度知识单元，进而依据用户需求自动构建面向特定科研场景的评测基准。上述工作推动科学数据构建由依赖人工走向自动化，为科学大模型的持续进化提供数据支撑。 #### 嘉宾介绍 中关村学院 · AI4Science [...] 闫宇坤启元 闫宇坤头像 #### 演讲摘要 近年来，智能体技术经历了\"推理能力增强 → 工具能力提升 → 复杂问题拆解\"等发展阶段，正从\"问答工具\"和\"专业智能体\"迈向更具通用能力的智能体操作系统（Agent OS）。然而，当前Agent OS在多项目并行的记忆污染、不加区分的Token成本浪费、以及问答范式下的能动性缺失等方面仍存在显著瓶颈。 PilotDeck以\"解放生产力的第一性原理 - 提供好的生产关系\"为设计思路，为大型语言模型提供最适合其工作的生产环境与执行模式，核心创新包括独立工作舱、项目制白盒记忆、多模型智能路由、常驻式主动执行等方面。 #### 嘉宾介绍 启元实验室 · 大模型研究中心 闫宇坤，启元实验室（Qiyuan Lab）大模型中心副研究员，清华大学自然语言处理实验室（THUNLP）客座研究员，博士毕业于清华大学脑与智能实验室，主要研究方向为大模型知识增强与智能体技术。近年来，在ICLR、NeurIPS、ICML、ACL等人工智能顶级国际会议发表论文40余篇，Google引用超千次，多次担任领域主席与审稿人。主持负责大模型相关开源项目UltraRAG（Github Trending Rank 2）、PilotDeck等，累计星标量1万以上；主持负责开源模型MiniCPM-Emedding系列、VisRAG-Ret系列等，累计下载量超50万次。 Benchmarking Language Models for Statistical Problem Formulation15:30-16:00 从鑫清华大学 从鑫头像 #### 演讲摘要",
+          "publishedAt": "Sat, 17 Oct 2026 00:00:00 GMT",
+          "ts": 1792195200000,
+          "tavilyScore": 0.6532428320000001,
+          "summary": "嘉宾介绍 北京大学 · 前沿交叉学科研究院 周沛劼，北京大学前沿交叉学科研究院国际机器学习研究中心和定量生物学中心研究员、博士生导师，博雅青年学者，国家级青年人才。 2014年和2019年在北京大学数学科学学院获得计算数学学士和博士学位，获北京大学优秀博士论文奖；2020-2023年任美国加州大学尔湾分校数学系访问助理教授。 主要从事计算系统生物学、单细胞组学动力学、复杂生物系统建模与AI for Science研究。",
+          "judgement": {
+            "frontier": 9,
+            "depth": 8,
+            "reach": 3,
+            "total": 7.823242832
+          },
           "tags": [
-            "抓取异常"
-          ]
-        },
-        {
-          "title": "抓取失败：ICLR",
-          "titleZh": "抓取失败：ICLR",
-          "source": "ICLR",
-          "link": "https://openreview.net/group?id=ICLR.cc/2025/Conference.rss",
-          "rawSummary": "",
-          "summary": "无法获取 https://openreview.net/group?id=ICLR.cc/2025/Conference.rss（Attribute without value Line: 32 Column: 6380 Char: i）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
-        },
-        {
-          "title": "抓取失败：ACL Anthology",
-          "titleZh": "抓取失败：ACL Anthology",
-          "source": "ACL Anthology",
-          "link": "https://aclanthology.org/events/acl-2025/feed.xml",
-          "rawSummary": "",
-          "summary": "无法获取 https://aclanthology.org/events/acl-2025/feed.xml（Status code 404）",
-          "publishedAt": "",
-          "ts": 0,
-          "error": true,
-          "tags": [
-            "抓取异常"
-          ]
+            "人工智能",
+            "智能体",
+            "AI安全",
+            "生命科学",
+            "科研进展",
+            "科学发现"
+          ],
+          "score": 7.823242832
         }
       ]
     },
@@ -68,7 +52,7 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1794547882057,
+      "updatedAt": 1794597562150,
       "items": [
         {
           "title": "抓取失败：Reuters Technology",
