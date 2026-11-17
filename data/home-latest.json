@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T06:58:25.934Z",
+  "generatedAt": "2026-11-17T20:33:14.475Z",
   "categories": [
     {
       "id": "media",
@@ -7,8 +7,23 @@
       "zhName": "媒体头条",
       "description": "Broad-reach media coverage around AI, neuroscience, life science and technology",
       "zhDescription": "AI / 神经科学 / 生命科学 / 技术主流媒体报道",
-      "updatedAt": 1794898676330,
-      "items": []
+      "updatedAt": 1794947578490,
+      "items": [
+        {
+          "title": "抓取失败：TechCrunch",
+          "titleZh": "抓取失败：TechCrunch",
+          "source": "TechCrunch",
+          "link": "https://techcrunch.com/category/artificial-intelligence/feed/",
+          "rawSummary": "",
+          "summary": "无法获取 https://techcrunch.com/category/artificial-intelligence/feed/（Status code 403）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
+          "tags": [
+            "抓取异常"
+          ]
+        }
+      ]
     },
     {
       "id": "research",
@@ -16,7 +31,7 @@
       "zhName": "研究速递",
       "description": "Research-heavy updates from journals, labs, and arXiv",
       "zhDescription": "科研导向更新（含 arXiv）",
-      "updatedAt": 1794898687826,
+      "updatedAt": 1794947586871,
       "items": [
         {
           "title": "抓取失败：NeurIPS",
@@ -68,8 +83,36 @@
       "zhName": "技术趋势",
       "description": "Tech & biotech company moves, market changes and funding trends",
       "zhDescription": "科技/生物医疗公司动向、市场变化与投融资趋势",
-      "updatedAt": 1794898705934,
+      "updatedAt": 1794947594475,
       "items": [
+        {
+          "title": "抓取失败：TechCrunch Startups",
+          "titleZh": "抓取失败：TechCrunch Startups",
+          "source": "TechCrunch Startups",
+          "link": "https://techcrunch.com/category/startups/feed/",
+          "rawSummary": "",
+          "summary": "无法获取 https://techcrunch.com/category/startups/feed/（Status code 403）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
+          "tags": [
+            "抓取异常"
+          ]
+        },
+        {
+          "title": "抓取失败：TechCrunch AI",
+          "titleZh": "抓取失败：TechCrunch 人工智能",
+          "source": "TechCrunch AI",
+          "link": "https://techcrunch.com/category/artificial-intelligence/feed/",
+          "rawSummary": "",
+          "summary": "无法获取 https://techcrunch.com/category/artificial-intelligence/feed/（Status code 403）",
+          "publishedAt": "",
+          "ts": 0,
+          "error": true,
+          "tags": [
+            "抓取异常"
+          ]
+        },
         {
           "title": "抓取失败：Reuters Technology",
           "titleZh": "抓取失败：Reuters Technology",
